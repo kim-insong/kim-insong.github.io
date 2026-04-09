@@ -69,4 +69,20 @@
   .delay-2 { transition-delay: 0.12s; }
   .delay-3 { transition-delay: 0.18s; }
   .delay-4 { transition-delay: 0.24s; }
+
+  /* Wiki internal links (remark-wiki-link) */
+  .internal {
+    color: var(--color-primary);
+    text-decoration-style: dotted;
+    text-underline-offset: 2px;
+  }
+
+  .internal:hover {
+    text-decoration-style: solid;
+  }
+
+  .internal.new {
+    color: var(--color-warm);
+    opacity: 0.75;
+  }
 }

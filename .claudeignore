@@ -1,0 +1,12 @@
+# Build output
+dist/
+.astro/
+
+# Dependencies
+node_modules/
+
+# Package lock (too large, not useful for context)
+package-lock.json
+
+# Git internals
+.git/

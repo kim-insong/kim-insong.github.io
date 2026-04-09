@@ -23,8 +23,10 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm install --include=dev
-      - run: npm run build
+      - name: Install dependencies
+        run: npm ci
+      - name: Build site
+        run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/

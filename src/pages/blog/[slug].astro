@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<BaseLayout title={post.data.title} description={post.data.description}>
+  <article class="py-24 md:py-36 px-6">
+    <div class="max-w-5xl w-full mx-auto">
+      <!-- Post header -->
+      <div class="max-w-2xl mb-16 animate-reveal">
+        <a href="/blog" class="text-sm text-text-sub hover:text-text transition-colors mb-6 inline-block">
+          ← Blog
+        </a>
+        <span class="section-label">
+          {post.data.publishDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </span>
+        <h1 class="text-3xl md:text-4xl font-semibold text-text tracking-tight mb-4">
+          {post.data.title}
+        </h1>
+        {post.data.description && (
+          <p class="text-text-sub leading-relaxed text-lg">{post.data.description}</p>
+        )}
+        {post.data.tags && post.data.tags.length > 0 && (
+          <div class="flex flex-wrap gap-2 mt-4">
+            {post.data.tags.map((tag: string) => (
+              <span class="text-xs px-3 py-1 rounded-md border border-border bg-muted text-muted-foreground">
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
+      </div>
+
+      <!-- Post content -->
+      <div class="max-w-2xl prose prose-neutral animate-reveal delay-1">
+        <Content />
+      </div>
+    </div>
+  </article>
+</BaseLayout>

@@ -1,25 +1,23 @@
 ---
-title: "On Building iOS Apps in 2025"
-description: "What's changed, what hasn't, and why SwiftUI is finally the right default."
+title: "2025년, iOS 앱 개발하기"
+description: "무엇이 달라졌고, 무엇이 그대로인지 — 그리고 SwiftUI가 이제 왜 올바른 기본값인지."
 publishDate: 2026-03-15
-tags: ["iOS", "SwiftUI", "development"]
+tags: ["iOS", "SwiftUI", "개발"]
 ---
 
-SwiftUI has come a long way.
+SwiftUI는 정말 많이 좋아졌습니다.
 
-When it launched in 2019, it was exciting but incomplete — you'd hit a wall every few screens and have to drop down to UIKit.
-In 2025, that's rarely the case. The framework is mature enough that I default to SwiftUI for everything new.
+2019년 출시 당시에는 흥미롭지만 불완전했습니다 — 몇 화면만 지나면 UIKit으로 내려가야 할 상황이 자꾸 생겼습니다. 2025년에는 그런 일이 거의 없습니다. 프레임워크가 충분히 성숙해서 이제는 새 작업의 기본값으로 SwiftUI를 선택합니다.
 
-## What I build with now
+## 지금 사용하는 스택
 
-- **SwiftUI** for all UI
-- **Swift Concurrency** (async/await) for networking and background work
-- **SwiftData** for persistence when Core Data would be overkill
-- **Xcode Cloud** for CI
+- **SwiftUI** — 모든 UI
+- **Swift Concurrency** (async/await) — 네트워킹과 백그라운드 작업
+- **SwiftData** — Core Data가 과할 때의 영속성
+- **Xcode Cloud** — CI
 
-The stack is boring in the best way. No surprises, no glue code, just building the actual product.
+최고의 의미에서 지루한 스택입니다. 놀랄 일도, 조각 코드도 없고, 그냥 실제 제품을 만드는 데 집중합니다.
 
-## What still hasn't changed
+## 변하지 않은 것
 
-Users still care about the same things: speed, reliability, and not being annoyed.
-Good software gets out of your way. Every feature you don't ship is a bug you don't have to fix.
+사용자가 중요하게 생각하는 건 여전히 같습니다: 속도, 신뢰성, 그리고 방해받지 않는 것. 좋은 소프트웨어는 사용자를 방해하지 않습니다. 출시하지 않은 기능마다 고칠 필요 없는 버그가 하나씩 줄어드는 셈입니다.

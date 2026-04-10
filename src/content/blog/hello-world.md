@@ -1,13 +1,12 @@
 ---
-title: "Hello, World"
-description: "First post on insong.net — why I'm starting to write."
+title: "블로그를 시작합니다"
+description: "첫 번째 글 — 왜 글을 쓰기 시작했는지에 대해."
 publishDate: 2026-04-09
 tags: ["meta"]
 ---
 
-This is the first post on my site.
+이 사이트의 첫 번째 글입니다.
 
-I've been building apps for a few years and mostly kept things to myself — shipping quietly, iterating, moving on.
-Writing feels like a way to slow down and actually think through what I'm building and why.
+몇 년 동안 앱을 만들면서 대부분 조용히 작업해왔습니다 — 묵묵히 출시하고, 수정하고, 넘어갔습니다. 글쓰기는 속도를 늦추고 내가 무엇을 왜 만드는지 실제로 생각해보는 방법이 될 것 같습니다.
 
-No promises on cadence. Just writing when something's worth saying.
+게시 주기에 대한 약속은 없습니다. 그냥 할 말이 생길 때 씁니다.

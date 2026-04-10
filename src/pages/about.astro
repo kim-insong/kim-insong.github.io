@@ -3,43 +3,43 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 const experience = [
   {
-    period: '2023 — Present',
-    role: 'Indie App Developer',
-    org: 'Independent',
+    period: '2023 — 현재',
+    role: '인디 앱 개발자',
+    org: '독립',
   },
   {
     period: '2021 — 2023',
-    role: 'iOS Developer',
-    org: 'Company Name',
+    role: 'iOS 개발자',
+    org: '회사명',
   },
   {
     period: '2019 — 2021',
-    role: 'Software Engineer',
-    org: 'Company Name',
+    role: '소프트웨어 엔지니어',
+    org: '회사명',
   },
 ];
 
 const skills = [
-  { name: 'Swift · SwiftUI', desc: 'iOS / macOS native' },
-  { name: 'Kotlin · Jetpack Compose', desc: 'Android native' },
-  { name: 'TypeScript · Astro', desc: 'Web & static sites' },
-  { name: 'Figma', desc: 'UI design & prototyping' },
+  { name: 'Swift · SwiftUI', desc: 'iOS / macOS 네이티브' },
+  { name: 'Kotlin · Jetpack Compose', desc: 'Android 네이티브' },
+  { name: 'TypeScript · Astro', desc: '웹 & 정적 사이트' },
+  { name: 'Figma', desc: 'UI 디자인 & 프로토타이핑' },
 ];
 ---
 
-<BaseLayout title="About" description="About insong — indie app developer">
+<BaseLayout title="소개" description="김인송 소개 — iOS 개발자, 인디 메이커">
   <!-- Header -->
   <section class="py-24 md:py-36 px-6">
     <div class="max-w-5xl w-full mx-auto">
       <div class="max-w-xl animate-reveal">
         <span class="section-label">About</span>
         <h1 class="text-3xl md:text-4xl font-semibold text-text tracking-tight mb-4">
-          insong
+          김인송
         </h1>
         <p class="text-text-sub leading-relaxed">
-          I'm an indie app developer focused on iOS and mobile products.
-          I've been shipping apps since 2019 — I believe the best software
-          is opinionated, fast, and gets out of your way.
+          iOS 개발자이자 인디 메이커입니다. 2019년부터 앱을 만들어왔고,
+          지금은 직접 제품을 기획하고 개발해 출시하고 있습니다.
+          좋은 소프트웨어는 빠르고, 직관적이며, 사용자를 방해하지 않는다고 생각합니다.
         </p>
       </div>
     </div>
@@ -50,7 +50,7 @@ const skills = [
     <div class="max-w-5xl mx-auto">
       <div class="mb-8 animate-reveal">
         <span class="section-label">Experience</span>
-        <h2 class="text-2xl font-semibold text-text tracking-tight">Work</h2>
+        <h2 class="text-2xl font-semibold text-text tracking-tight">경력</h2>
       </div>
       <div class="flex flex-col md:flex-row gap-16 items-start">
         <div class="flex-1 animate-reveal delay-1">
@@ -68,8 +68,8 @@ const skills = [
         </div>
         <div class="flex-1 animate-reveal delay-2">
           <p class="text-sm text-text-sub leading-relaxed">
-            I started as a software engineer and moved into mobile development.
-            Now I work independently — building, shipping, and iterating on my own apps.
+            소프트웨어 엔지니어로 시작해 모바일 개발로 이동했습니다.
+            지금은 독립적으로 작업하며, 직접 앱을 만들고 출시하고 개선합니다.
           </p>
         </div>
       </div>
@@ -81,7 +81,7 @@ const skills = [
     <div class="max-w-5xl mx-auto">
       <div class="mb-8 animate-reveal">
         <span class="section-label">Tools</span>
-        <h2 class="text-2xl font-semibold text-text tracking-tight">Skills & Stack</h2>
+        <h2 class="text-2xl font-semibold text-text tracking-tight">스킬 & 스택</h2>
       </div>
       <div class="grid sm:grid-cols-2 gap-3 animate-reveal delay-1">
         {skills.map(skill => (

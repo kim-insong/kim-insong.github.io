@@ -1,28 +1,103 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'))
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+  .slice(0, 3);
 ---
 
-<BaseLayout title="Home" description="insong — indie app developer">
+<BaseLayout title="Home" description="김인송 — iOS 개발자, 인디 메이커">
+  <!-- Hero -->
   <section class="py-24 md:py-36 px-6">
     <div class="max-w-5xl w-full mx-auto">
       <div class="max-w-xl animate-reveal">
         <span class="section-label">Indie Developer</span>
         <h1 class="text-3xl md:text-4xl font-semibold text-text tracking-tight mb-4">
-          Hi, I'm insong.
+          안녕하세요, 김인송입니다.
         </h1>
         <p class="text-text-sub leading-relaxed mb-8">
-          I build iOS apps and ship products that people actually use.
-          I care about clean UI, good UX, and software that just works.
+          iOS 앱을 만들고 직접 출시합니다. 깔끔한 UI와 좋은 사용자 경험에 집중하며,
+          실제로 사람들이 쓰는 제품을 만드는 것을 목표로 합니다.
         </p>
-        <div class="flex flex-wrap gap-3">
+        <div class="flex flex-wrap gap-4">
           <a href="/about" class="text-sm font-medium text-primary hover:underline">
-            About me →
+            소개 →
           </a>
           <a href="/blog" class="text-sm font-medium text-primary hover:underline">
-            Blog →
+            블로그 →
           </a>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- About teaser -->
+  <section class="py-20 px-6 border-t border-border bg-bg-alt">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-8 animate-reveal">
+        <span class="section-label">About</span>
+        <h2 class="text-2xl font-semibold text-text tracking-tight">소개</h2>
+      </div>
+      <div class="flex flex-col md:flex-row gap-16 items-start">
+        <div class="flex-1 animate-reveal delay-1">
+          <p class="text-sm text-text-sub leading-relaxed mb-4">
+            2019년부터 iOS 개발을 시작해 다양한 프로젝트를 거쳐,
+            지금은 독립적으로 제품을 기획·개발·출시하고 있습니다.
+          </p>
+          <p class="text-sm text-text-sub leading-relaxed">
+            Swift와 SwiftUI를 주로 사용하며, 앱 디자인부터 배포까지 혼자 진행합니다.
+          </p>
+          <a href="/about" class="inline-block mt-6 text-sm font-medium text-primary hover:underline">
+            자세한 소개 →
+          </a>
+        </div>
+        <div class="flex-1 animate-reveal delay-2">
+          <div class="grid grid-cols-2 gap-3">
+            {['Swift · SwiftUI', 'Kotlin · Compose', 'TypeScript · Astro', 'Figma'].map(skill => (
+              <div class="text-xs px-4 py-3 rounded-xl border border-border bg-bg text-text-sub">
+                {skill}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent posts -->
+  {posts.length > 0 && (
+    <section class="py-20 px-6 border-t border-border bg-bg">
+      <div class="max-w-5xl mx-auto">
+        <div class="mb-8 animate-reveal">
+          <span class="section-label">Writing</span>
+          <h2 class="text-2xl font-semibold text-text tracking-tight">최근 글</h2>
+        </div>
+        <div class="divide-y divide-border animate-reveal delay-1">
+          {posts.map(post => (
+            <a
+              href={`/blog/${post.slug}`}
+              class="group flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-6 py-5 first:pt-0 hover:bg-bg-alt -mx-4 px-4 rounded-xl transition-colors"
+            >
+              <span class="text-xs text-text-sub tabular-nums shrink-0 w-28">
+                {post.data.publishDate.toLocaleDateString('ko-KR', { year: 'numeric', month: 'short', day: 'numeric' })}
+              </span>
+              <div class="flex-1">
+                <div class="text-sm font-semibold text-text group-hover:text-primary transition-colors">
+                  {post.data.title}
+                </div>
+                {post.data.description && (
+                  <div class="text-sm text-text-sub mt-0.5">{post.data.description}</div>
+                )}
+              </div>
+            </a>
+          ))}
+        </div>
+        <a href="/blog" class="inline-block mt-8 text-sm font-medium text-primary hover:underline animate-reveal delay-2">
+          모든 글 보기 →
+        </a>
+      </div>
+    </section>
+  )}
 </BaseLayout>

@@ -2,8 +2,18 @@
 
 ## Project
 insong.net — personal portfolio site for insong.
-Stack: Astro v6 + shadcn/ui + Tailwind CSS v4 + Pretendard Variable.
+Stack: Astro v4 + Tailwind CSS v4 + Pretendard Variable.
 Use the `/web-insong-net` skill for design system reference.
+
+## Feature → Doc Index
+
+| Feature | Module Doc | Spec |
+|---------|------------|------|
+| Layout & Components | docs/modules/layout.md | — |
+| Pages & Routing | docs/modules/pages.md | — |
+| Content Collections | docs/modules/content.md | — |
+| Styles & Design Tokens | docs/modules/styles.md | — |
+| Deployment (GitHub Pages) | docs/modules/deploy.md | — |
 
 ## Git Workflow
 

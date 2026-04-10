@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('wiki');
+  return entries.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<BaseLayout title={entry.data.title} description={entry.data.description}>
+  <article class="py-24 md:py-36 px-6">
+    <div class="max-w-5xl w-full mx-auto">
+      <!-- Entry header -->
+      <div class="max-w-2xl mb-16 animate-reveal">
+        <a href="/wiki" class="text-sm text-text-sub hover:text-text transition-colors mb-6 inline-block">
+          ← 위키
+        </a>
+        <span class="section-label">
+          {entry.data.publishDate.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </span>
+        <h1 class="text-3xl md:text-4xl font-semibold text-text tracking-tight mb-4">
+          {entry.data.title}
+        </h1>
+        {entry.data.description && (
+          <p class="text-text-sub leading-relaxed text-lg">{entry.data.description}</p>
+        )}
+        {entry.data.tags && entry.data.tags.length > 0 && (
+          <div class="flex flex-wrap gap-2 mt-4">
+            {entry.data.tags.map((tag: string) => (
+              <a
+                href={`/wiki?tag=${tag}`}
+                class="text-xs px-3 py-1 rounded-md border border-border bg-muted text-muted-foreground hover:border-primary hover:text-primary transition-colors"
+              >
+                {tag}
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+
+      <!-- Entry content -->
+      <div class="max-w-2xl prose prose-neutral animate-reveal delay-1">
+        <Content />
+      </div>
+    </div>
+  </article>
+</BaseLayout>

@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Home" description="insong — indie app developer">
+  <section class="py-24 md:py-36 px-6">
+    <div class="max-w-5xl w-full mx-auto">
+      <div class="max-w-xl animate-reveal">
+        <span class="section-label">Indie Developer</span>
+        <h1 class="text-3xl md:text-4xl font-semibold text-text tracking-tight mb-4">
+          Hi, I'm insong.
+        </h1>
+        <p class="text-text-sub leading-relaxed mb-8">
+          I build iOS apps and ship products that people actually use.
+          I care about clean UI, good UX, and software that just works.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="/about" class="text-sm font-medium text-primary hover:underline">
+            About me →
+          </a>
+          <a href="/blog" class="text-sm font-medium text-primary hover:underline">
+            Blog →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

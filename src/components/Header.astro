@@ -1,0 +1,30 @@
+---
+const nav = [
+  { label: 'About', href: '/about' },
+  { label: 'Blog', href: '/blog' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="border-b border-border bg-bg/90 backdrop-blur-sm sticky top-0 z-50">
+  <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
+    <a href="/" class="text-sm font-semibold text-text tracking-tight hover:text-primary transition-colors">
+      insong
+    </a>
+    <nav class="flex items-center gap-6">
+      {nav.map(item => (
+        <a
+          href={item.href}
+          class={`text-sm transition-colors ${
+            currentPath.startsWith(item.href)
+              ? 'text-text font-medium'
+              : 'text-text-sub hover:text-text'
+          }`}
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4F6DF0;
+  --color-primary-light: #EFF1FE;
+  --color-primary-dark: #3B55D4;
+  --color-secondary: #34C793;
+  --color-warm: #F97E5A;
+  --color-bg: #FFFFFF;
+  --color-bg-alt: #FAFAFA;
+  --color-bg-warm: #FFF8F5;
+  --color-card: #FFFFFF;
+  --color-text: #18181B;
+  --color-text-sub: #71717A;
+  --color-muted: #F4F4F5;
+  --color-muted-foreground: #71717A;
+  --color-border: #E4E4E7;
+
+  --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .section-label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+  }
+
+  .pillar-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .pillar-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.07);
+  }
+
+  .animate-reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .animate-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .delay-1 { transition-delay: 0.06s; }
+  .delay-2 { transition-delay: 0.12s; }
+  .delay-3 { transition-delay: 0.18s; }
+  .delay-4 { transition-delay: 0.24s; }
+}

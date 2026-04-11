@@ -41,43 +41,43 @@ const careers = [
     period: '2009 — 2013',
     org: '(주)컴투스',
     projects: [
-      { name: '액션퍼즐패밀리3 (제한적 참여)', stack: ['위피C'] },
-      { name: '초코초코타이쿤2', stack: ['위피C'] },
-      { name: '초콜릿타이쿤', stack: ['위피C'] },
-      { name: '프로토타입 1종 (드랍)', stack: ['C++', 'Box2d'] },
-      { name: '프로토타입 1종 (드랍)', stack: ['C#', 'Unity3D'] },
-      { name: '프로토타입 1종 (드랍)', stack: ['C++'] },
+      { name: '액션퍼즐패밀리3 (제한적 참여)', roles: ['클라이언트'], stack: ['위피C'] },
+      { name: '초코초코타이쿤2', roles: ['클라이언트'], stack: ['위피C'] },
+      { name: '초콜릿타이쿤', roles: ['클라이언트'], stack: ['위피C'] },
+      { name: '프로토타입 1종 (드랍)', roles: ['클라이언트'], stack: ['C++', 'Box2d'] },
+      { name: '프로토타입 1종 (드랍)', roles: ['클라이언트'], stack: ['C#', 'Unity3D'] },
+      { name: '프로토타입 1종 (드랍)', roles: ['클라이언트'], stack: ['C++'] },
     ],
   },
   {
     period: '2013 — 2014',
     org: '(주)게임하이',
     projects: [
-      { name: '프로토타입 1종 (드랍)', stack: ['C++', 'Cocos2d-x'] },
-      { name: '몬몬몬', stack: ['C++', 'C#', 'Cocos2d-x', 'ASP.NET', 'WinForms', 'MSSQL', 'Redis', 'Lua'] },
+      { name: '프로토타입 1종 (드랍)', roles: ['클라이언트'], stack: ['C++', 'Cocos2d-x'] },
+      { name: '몬몬몬', roles: ['클라이언트', '웹서버'], stack: ['C++', 'C#', 'Cocos2d-x', 'ASP.NET', 'WinForms', 'MSSQL', 'Redis', 'Lua'] },
     ],
   },
   {
     period: '2014 — 2017',
     org: '(주)넥슨GT',
     projects: [
-      { name: '서든어택2', stack: ['C++', 'UnrealEngine'] },
+      { name: '서든어택2', roles: ['클라이언트'], stack: ['C++', 'UnrealEngine'] },
     ],
   },
   {
     period: '2017 — 2019',
     org: '(주)넥슨레드',
     projects: [
-      { name: '포인트 블랭크: 스트라이크', stack: ['PHP', 'MySQL', 'Redis'] },
-      { name: '프로토타입 1종 (드랍)', stack: ['C++', 'UnrealEngine'] },
+      { name: '포인트 블랭크: 스트라이크', roles: ['웹서버'], stack: ['PHP', 'MySQL', 'Redis'] },
+      { name: '프로토타입 1종 (드랍)', roles: ['클라이언트'], stack: ['C++', 'UnrealEngine'] },
     ],
   },
   {
     period: '2020 — 현재',
     org: '(주)넥슨코리아',
     projects: [
-      { name: '프라시아전기', stack: ['C++', 'C#', 'WPF', 'MSSQL', 'Azure'] },
-      { name: '프로젝트EL (드랍)', stack: ['C++', 'C#', 'UnrealEngine', 'AWS', 'GameLift', 'SteamWorks', 'Redis', 'MySQL', 'MSSQL'] },
+      { name: '프라시아전기', roles: ['소켓서버'], stack: ['C++', 'C#', 'WPF', 'MSSQL', 'Azure'] },
+      { name: '프로젝트EL (드랍)', roles: ['클라이언트', '소켓서버'], stack: ['C++', 'C#', 'UnrealEngine', 'AWS', 'GameLift', 'SteamWorks', 'Redis', 'MySQL', 'MSSQL'] },
     ],
   },
 ];
@@ -155,14 +155,11 @@ const activities = [
                     <span class="text-xs text-text-sub tabular-nums shrink-0 w-36">{item.date}</span>
                     <div class="flex flex-col gap-1">
                       <span class="text-sm text-text-sub">{item.desc}</span>
-                      {(item.stack || item.award) && (
+                      {item.stack && (
                         <div class="flex flex-wrap gap-1.5">
-                          {item.stack && item.stack.map(s => (
+                          {item.stack.map(s => (
                             <span class="text-xs font-medium text-text-sub bg-bg border border-border rounded px-2 py-0.5">{s}</span>
                           ))}
-                          {item.award && (
-                            <span class="text-xs font-medium text-text bg-bg border border-border rounded px-2 py-0.5">{item.award}</span>
-                          )}
                         </div>
                       )}
                     </div>
@@ -215,7 +212,12 @@ const activities = [
               <ul class="flex flex-col gap-2">
                 {item.projects.map(p => (
                   <li class="flex flex-col gap-1">
-                    <span class="text-sm text-text-sub">{p.name}</span>
+                    <div class="flex items-baseline gap-2">
+                      <span class="text-sm text-text-sub">{p.name}</span>
+                      {p.roles && p.roles.map(r => (
+                        <span class="text-xs font-medium text-text border border-border rounded px-1.5 py-0.5">{r}</span>
+                      ))}
+                    </div>
                     {p.stack && (
                       <div class="flex flex-wrap gap-1.5">
                         {p.stack.map(s => (

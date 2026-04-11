@@ -1,14 +1,27 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const education = {
-  period: '2005 — 2010',
-  org: '서울대학교 컴퓨터공학부',
-  items: [
-    { date: '2008.01–06', desc: 'Uppsala University 교환학생 (스웨덴)' },
-    { date: '2008.07–2009.03', desc: '서울대학교 컴퓨터공학부 학부커뮤니티 개발', stack: ['C#', 'ASP.NET', 'MS-SQL'] },
-  ],
-};
+const educations = [
+  {
+    period: '2005 — 2010',
+    org: '서울대학교 컴퓨터공학부',
+    items: [
+      { date: '2007.09–12', desc: '현대오토넷 화상통화프로그램 프로젝트', stack: ['C#', 'WinCE'] },
+      { date: '2007.09', desc: '제10회 SNU CSE 컴퓨터전시회 출품 — 절대음감 (ansp팀, 팀장)', stack: ['C++'], award: '인기상' },
+      { date: '2007.11', desc: '2007 창의적 종합설계 경진대회(Capstone Design) 출품 — 절대음감 (ansp팀)', stack: ['C#'], award: '산업자원부장관상' },
+      { date: '2008.09', desc: '제11회 SNU CSE 컴퓨터전시회 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'], award: '우수상' },
+      { date: '2008.11', desc: '2008 창의적 종합설계 경진대회(Capstone Design) 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'], award: '교육과학기술부장관상' },
+      { date: '2008.07–2009.03', desc: '학부커뮤니티 개발', stack: ['C#', 'ASP.NET', 'MS-SQL'] },
+    ],
+  },
+  {
+    period: '2008.01–06',
+    org: 'Uppsala University',
+    items: [
+      { date: '2008.01–06', desc: '교환학생 (스웨덴)' },
+    ],
+  },
+];
 
 const careers = [
   {
@@ -16,13 +29,6 @@ const careers = [
     org: '포스데이타(POSDATA)',
     projects: [
       { name: 'FLYVO팀 인턴십', stack: ['C'] },
-    ],
-  },
-  {
-    period: '2007.09–12',
-    org: '현대오토넷',
-    projects: [
-      { name: '화상통화프로그램 프로젝트', stack: ['C#', 'WinCE'] },
     ],
   },
   {
@@ -38,8 +44,8 @@ const careers = [
     projects: [
       { name: '액션퍼즐패밀리3 (제한적 참여)', stack: ['위피C'] },
       { name: '초코초코타이쿤2', stack: ['위피C'] },
-      { name: '초콜릿타이쿤' },
-      { name: '프로토타입 1종 (드랍)', stack: ['C++', 'Cocos2d-x'] },
+      { name: '초콜릿타이쿤', stack: ['위피C'] },
+      { name: '프로토타입 1종 (드랍)', stack: ['C++', 'Cocos2d-x', 'Box2d'] },
       { name: '프로토타입 1종 (드랍)', stack: ['C#', 'Unity3D'] },
     ],
   },
@@ -47,7 +53,7 @@ const careers = [
     period: '2013 — 2014',
     org: '(주)게임하이',
     projects: [
-      { name: '프로토타입 1종 (드랍)' },
+      { name: '프로토타입 1종 (드랍)', stack: ['C++', 'Cocos2d-x'] },
       { name: '몬몬몬', stack: ['C++', 'C#', 'Cocos2d-x', 'ASP.NET', 'MSSQL', 'Redis', 'Lua'] },
     ],
   },
@@ -71,14 +77,14 @@ const careers = [
     org: '(주)넥슨코리아',
     projects: [
       { name: '프라시아전기', stack: ['C++', 'C#', 'WPF', 'MSSQL', 'Azure'] },
-      { name: '프로젝트EL (드랍)', stack: ['C#', 'UnrealEngine', 'AWS', 'GameLift', 'SteamWorks'] },
+      { name: '프로젝트EL (드랍)', stack: ['C#', 'UnrealEngine', 'AWS', 'GameLift', 'SteamWorks', 'Redis'] },
     ],
   },
 ];
 
 const skills = [
   { category: '언어', items: ['C', 'C++', 'C#', 'Lua', 'Python', 'Groovy', 'Swift'] },
-  { category: '게임엔진 / 프레임워크', items: ['Cocos2d-x', 'Unity3D', 'UnrealEngine', 'SwiftUI', 'WPF'] },
+  { category: '게임엔진 / 프레임워크', items: ['Cocos2d-x', 'Unity3D', 'UnrealEngine', 'Box2d', 'SwiftUI', 'WPF'] },
   { category: '협업 / 버전관리', items: ['Git', 'SVN', 'Perforce', 'Jira', 'Confluence', 'Redmine', 'Jenkins', 'Slack', 'Discord'] },
   { category: '데이터베이스', items: ['MSSQL', 'MySQL', 'Redis'] },
   { category: '클라우드', items: ['Azure', 'AWS', 'GameLift'] },
@@ -89,25 +95,21 @@ const activities = [
   {
     date: '2007.09',
     desc: '제10회 SNU CSE 컴퓨터전시회 출품 — 절대음감 (ansp팀, 팀장)',
-    stack: ['C++'],
     award: '인기상',
   },
   {
     date: '2007.11',
     desc: '2007 창의적 종합설계 경진대회(Capstone Design) 출품 — 절대음감 (ansp팀)',
-    stack: ['C#'],
     award: '산업자원부장관상',
   },
   {
     date: '2008.09',
     desc: '제11회 SNU CSE 컴퓨터전시회 출품 — 미라클 (new Miracle 팀, 팀장)',
-    stack: ['C#'],
     award: '우수상',
   },
   {
     date: '2008.11',
     desc: '2008 창의적 종합설계 경진대회(Capstone Design) 출품 — 미라클 (new Miracle 팀, 팀장)',
-    stack: ['C#'],
     award: '교육과학기술부장관상',
   },
 ];
@@ -138,34 +140,66 @@ const activities = [
         <span class="section-label">Education</span>
         <h2 class="text-2xl font-semibold text-text tracking-tight">학력</h2>
       </div>
-      <div class="animate-reveal delay-1">
-        <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 mb-4">
-          <span class="text-xs text-text-sub tabular-nums shrink-0 w-32">{education.period}</span>
-          <div class="text-sm font-semibold text-text">{education.org}</div>
-        </div>
-        <div class="sm:pl-36 flex flex-col gap-2">
-          {education.items.map(item => (
-            <div class="flex flex-col sm:flex-row gap-1 sm:gap-4">
-              <span class="text-xs text-text-sub tabular-nums shrink-0 w-36">{item.date}</span>
-              <div class="flex flex-col gap-1">
-                <span class="text-sm text-text-sub">{item.desc}</span>
-                {item.stack && (
-                  <div class="flex flex-wrap gap-1.5">
-                    {item.stack.map(s => (
-                      <span class="text-xs font-medium text-text-sub bg-bg border border-border rounded px-2 py-0.5">{s}</span>
-                    ))}
+      <div class="divide-y divide-border animate-reveal delay-1">
+        {educations.map(edu => (
+          <div class="py-5 first:pt-0 last:pb-0">
+            <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 mb-3">
+              <span class="text-xs text-text-sub tabular-nums shrink-0 w-32">{edu.period}</span>
+              <div class="text-sm font-semibold text-text">{edu.org}</div>
+            </div>
+            {edu.items.length > 0 && (
+              <div class="sm:pl-36 flex flex-col gap-2">
+                {edu.items.map(item => (
+                  <div class="flex flex-col sm:flex-row gap-1 sm:gap-4">
+                    <span class="text-xs text-text-sub tabular-nums shrink-0 w-36">{item.date}</span>
+                    <div class="flex flex-col gap-1">
+                      <span class="text-sm text-text-sub">{item.desc}</span>
+                      {(item.stack || item.award) && (
+                        <div class="flex flex-wrap gap-1.5">
+                          {item.stack && item.stack.map(s => (
+                            <span class="text-xs font-medium text-text-sub bg-bg border border-border rounded px-2 py-0.5">{s}</span>
+                          ))}
+                          {item.award && (
+                            <span class="text-xs font-medium text-text bg-bg border border-border rounded px-2 py-0.5">{item.award}</span>
+                          )}
+                        </div>
+                      )}
+                    </div>
                   </div>
-                )}
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities -->
+  <section class="py-20 px-6 border-t border-border bg-bg">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-8 animate-reveal">
+        <span class="section-label">Activities</span>
+        <h2 class="text-2xl font-semibold text-text tracking-tight">대회 & 수상</h2>
+      </div>
+      <div class="divide-y divide-border animate-reveal delay-1">
+        {activities.map(item => (
+          <div class="flex flex-col sm:flex-row gap-1 sm:gap-4 py-4 first:pt-0 last:pb-0">
+            <span class="text-xs text-text-sub tabular-nums shrink-0 w-32">{item.date}</span>
+            <div class="flex flex-col gap-1.5">
+              <span class="text-sm text-text-sub">{item.desc}</span>
+              <div>
+                <span class="text-xs font-medium text-text bg-bg-alt border border-border rounded px-2 py-0.5">{item.award}</span>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   </section>
 
   <!-- Career -->
-  <section class="py-20 px-6 border-t border-border bg-bg">
+  <section class="py-20 px-6 border-t border-border bg-bg-alt">
     <div class="max-w-5xl mx-auto">
       <div class="mb-8 animate-reveal">
         <span class="section-label">Experience</span>
@@ -184,7 +218,7 @@ const activities = [
                     {p.stack && (
                       <div class="flex flex-wrap gap-1.5">
                         {p.stack.map(s => (
-                          <span class="text-xs font-medium text-text-sub bg-bg-alt border border-border rounded px-2 py-0.5">{s}</span>
+                          <span class="text-xs font-medium text-text-sub bg-bg border border-border rounded px-2 py-0.5">{s}</span>
                         ))}
                       </div>
                     )}
@@ -213,32 +247,6 @@ const activities = [
               {group.items.map(item => (
                 <span class="text-xs font-medium text-text bg-bg-alt border border-border rounded-lg px-3 py-1.5">{item}</span>
               ))}
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- Activities -->
-  <section class="py-20 px-6 border-t border-border bg-bg-alt">
-    <div class="max-w-5xl mx-auto">
-      <div class="mb-8 animate-reveal">
-        <span class="section-label">Activities</span>
-        <h2 class="text-2xl font-semibold text-text tracking-tight">대회 & 수상</h2>
-      </div>
-      <div class="divide-y divide-border animate-reveal delay-1">
-        {activities.map(item => (
-          <div class="flex flex-col sm:flex-row gap-1 sm:gap-4 py-4 first:pt-0 last:pb-0">
-            <span class="text-xs text-text-sub tabular-nums shrink-0 w-32">{item.date}</span>
-            <div class="flex flex-col gap-1.5">
-              <span class="text-sm text-text-sub">{item.desc}</span>
-              <div class="flex flex-wrap items-center gap-2">
-                {item.stack.map(s => (
-                  <span class="text-xs font-medium text-text-sub bg-bg border border-border rounded px-2 py-0.5">{s}</span>
-                ))}
-                <span class="text-xs font-medium text-text bg-bg border border-border rounded px-2 py-0.5">{item.award}</span>
-              </div>
             </div>
           </div>
         ))}

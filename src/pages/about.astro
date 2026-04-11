@@ -5,15 +5,15 @@ const education = {
   period: '2005 — 2010',
   org: '서울대학교 컴퓨터공학부',
   items: [
-    { date: '2007.01–03', desc: '포스데이타(POSDATA) FLYVO팀 인턴십' },
-    { date: '2007.09–12', desc: '현대오토넷 화상통화프로그램 프로젝트' },
-    { date: '2007.09', desc: '제10회 SNU CSE 컴퓨터전시회 출품 — 절대음감 (ansp팀, 팀장)' },
-    { date: '2007.11', desc: '2007 창의적 종합설계 경진대회(Capstone Design) 출품 — 절대음감 (ansp팀)' },
+    { date: '2007.01–03', desc: '포스데이타(POSDATA) FLYVO팀 인턴십', stack: ['C'] },
+    { date: '2007.09–12', desc: '현대오토넷 화상통화프로그램 프로젝트', stack: ['C#', 'WinCE'] },
+    { date: '2007.09', desc: '제10회 SNU CSE 컴퓨터전시회 출품 — 절대음감 (ansp팀, 팀장)', stack: ['C++'] },
+    { date: '2007.11', desc: '2007 창의적 종합설계 경진대회(Capstone Design) 출품 — 절대음감 (ansp팀)', stack: ['C#'] },
     { date: '2008.01–06', desc: 'Uppsala University 교환학생 (스웨덴)' },
-    { date: '2008.07–08', desc: '다음(Daum) 컨텐츠개발팀 인턴십' },
-    { date: '2008.09', desc: '제11회 SNU CSE 컴퓨터전시회 출품 — 미라클 (new Miracle 팀, 팀장)' },
-    { date: '2008.11', desc: '2008 창의적 종합설계 경진대회(Capstone Design) 출품 — 미라클 (new Miracle 팀, 팀장)' },
-    { date: '2008.07–2009.03', desc: '서울대학교 컴퓨터공학부 학부커뮤니티 개발' },
+    { date: '2008.07–08', desc: '다음(Daum) 컨텐츠개발팀 인턴십', stack: ['Java', 'Spring'] },
+    { date: '2008.09', desc: '제11회 SNU CSE 컴퓨터전시회 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'] },
+    { date: '2008.11', desc: '2008 창의적 종합설계 경진대회(Capstone Design) 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'] },
+    { date: '2008.07–2009.03', desc: '서울대학교 컴퓨터공학부 학부커뮤니티 개발', stack: ['C#', 'ASP.NET', 'MS-SQL'] },
   ],
 };
 
@@ -22,41 +22,42 @@ const careers = [
     period: '2009 — 2013',
     org: '(주)컴투스',
     projects: [
-      '액션퍼즐패밀리3 (제한적 참여)',
-      '초코초코타이쿤2',
-      '초콜릿타이쿤',
-      '프로토타입 1종 (드랍)',
+      { name: '액션퍼즐패밀리3 (제한적 참여)', stack: ['위피C'] },
+      { name: '초코초코타이쿤2', stack: ['위피C'] },
+      { name: '초콜릿타이쿤' },
+      { name: '프로토타입 1종 (드랍)', stack: ['C++', 'Cocos2d-x'] },
+      { name: '프로토타입 1종 (드랍)', stack: ['C#', 'Unity3D'] },
     ],
   },
   {
     period: '2013 — 2014',
     org: '(주)게임하이',
     projects: [
-      '프로토타입 1종 (드랍)',
-      '몬몬몬',
+      { name: '프로토타입 1종 (드랍)' },
+      { name: '몬몬몬' },
     ],
   },
   {
     period: '2014 — 2017',
     org: '(주)넥슨GT',
     projects: [
-      '서든어택2',
+      { name: '서든어택2' },
     ],
   },
   {
     period: '2017 — 2019',
     org: '(주)넥슨레드',
     projects: [
-      '포인트 블랭크: 스트라이크',
-      '프로토타입 1종 (드랍)',
+      { name: '포인트 블랭크: 스트라이크' },
+      { name: '프로토타입 1종 (드랍)' },
     ],
   },
   {
     period: '2020 — 현재',
     org: '(주)넥슨코리아',
     projects: [
-      '프라시아전기',
-      '프로젝트EL (드랍)',
+      { name: '프라시아전기' },
+      { name: '프로젝트EL (드랍)' },
     ],
   },
 ];
@@ -111,7 +112,16 @@ const awards = [
           {education.items.map(item => (
             <div class="flex flex-col sm:flex-row gap-1 sm:gap-4">
               <span class="text-xs text-text-sub tabular-nums shrink-0 w-36">{item.date}</span>
-              <span class="text-sm text-text-sub">{item.desc}</span>
+              <div class="flex flex-col gap-1">
+                <span class="text-sm text-text-sub">{item.desc}</span>
+                {item.stack && (
+                  <div class="flex flex-wrap gap-1.5">
+                    {item.stack.map(s => (
+                      <span class="text-xs font-medium text-text-sub bg-bg border border-border rounded px-2 py-0.5">{s}</span>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           ))}
         </div>
@@ -132,9 +142,18 @@ const awards = [
             <span class="text-xs text-text-sub tabular-nums shrink-0 w-32 pt-0.5">{item.period}</span>
             <div class="flex-1">
               <div class="text-sm font-semibold text-text mb-1.5">{item.org}</div>
-              <ul class="flex flex-col gap-1">
+              <ul class="flex flex-col gap-2">
                 {item.projects.map(p => (
-                  <li class="text-sm text-text-sub">{p}</li>
+                  <li class="flex flex-col gap-1">
+                    <span class="text-sm text-text-sub">{p.name}</span>
+                    {p.stack && (
+                      <div class="flex flex-wrap gap-1.5">
+                        {p.stack.map(s => (
+                          <span class="text-xs font-medium text-text-sub bg-bg-alt border border-border rounded px-2 py-0.5">{s}</span>
+                        ))}
+                      </div>
+                    )}
+                  </li>
                 ))}
               </ul>
             </div>

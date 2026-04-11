@@ -7,19 +7,18 @@ const educations = [
     org: '서울대학교 컴퓨터공학부',
     items: [
       { date: '2007.09–12', desc: '현대오토넷 화상통화프로그램 프로젝트', stack: ['C#', 'WinCE'] },
-      { date: '2007.09', desc: '제10회 SNU CSE 컴퓨터전시회 출품 — 절대음감 (ansp팀, 팀장)', stack: ['C++'], award: '인기상' },
-      { date: '2007.11', desc: '2007 창의적 종합설계 경진대회(Capstone Design) 출품 — 절대음감 (ansp팀)', stack: ['C#'], award: '산업자원부장관상' },
-      { date: '2008.09', desc: '제11회 SNU CSE 컴퓨터전시회 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'], award: '우수상' },
-      { date: '2008.11', desc: '2008 창의적 종합설계 경진대회(Capstone Design) 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'], award: '교육과학기술부장관상' },
+      { date: '2007.09', desc: '제10회 SNU CSE 컴퓨터전시회 출품 — 절대음감 (ansp팀, 팀장)', stack: ['C++'] },
+      { date: '2007.11', desc: '2007 창의적 종합설계 경진대회(Capstone Design) 출품 — 절대음감 (ansp팀)', stack: ['C#'] },
+      { date: '2008.09', desc: '제11회 SNU CSE 컴퓨터전시회 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'] },
+      { date: '2008.11', desc: '2008 창의적 종합설계 경진대회(Capstone Design) 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'] },
       { date: '2008.07–2009.03', desc: '학부커뮤니티 개발', stack: ['C#', 'ASP.NET', 'MS-SQL'] },
     ],
   },
   {
     period: '2008.01–06',
     org: 'Uppsala University',
-    items: [
-      { date: '2008.01–06', desc: '교환학생 (스웨덴)' },
-    ],
+    note: 'Sweden, 교환학생',
+    items: [],
   },
 ];
 
@@ -145,7 +144,10 @@ const activities = [
           <div class="py-5 first:pt-0 last:pb-0">
             <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 mb-3">
               <span class="text-xs text-text-sub tabular-nums shrink-0 w-32">{edu.period}</span>
-              <div class="text-sm font-semibold text-text">{edu.org}</div>
+              <div class="flex items-baseline gap-2">
+                <span class="text-sm font-semibold text-text">{edu.org}</span>
+                {edu.note && <span class="text-sm text-text-sub">{edu.note}</span>}
+              </div>
             </div>
             {edu.items.length > 0 && (
               <div class="sm:pl-36 flex flex-col gap-2">

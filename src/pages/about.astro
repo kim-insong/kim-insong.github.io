@@ -61,6 +61,12 @@ const careers = [
   },
 ];
 
+const skills = [
+  { category: '언어', items: ['C++', 'C#', 'Python', 'Groovy', 'Swift'] },
+  { category: '게임엔진 / 프레임워크', items: ['Cocos2d-x', 'Unity3D', 'UnrealEngine', 'SwiftUI', 'WPF'] },
+  { category: '협업 / 버전관리', items: ['Git', 'SVN', 'Perforce', 'Jira', 'Confluence', 'Jenkins'] },
+];
+
 const awards = [
   { date: '2007.09.24', desc: '제10회 SNU CSE 컴퓨터전시회 인기상' },
   { date: '2007.11.22', desc: '2007 창의적 종합설계 경진대회 산업자원부장관상' },
@@ -129,6 +135,28 @@ const awards = [
                   <li class="text-sm text-text-sub">{p}</li>
                 ))}
               </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="py-20 px-6 border-t border-border bg-bg">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-8 animate-reveal">
+        <span class="section-label">Skills</span>
+        <h2 class="text-2xl font-semibold text-text tracking-tight">스킬 & 스택</h2>
+      </div>
+      <div class="flex flex-col gap-6 animate-reveal delay-1">
+        {skills.map(group => (
+          <div class="flex flex-col sm:flex-row gap-2 sm:gap-4">
+            <span class="text-xs text-text-sub shrink-0 w-32 pt-0.5">{group.category}</span>
+            <div class="flex flex-wrap gap-2">
+              {group.items.map(item => (
+                <span class="text-xs font-medium text-text bg-bg-alt border border-border rounded-lg px-3 py-1.5">{item}</span>
+              ))}
             </div>
           </div>
         ))}

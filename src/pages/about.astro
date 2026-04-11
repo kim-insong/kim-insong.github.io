@@ -7,19 +7,18 @@ const educations = [
     org: '서울대학교 컴퓨터공학부',
     items: [
       { date: '2007.09–12', desc: '현대오토넷 화상통화프로그램 프로젝트', stack: ['C#', 'WinCE'] },
-      { date: '2007.09', desc: '제10회 SNU CSE 컴퓨터전시회 출품 — 절대음감 (ansp팀, 팀장)', stack: ['C++'], award: '인기상' },
-      { date: '2007.11', desc: '2007 창의적 종합설계 경진대회(Capstone Design) 출품 — 절대음감 (ansp팀)', stack: ['C#'], award: '산업자원부장관상' },
-      { date: '2008.09', desc: '제11회 SNU CSE 컴퓨터전시회 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'], award: '우수상' },
-      { date: '2008.11', desc: '2008 창의적 종합설계 경진대회(Capstone Design) 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'], award: '교육과학기술부장관상' },
+      { date: '2007.09', desc: '제10회 SNU CSE 컴퓨터전시회 출품 — 절대음감 (ansp팀, 팀장)', stack: ['C++'] },
+      { date: '2007.11', desc: '2007 창의적 종합설계 경진대회(Capstone Design) 출품 — 절대음감 (ansp팀)', stack: ['C#'] },
+      { date: '2008.09', desc: '제11회 SNU CSE 컴퓨터전시회 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'] },
+      { date: '2008.11', desc: '2008 창의적 종합설계 경진대회(Capstone Design) 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'] },
       { date: '2008.07–2009.03', desc: '학부커뮤니티 개발', stack: ['C#', 'ASP.NET', 'MS-SQL'] },
     ],
   },
   {
     period: '2008.01–06',
     org: 'Uppsala University',
-    items: [
-      { date: '2008.01–06', desc: '교환학생 (스웨덴)' },
-    ],
+    note: 'Sweden, 교환학생',
+    items: [],
   },
 ];
 
@@ -45,8 +44,9 @@ const careers = [
       { name: '액션퍼즐패밀리3 (제한적 참여)', stack: ['위피C'] },
       { name: '초코초코타이쿤2', stack: ['위피C'] },
       { name: '초콜릿타이쿤', stack: ['위피C'] },
-      { name: '프로토타입 1종 (드랍)', stack: ['C++', 'Cocos2d-x', 'Box2d'] },
+      { name: '프로토타입 1종 (드랍)', stack: ['C++', 'Box2d'] },
       { name: '프로토타입 1종 (드랍)', stack: ['C#', 'Unity3D'] },
+      { name: '프로토타입 1종 (드랍)', stack: ['C++'] },
     ],
   },
   {
@@ -54,14 +54,14 @@ const careers = [
     org: '(주)게임하이',
     projects: [
       { name: '프로토타입 1종 (드랍)', stack: ['C++', 'Cocos2d-x'] },
-      { name: '몬몬몬', stack: ['C++', 'C#', 'Cocos2d-x', 'ASP.NET', 'MSSQL', 'Redis', 'Lua'] },
+      { name: '몬몬몬', stack: ['C++', 'C#', 'Cocos2d-x', 'ASP.NET', 'WinForms', 'MSSQL', 'Redis', 'Lua'] },
     ],
   },
   {
     period: '2014 — 2017',
     org: '(주)넥슨GT',
     projects: [
-      { name: '서든어택2', stack: ['UnrealEngine'] },
+      { name: '서든어택2', stack: ['C++', 'UnrealEngine'] },
     ],
   },
   {
@@ -69,7 +69,7 @@ const careers = [
     org: '(주)넥슨레드',
     projects: [
       { name: '포인트 블랭크: 스트라이크', stack: ['PHP', 'Redis'] },
-      { name: '프로토타입 1종 (드랍)', stack: ['UnrealEngine'] },
+      { name: '프로토타입 1종 (드랍)', stack: ['C++', 'UnrealEngine'] },
     ],
   },
   {
@@ -77,7 +77,7 @@ const careers = [
     org: '(주)넥슨코리아',
     projects: [
       { name: '프라시아전기', stack: ['C++', 'C#', 'WPF', 'MSSQL', 'Azure'] },
-      { name: '프로젝트EL (드랍)', stack: ['C#', 'UnrealEngine', 'AWS', 'GameLift', 'SteamWorks', 'Redis'] },
+      { name: '프로젝트EL (드랍)', stack: ['C++', 'C#', 'UnrealEngine', 'AWS', 'GameLift', 'SteamWorks', 'Redis', 'MySQL', 'MSSQL'] },
     ],
   },
 ];
@@ -145,7 +145,10 @@ const activities = [
           <div class="py-5 first:pt-0 last:pb-0">
             <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 mb-3">
               <span class="text-xs text-text-sub tabular-nums shrink-0 w-32">{edu.period}</span>
-              <div class="text-sm font-semibold text-text">{edu.org}</div>
+              <div class="flex items-baseline gap-2">
+                <span class="text-sm font-semibold text-text">{edu.org}</span>
+                {edu.note && <span class="text-sm text-text-sub">{edu.note}</span>}
+              </div>
             </div>
             {edu.items.length > 0 && (
               <div class="sm:pl-36 flex flex-col gap-2">

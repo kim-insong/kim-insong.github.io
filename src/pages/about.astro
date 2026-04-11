@@ -5,19 +5,33 @@ const education = {
   period: '2005 — 2010',
   org: '서울대학교 컴퓨터공학부',
   items: [
-    { date: '2007.01–03', desc: '포스데이타(POSDATA) FLYVO팀 인턴십', stack: ['C'] },
-    { date: '2007.09–12', desc: '현대오토넷 화상통화프로그램 프로젝트', stack: ['C#', 'WinCE'] },
-    { date: '2007.09', desc: '제10회 SNU CSE 컴퓨터전시회 출품 — 절대음감 (ansp팀, 팀장)', stack: ['C++'] },
-    { date: '2007.11', desc: '2007 창의적 종합설계 경진대회(Capstone Design) 출품 — 절대음감 (ansp팀)', stack: ['C#'] },
     { date: '2008.01–06', desc: 'Uppsala University 교환학생 (스웨덴)' },
-    { date: '2008.07–08', desc: '다음(Daum) 컨텐츠개발팀 인턴십', stack: ['Java', 'Spring'] },
-    { date: '2008.09', desc: '제11회 SNU CSE 컴퓨터전시회 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'] },
-    { date: '2008.11', desc: '2008 창의적 종합설계 경진대회(Capstone Design) 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'] },
     { date: '2008.07–2009.03', desc: '서울대학교 컴퓨터공학부 학부커뮤니티 개발', stack: ['C#', 'ASP.NET', 'MS-SQL'] },
   ],
 };
 
 const careers = [
+  {
+    period: '2007.01–03',
+    org: '포스데이타(POSDATA)',
+    projects: [
+      { name: 'FLYVO팀 인턴십', stack: ['C'] },
+    ],
+  },
+  {
+    period: '2007.09–12',
+    org: '현대오토넷',
+    projects: [
+      { name: '화상통화프로그램 프로젝트', stack: ['C#', 'WinCE'] },
+    ],
+  },
+  {
+    period: '2008.07–08',
+    org: '다음(Daum)',
+    projects: [
+      { name: '컨텐츠개발팀 인턴십', stack: ['Java', 'Spring'] },
+    ],
+  },
   {
     period: '2009 — 2013',
     org: '(주)컴투스',
@@ -34,47 +48,68 @@ const careers = [
     org: '(주)게임하이',
     projects: [
       { name: '프로토타입 1종 (드랍)' },
-      { name: '몬몬몬' },
+      { name: '몬몬몬', stack: ['C++', 'C#', 'Cocos2d-x', 'ASP.NET', 'MSSQL', 'Redis', 'Lua'] },
     ],
   },
   {
     period: '2014 — 2017',
     org: '(주)넥슨GT',
     projects: [
-      { name: '서든어택2' },
+      { name: '서든어택2', stack: ['UnrealEngine'] },
     ],
   },
   {
     period: '2017 — 2019',
     org: '(주)넥슨레드',
     projects: [
-      { name: '포인트 블랭크: 스트라이크' },
-      { name: '프로토타입 1종 (드랍)' },
+      { name: '포인트 블랭크: 스트라이크', stack: ['PHP', 'Redis'] },
+      { name: '프로토타입 1종 (드랍)', stack: ['UnrealEngine'] },
     ],
   },
   {
     period: '2020 — 현재',
     org: '(주)넥슨코리아',
     projects: [
-      { name: '프라시아전기' },
-      { name: '프로젝트EL (드랍)' },
+      { name: '프라시아전기', stack: ['C++', 'C#', 'WPF', 'MSSQL', 'Azure'] },
+      { name: '프로젝트EL (드랍)', stack: ['C#', 'UnrealEngine', 'AWS', 'GameLift', 'SteamWorks'] },
     ],
   },
 ];
 
 const skills = [
-  { category: '언어', items: ['C++', 'C#', 'Python', 'Groovy', 'Swift'] },
+  { category: '언어', items: ['C', 'C++', 'C#', 'Lua', 'Python', 'Groovy', 'Swift'] },
   { category: '게임엔진 / 프레임워크', items: ['Cocos2d-x', 'Unity3D', 'UnrealEngine', 'SwiftUI', 'WPF'] },
-  { category: '협업 / 버전관리', items: ['Git', 'SVN', 'Perforce', 'Jira', 'Confluence', 'Jenkins', 'Slack', 'Discord'] },
+  { category: '협업 / 버전관리', items: ['Git', 'SVN', 'Perforce', 'Jira', 'Confluence', 'Redmine', 'Jenkins', 'Slack', 'Discord'] },
   { category: '데이터베이스', items: ['MSSQL', 'MySQL', 'Redis'] },
+  { category: '클라우드', items: ['Azure', 'AWS', 'GameLift'] },
   { category: 'AI / LLM', items: ['Claude', 'Gemini'] },
 ];
 
-const awards = [
-  { date: '2007.09.24', desc: '제10회 SNU CSE 컴퓨터전시회 인기상' },
-  { date: '2007.11.22', desc: '2007 창의적 종합설계 경진대회 산업자원부장관상' },
-  { date: '2008.09.24', desc: '제11회 SNU CSE 컴퓨터전시회 우수상' },
-  { date: '2008.11.06', desc: '2008 창의적 종합설계 경진대회 교육과학기술부장관상' },
+const activities = [
+  {
+    date: '2007.09',
+    desc: '제10회 SNU CSE 컴퓨터전시회 출품 — 절대음감 (ansp팀, 팀장)',
+    stack: ['C++'],
+    award: '인기상',
+  },
+  {
+    date: '2007.11',
+    desc: '2007 창의적 종합설계 경진대회(Capstone Design) 출품 — 절대음감 (ansp팀)',
+    stack: ['C#'],
+    award: '산업자원부장관상',
+  },
+  {
+    date: '2008.09',
+    desc: '제11회 SNU CSE 컴퓨터전시회 출품 — 미라클 (new Miracle 팀, 팀장)',
+    stack: ['C#'],
+    award: '우수상',
+  },
+  {
+    date: '2008.11',
+    desc: '2008 창의적 종합설계 경진대회(Capstone Design) 출품 — 미라클 (new Miracle 팀, 팀장)',
+    stack: ['C#'],
+    award: '교육과학기술부장관상',
+  },
 ];
 ---
 
@@ -185,18 +220,26 @@ const awards = [
     </div>
   </section>
 
-  <!-- Awards -->
+  <!-- Activities -->
   <section class="py-20 px-6 border-t border-border bg-bg-alt">
     <div class="max-w-5xl mx-auto">
       <div class="mb-8 animate-reveal">
-        <span class="section-label">Awards</span>
-        <h2 class="text-2xl font-semibold text-text tracking-tight">수상경력</h2>
+        <span class="section-label">Activities</span>
+        <h2 class="text-2xl font-semibold text-text tracking-tight">대회 & 수상</h2>
       </div>
       <div class="divide-y divide-border animate-reveal delay-1">
-        {awards.map(award => (
+        {activities.map(item => (
           <div class="flex flex-col sm:flex-row gap-1 sm:gap-4 py-4 first:pt-0 last:pb-0">
-            <span class="text-xs text-text-sub tabular-nums shrink-0 w-32">{award.date}</span>
-            <span class="text-sm text-text-sub">{award.desc}</span>
+            <span class="text-xs text-text-sub tabular-nums shrink-0 w-32">{item.date}</span>
+            <div class="flex flex-col gap-1.5">
+              <span class="text-sm text-text-sub">{item.desc}</span>
+              <div class="flex flex-wrap items-center gap-2">
+                {item.stack.map(s => (
+                  <span class="text-xs font-medium text-text-sub bg-bg border border-border rounded px-2 py-0.5">{s}</span>
+                ))}
+                <span class="text-xs font-medium text-text bg-bg border border-border rounded px-2 py-0.5">{item.award}</span>
+              </div>
+            </div>
           </div>
         ))}
       </div>

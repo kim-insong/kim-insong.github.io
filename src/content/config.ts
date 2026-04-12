@@ -17,8 +17,10 @@ const wiki = defineCollection({
     title: z.string(),
     description: z.string().optional(),
     publishDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
     tags: z.array(z.string()).optional(),
     draft: z.boolean().optional().default(false),
+    sources: z.array(z.string()).optional(),
   }),
 });
 

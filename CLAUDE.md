@@ -15,6 +15,20 @@ Use the `/web-insong-net` skill for design system reference.
 | Styles & Design Tokens | docs/modules/styles.md | — |
 | Deployment (GitHub Pages) | docs/modules/deploy.md | — |
 
+## Wiki Auto-Ingest
+
+If a PostToolUse hook outputs `[WIKI_AUTO_INGEST: <path>]`, immediately process that file into the wiki **without asking for confirmation**:
+
+1. Convert path to source ID:
+   - `/raw/file.md` → `raw/file.md`
+   - `/src/content/blog/slug.md` → `blog:slug`
+2. Read `wiki-log.md` — add source to `## Unincorporated` if not already there (today's date)
+3. Read the source file content
+4. Check existing pages in `src/content/wiki/` (reference `## Wiki Pages` in wiki-log.md)
+5. Decide MERGE or CREATE based on topic overlap
+6. Write the wiki page (content rules: no narrative, structured reference only, `[[links]]` for cross-refs)
+7. Update `wiki-log.md`: move source to `## Incorporated`, update `## Wiki Pages`
+
 ## Git Workflow
 
 - 작업마다 별도의 feature branch를 생성한다.

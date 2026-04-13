@@ -4,3 +4,9 @@ node_modules/
 .env.*
 !.env.example
 .DS_Store
+# graphify temp files (intermediate extraction artifacts)
+.graphify_detect.json
+.graphify_ast.json
+.graphify_cached.json
+.graphify_uncached.txt
+.graphify_semantic*.json

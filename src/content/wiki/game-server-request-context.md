@@ -29,6 +29,11 @@ struct RequestContext {
     Timestamp   issuedAt;     // 진입점 기준 시각
     ServerId    serverId;     // 처리 서버 식별자
 
+    // 처리 중간에 채워지는 필드들
+    GuildId     guildId;      // 길드 조회 후 세팅
+    ItemId      itemId;       // 아이템 특정 후 세팅
+    ZoneId      zoneId;       // 존 진입 후 세팅
+
     static RequestContext FromPacket(PlayerId, PacketType);
     static RequestContext FromGMCommand(GmId, CommandType);
     static RequestContext FromEvent(EventType);
@@ -56,6 +61,25 @@ void OnScheduledEvent(EventType event) {
     HandleScheduledEvent(ctx);
 }
 ```
+
+## 컨텍스트 누적 패턴
+
+진입점 컨텍스트는 고정되지 않는다. 처리 흐름 중 파악되는 정보를 즉시 `ctx`에 기록한다.
+
+```cpp
+void HandleItemUse(RequestContext& ctx, ItemId item) {
+    ctx.itemId = item;  // 이 시점부터 로그에 itemId가 찍힘
+
+    auto guild = GetPlayerGuild(ctx.playerId);
+    ctx.guildId = guild.id;
+
+    // 이후 모든 로그에 requestId + itemId + guildId가 함께 나온다
+    ProcessItemEffect(ctx, item);
+}
+```
+
+- 각 처리 단계에서 알게 된 정보를 `ctx`에 바로 기록
+- 로그를 볼 때 그 시점까지 파악된 모든 맥락이 한 줄에 담김
 
 ## 설계 원칙
 

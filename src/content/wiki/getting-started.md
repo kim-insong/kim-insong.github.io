@@ -3,10 +3,14 @@ title: "위키 시작하기"
 description: "insong.net 위키의 첫 번째 노트입니다."
 tags: ["meta", "위키"]
 publishDate: 2026-04-10
+updatedDate: 2026-04-13
+sources: ["blog:hello-world"]
 draft: false
 ---
 
 개발 경험에서 얻은 인사이트와 지식을 기록하는 공간입니다.
+
+글쓰기는 속도를 늦추고 무엇을 왜 만드는지 실제로 생각해보는 방법.
 
 ## 이 위키의 목적
 

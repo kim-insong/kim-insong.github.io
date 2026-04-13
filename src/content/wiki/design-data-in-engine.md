@@ -3,6 +3,8 @@ title: "게임 기획데이터 관리 원칙"
 description: "기획데이터를 클라/서버에 종속시킬 때 생기는 순환 참조 패턴과 독립 관리 원칙"
 tags: ["game-dev", "architecture", "design-data"]
 publishDate: 2026-04-13
+updatedDate: 2026-04-13
+sources: ["blog:design-data-in-engine"]
 draft: false
 ---
 

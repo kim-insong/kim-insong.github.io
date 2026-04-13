@@ -3,6 +3,8 @@ title: "게임 서버 요청 컨텍스트 패턴"
 description: "게임 서버 진입점에서 RequestContext를 발급하고 전파하는 설계 패턴"
 tags: ["game-dev", "server", "logging", "architecture"]
 publishDate: 2026-04-13
+updatedDate: 2026-04-13
+sources: ["blog:game-server-request-context"]
 draft: false
 ---
 

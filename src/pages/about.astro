@@ -7,10 +7,10 @@ const educations = [
     org: '서울대학교 컴퓨터공학부',
     items: [
       { date: '2007.09–12', desc: '현대오토넷 화상통화프로그램 프로젝트', stack: ['C#', 'WinCE'] },
-      { date: '2007.09', desc: '제10회 SNU CSE 컴퓨터전시회 출품 — 절대음감 (ansp팀, 팀장)', stack: ['C++'] },
-      { date: '2007.11', desc: '2007 창의적 종합설계 경진대회(Capstone Design) 출품 — 절대음감 (ansp팀)', stack: ['C#'] },
-      { date: '2008.09', desc: '제11회 SNU CSE 컴퓨터전시회 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'] },
-      { date: '2008.11', desc: '2008 창의적 종합설계 경진대회(Capstone Design) 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'] },
+      { date: '2007.09', desc: '제10회 SNU CSE 컴퓨터전시회 출품 — 절대음감 (ansp팀, 팀장)', stack: ['C++'], award: '인기상' },
+      { date: '2007.11', desc: '2007 창의적 종합설계 경진대회(Capstone Design) 출품 — 절대음감 (ansp팀)', stack: ['C#'], award: '산업자원부장관상' },
+      { date: '2008.09', desc: '제11회 SNU CSE 컴퓨터전시회 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'], award: '우수상' },
+      { date: '2008.11', desc: '2008 창의적 종합설계 경진대회(Capstone Design) 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'], award: '교육과학기술부장관상' },
       { date: '2008.07–2009.03', desc: '학부커뮤니티 개발', stack: ['C#', 'ASP.NET', 'MS-SQL'] },
     ],
   },
@@ -168,28 +168,6 @@ const skills = [
   { category: 'AI / LLM', items: ['Claude', 'Gemini'] },
 ];
 
-const activities = [
-  {
-    date: '2007.09',
-    desc: '제10회 SNU CSE 컴퓨터전시회 출품 — 절대음감 (ansp팀, 팀장)',
-    award: '인기상',
-  },
-  {
-    date: '2007.11',
-    desc: '2007 창의적 종합설계 경진대회(Capstone Design) 출품 — 절대음감 (ansp팀)',
-    award: '산업자원부장관상',
-  },
-  {
-    date: '2008.09',
-    desc: '제11회 SNU CSE 컴퓨터전시회 출품 — 미라클 (new Miracle 팀, 팀장)',
-    award: '우수상',
-  },
-  {
-    date: '2008.11',
-    desc: '2008 창의적 종합설계 경진대회(Capstone Design) 출품 — 미라클 (new Miracle 팀, 팀장)',
-    award: '교육과학기술부장관상',
-  },
-];
 ---
 
 <BaseLayout title="소개" description="김인송 소개 — 게임 개발자">
@@ -231,7 +209,12 @@ const activities = [
                   <div class="flex flex-col sm:flex-row gap-1 sm:gap-4">
                     <span class="text-xs text-text-sub tabular-nums shrink-0 w-36">{item.date}</span>
                     <div class="flex flex-col gap-1">
-                      <span class="text-sm text-text-sub">{item.desc}</span>
+                      <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="text-sm text-text-sub">{item.desc}</span>
+                        {item.award && (
+                          <span class="text-xs font-medium text-text bg-bg-alt border border-border rounded px-2 py-0.5 shrink-0">{item.award}</span>
+                        )}
+                      </div>
                       {item.stack && (
                         <div class="flex flex-wrap gap-1.5">
                           {item.stack.map(s => (
@@ -244,29 +227,6 @@ const activities = [
                 ))}
               </div>
             )}
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- Activities -->
-  <section class="py-20 px-6 border-t border-border bg-bg">
-    <div class="max-w-5xl mx-auto">
-      <div class="mb-8 animate-reveal">
-        <span class="section-label">Activities</span>
-        <h2 class="text-2xl font-semibold text-text tracking-tight">대회 & 수상</h2>
-      </div>
-      <div class="divide-y divide-border animate-reveal delay-1">
-        {activities.map(item => (
-          <div class="flex flex-col sm:flex-row gap-1 sm:gap-4 py-4 first:pt-0 last:pb-0">
-            <span class="text-xs text-text-sub tabular-nums shrink-0 w-32">{item.date}</span>
-            <div class="flex flex-col gap-1.5">
-              <span class="text-sm text-text-sub">{item.desc}</span>
-              <div>
-                <span class="text-xs font-medium text-text bg-bg-alt border border-border rounded px-2 py-0.5">{item.award}</span>
-              </div>
-            </div>
           </div>
         ))}
       </div>

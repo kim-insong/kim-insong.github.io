@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "getting-started",
+      "title": "위키 시작하기",
+      "tags": [
+        "meta",
+        "위키"
+      ]
+    },
+    {
+      "id": "다른-노트-파일명",
+      "title": "다른-노트-파일명",
+      "tags": [],
+      "orphan": true
+    }
+  ],
+  "links": [
+    {
+      "source": "getting-started",
+      "target": "getting-started"
+    },
+    {
+      "source": "getting-started",
+      "target": "다른-노트-파일명"
+    }
+  ]
+}

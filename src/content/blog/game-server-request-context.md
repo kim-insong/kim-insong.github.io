@@ -69,6 +69,48 @@ struct RequestContext {
 
 로그를 찍는 쪽에서는 `ctx`를 넘겨받아 필요한 필드를 꺼내 쓴다. 진입점 종류에 따라 어떤 필드는 비어있을 수 있고, 그 자체가 정보가 된다. GM 명령인데 `playerId`가 찍혀 있으면 "어떤 플레이어에게 작용한 명령"이라는 걸 바로 알 수 있다.
 
+## 컨텍스트는 흘러가면서 쌓인다
+
+진입점에서 만든 컨텍스트가 끝까지 고정된 채로 전달되는 건 아니다. 함수 호출이 이어지는 중간중간에 새로운 정보가 계속 추가될 수 있다.
+
+예를 들어, 패킷을 처음 받은 시점에는 플레이어 ID와 요청 종류밖에 모른다. 처리가 진행되면서 플레이어가 속한 길드를 조회하고, 어떤 아이템에 관한 요청인지 파악하고, 대상 NPC가 어떤 존에 있는지 알게 된다. 이 정보를 그냥 지역 변수에만 두면 로그에 남지 않는다.
+
+```cpp
+struct RequestContext {
+    RequestId   requestId;
+    RequestType type;
+    PlayerId    playerId;
+    GmId        gmId;
+    Timestamp   issuedAt;
+    ServerId    serverId;
+
+    // 처리 중간에 채워지는 필드들
+    GuildId     guildId;      // 길드 조회 후 세팅
+    ItemId      itemId;       // 아이템 특정 후 세팅
+    ZoneId      zoneId;       // 존 진입 후 세팅
+
+    static RequestContext FromPacket(PlayerId player, PacketType type);
+    static RequestContext FromGMCommand(GmId gm, CommandType cmd);
+    static RequestContext FromEvent(EventType event);
+};
+```
+
+각 처리 단계에서 알게 된 정보를 `ctx`에 바로 기록한다.
+
+```cpp
+void HandleItemUse(RequestContext& ctx, ItemId item) {
+    ctx.itemId = item;  // 이 시점부터 로그에 itemId가 찍힘
+
+    auto guild = GetPlayerGuild(ctx.playerId);
+    ctx.guildId = guild.id;
+
+    // 이후 모든 로그에 requestId + itemId + guildId가 함께 나온다
+    ProcessItemEffect(ctx, item);
+}
+```
+
+이렇게 하면 흐름의 어느 시점에서든 로그를 봤을 때, 그 시점까지 파악된 모든 맥락이 한 줄에 담긴다. 어디서 무엇을 처리하다 문제가 생겼는지 로그 하나로 파악할 수 있다.
+
 ## 로깅 작업이 뒤가 아니라 앞에서 끝난다
 
 이 구조를 처음부터 잡아두면, 나중에 로깅을 추가할 때 할 일이 단순해진다. 어디서 로그를 찍든 `ctx`가 있으니 ID와 맥락 정보를 쓰면 된다. 로그 집계 도구에서 `requestId`로 필터링하면 하나의 요청 흐름을 전부 뽑을 수 있다.

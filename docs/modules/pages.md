@@ -7,7 +7,7 @@ Static Astro pages covering home, about, and blog (listing + detail).
 | File | Role |
 |------|------|
 | src/pages/index.astro | Homepage — hero section with bio and nav links |
-| src/pages/about.astro | About page — 5 sections: Education, Career, Skills, Activities |
+| src/pages/about.astro | About page — 4 sections: Education, Career, Skills |
 | src/pages/blog/index.astro | Blog listing — sorted by `publishDate` desc |
 | src/pages/blog/[slug].astro | Blog post detail — dynamic route from content collection |
 
@@ -15,12 +15,12 @@ Static Astro pages covering home, about, and blog (listing + detail).
 
 - All pages are statically generated (`output: "static"` default in Astro).
 - `blog/[slug].astro` uses `getStaticPaths()` to enumerate posts from the `blog` content collection.
-- About page hardcodes all data (education, career, skills, activities) as typed arrays in the component frontmatter — update directly in the file.
+- About page hardcodes all data (education, career, skills) as typed arrays in the component frontmatter — update directly in the file.
 - Section rhythm follows the design system: alternating `bg-bg` / `bg-bg-alt`, `border-t border-border` dividers, `py-20 px-6` spacing, `max-w-5xl mx-auto` container.
 
 ## About Page Structure (`src/pages/about.astro`)
 
-The about page is divided into 5 sections with hardcoded data arrays:
+The about page is divided into 4 sections with hardcoded data arrays:
 
 ### 1. Header
 Introductory paragraph about the developer's background and focus.
@@ -32,6 +32,7 @@ Array of education items, each with:
   date: string;        // e.g. "2005 – 2010"
   description: string; // role/activity description
   stack?: string[];    // optional tech stack labels rendered as badges
+  award?: string;      // optional award badge rendered inline (merged from former Activities section)
 }
 ```
 
@@ -43,7 +44,8 @@ Array of career entries, each with:
   company: string;  // company name
   projects: {
     name: string;
-    stack?: string[]; // optional tech stack labels rendered as badges
+    stack?: string[];      // optional tech stack labels rendered as badges
+    highlights?: string[]; // optional bullet points describing key contributions
   }[];
 }
 ```
@@ -59,19 +61,10 @@ Array of skill categories, each with:
 
 Current categories: Languages, Game Engines/Frameworks, Collaboration/Version Control, Databases, AI/LLM.
 
-### 5. Activities
-Combined competition entries and awards, each with:
-```ts
-{
-  date: string;    // e.g. "2007.09"
-  desc: string;    // competition name and team info
-  stack: string[]; // tech stack used, rendered as badges
-  award: string;   // award received, rendered as a distinct badge
-}
-```
-
 ### Tech Stack Badges
-Both education items and career project entries optionally render a `stack` array as small inline badges. Badges use the design system's tag/chip styles and are rendered inline below the description or project name.
+Education items and career project entries optionally render a `stack` array as small inline badges. Badges use the design system's tag/chip styles and are rendered inline below the description or project name.
+
+> **Note:** The standalone Activities section was removed in April 2026. Award entries are now inlined into Education items via the `award` field.
 
 ## Diagram
 

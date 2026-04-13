@@ -21,6 +21,7 @@ Run `/wiki-ingest` to process unincorporated sources.
 | blog:ai-skill-feedback-loop | claude-skill-feedback-loop | 2026-04-13 | new page |
 | blog:game-server-request-context | game-server-request-context | 2026-04-13 | new page |
 | blog:design-data-in-engine | design-data-in-engine | 2026-04-13 | new page |
+| blog:leaderboard-snapshot | redis-leaderboard-snapshot | 2026-04-13 | new page |
 
 ---
 
@@ -33,3 +34,4 @@ Run `/wiki-ingest` to process unincorporated sources.
 | design-data-in-engine | 게임 기획데이터 관리 원칙 | game-dev, architecture, design-data |
 | ios-app-development | iOS 앱 개발 스택 (2025) | iOS, SwiftUI, 개발 |
 | claude-skill-feedback-loop | Claude 스킬 자동 피드백 루프 | Claude, AI, workflow, automation |
+| redis-leaderboard-snapshot | Redis 랭킹과 스냅샷 패턴 | game-dev, server, redis, ranking |

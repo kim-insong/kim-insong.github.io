@@ -41,12 +41,37 @@ const careers = [
     period: '2009 — 2013',
     org: '(주)컴투스',
     projects: [
-      { name: '액션퍼즐패밀리3 (제한적 참여)', roles: ['클라이언트'], stack: ['위피C'] },
+      {
+        name: '액션퍼즐패밀리3',
+        roles: ['클라이언트'],
+        stack: ['위피C'],
+        highlights: ['세이브 데이터 구성, 관리, 업로드 & 다운로드'],
+      },
       { name: '초코초코타이쿤2', roles: ['클라이언트'], stack: ['위피C'] },
-      { name: '초콜릿타이쿤', roles: ['클라이언트'], stack: ['위피C'] },
-      { name: '프로토타입 1종 (드랍)', roles: ['클라이언트'], stack: ['C++', 'Box2d'] },
-      { name: '프로토타입 1종 (드랍)', roles: ['클라이언트'], stack: ['C#', 'Unity3D'] },
-      { name: '프로토타입 1종 (드랍)', roles: ['클라이언트'], stack: ['C++'] },
+      {
+        name: '초콜릿타이쿤',
+        roles: ['클라이언트'],
+        stack: ['위피C'],
+        highlights: ['피처폰 → 스마트폰 포팅', '자이로 센서를 이용한 미니게임'],
+      },
+      {
+        name: '프로토타입 1종 (드랍)',
+        roles: ['클라이언트'],
+        stack: ['C++', 'Box2d'],
+        highlights: ['Box2d를 활용한 물리 시뮬레이션'],
+      },
+      {
+        name: '프로토타입 1종 (드랍)',
+        roles: ['클라이언트'],
+        stack: ['C#', 'Unity3D'],
+        highlights: ['레스토랑 SNG', '레스토랑 커스터마이징 기능 구현'],
+      },
+      {
+        name: '프로토타입 1종 (드랍)',
+        roles: ['클라이언트'],
+        stack: ['C++'],
+        highlights: ['간단한 물리 구현', '타일맵 드로우콜 최적화'],
+      },
     ],
   },
   {
@@ -54,30 +79,82 @@ const careers = [
     org: '(주)게임하이',
     projects: [
       { name: '프로토타입 1종 (드랍)', roles: ['클라이언트'], stack: ['C++', 'Cocos2d-x'] },
-      { name: '몬몬몬', roles: ['클라이언트', '웹서버'], stack: ['C++', 'C#', 'Cocos2d-x', 'ASP.NET', 'WinForms', 'MSSQL', 'Redis', 'Lua'] },
+      {
+        name: '몬몬몬',
+        roles: ['클라이언트', '웹서버'],
+        stack: ['C++', 'C#', 'Cocos2d-x', 'ASP.NET', 'WinForms', 'MSSQL', 'Redis', 'Lua'],
+        highlights: [
+          'UI 제작을 위한 툴 제작 및 유지보수 (Lua로 애니메이션 추가)',
+          '인벤토리 스크롤뷰 최적화',
+          '수집형 RPG 게임의 대부분의 기능 구현',
+          '전투 방식 집중 폴리싱 (별도 전투 TF 구성)',
+          '런칭 이후 클라이언트 + ASP.NET 웹서버 유지보수',
+        ],
+      },
     ],
   },
   {
     period: '2014 — 2017',
     org: '(주)넥슨GT',
     projects: [
-      { name: '서든어택2', roles: ['클라이언트'], stack: ['C++', 'UnrealEngine'] },
+      {
+        name: '서든어택2',
+        roles: ['클라이언트'],
+        stack: ['C++', 'UnrealEngine'],
+        highlights: [
+          'AI 길찾기 및 이동 리서치 (RVO, Detour) 및 구현',
+          '별도 게임 모드 개발 및 재미 검증',
+        ],
+      },
     ],
   },
   {
     period: '2017 — 2019',
     org: '(주)넥슨레드',
     projects: [
-      { name: '포인트 블랭크: 스트라이크', roles: ['웹서버'], stack: ['PHP', 'MySQL', 'Redis'] },
-      { name: '프로토타입 1종 (드랍)', roles: ['클라이언트'], stack: ['C++', 'UnrealEngine'] },
+      {
+        name: '포인트 블랭크: 스트라이크',
+        roles: ['웹서버'],
+        stack: ['PHP', 'MySQL', 'Redis'],
+        highlights: ['쿠폰 시스템', '랭킹 시스템'],
+      },
+      {
+        name: '프로토타입 1종 (드랍)',
+        roles: ['클라이언트'],
+        stack: ['C++', 'UnrealEngine'],
+        highlights: ['AI 개발 위주'],
+      },
     ],
   },
   {
     period: '2020 — 현재',
     org: '(주)넥슨코리아',
     projects: [
-      { name: '프라시아전기', roles: ['소켓서버'], stack: ['C++', 'C#', 'WPF', 'MSSQL', 'Azure'] },
-      { name: '프로젝트EL (드랍)', roles: ['클라이언트', '소켓서버'], stack: ['C++', 'C#', 'UnrealEngine', 'AWS', 'GameLift', 'SteamWorks', 'Redis', 'MySQL', 'MSSQL'] },
+      {
+        name: '프라시아전기',
+        roles: ['소켓서버'],
+        stack: ['C++', 'C#', 'WPF', 'MSSQL', 'Azure'],
+        highlights: [
+          'MMORPG 서버 기반 설계',
+          '이동 및 동기화 기반',
+          '공성전 TF',
+          '거래소 시스템',
+          '서버 파트장',
+        ],
+      },
+      {
+        name: '프로젝트EL (드랍)',
+        roles: ['클라이언트', '소켓서버'],
+        stack: ['C++', 'C#', 'UnrealEngine', 'AWS', 'GameLift', 'SteamWorks', 'Redis', 'MySQL', 'MSSQL'],
+        highlights: [
+          'MO 서버 기반 설계',
+          '기능별 서버 구성 및 RPC 연결 기반',
+          '랭킹 시스템',
+          '데디서버 관리 기능 초안',
+          '클라이언트 목업 표시 기능',
+          '임베딩을 위한 클라이언트 에셋 데이터 추출',
+        ],
+      },
     ],
   },
 ];
@@ -218,6 +295,13 @@ const activities = [
                         <span class="text-xs font-medium text-text border border-border rounded px-1.5 py-0.5">{r}</span>
                       ))}
                     </div>
+                    {p.highlights && (
+                      <ul class="flex flex-col gap-0.5">
+                        {p.highlights.map(h => (
+                          <li class="text-xs text-text-sub">— {h}</li>
+                        ))}
+                      </ul>
+                    )}
                     {p.stack && (
                       <div class="flex flex-wrap gap-1.5">
                         {p.stack.map(s => (

@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WikiGraph from '../../components/WikiGraph';
+---
+
+<BaseLayout title="Wiki Graph" description="Wiki 페이지 간 연결 관계 시각화">
+  <div class="h-[calc(100vh-3.5rem)] w-full overflow-hidden">
+    <WikiGraph client:only="react" />
+  </div>
+</BaseLayout>

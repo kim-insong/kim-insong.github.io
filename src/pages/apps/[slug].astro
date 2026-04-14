@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const apps = await getCollection('apps');
+  return apps
+    .filter(app => !app.data.draft)
+    .map(app => ({ params: { slug: app.slug } }));
+}
+
+const { slug } = Astro.params;
+const apps = await getCollection('apps');
+const app = apps.find(a => a.slug === slug);
+
+if (!app) return Astro.redirect('/apps');
+
+const { data } = app;
+const hasScreenshots = data.screenshots && data.screenshots.length > 0;
+---
+
+<BaseLayout title={data.title} description={data.description}>
+  <!-- Header -->
+  <section class="py-24 md:py-36 px-6">
+    <div class="max-w-5xl w-full mx-auto">
+      <div class="max-w-xl animate-reveal">
+        <span class="section-label">{data.platform}</span>
+        <h1 class="text-3xl md:text-4xl font-semibold text-text tracking-tight mb-4">
+          {data.title}
+        </h1>
+        <p class="text-text-sub leading-relaxed mb-6">
+          {data.tagline}
+        </p>
+        <p class="text-sm text-text-sub leading-relaxed mb-6">
+          {data.description}
+        </p>
+        <div class="flex gap-2 flex-wrap">
+          <span class="text-xs px-3 py-1 rounded-md border border-border bg-muted text-muted-foreground">
+            {data.platform}
+          </span>
+          <span class="text-xs px-3 py-1 rounded-md border border-border bg-muted text-muted-foreground">
+            {data.status}
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-20 px-6 border-t border-border bg-bg-alt">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-8 animate-reveal">
+        <span class="section-label">Features</span>
+        <h2 class="text-2xl font-semibold text-text tracking-tight">주요 기능</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 animate-reveal delay-1">
+        {data.features.map(feature => (
+          <div class="pillar-card bg-card border border-border rounded-2xl p-7">
+            <h3 class="text-sm font-semibold text-text mb-2">{feature.title}</h3>
+            <p class="text-sm text-text-sub leading-relaxed">{feature.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  {hasScreenshots && (
+    <section class="py-20 px-6 border-t border-border bg-bg">
+      <div class="max-w-5xl mx-auto">
+        <div class="mb-8 animate-reveal">
+          <span class="section-label">Screenshots</span>
+          <h2 class="text-2xl font-semibold text-text tracking-tight">스크린샷</h2>
+        </div>
+        <div class="overflow-x-auto animate-reveal delay-1">
+          <div class="flex gap-4 pb-2" style="min-width: max-content;">
+            {data.screenshots!.map((filename, i) => (
+              <img
+                src={`/apps/${slug}/${filename}`}
+                alt={`${data.title} 스크린샷 ${i + 1}`}
+                class="h-[480px] w-auto rounded-2xl border border-border object-cover"
+                loading="lazy"
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- App Store link -->
+  {data.appStoreUrl && (
+    <section class="py-20 px-6 border-t border-border bg-bg-alt">
+      <div class="max-w-5xl mx-auto animate-reveal">
+        <a
+          href={data.appStoreUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+        >
+          App Store에서 다운로드 →
+        </a>
+      </div>
+    </section>
+  )}
+</BaseLayout>

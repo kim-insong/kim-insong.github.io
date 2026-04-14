@@ -22,6 +22,12 @@ const educations = [
   },
 ];
 
+const tagStyles: Record<string, string> = {
+  '출시': 'text-xs font-medium text-emerald-600 border border-emerald-300 rounded px-1.5 py-0.5',
+  '라이브': 'text-xs font-medium text-sky-600 border border-sky-300 rounded px-1.5 py-0.5',
+  '드랍': 'text-xs font-medium text-text-sub border border-border rounded px-1.5 py-0.5 opacity-60',
+};
+
 const careers = [
   {
     period: '2007.01–03',
@@ -43,31 +49,36 @@ const careers = [
     projects: [
       {
         name: '액션퍼즐패밀리3',
+        tags: ['출시'],
         roles: ['클라이언트'],
         stack: ['위피C'],
         highlights: ['세이브 데이터 구성, 관리, 업로드 & 다운로드'],
       },
-      { name: '초코초코타이쿤2', roles: ['클라이언트'], stack: ['위피C'] },
+      { name: '초코초코타이쿤2', tags: ['출시', '라이브'], roles: ['클라이언트'], stack: ['위피C'] },
       {
         name: '초콜릿타이쿤',
+        tags: ['출시', '라이브'],
         roles: ['클라이언트'],
         stack: ['위피C'],
         highlights: ['피처폰 → 스마트폰 포팅', '자이로 센서를 이용한 미니게임'],
       },
       {
-        name: '프로토타입 1종 (드랍)',
+        name: '프로토타입 1종',
+        tags: ['드랍'],
         roles: ['클라이언트'],
         stack: ['C++', 'Box2d'],
         highlights: ['Box2d를 활용한 물리 시뮬레이션'],
       },
       {
-        name: '프로토타입 1종 (드랍)',
+        name: '프로토타입 1종',
+        tags: ['드랍'],
         roles: ['클라이언트'],
         stack: ['C#', 'Unity3D'],
         highlights: ['레스토랑 SNG', '레스토랑 커스터마이징 기능 구현'],
       },
       {
-        name: '프로토타입 1종 (드랍)',
+        name: '프로토타입 1종',
+        tags: ['드랍'],
         roles: ['클라이언트'],
         stack: ['C++'],
         highlights: ['간단한 물리 구현', '타일맵 드로우콜 최적화'],
@@ -78,9 +89,10 @@ const careers = [
     period: '2013 — 2014',
     org: '(주)게임하이',
     projects: [
-      { name: '프로토타입 1종 (드랍)', roles: ['클라이언트'], stack: ['C++', 'Cocos2d-x'] },
+      { name: '프로토타입 1종', tags: ['드랍'], roles: ['클라이언트'], stack: ['C++', 'Cocos2d-x'] },
       {
         name: '몬몬몬',
+        tags: ['출시', '라이브'],
         roles: ['클라이언트', '웹서버'],
         stack: ['C++', 'C#', 'Cocos2d-x', 'ASP.NET', 'WinForms', 'MSSQL', 'Redis', 'Lua'],
         highlights: [
@@ -99,6 +111,7 @@ const careers = [
     projects: [
       {
         name: '서든어택2',
+        tags: ['출시'],
         roles: ['클라이언트'],
         stack: ['C++', 'UnrealEngine'],
         highlights: [
@@ -114,12 +127,14 @@ const careers = [
     projects: [
       {
         name: '포인트 블랭크: 스트라이크',
+        tags: ['출시', '라이브'],
         roles: ['웹서버'],
         stack: ['PHP', 'MySQL', 'Redis'],
         highlights: ['쿠폰 시스템', '랭킹 시스템'],
       },
       {
-        name: '프로토타입 1종 (드랍)',
+        name: '프로토타입 1종',
+        tags: ['드랍'],
         roles: ['클라이언트'],
         stack: ['C++', 'UnrealEngine'],
         highlights: [
@@ -135,6 +150,7 @@ const careers = [
     projects: [
       {
         name: '프라시아전기',
+        tags: ['출시', '라이브'],
         roles: ['소켓서버'],
         stack: ['C++', 'C#', 'WPF', 'MSSQL', 'Azure'],
         highlights: [
@@ -147,7 +163,8 @@ const careers = [
         ],
       },
       {
-        name: '프로젝트EL (드랍)',
+        name: '프로젝트EL',
+        tags: ['드랍'],
         period: '2024.06 — 2026.04',
         roles: ['클라이언트', '소켓서버'],
         stack: ['C++', 'C#', 'UnrealEngine', 'Groovy', 'AWS', 'GameLift', 'SteamWorks', 'Redis', 'MySQL', 'MSSQL'],
@@ -264,6 +281,9 @@ const skills = [
                   <li class="flex flex-col gap-1">
                     <div class="flex items-baseline gap-2 flex-wrap">
                       <span class="text-sm text-text-sub">{p.name}</span>
+                      {p.tags && p.tags.map((t: string) => (
+                        <span class={tagStyles[t]}>{t}</span>
+                      ))}
                       {p.period && <span class="text-xs text-text-sub tabular-nums">{p.period}</span>}
                       {p.roles && p.roles.map(r => (
                         <span class="text-xs font-medium text-text border border-border rounded px-1.5 py-0.5">{r}</span>

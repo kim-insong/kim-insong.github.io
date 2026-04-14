@@ -22,6 +22,8 @@ Run `/wiki-ingest` to process unincorporated sources.
 | blog:game-server-request-context | game-server-request-context | 2026-04-13 | new page |
 | blog:design-data-in-engine | design-data-in-engine | 2026-04-13 | new page |
 | blog:leaderboard-snapshot | redis-leaderboard-snapshot | 2026-04-13 | new page |
+| raw/graphify.md | graphify | 2026-04-14 | new page |
+| raw/llm-wiki.md | llm-wiki-pattern | 2026-04-14 | new page |
 
 ---
 
@@ -35,3 +37,5 @@ Run `/wiki-ingest` to process unincorporated sources.
 | ios-app-development | iOS 앱 개발 스택 (2025) | iOS, SwiftUI, 개발 |
 | claude-skill-feedback-loop | Claude 스킬 자동 피드백 루프 | Claude, AI, workflow, automation |
 | redis-leaderboard-snapshot | Redis 랭킹과 스냅샷 패턴 | game-dev, server, redis, ranking |
+| graphify | graphify — 코드/문서 지식 그래프 도구 | wiki, knowledge-graph, tooling, AI, Claude |
+| llm-wiki-pattern | LLM Wiki 패턴 | wiki, knowledge-management, AI, workflow, architecture |

@@ -24,4 +24,23 @@ const wiki = defineCollection({
   }),
 });
 
-export const collections = { blog, wiki };
+const apps = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    tagline: z.string(),
+    description: z.string(),
+    platform: z.string(),
+    status: z.string(),
+    features: z.array(z.object({
+      title: z.string(),
+      description: z.string(),
+    })),
+    screenshots: z.array(z.string()).optional(),
+    appStoreUrl: z.string().optional(),
+    publishDate: z.coerce.date(),
+    draft: z.boolean().optional().default(false),
+  }),
+});
+
+export const collections = { blog, wiki, apps };

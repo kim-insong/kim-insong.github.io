@@ -148,15 +148,21 @@ const careers = [
       },
       {
         name: '프로젝트EL (드랍)',
+        period: '2024.06 — 2026.04',
         roles: ['클라이언트', '소켓서버'],
-        stack: ['C++', 'C#', 'UnrealEngine', 'AWS', 'GameLift', 'SteamWorks', 'Redis', 'MySQL', 'MSSQL'],
+        stack: ['C++', 'C#', 'UnrealEngine', 'Groovy', 'AWS', 'GameLift', 'SteamWorks', 'Redis', 'MySQL', 'MSSQL'],
         highlights: [
           '프로젝트 개발환경 구성 (Perforce 스트림, Jenkins 빌드 파이프라인, Swarm 리뷰)',
-          'AWS 개발환경 구성',
+          '빌드 프로세스 정립 (Groovy 파이프라인 → 버전관리·관리포인트 일원화, Shared Library로 코드 재사용)',
+          '빌드 실패 및 서버 접속 실패 주도적으로 정상화 (용량 부족 방지 cleanup 자동화, Slack 로그 출력, P4 트리거 기반 / Daily 빌드 결과·게임서버 패치 준비→시작→완료 Slack 알림)',
+          'AWS 개발환경 구성 (빌드→배포→패치)',
           '로컬서버 개발환경 구성',
           'MO 서버 기반 설계',
           '기능별 서버 구성 및 RPC 연결 기반',
-          '랭킹 시스템',
+          '랭킹 시스템 (Redis 장애 시 DB 기반 복구)',
+          'FunQA 빌드 준비 주도적으로 챙김',
+          '클라이언트 SteamWorks 연동',
+          'Confluence 캘린더-웹오피스 근태 정보 연동',
           '데디서버 관리 기능 초안',
           '클라이언트 목업 표시 기능',
           '임베딩을 위한 클라이언트 에셋 데이터 추출',
@@ -256,8 +262,9 @@ const skills = [
               <ul class="flex flex-col gap-2">
                 {item.projects.map(p => (
                   <li class="flex flex-col gap-1">
-                    <div class="flex items-baseline gap-2">
+                    <div class="flex items-baseline gap-2 flex-wrap">
                       <span class="text-sm text-text-sub">{p.name}</span>
+                      {p.period && <span class="text-xs text-text-sub tabular-nums">{p.period}</span>}
                       {p.roles && p.roles.map(r => (
                         <span class="text-xs font-medium text-text border border-border rounded px-1.5 py-0.5">{r}</span>
                       ))}

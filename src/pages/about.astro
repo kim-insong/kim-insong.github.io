@@ -22,13 +22,28 @@ const educations = [
   },
 ];
 
+interface Project {
+  name: string;
+  tags?: string[];
+  period?: string;
+  roles?: string[];
+  stack: string[];
+  highlights?: string[];
+}
+
+interface Career {
+  period: string;
+  org: string;
+  projects: Project[];
+}
+
 const tagStyles: Record<string, string> = {
   '출시': 'text-xs font-medium text-emerald-600 border border-emerald-300 rounded px-1.5 py-0.5',
   '라이브': 'text-xs font-medium text-sky-600 border border-sky-300 rounded px-1.5 py-0.5',
   '드랍': 'text-xs font-medium text-text-sub border border-border rounded px-1.5 py-0.5 opacity-60',
 };
 
-const careers = [
+const careers: Career[] = [
   {
     period: '2007.01–03',
     org: '포스데이타(POSDATA)',
@@ -66,14 +81,14 @@ const careers = [
         name: '프로토타입 1종',
         tags: ['드랍'],
         roles: ['클라이언트'],
-        stack: ['C++', 'Box2d'],
-        highlights: ['Box2d를 활용한 물리 시뮬레이션'],
+        stack: ['C++', 'Box2D'],
+        highlights: ['Box2D를 활용한 물리 시뮬레이션'],
       },
       {
         name: '프로토타입 1종',
         tags: ['드랍'],
         roles: ['클라이언트'],
-        stack: ['C#', 'Unity3D'],
+        stack: ['C#', 'Unity'],
         highlights: ['레스토랑 SNG', '레스토랑 커스터마이징 기능 구현'],
       },
       {
@@ -191,11 +206,11 @@ const careers = [
 
 const skills = [
   { category: '언어', items: ['C', 'C++', 'C#', 'Lua', 'Python', 'Groovy', 'Swift'] },
-  { category: '게임엔진 / 프레임워크', items: ['Cocos2d-x', 'Unity3D', 'UnrealEngine', 'Box2d', 'SwiftUI', 'WPF'] },
+  { category: '게임엔진 / 프레임워크', items: ['Cocos2d-x', 'Unity', 'UnrealEngine', 'Box2D', 'SwiftUI', 'WPF'] },
   { category: '협업 / 버전관리', items: ['Git', 'SVN', 'Perforce', 'Jira', 'Confluence', 'Redmine', 'Jenkins', 'Slack', 'Discord', 'Teams'] },
   { category: '데이터베이스', items: ['MSSQL', 'MySQL', 'Redis'] },
   { category: '클라우드', items: ['Azure', 'AWS', 'GameLift'] },
-  { category: 'AI / LLM', items: ['Claude', 'Gemini'] },
+  { category: 'AI / LLM', items: ['Claude'] },
 ];
 
 ---

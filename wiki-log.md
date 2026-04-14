@@ -9,6 +9,14 @@ Run `/wiki-ingest` to process unincorporated sources.
 
 | Source | Added | Notes |
 |--------|-------|-------|
+| raw/claude-workflow-tiers.md | 2026-04-14 | |
+| raw/git-workflow-patterns.md | 2026-04-14 | |
+| raw/ios-ui-layout-patterns.md | 2026-04-14 | |
+| raw/ios-design-tokens.md | 2026-04-14 | |
+| raw/ios-data-persistence.md | 2026-04-14 | |
+| raw/agent-orchestration-patterns.md | 2026-04-14 | |
+| raw/documentation-policy.md | 2026-04-14 | |
+| raw/code-quality-principles.md | 2026-04-14 | |
 
 ---
 

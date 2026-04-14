@@ -1,11 +1,11 @@
 ---
 source_file: "src/content/wiki/claude-skill-feedback-loop.md"
 type: "document"
-community: "Claude 스킬 자동화"
+community: "Claude Skills & Game Server"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Claude_스킬_자동화
+  - community/Claude_Skills_&_Game_Server
 ---
 
 # Claude 스킬 자동 피드백 루프
@@ -15,4 +15,4 @@ tags:
 - [[Hook 타이밍 불일치 (stop hook vs user-prompt-submit)]] - `references` [EXTRACTED]
 - [[자동 감지 + 사람 확인 패턴]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Claude_스킬_자동화
+#graphify/document #graphify/EXTRACTED #community/Claude_Skills_&_Game_Server

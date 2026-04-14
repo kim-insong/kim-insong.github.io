@@ -3,7 +3,7 @@
     {
       "id": "g0",
       "type": "group",
-      "label": "Redis \ub7ad\ud0b9 & \uc2a4\ub0c5\uc0f7",
+      "label": "graphify Output Layer",
       "x": 0,
       "y": 0,
       "width": 660,
@@ -11,10 +11,183 @@
       "color": "1"
     },
     {
+      "id": "n_graphify_wiki_graph_report",
+      "type": "file",
+      "file": "graphify/obsidian/GRAPH_REPORT.md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_graphify_wiki_git_hook",
+      "type": "file",
+      "file": "graphify/obsidian/Git Hook Integration.md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_graphify_wiki_leiden",
+      "type": "file",
+      "file": "graphify/obsidian/Leiden Clustering (Community Detection).md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_graphify_wiki_whisper",
+      "type": "file",
+      "file": "graphify/obsidian/Local Whisper Transcription.md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_graphify_wiki_relationship_tagging",
+      "type": "file",
+      "file": "graphify/obsidian/Relationship Tagging (EXTRACTEDINFERREDAMBIGUOUS).md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_graphify_wiki_sha256_cache",
+      "type": "file",
+      "file": "graphify/obsidian/SHA256-based Incremental Caching.md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_graphify_wiki_graph_html",
+      "type": "file",
+      "file": "graphify/obsidian/graph.html Interactive Visualization.md",
+      "x": 20,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_graphify_wiki_graph_json",
+      "type": "file",
+      "file": "graphify/obsidian/graph.json Persistent Graph Data.md",
+      "x": 220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_graphify_wiki_graphify",
+      "type": "file",
+      "file": "graphify/obsidian/graphify Tool.md",
+      "x": 420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "Claude Skills & Game Server",
+      "x": 740,
+      "y": 0,
+      "width": 660,
+      "height": 420,
+      "color": "2"
+    },
+    {
+      "id": "n_claude_skill_feedback_loop_blog",
+      "type": "file",
+      "file": "graphify/obsidian/Blog ai-skill-feedback-loop.md",
+      "x": 760,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_game_server_request_context_blog",
+      "type": "file",
+      "file": "graphify/obsidian/Blog game-server-request-context.md",
+      "x": 960,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_claude_skill_feedback_loop",
+      "type": "file",
+      "file": "graphify/obsidian/Claude \uc2a4\ud0ac \uc790\ub3d9 \ud53c\ub4dc\ubc31 \ub8e8\ud504.md",
+      "x": 1160,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_claude_skill_feedback_loop_hook_timing",
+      "type": "file",
+      "file": "graphify/obsidian/Hook \ud0c0\uc774\ubc0d \ubd88\uc77c\uce58 (stop hook vs user-prompt-submit).md",
+      "x": 760,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_game_server_request_context_struct",
+      "type": "file",
+      "file": "graphify/obsidian/RequestContext \uad6c\uc870\uccb4 (C++).md",
+      "x": 960,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_game_server_request_context",
+      "type": "file",
+      "file": "graphify/obsidian/\uac8c\uc784 \uc11c\ubc84 \uc694\uccad \ucee8\ud14d\uc2a4\ud2b8 \ud328\ud134.md",
+      "x": 1160,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_claude_skill_feedback_loop_auto_detect",
+      "type": "file",
+      "file": "graphify/obsidian/\uc790\ub3d9 \uac10\uc9c0 + \uc0ac\ub78c \ud655\uc778 \ud328\ud134.md",
+      "x": 760,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_game_server_request_context_entry_points",
+      "type": "file",
+      "file": "graphify/obsidian/\uc9c4\uc785\uc810 \ubd84\ub958 (\ud328\ud0b7\uc6b4\uc601\ud234\uc790\ub3d9\uc774\ubca4\ud2b8).md",
+      "x": 960,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "Redis Leaderboard Patterns",
+      "x": 1480,
+      "y": 0,
+      "width": 660,
+      "height": 420,
+      "color": "3"
+    },
+    {
       "id": "n_leaderboard_snapshot_blog",
       "type": "file",
       "file": "graphify/obsidian/Blog leaderboard-snapshot.md",
-      "x": 20,
+      "x": 1500,
       "y": 80,
       "width": 180,
       "height": 60
@@ -23,7 +196,7 @@
       "id": "n_redis_leaderboard_snapshot_sorted_set",
       "type": "file",
       "file": "graphify/obsidian/Redis sorted set \uc2e4\uc2dc\uac04 \ub7ad\ud0b9.md",
-      "x": 220,
+      "x": 1700,
       "y": 80,
       "width": 180,
       "height": 60
@@ -32,7 +205,7 @@
       "id": "n_redis_leaderboard_snapshot",
       "type": "file",
       "file": "graphify/obsidian/Redis \ub7ad\ud0b9\uacfc \uc2a4\ub0c5\uc0f7 \ud328\ud134.md",
-      "x": 420,
+      "x": 1900,
       "y": 80,
       "width": 180,
       "height": 60
@@ -41,7 +214,7 @@
       "id": "n_leaderboard_snapshot",
       "type": "file",
       "file": "graphify/obsidian/\ub9ac\ub354\ubcf4\ub4dc \uc2a4\ub0c5\uc0f7 \ud328\ud134.md",
-      "x": 20,
+      "x": 1500,
       "y": 160,
       "width": 180,
       "height": 60
@@ -50,7 +223,7 @@
       "id": "n_redis_leaderboard_snapshot_ab",
       "type": "file",
       "file": "graphify/obsidian/\uc2a4\ub0c5\uc0f7 AB \uad50\uccb4 \ud328\ud134.md",
-      "x": 220,
+      "x": 1700,
       "y": 160,
       "width": 180,
       "height": 60
@@ -59,7 +232,7 @@
       "id": "n_leaderboard_snapshot_ab",
       "type": "file",
       "file": "graphify/obsidian/\uc2a4\ub0c5\uc0f7 AB \uc21c\ud658 \uad50\uccb4 (leaderboard-snapshot).md",
-      "x": 420,
+      "x": 1900,
       "y": 160,
       "width": 180,
       "height": 60
@@ -68,7 +241,7 @@
       "id": "n_redis_leaderboard_snapshot_dual_set",
       "type": "file",
       "file": "graphify/obsidian/\uc774\uc911 sorted set \uc2a4\ub0c5\uc0f7 \ud328\ud134.md",
-      "x": 20,
+      "x": 1500,
       "y": 240,
       "width": 180,
       "height": 60
@@ -77,164 +250,209 @@
       "id": "n_leaderboard_snapshot_dual_set",
       "type": "file",
       "file": "graphify/obsidian/\uc774\uc911 sorted set \uc2a4\ub0c5\uc0f7 \ud328\ud134 (leaderboard-snapshot).md",
-      "x": 220,
+      "x": 1700,
       "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g1",
-      "type": "group",
-      "label": "\uae30\ud68d\ub370\uc774\ud130 \uc544\ud0a4\ud14d\ucc98",
-      "x": 740,
-      "y": 0,
-      "width": 600,
-      "height": 400,
-      "color": "2"
-    },
-    {
-      "id": "n_design_data_in_engine_blog",
-      "type": "file",
-      "file": "graphify/obsidian/Blog design-data-in-engine.md",
-      "x": 760,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_design_data_in_engine",
-      "type": "file",
-      "file": "graphify/obsidian/\uac8c\uc784 \uae30\ud68d\ub370\uc774\ud130 \uad00\ub9ac \uc6d0\uce59.md",
-      "x": 960,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_design_data_in_engine_schema_export",
-      "type": "file",
-      "file": "graphify/obsidian/\uc2a4\ud0a4\ub9c8 export \ubc29\uc2dd (\uc784\uc2dc \ud574\uacb0\ucc45).md",
-      "x": 1160,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_design_data_in_engine_circular_dep",
-      "type": "file",
-      "file": "graphify/obsidian/\ud074\ub77c\uc774\uc5b8\ud2b8 \uc6d0\ubcf8 \uc2dc \uc21c\ud658 \ucc38\uc870 \ud328\ud134.md",
-      "x": 760,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g2",
-      "type": "group",
-      "label": "\uac8c\uc784 \uc11c\ubc84 \uc694\uccad \ucd94\uc801",
-      "x": 1420,
-      "y": 0,
-      "width": 600,
-      "height": 400,
-      "color": "3"
-    },
-    {
-      "id": "n_game_server_request_context_blog",
-      "type": "file",
-      "file": "graphify/obsidian/Blog game-server-request-context.md",
-      "x": 1440,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_game_server_request_context_struct",
-      "type": "file",
-      "file": "graphify/obsidian/RequestContext \uad6c\uc870\uccb4 (C++).md",
-      "x": 1640,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_game_server_request_context",
-      "type": "file",
-      "file": "graphify/obsidian/\uac8c\uc784 \uc11c\ubc84 \uc694\uccad \ucee8\ud14d\uc2a4\ud2b8 \ud328\ud134.md",
-      "x": 1840,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_game_server_request_context_entry_points",
-      "type": "file",
-      "file": "graphify/obsidian/\uc9c4\uc785\uc810 \ubd84\ub958 (\ud328\ud0b7\uc6b4\uc601\ud234\uc790\ub3d9\uc774\ubca4\ud2b8).md",
-      "x": 1440,
-      "y": 160,
       "width": 180,
       "height": 60
     },
     {
       "id": "g3",
       "type": "group",
-      "label": "Claude \uc2a4\ud0ac \uc790\ub3d9\ud654",
-      "x": 0,
-      "y": 500,
-      "width": 600,
-      "height": 400,
+      "label": "Wiki Operations (Ingest/Query/Lint)",
+      "x": 2220,
+      "y": 0,
+      "width": 660,
+      "height": 420,
       "color": "4"
     },
     {
-      "id": "n_claude_skill_feedback_loop_blog",
+      "id": "n_llm_wiki_pattern_ingest_op",
       "type": "file",
-      "file": "graphify/obsidian/Blog ai-skill-feedback-loop.md",
-      "x": 20,
-      "y": 580,
+      "file": "graphify/obsidian/Ingest Operation.md",
+      "x": 2240,
+      "y": 80,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_claude_skill_feedback_loop",
+      "id": "n_llm_wiki_pattern_wiki",
       "type": "file",
-      "file": "graphify/obsidian/Claude \uc2a4\ud0ac \uc790\ub3d9 \ud53c\ub4dc\ubc31 \ub8e8\ud504.md",
-      "x": 220,
-      "y": 580,
+      "file": "graphify/obsidian/LLM Wiki Pattern.md",
+      "x": 2440,
+      "y": 80,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_claude_skill_feedback_loop_hook_timing",
+      "id": "n_llm_wiki_pattern_lint_op",
       "type": "file",
-      "file": "graphify/obsidian/Hook \ud0c0\uc774\ubc0d \ubd88\uc77c\uce58 (stop hook vs user-prompt-submit).md",
-      "x": 420,
-      "y": 580,
+      "file": "graphify/obsidian/Lint Operation.md",
+      "x": 2640,
+      "y": 80,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_claude_skill_feedback_loop_auto_detect",
+      "id": "n_llm_wiki_pattern_query_op",
       "type": "file",
-      "file": "graphify/obsidian/\uc790\ub3d9 \uac10\uc9c0 + \uc0ac\ub78c \ud655\uc778 \ud328\ud134.md",
-      "x": 20,
-      "y": 660,
+      "file": "graphify/obsidian/Query Operation.md",
+      "x": 2240,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_llm_wiki_pattern_index_md",
+      "type": "file",
+      "file": "graphify/obsidian/index.md Catalog.md",
+      "x": 2440,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_llm_wiki_pattern_log_md",
+      "type": "file",
+      "file": "graphify/obsidian/log.md Chronological Log.md",
+      "x": 2640,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_llm_wiki_pattern_qmd",
+      "type": "file",
+      "file": "graphify/obsidian/qmd Local Search Engine.md",
+      "x": 2240,
+      "y": 240,
       "width": 180,
       "height": 60
     },
     {
       "id": "g4",
       "type": "group",
-      "label": "iOS \uc571 \uac1c\ubc1c",
+      "label": "graphify Pipeline (AST + Semantic)",
+      "x": 0,
+      "y": 500,
+      "width": 660,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_raw_graphify_claude_gpt",
+      "type": "file",
+      "file": "graphify/obsidian/ClaudeGPT API (semantic extraction).md",
+      "x": 20,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_graphify_wiki_semantic_extraction",
+      "type": "file",
+      "file": "graphify/obsidian/ClaudeGPT Semantic Extraction.md",
+      "x": 220,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_graphify_wiki_ast_pass",
+      "type": "file",
+      "file": "graphify/obsidian/Deterministic AST Pass (tree-sitter).md",
+      "x": 420,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_raw_graphify_pipeline",
+      "type": "file",
+      "file": "graphify/obsidian/graphify Processing Pipeline.md",
+      "x": 20,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_raw_graphify_treesitter",
+      "type": "file",
+      "file": "graphify/obsidian/tree-sitter AST Parser.md",
+      "x": 220,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Knowledge Architecture Layers",
       "x": 740,
+      "y": 500,
+      "width": 660,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_graphify_wiki_agent_wiki",
+      "type": "file",
+      "file": "graphify/obsidian/Agent-Navigable Wiki Output (wiki).md",
+      "x": 760,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_raw_llm_wiki_architecture",
+      "type": "file",
+      "file": "graphify/obsidian/LLM Wiki Three-Layer Architecture.md",
+      "x": 960,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_llm_wiki_pattern_raw_sources",
+      "type": "file",
+      "file": "graphify/obsidian/Raw Sources Layer.md",
+      "x": 1160,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_llm_wiki_pattern_schema",
+      "type": "file",
+      "file": "graphify/obsidian/Schema Layer (CLAUDE.md  AGENTS.md).md",
+      "x": 760,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_llm_wiki_pattern_wiki_layer",
+      "type": "file",
+      "file": "graphify/obsidian/Wiki Layer.md",
+      "x": 960,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g6",
+      "type": "group",
+      "label": "iOS App Development",
+      "x": 1480,
       "y": 500,
       "width": 600,
       "height": 400,
-      "color": "5"
+      "color": "1"
     },
     {
       "id": "n_ios_app_development_blog",
       "type": "file",
       "file": "graphify/obsidian/Blog on-building-ios-apps.md",
-      "x": 760,
+      "x": 1500,
       "y": 580,
       "width": 180,
       "height": 60
@@ -243,7 +461,7 @@
       "id": "n_ios_app_development_swiftdata",
       "type": "file",
       "file": "graphify/obsidian/SwiftData (\uc601\uc18d\uc131 \ub808\uc774\uc5b4).md",
-      "x": 960,
+      "x": 1700,
       "y": 580,
       "width": 180,
       "height": 60
@@ -252,7 +470,7 @@
       "id": "n_ios_app_development_swiftui",
       "type": "file",
       "file": "graphify/obsidian/SwiftUI (\uae30\ubcf8 UI \ub808\uc774\uc5b4).md",
-      "x": 1160,
+      "x": 1900,
       "y": 580,
       "width": 180,
       "height": 60
@@ -261,27 +479,119 @@
       "id": "n_ios_app_development",
       "type": "file",
       "file": "graphify/obsidian/iOS \uc571 \uac1c\ubc1c \uc2a4\ud0dd (2025).md",
-      "x": 760,
+      "x": 1500,
       "y": 660,
       "width": 180,
       "height": 60
     },
     {
-      "id": "g5",
+      "id": "g7",
       "type": "group",
-      "label": "\uc704\ud0a4 \uc6cc\ud06c\ud50c\ub85c\uc6b0",
-      "x": 1420,
+      "label": "LLM Memory & Knowledge",
+      "x": 2220,
       "y": 500,
       "width": 600,
       "height": 400,
-      "color": "6"
+      "color": "2"
+    },
+    {
+      "id": "n_raw_llm_wiki_core_idea",
+      "type": "file",
+      "file": "graphify/obsidian/LLM Wiki Core Idea (Persistent Compounding Knowledge).md",
+      "x": 2240,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_llm_wiki_pattern_rag",
+      "type": "file",
+      "file": "graphify/obsidian/RAG (Retrieval-Augmented Generation).md",
+      "x": 2440,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_raw_llm_wiki_tolkien_gateway",
+      "type": "file",
+      "file": "graphify/obsidian/Tolkien Gateway (fan wiki reference).md",
+      "x": 2640,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_raw_llm_wiki_memex",
+      "type": "file",
+      "file": "graphify/obsidian/Vannevar Bush Memex (1945).md",
+      "x": 2240,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g8",
+      "type": "group",
+      "label": "Game Data Architecture",
+      "x": 0,
+      "y": 980,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_design_data_in_engine_blog",
+      "type": "file",
+      "file": "graphify/obsidian/Blog design-data-in-engine.md",
+      "x": 20,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_data_in_engine",
+      "type": "file",
+      "file": "graphify/obsidian/\uac8c\uc784 \uae30\ud68d\ub370\uc774\ud130 \uad00\ub9ac \uc6d0\uce59.md",
+      "x": 220,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_data_in_engine_schema_export",
+      "type": "file",
+      "file": "graphify/obsidian/\uc2a4\ud0a4\ub9c8 export \ubc29\uc2dd (\uc784\uc2dc \ud574\uacb0\ucc45).md",
+      "x": 420,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_data_in_engine_circular_dep",
+      "type": "file",
+      "file": "graphify/obsidian/\ud074\ub77c\uc774\uc5b8\ud2b8 \uc6d0\ubcf8 \uc2dc \uc21c\ud658 \ucc38\uc870 \ud328\ud134.md",
+      "x": 20,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g9",
+      "type": "group",
+      "label": "Getting Started",
+      "x": 740,
+      "y": 980,
+      "width": 600,
+      "height": 400,
+      "color": "4"
     },
     {
       "id": "n_getting_started_blog",
       "type": "file",
       "file": "graphify/obsidian/Blog hello-world.md",
-      "x": 1440,
-      "y": 580,
+      "x": 760,
+      "y": 1060,
       "width": 180,
       "height": 60
     },
@@ -289,8 +599,8 @@
       "id": "n_raw_readme",
       "type": "file",
       "file": "graphify/obsidian/raw \ud3f4\ub354 README \u2014 \uc704\ud0a4 \uc18c\uc2a4 \uad00\ub9ac \uc9c0\uce68.md",
-      "x": 1640,
-      "y": 580,
+      "x": 960,
+      "y": 1060,
       "width": 180,
       "height": 60
     },
@@ -298,8 +608,64 @@
       "id": "n_getting_started",
       "type": "file",
       "file": "graphify/obsidian/\uc704\ud0a4 \uc2dc\uc791\ud558\uae30.md",
-      "x": 1840,
-      "y": 580,
+      "x": 1160,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g10",
+      "type": "group",
+      "label": "graphify Enterprise (Penpax)",
+      "x": 1480,
+      "y": 980,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_raw_graphify_penpax",
+      "type": "file",
+      "file": "graphify/obsidian/Penpax (Enterprise graphify layer).md",
+      "x": 1500,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_raw_graphify_tool",
+      "type": "file",
+      "file": "graphify/obsidian/graphify (raw source).md",
+      "x": 1700,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g11",
+      "type": "group",
+      "label": "Obsidian Integration",
+      "x": 2220,
+      "y": 980,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_llm_wiki_pattern_obsidian",
+      "type": "file",
+      "file": "graphify/obsidian/Obsidian (Wiki IDE).md",
+      "x": 2240,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_graphify_wiki_obsidian_vault",
+      "type": "file",
+      "file": "graphify/obsidian/Obsidian Vault Output.md",
+      "x": 2440,
+      "y": 1060,
       "width": 180,
       "height": 60
     }
@@ -438,6 +804,222 @@
       "label": "references [EXTRACTED]"
     },
     {
+      "id": "e_llm_wiki_pattern_wiki_llm_wiki_pattern_raw_sources",
+      "fromNode": "n_llm_wiki_pattern_wiki",
+      "toNode": "n_llm_wiki_pattern_raw_sources",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_wiki_llm_wiki_pattern_wiki_layer",
+      "fromNode": "n_llm_wiki_pattern_wiki",
+      "toNode": "n_llm_wiki_pattern_wiki_layer",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_wiki_llm_wiki_pattern_schema",
+      "fromNode": "n_llm_wiki_pattern_wiki",
+      "toNode": "n_llm_wiki_pattern_schema",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_wiki_llm_wiki_pattern_ingest_op",
+      "fromNode": "n_llm_wiki_pattern_wiki",
+      "toNode": "n_llm_wiki_pattern_ingest_op",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_wiki_llm_wiki_pattern_query_op",
+      "fromNode": "n_llm_wiki_pattern_wiki",
+      "toNode": "n_llm_wiki_pattern_query_op",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_wiki_llm_wiki_pattern_lint_op",
+      "fromNode": "n_llm_wiki_pattern_wiki",
+      "toNode": "n_llm_wiki_pattern_lint_op",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_wiki_llm_wiki_pattern_index_md",
+      "fromNode": "n_llm_wiki_pattern_wiki",
+      "toNode": "n_llm_wiki_pattern_index_md",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_wiki_llm_wiki_pattern_log_md",
+      "fromNode": "n_llm_wiki_pattern_wiki",
+      "toNode": "n_llm_wiki_pattern_log_md",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_wiki_llm_wiki_pattern_qmd",
+      "fromNode": "n_llm_wiki_pattern_wiki",
+      "toNode": "n_llm_wiki_pattern_qmd",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_wiki_llm_wiki_pattern_obsidian",
+      "fromNode": "n_llm_wiki_pattern_wiki",
+      "toNode": "n_llm_wiki_pattern_obsidian",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_wiki_llm_wiki_pattern_rag",
+      "fromNode": "n_llm_wiki_pattern_wiki",
+      "toNode": "n_llm_wiki_pattern_rag",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_wiki_raw_llm_wiki_core_idea",
+      "fromNode": "n_llm_wiki_pattern_wiki",
+      "toNode": "n_raw_llm_wiki_core_idea",
+      "label": "references [INFERRED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_raw_sources_raw_llm_wiki_architecture",
+      "fromNode": "n_llm_wiki_pattern_raw_sources",
+      "toNode": "n_raw_llm_wiki_architecture",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_wiki_layer_raw_llm_wiki_architecture",
+      "fromNode": "n_llm_wiki_pattern_wiki_layer",
+      "toNode": "n_raw_llm_wiki_architecture",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_schema_raw_llm_wiki_architecture",
+      "fromNode": "n_llm_wiki_pattern_schema",
+      "toNode": "n_raw_llm_wiki_architecture",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_rag_raw_llm_wiki_core_idea",
+      "fromNode": "n_llm_wiki_pattern_rag",
+      "toNode": "n_raw_llm_wiki_core_idea",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_wiki_graphify_graphify_wiki_ast_pass",
+      "fromNode": "n_graphify_wiki_graphify",
+      "toNode": "n_graphify_wiki_ast_pass",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_wiki_graphify_graphify_wiki_whisper",
+      "fromNode": "n_graphify_wiki_graphify",
+      "toNode": "n_graphify_wiki_whisper",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_wiki_graphify_graphify_wiki_semantic_extraction",
+      "fromNode": "n_graphify_wiki_graphify",
+      "toNode": "n_graphify_wiki_semantic_extraction",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_wiki_graphify_graphify_wiki_leiden",
+      "fromNode": "n_graphify_wiki_graphify",
+      "toNode": "n_graphify_wiki_leiden",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_wiki_graphify_graphify_wiki_graph_html",
+      "fromNode": "n_graphify_wiki_graphify",
+      "toNode": "n_graphify_wiki_graph_html",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_wiki_graphify_graphify_wiki_graph_report",
+      "fromNode": "n_graphify_wiki_graphify",
+      "toNode": "n_graphify_wiki_graph_report",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_wiki_graphify_graphify_wiki_graph_json",
+      "fromNode": "n_graphify_wiki_graphify",
+      "toNode": "n_graphify_wiki_graph_json",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_wiki_graphify_graphify_wiki_obsidian_vault",
+      "fromNode": "n_graphify_wiki_graphify",
+      "toNode": "n_graphify_wiki_obsidian_vault",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_wiki_graphify_graphify_wiki_agent_wiki",
+      "fromNode": "n_graphify_wiki_graphify",
+      "toNode": "n_graphify_wiki_agent_wiki",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_wiki_graphify_graphify_wiki_relationship_tagging",
+      "fromNode": "n_graphify_wiki_graphify",
+      "toNode": "n_graphify_wiki_relationship_tagging",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_wiki_graphify_graphify_wiki_git_hook",
+      "fromNode": "n_graphify_wiki_graphify",
+      "toNode": "n_graphify_wiki_git_hook",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_wiki_graphify_graphify_wiki_sha256_cache",
+      "fromNode": "n_graphify_wiki_graphify",
+      "toNode": "n_graphify_wiki_sha256_cache",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_wiki_graphify_raw_graphify_tool",
+      "fromNode": "n_graphify_wiki_graphify",
+      "toNode": "n_raw_graphify_tool",
+      "label": "references [INFERRED]"
+    },
+    {
+      "id": "e_raw_llm_wiki_core_idea_raw_llm_wiki_memex",
+      "fromNode": "n_raw_llm_wiki_core_idea",
+      "toNode": "n_raw_llm_wiki_memex",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_raw_llm_wiki_core_idea_raw_llm_wiki_tolkien_gateway",
+      "fromNode": "n_raw_llm_wiki_core_idea",
+      "toNode": "n_raw_llm_wiki_tolkien_gateway",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_raw_llm_wiki_core_idea_raw_llm_wiki_architecture",
+      "fromNode": "n_raw_llm_wiki_core_idea",
+      "toNode": "n_raw_llm_wiki_architecture",
+      "label": "references [INFERRED]"
+    },
+    {
+      "id": "e_raw_graphify_tool_raw_graphify_pipeline",
+      "fromNode": "n_raw_graphify_tool",
+      "toNode": "n_raw_graphify_pipeline",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_raw_graphify_tool_raw_graphify_penpax",
+      "fromNode": "n_raw_graphify_tool",
+      "toNode": "n_raw_graphify_penpax",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_raw_graphify_pipeline_raw_graphify_treesitter",
+      "fromNode": "n_raw_graphify_pipeline",
+      "toNode": "n_raw_graphify_treesitter",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_raw_graphify_pipeline_raw_graphify_claude_gpt",
+      "fromNode": "n_raw_graphify_pipeline",
+      "toNode": "n_raw_graphify_claude_gpt",
+      "label": "implements [EXTRACTED]"
+    },
+    {
       "id": "e_redis_leaderboard_snapshot_dual_set_leaderboard_snapshot_dual_set",
       "fromNode": "n_redis_leaderboard_snapshot_dual_set",
       "toNode": "n_leaderboard_snapshot_dual_set",
@@ -450,9 +1032,39 @@
       "label": "semantically_similar_to [INFERRED]"
     },
     {
+      "id": "e_graphify_wiki_ast_pass_raw_graphify_treesitter",
+      "fromNode": "n_graphify_wiki_ast_pass",
+      "toNode": "n_raw_graphify_treesitter",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_graphify_wiki_semantic_extraction_raw_graphify_claude_gpt",
+      "fromNode": "n_graphify_wiki_semantic_extraction",
+      "toNode": "n_raw_graphify_claude_gpt",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
       "id": "e_redis_leaderboard_snapshot_leaderboard_snapshot",
       "fromNode": "n_redis_leaderboard_snapshot",
       "toNode": "n_leaderboard_snapshot",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_obsidian_graphify_wiki_obsidian_vault",
+      "fromNode": "n_llm_wiki_pattern_obsidian",
+      "toNode": "n_graphify_wiki_obsidian_vault",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_wiki_layer_graphify_wiki_agent_wiki",
+      "fromNode": "n_llm_wiki_pattern_wiki_layer",
+      "toNode": "n_graphify_wiki_agent_wiki",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_wiki_graphify_wiki_graphify",
+      "fromNode": "n_llm_wiki_pattern_wiki",
+      "toNode": "n_graphify_wiki_graphify",
       "label": "semantically_similar_to [INFERRED]"
     },
     {
@@ -460,6 +1072,12 @@
       "fromNode": "n_getting_started",
       "toNode": "n_raw_readme",
       "label": "references [INFERRED]"
+    },
+    {
+      "id": "e_llm_wiki_pattern_lint_op_graphify_wiki_relationship_tagging",
+      "fromNode": "n_llm_wiki_pattern_lint_op",
+      "toNode": "n_graphify_wiki_relationship_tagging",
+      "label": "semantically_similar_to [INFERRED]"
     },
     {
       "id": "e_game_server_request_context_design_data_in_engine",

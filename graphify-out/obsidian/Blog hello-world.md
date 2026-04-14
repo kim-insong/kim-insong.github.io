@@ -1,11 +1,11 @@
 ---
 source_file: "src/content/wiki/getting-started.md"
 type: "document"
-community: "위키 워크플로우"
+community: "Getting Started"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/위키_워크플로우
+  - community/Getting_Started
 ---
 
 # Blog: hello-world
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[위키 시작하기]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/위키_워크플로우
+#graphify/document #graphify/EXTRACTED #community/Getting_Started

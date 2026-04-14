@@ -7,10 +7,10 @@ const educations = [
     org: '서울대학교 컴퓨터공학부',
     items: [
       { date: '2007.09–12', desc: '현대오토넷 화상통화프로그램 프로젝트', stack: ['C#', 'WinCE'] },
-      { date: '2007.09', desc: '제10회 SNU CSE 컴퓨터전시회 출품 — 절대음감 (ansp팀, 팀장)', stack: ['C++'], award: '인기상' },
-      { date: '2007.11', desc: '2007 창의적 종합설계 경진대회(Capstone Design) 출품 — 절대음감 (ansp팀)', stack: ['C#'], award: '산업자원부장관상' },
-      { date: '2008.09', desc: '제11회 SNU CSE 컴퓨터전시회 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'], award: '우수상' },
-      { date: '2008.11', desc: '2008 창의적 종합설계 경진대회(Capstone Design) 출품 — 미라클 (new Miracle 팀, 팀장)', stack: ['C#'], award: '교육과학기술부장관상' },
+      { date: '2007.09', desc: '제10회 SNU CSE 컴퓨터전시회 출품', stack: ['C++'], award: '인기상' },
+      { date: '2007.11', desc: '2007 창의적 종합설계 경진대회(Capstone Design) 출품', stack: ['C#'], award: '산업자원부장관상' },
+      { date: '2008.09', desc: '제11회 SNU CSE 컴퓨터전시회 출품', stack: ['C#'], award: '우수상' },
+      { date: '2008.11', desc: '2008 창의적 종합설계 경진대회(Capstone Design) 출품', stack: ['C#'], award: '교육과학기술부장관상' },
       { date: '2008.07–2009.03', desc: '학부커뮤니티 개발', stack: ['C#', 'ASP.NET', 'MS-SQL'] },
     ],
   },
@@ -257,7 +257,7 @@ const skills = [
                       <div class="flex items-baseline gap-2 flex-wrap">
                         <span class="text-sm text-text-sub">{item.desc}</span>
                         {item.award && (
-                          <span class="text-xs font-medium text-text bg-bg-alt border border-border rounded px-2 py-0.5 shrink-0">{item.award}</span>
+                          <span class="text-xs font-bold text-amber-800 bg-gradient-to-r from-yellow-100 to-amber-200 border border-amber-400 rounded px-2 py-0.5 shrink-0 shadow-sm shadow-amber-200 ring-1 ring-amber-300/60">{item.award}</span>
                         )}
                       </div>
                       {item.stack && (

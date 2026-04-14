@@ -7,13 +7,14 @@ Use the `/web-insong-net` skill for design system reference.
 
 ## Feature → Doc Index
 
-| Feature | Module Doc | Spec |
-|---------|------------|------|
-| Layout & Components | docs/modules/layout.md | — |
-| Pages & Routing | docs/modules/pages.md | — |
-| Content Collections | docs/modules/content.md | — |
-| Styles & Design Tokens | docs/modules/styles.md | — |
-| Deployment (GitHub Pages) | docs/modules/deploy.md | — |
+| Feature | Design Doc | Exec Plan |
+|---------|------------|-----------|
+| Layout & Components | docs/design-docs/layout.md | — |
+| Pages & Routing | docs/design-docs/pages.md | — |
+| Content Collections | docs/design-docs/content.md | — |
+| Styles & Design Tokens | docs/design-docs/styles.md | — |
+| Deployment (GitHub Pages) | docs/design-docs/deploy.md | — |
+| graphify 지식 그래프 | docs/design-docs/graphify-wiki-integration.md | docs/exec-plans/active/graphify-wiki-integration.md |
 
 ## Wiki Auto-Ingest
 

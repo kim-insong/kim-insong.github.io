@@ -9,14 +9,6 @@ Run `/wiki-ingest` to process unincorporated sources.
 
 | Source | Added | Notes |
 |--------|-------|-------|
-| raw/claude-workflow-tiers.md | 2026-04-14 | |
-| raw/git-workflow-patterns.md | 2026-04-14 | |
-| raw/ios-ui-layout-patterns.md | 2026-04-14 | |
-| raw/ios-design-tokens.md | 2026-04-14 | |
-| raw/ios-data-persistence.md | 2026-04-14 | |
-| raw/agent-orchestration-patterns.md | 2026-04-14 | |
-| raw/documentation-policy.md | 2026-04-14 | |
-| raw/code-quality-principles.md | 2026-04-14 | |
 
 ---
 
@@ -32,6 +24,14 @@ Run `/wiki-ingest` to process unincorporated sources.
 | blog:leaderboard-snapshot | redis-leaderboard-snapshot | 2026-04-13 | new page |
 | raw/graphify.md | graphify | 2026-04-14 | new page |
 | raw/llm-wiki.md | llm-wiki-pattern | 2026-04-14 | new page |
+| raw/claude-workflow-tiers.md | claude-workflow-tiers | 2026-04-14 | new page |
+| raw/git-workflow-patterns.md | git-workflow-patterns | 2026-04-14 | new page |
+| raw/ios-ui-layout-patterns.md | ios-ui-layout | 2026-04-14 | new page |
+| raw/ios-design-tokens.md | ios-design-tokens | 2026-04-14 | new page |
+| raw/ios-data-persistence.md | ios-data-persistence | 2026-04-14 | new page |
+| raw/agent-orchestration-patterns.md | agent-orchestration | 2026-04-14 | new page |
+| raw/documentation-policy.md | documentation-policy | 2026-04-14 | new page |
+| raw/code-quality-principles.md | code-quality | 2026-04-14 | new page |
 
 ---
 
@@ -47,3 +47,11 @@ Run `/wiki-ingest` to process unincorporated sources.
 | redis-leaderboard-snapshot | Redis 랭킹과 스냅샷 패턴 | game-dev, server, redis, ranking |
 | graphify | graphify — 코드/문서 지식 그래프 도구 | wiki, knowledge-graph, tooling, AI, Claude |
 | llm-wiki-pattern | LLM Wiki 패턴 | wiki, knowledge-management, AI, workflow, architecture |
+| claude-workflow-tiers | Claude Code 개발 워크플로우 티어 | Claude, AI, workflow, agent |
+| git-workflow-patterns | Git 워크플로우 패턴 | git, workflow, Claude, PR |
+| ios-ui-layout | iOS SwiftUI UI 레이아웃 패턴 | iOS, SwiftUI, layout, iPad, iPhone |
+| ios-design-tokens | iOS SwiftUI 디자인 토큰 & 컴포넌트 패턴 | iOS, SwiftUI, design-tokens, components, UI |
+| ios-data-persistence | iOS 데이터 영속성 패턴 | iOS, SwiftUI, data, persistence, migration |
+| agent-orchestration | AI Agent 오케스트레이션 패턴 | Claude, AI, agent, workflow, parallelization |
+| documentation-policy | 프로젝트 문서 정책 | documentation, workflow, Claude, architecture |
+| code-quality | 코드 품질 원칙 | code-quality, Claude, workflow, security |

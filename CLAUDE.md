@@ -14,7 +14,7 @@ Use the `/web-insong-net` skill for design system reference.
 | Content Collections | docs/design-docs/content.md | — |
 | Styles & Design Tokens | docs/design-docs/styles.md | — |
 | Deployment (GitHub Pages) | docs/design-docs/deploy.md | — |
-| graphify 지식 그래프 | docs/design-docs/graphify-wiki-integration.md | docs/exec-plans/active/graphify-wiki-integration.md |
+| graphify 지식 그래프 | docs/design-docs/graphify-wiki-integration.md | docs/exec-plans/completed/graphify-wiki-integration.md |
 
 ## Wiki Auto-Ingest
 
@@ -41,21 +41,23 @@ Then check `wiki-log.md` to determine the mode:
 4. wiki frontmatter의 `updatedDate` 갱신
 5. wiki-log.md는 변경하지 않음
 
-## Agent Wiki (graphify-out/)
+## graphify 지식 그래프
 
-AI 에이전트는 `graphify-out/wiki/index.md`를 진입점으로 사용해 지식 그래프를 탐색할 수 있다.
+post-commit hook이 `src/content/wiki/` 변경 시 자동으로 `graphify-out/`을 갱신한다.
 
-- **진입점**: `graphify-out/wiki/index.md`
-- **전체 요약 + 추천 쿼리**: `graphify-out/GRAPH_REPORT.md`
-- **그래프 데이터**: `graphify-out/graph.json` (노드/엣지, confidence 태그)
-- **커뮤니티 문서**:
-  - `graphify-out/wiki/communities/game-dev.md` — 게임 서버, Redis 랭킹, 기획데이터
-  - `graphify-out/wiki/communities/ios.md` — iOS/SwiftUI 스택
-  - `graphify-out/wiki/communities/claude-ai.md` — Claude 자동화 패턴
-  - `graphify-out/wiki/communities/meta.md` — 위키 워크플로우
+**AI 에이전트 활용 규칙:**
+- wiki 관련 작업 전: `graphify-out/GRAPH_REPORT.md` 읽어서 커뮤니티/핵심 노드 파악
+- 구체적인 개념 탐색: `/graphify query "<질문>"` 실행
+- 에이전트 진입점: `graphify-out/wiki/index.md`
 
-갱신: `npm run build:agent-wiki` (graphify skill 실행)  
-갱신 주기: 새 wiki 페이지 추가 또는 raw/ 파일 ingest 후
+**출력 구조:**
+- `graphify-out/GRAPH_REPORT.md` — 커뮤니티 요약, God Nodes, 추천 쿼리
+- `graphify-out/graph.json` — 전체 그래프 데이터
+- `graphify-out/graph.html` — 브라우저 시각화
+- `graphify-out/obsidian/` — Obsidian vault (File > Open Vault)
+- `graphify-out/wiki/` — 에이전트 탐색용 마크다운
+
+**수동 갱신:** `npm run build:agent-wiki`
 
 ## Git Workflow
 

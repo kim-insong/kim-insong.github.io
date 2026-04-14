@@ -37,7 +37,10 @@ while IFS=$'\t' read -r STATUS FILE; do
 
   if [ "$STATUS" = "A" ]; then
     # New file: add to Unincorporated if not already tracked
-    if grep -qF "| $SOURCE_ID |" "$WIKI_LOG" 2>/dev/null; then
+    # Check against HEAD~1 (previous commit) to avoid false-skip when wiki-log.md
+    # was pre-populated in the same commit as the raw file.
+    PREV_WIKI_LOG=$(git show HEAD~1:wiki-log.md 2>/dev/null || echo "")
+    if [ -n "$PREV_WIKI_LOG" ] && echo "$PREV_WIKI_LOG" | grep -qF "| $SOURCE_ID |"; then
       continue
     fi
 

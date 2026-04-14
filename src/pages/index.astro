@@ -7,9 +7,6 @@ const posts = (await getCollection('blog'))
   .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
   .slice(0, 3);
 
-const apps = (await getCollection('apps'))
-  .filter(app => !app.data.draft)
-  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 ---
 
 <BaseLayout title="Home" description="김인송 — iOS 개발자, 인디 메이커">
@@ -69,41 +66,6 @@ const apps = (await getCollection('apps'))
       </div>
     </div>
   </section>
-
-  <!-- Apps -->
-  {apps.length > 0 && (
-    <section class="py-20 px-6 border-t border-border bg-bg">
-      <div class="max-w-5xl mx-auto">
-        <div class="mb-8 animate-reveal">
-          <span class="section-label">Apps</span>
-          <h2 class="text-2xl font-semibold text-text tracking-tight">앱</h2>
-        </div>
-        <div class="divide-y divide-border animate-reveal delay-1">
-          {apps.map(app => (
-            <a
-              href={`/apps/${app.slug}`}
-              class="group flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-6 py-5 first:pt-0 hover:bg-bg-alt -mx-4 px-4 rounded-xl transition-colors"
-            >
-              <div class="flex gap-2 shrink-0">
-                <span class="text-xs px-2 py-0.5 rounded-md bg-muted text-text-sub border border-border">
-                  {app.data.status}
-                </span>
-              </div>
-              <div class="flex-1">
-                <div class="text-sm font-semibold text-text group-hover:text-primary transition-colors">
-                  {app.data.title}
-                </div>
-                <div class="text-sm text-text-sub mt-0.5">{app.data.tagline}</div>
-              </div>
-            </a>
-          ))}
-        </div>
-        <a href="/apps" class="inline-block mt-8 text-sm font-medium text-primary hover:underline animate-reveal delay-2">
-          앱 전체 보기 →
-        </a>
-      </div>
-    </section>
-  )}
 
   <!-- Recent posts -->
   {posts.length > 0 && (

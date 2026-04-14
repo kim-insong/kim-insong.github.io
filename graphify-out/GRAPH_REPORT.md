@@ -1,86 +1,88 @@
-# GRAPH_REPORT — insong.net Wiki Knowledge Graph
+# Graph Report - src/content/wiki/ + raw/  (2026-04-14)
 
-Generated: 2026-04-13  
-Source: `src/content/wiki/` + `raw/`  
-Total nodes: 27 | Total edges: 39 | Communities: 4
+## Corpus Check
+- Corpus is ~1,658 words - fits in a single context window. You may not need a graph.
 
----
+## Summary
+- 27 nodes · 28 edges · 6 communities detected
+- Extraction: 79% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.8)
+- Token cost: 0 input · 0 output
 
-## High-Degree Nodes (Most Connected)
+## Community Hubs (Navigation)
+- [[_COMMUNITY_Redis 랭킹 & 스냅샷|Redis 랭킹 & 스냅샷]]
+- [[_COMMUNITY_기획데이터 아키텍처|기획데이터 아키텍처]]
+- [[_COMMUNITY_게임 서버 요청 추적|게임 서버 요청 추적]]
+- [[_COMMUNITY_Claude 스킬 자동화|Claude 스킬 자동화]]
+- [[_COMMUNITY_iOS 앱 개발|iOS 앱 개발]]
+- [[_COMMUNITY_위키 워크플로우|위키 워크플로우]]
 
-| Node | Degree | Community |
-|------|--------|-----------|
-| `game-server-request-context_wiki` | 6 | game-dev |
-| `wiki_redis_leaderboard_snapshot` | 6 | game-dev |
-| `ios-app-development_wiki` | 6 | ios |
-| `claude-skill-feedback-loop_wiki` | 4 | claude-ai |
-| `game-server-request-context_request_context` | 4 | game-dev |
-| `concept_circular_dependency` | 4 | game-dev |
-| `concept_redis_sorted_set` | 4 | game-dev |
-| `concept_snapshot_ab_rotation` | 4 | game-dev |
-| `concept_dual_sorted_set` | 4 | game-dev |
+## God Nodes (most connected - your core abstractions)
+1. `게임 서버 요청 컨텍스트 패턴` - 5 edges
+2. `Redis 랭킹과 스냅샷 패턴` - 5 edges
+3. `게임 기획데이터 관리 원칙` - 4 edges
+4. `리더보드 스냅샷 패턴` - 4 edges
+5. `Claude 스킬 자동 피드백 루프` - 3 edges
+6. `진입점 분류 (패킷/운영툴/자동이벤트)` - 3 edges
+7. `iOS 앱 개발 스택 (2025)` - 3 edges
+8. `자동 감지 + 사람 확인 패턴` - 2 edges
+9. `RequestContext 구조체 (C++)` - 2 edges
+10. `위키 시작하기` - 2 edges
 
----
+## Surprising Connections (you probably didn't know these)
+- `자동 감지 + 사람 확인 패턴` --semantically_similar_to--> `진입점 분류 (패킷/운영툴/자동이벤트)`  [INFERRED] [semantically similar]
+  src/content/wiki/claude-skill-feedback-loop.md → src/content/wiki/game-server-request-context.md
+- `게임 서버 요청 컨텍스트 패턴` --semantically_similar_to--> `게임 기획데이터 관리 원칙`  [INFERRED] [semantically similar]
+  src/content/wiki/game-server-request-context.md → src/content/wiki/design-data-in-engine.md
+- `raw/ 폴더 README — 위키 소스 관리 지침` --references--> `위키 시작하기`  [INFERRED]
+  raw/README.md → src/content/wiki/getting-started.md
+- `Redis 랭킹과 스냅샷 패턴` --semantically_similar_to--> `리더보드 스냅샷 패턴`  [INFERRED] [semantically similar]
+  src/content/wiki/redis-leaderboard-snapshot.md → src/content/wiki/leaderboard-snapshot.md
+- `이중 sorted set 스냅샷 패턴` --semantically_similar_to--> `이중 sorted set 스냅샷 패턴 (leaderboard-snapshot)`  [INFERRED] [semantically similar]
+  src/content/wiki/redis-leaderboard-snapshot.md → src/content/wiki/leaderboard-snapshot.md
+
+## Hyperedges (group relationships)
+- **Redis 스냅샷 랭킹 구현 패턴** — redis_leaderboard_snapshot_sorted_set, redis_leaderboard_snapshot_dual_set, redis_leaderboard_snapshot_ab [EXTRACTED 0.95]
+- **게임 서버 진입점 → RequestContext 흐름** — game_server_request_context_entry_points, game_server_request_context_struct, game_server_request_context [EXTRACTED 0.95]
+- **기획데이터 독립 관리 패턴** — design_data_in_engine, design_data_in_engine_circular_dep, design_data_in_engine_schema_export [EXTRACTED 0.90]
 
 ## Communities
 
-### game-dev (15 nodes) — 가장 큰 커뮤니티
-주제: 게임 서버 아키텍처, Redis 랭킹, 기획데이터 관리
+### Community 0 - "Redis 랭킹 & 스냅샷"
+Cohesion: 0.32
+Nodes (8): 리더보드 스냅샷 패턴, 스냅샷 A/B 순환 교체 (leaderboard-snapshot), Blog: leaderboard-snapshot, 이중 sorted set 스냅샷 패턴 (leaderboard-snapshot), Redis 랭킹과 스냅샷 패턴, 스냅샷 A/B 교체 패턴, 이중 sorted set 스냅샷 패턴, Redis sorted set 실시간 랭킹
 
-핵심 노드:
-- **게임 서버 요청 컨텍스트 패턴** (`game-server-request-context_wiki`) — C++ RequestContext 설계 패턴
-- **게임 기획데이터 관리 원칙** (`wiki_design_data_in_engine`) — 순환 참조 회피, enum 발급 원칙
-- **Redis 랭킹과 스냅샷 패턴** (`wiki_redis_leaderboard_snapshot`) — sorted set 기반 실시간 + 스냅샷 랭킹
+### Community 1 - "기획데이터 아키텍처"
+Cohesion: 0.67
+Nodes (4): 게임 기획데이터 관리 원칙, Blog: design-data-in-engine, 클라이언트 원본 시 순환 참조 패턴, 스키마 export 방식 (임시 해결책)
 
-내부 연결:
-- `redis-leaderboard` → `game-server-request-context` (wikilink, EXTRACTED)
-- `design-data-in-engine` ↔ `game-server-request-context` (서버 아키텍처 공유, INFERRED 0.75)
-- `redis-leaderboard` ↔ `design-data-in-engine` (서버 레이어 공유, INFERRED 0.65)
+### Community 2 - "게임 서버 요청 추적"
+Cohesion: 0.67
+Nodes (4): 게임 서버 요청 컨텍스트 패턴, Blog: game-server-request-context, 진입점 분류 (패킷/운영툴/자동이벤트), RequestContext 구조체 (C++)
 
-### ios (6 nodes)
-주제: SwiftUI 기반 iOS 앱 개발 스택 (2025)
+### Community 3 - "Claude 스킬 자동화"
+Cohesion: 0.5
+Nodes (4): Claude 스킬 자동 피드백 루프, 자동 감지 + 사람 확인 패턴, Blog: ai-skill-feedback-loop, Hook 타이밍 불일치 (stop hook vs user-prompt-submit)
 
-핵심 노드:
-- **SwiftUI** — 선언형 UI, UIKit 없이 실제 앱 개발 가능
-- **Swift Concurrency** — async/await 네트워킹
-- **SwiftData** — 경량 영속성
+### Community 4 - "iOS 앱 개발"
+Cohesion: 0.5
+Nodes (4): iOS 앱 개발 스택 (2025), Blog: on-building-ios-apps, SwiftData (영속성 레이어), SwiftUI (기본 UI 레이어)
 
-### claude-ai (4 nodes)
-주제: Claude Code 자동화, 스킬 피드백 루프
+### Community 5 - "위키 워크플로우"
+Cohesion: 0.67
+Nodes (3): 위키 시작하기, Blog: hello-world, raw/ 폴더 README — 위키 소스 관리 지침
 
-핵심 노드:
-- **Claude 스킬 자동 피드백 루프** — Stop Hook 기반 안전한 자동화 패턴
-- **Stop Hook** vs **user-prompt-submit Hook** — 수정 패턴 감지에는 Stop Hook이 적합
+## Knowledge Gaps
+- **11 isolated node(s):** `Blog: ai-skill-feedback-loop`, `Hook 타이밍 불일치 (stop hook vs user-prompt-submit)`, `Blog: game-server-request-context`, `Blog: hello-world`, `Blog: design-data-in-engine` (+6 more)
+  These have ≤1 connection - possible missing edges or undocumented components.
 
-### meta (2 nodes)
-주제: 위키 자체 메타 정보, raw/ 소스 워크플로우
+## Suggested Questions
+_Questions this graph is uniquely positioned to answer:_
 
----
-
-## Surprising Connections
-
-1. **Redis 랭킹 → 게임 서버 컨텍스트**: 랭킹 업데이트도 `RequestContext` 발급이 필요한 서버 진입점임 (wikilink로 명시)
-2. **기획데이터 → 서버 컨텍스트 공유**: 두 문서 모두 서버 아키텍처 레이어에서 데이터 흐름을 다루는데, 기획데이터 순환 참조가 RequestContext 전파와 유사한 소유권 설계 문제를 다룸 (INFERRED)
-3. **Stop Hook ↔ Skill File**: Stop Hook이 Skill File을 자동 수정하는 구조는 Git 추적과 묶여야 안전함
-
----
-
-## Suggested Queries
-
-```
-/graphify query "게임 서버에서 요청 추적을 어떻게 하나?"
-/graphify query "Redis 랭킹 스냅샷을 복사 없이 구현하는 방법"
-/graphify query "Claude 스킬 파일을 자동으로 업데이트할 때 주의할 점"
-/graphify query "iOS 앱에서 비동기 처리 방법"
-/graphify path "concept_circular_dependency" "concept_schema_export"
-/graphify explain "concept_snapshot_ab_rotation"
-```
-
----
-
-## Audit Trail
-
-- EXTRACTED edges: 28 (명시적 링크, 소스 참조)
-- INFERRED edges: 9 (맥락적 추론, confidence 0.65–0.9)
-- AMBIGUOUS edges: 0
-- Corpus: 8 markdown files, ~6,200 words total
+- **Why does `게임 서버 요청 컨텍스트 패턴` connect `게임 서버 요청 추적` to `Redis 랭킹 & 스냅샷`, `기획데이터 아키텍처`?**
+  _High betweenness centrality (0.375) - this node is a cross-community bridge._
+- **Why does `Redis 랭킹과 스냅샷 패턴` connect `Redis 랭킹 & 스냅샷` to `게임 서버 요청 추적`?**
+  _High betweenness centrality (0.290) - this node is a cross-community bridge._
+- **Why does `진입점 분류 (패킷/운영툴/자동이벤트)` connect `게임 서버 요청 추적` to `Claude 스킬 자동화`?**
+  _High betweenness centrality (0.185) - this node is a cross-community bridge._
+- **What connects `Blog: ai-skill-feedback-loop`, `Hook 타이밍 불일치 (stop hook vs user-prompt-submit)`, `Blog: game-server-request-context` to the rest of the system?**
+  _11 weakly-connected nodes found - possible documentation gaps or missing edges._

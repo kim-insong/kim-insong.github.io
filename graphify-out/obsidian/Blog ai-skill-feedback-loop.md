@@ -1,11 +1,11 @@
 ---
 source_file: "src/content/wiki/claude-skill-feedback-loop.md"
 type: "document"
-community: "Claude 스킬 자동화"
+community: "Claude Skills & Game Server"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Claude_스킬_자동화
+  - community/Claude_Skills_&_Game_Server
 ---
 
 # Blog: ai-skill-feedback-loop
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Claude 스킬 자동 피드백 루프]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Claude_스킬_자동화
+#graphify/document #graphify/EXTRACTED #community/Claude_Skills_&_Game_Server

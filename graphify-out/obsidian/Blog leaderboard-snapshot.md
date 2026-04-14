@@ -1,11 +1,11 @@
 ---
 source_file: "src/content/wiki/leaderboard-snapshot.md"
 type: "document"
-community: "Redis 랭킹 & 스냅샷"
+community: "Redis Leaderboard Patterns"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Redis_랭킹_&_스냅샷
+  - community/Redis_Leaderboard_Patterns
 ---
 
 # Blog: leaderboard-snapshot
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[리더보드 스냅샷 패턴]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Redis_랭킹_&_스냅샷
+#graphify/document #graphify/EXTRACTED #community/Redis_Leaderboard_Patterns

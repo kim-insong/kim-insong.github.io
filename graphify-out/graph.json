@@ -1,49 +1,7 @@
 {
   "directed": false,
   "multigraph": false,
-  "graph": {
-    "hyperedges": [
-      {
-        "id": "redis_snapshot_pattern_trio",
-        "label": "Redis \uc2a4\ub0c5\uc0f7 \ub7ad\ud0b9 \uad6c\ud604 \ud328\ud134",
-        "nodes": [
-          "redis_leaderboard_snapshot_sorted_set",
-          "redis_leaderboard_snapshot_dual_set",
-          "redis_leaderboard_snapshot_ab"
-        ],
-        "relation": "implement",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.95,
-        "source_file": "src/content/wiki/redis-leaderboard-snapshot.md"
-      },
-      {
-        "id": "game_server_entrypoint_context_flow",
-        "label": "\uac8c\uc784 \uc11c\ubc84 \uc9c4\uc785\uc810 \u2192 RequestContext \ud750\ub984",
-        "nodes": [
-          "game_server_request_context_entry_points",
-          "game_server_request_context_struct",
-          "game_server_request_context"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.95,
-        "source_file": "src/content/wiki/game-server-request-context.md"
-      },
-      {
-        "id": "design_data_independence_pattern",
-        "label": "\uae30\ud68d\ub370\uc774\ud130 \ub3c5\ub9bd \uad00\ub9ac \ud328\ud134",
-        "nodes": [
-          "design_data_in_engine",
-          "design_data_in_engine_circular_dep",
-          "design_data_in_engine_schema_export"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.9,
-        "source_file": "src/content/wiki/design-data-in-engine.md"
-      }
-    ]
-  },
+  "graph": {},
   "nodes": [
     {
       "label": "Claude \uc2a4\ud0ac \uc790\ub3d9 \ud53c\ub4dc\ubc31 \ub8e8\ud504",
@@ -55,7 +13,7 @@
       "author": null,
       "contributor": null,
       "id": "claude_skill_feedback_loop",
-      "community": 3,
+      "community": 1,
       "norm_label": "claude \u1109\u1173\u110f\u1175\u11af \u110c\u1161\u1103\u1169\u11bc \u1111\u1175\u1103\u1173\u1107\u1162\u11a8 \u1105\u116e\u1111\u1173"
     },
     {
@@ -68,7 +26,7 @@
       "author": null,
       "contributor": null,
       "id": "claude_skill_feedback_loop_blog",
-      "community": 3,
+      "community": 1,
       "norm_label": "blog: ai-skill-feedback-loop"
     },
     {
@@ -81,7 +39,7 @@
       "author": null,
       "contributor": null,
       "id": "claude_skill_feedback_loop_hook_timing",
-      "community": 3,
+      "community": 1,
       "norm_label": "hook \u1110\u1161\u110b\u1175\u1106\u1175\u11bc \u1107\u116e\u11af\u110b\u1175\u11af\u110e\u1175 (stop hook vs user-prompt-submit)"
     },
     {
@@ -94,7 +52,7 @@
       "author": null,
       "contributor": null,
       "id": "claude_skill_feedback_loop_auto_detect",
-      "community": 3,
+      "community": 1,
       "norm_label": "\u110c\u1161\u1103\u1169\u11bc \u1100\u1161\u11b7\u110c\u1175 + \u1109\u1161\u1105\u1161\u11b7 \u1112\u116a\u11a8\u110b\u1175\u11ab \u1111\u1162\u1110\u1165\u11ab"
     },
     {
@@ -107,7 +65,7 @@
       "author": null,
       "contributor": null,
       "id": "game_server_request_context",
-      "community": 2,
+      "community": 1,
       "norm_label": "\u1100\u1166\u110b\u1175\u11b7 \u1109\u1165\u1107\u1165 \u110b\u116d\u110e\u1165\u11bc \u110f\u1165\u11ab\u1110\u1166\u11a8\u1109\u1173\u1110\u1173 \u1111\u1162\u1110\u1165\u11ab"
     },
     {
@@ -120,7 +78,7 @@
       "author": null,
       "contributor": null,
       "id": "game_server_request_context_blog",
-      "community": 2,
+      "community": 1,
       "norm_label": "blog: game-server-request-context"
     },
     {
@@ -133,7 +91,7 @@
       "author": null,
       "contributor": null,
       "id": "game_server_request_context_struct",
-      "community": 2,
+      "community": 1,
       "norm_label": "requestcontext \u1100\u116e\u110c\u1169\u110e\u1166 (c++)"
     },
     {
@@ -146,7 +104,7 @@
       "author": null,
       "contributor": null,
       "id": "game_server_request_context_entry_points",
-      "community": 2,
+      "community": 1,
       "norm_label": "\u110c\u1175\u11ab\u110b\u1175\u11b8\u110c\u1165\u11b7 \u1107\u116e\u11ab\u1105\u1172 (\u1111\u1162\u110f\u1175\u11ba/\u110b\u116e\u11ab\u110b\u1167\u11bc\u1110\u116e\u11af/\u110c\u1161\u1103\u1169\u11bc\u110b\u1175\u1107\u1166\u11ab\u1110\u1173)"
     },
     {
@@ -159,7 +117,7 @@
       "author": null,
       "contributor": null,
       "id": "getting_started",
-      "community": 5,
+      "community": 9,
       "norm_label": "\u110b\u1171\u110f\u1175 \u1109\u1175\u110c\u1161\u11a8\u1112\u1161\u1100\u1175"
     },
     {
@@ -172,7 +130,7 @@
       "author": null,
       "contributor": null,
       "id": "getting_started_blog",
-      "community": 5,
+      "community": 9,
       "norm_label": "blog: hello-world"
     },
     {
@@ -185,7 +143,7 @@
       "author": null,
       "contributor": null,
       "id": "design_data_in_engine",
-      "community": 1,
+      "community": 8,
       "norm_label": "\u1100\u1166\u110b\u1175\u11b7 \u1100\u1175\u1112\u116c\u11a8\u1103\u1166\u110b\u1175\u1110\u1165 \u1100\u116a\u11ab\u1105\u1175 \u110b\u116f\u11ab\u110e\u1175\u11a8"
     },
     {
@@ -198,7 +156,7 @@
       "author": null,
       "contributor": null,
       "id": "design_data_in_engine_blog",
-      "community": 1,
+      "community": 8,
       "norm_label": "blog: design-data-in-engine"
     },
     {
@@ -211,7 +169,7 @@
       "author": null,
       "contributor": null,
       "id": "design_data_in_engine_circular_dep",
-      "community": 1,
+      "community": 8,
       "norm_label": "\u110f\u1173\u11af\u1105\u1161\u110b\u1175\u110b\u1165\u11ab\u1110\u1173 \u110b\u116f\u11ab\u1107\u1169\u11ab \u1109\u1175 \u1109\u116e\u11ab\u1112\u116a\u11ab \u110e\u1161\u11b7\u110c\u1169 \u1111\u1162\u1110\u1165\u11ab"
     },
     {
@@ -224,7 +182,7 @@
       "author": null,
       "contributor": null,
       "id": "design_data_in_engine_schema_export",
-      "community": 1,
+      "community": 8,
       "norm_label": "\u1109\u1173\u110f\u1175\u1106\u1161 export \u1107\u1161\u11bc\u1109\u1175\u11a8 (\u110b\u1175\u11b7\u1109\u1175 \u1112\u1162\u1100\u1167\u11af\u110e\u1162\u11a8)"
     },
     {
@@ -237,7 +195,7 @@
       "author": null,
       "contributor": null,
       "id": "redis_leaderboard_snapshot",
-      "community": 0,
+      "community": 2,
       "norm_label": "redis \u1105\u1162\u11bc\u110f\u1175\u11bc\u1100\u116a \u1109\u1173\u1102\u1162\u11b8\u1109\u1163\u11ba \u1111\u1162\u1110\u1165\u11ab"
     },
     {
@@ -250,7 +208,7 @@
       "author": null,
       "contributor": null,
       "id": "redis_leaderboard_snapshot_sorted_set",
-      "community": 0,
+      "community": 2,
       "norm_label": "redis sorted set \u1109\u1175\u11af\u1109\u1175\u1100\u1161\u11ab \u1105\u1162\u11bc\u110f\u1175\u11bc"
     },
     {
@@ -263,7 +221,7 @@
       "author": null,
       "contributor": null,
       "id": "redis_leaderboard_snapshot_dual_set",
-      "community": 0,
+      "community": 2,
       "norm_label": "\u110b\u1175\u110c\u116e\u11bc sorted set \u1109\u1173\u1102\u1162\u11b8\u1109\u1163\u11ba \u1111\u1162\u1110\u1165\u11ab"
     },
     {
@@ -276,7 +234,7 @@
       "author": null,
       "contributor": null,
       "id": "redis_leaderboard_snapshot_ab",
-      "community": 0,
+      "community": 2,
       "norm_label": "\u1109\u1173\u1102\u1162\u11b8\u1109\u1163\u11ba a/b \u1100\u116d\u110e\u1166 \u1111\u1162\u1110\u1165\u11ab"
     },
     {
@@ -289,7 +247,7 @@
       "author": null,
       "contributor": null,
       "id": "ios_app_development",
-      "community": 4,
+      "community": 6,
       "norm_label": "ios \u110b\u1162\u11b8 \u1100\u1162\u1107\u1161\u11af \u1109\u1173\u1110\u1162\u11a8 (2025)"
     },
     {
@@ -302,7 +260,7 @@
       "author": null,
       "contributor": null,
       "id": "ios_app_development_blog",
-      "community": 4,
+      "community": 6,
       "norm_label": "blog: on-building-ios-apps"
     },
     {
@@ -315,7 +273,7 @@
       "author": null,
       "contributor": null,
       "id": "ios_app_development_swiftui",
-      "community": 4,
+      "community": 6,
       "norm_label": "swiftui (\u1100\u1175\u1107\u1169\u11ab ui \u1105\u1166\u110b\u1175\u110b\u1165)"
     },
     {
@@ -328,7 +286,7 @@
       "author": null,
       "contributor": null,
       "id": "ios_app_development_swiftdata",
-      "community": 4,
+      "community": 6,
       "norm_label": "swiftdata (\u110b\u1167\u11bc\u1109\u1169\u11a8\u1109\u1165\u11bc \u1105\u1166\u110b\u1175\u110b\u1165)"
     },
     {
@@ -341,7 +299,7 @@
       "author": null,
       "contributor": null,
       "id": "leaderboard_snapshot",
-      "community": 0,
+      "community": 2,
       "norm_label": "\u1105\u1175\u1103\u1165\u1107\u1169\u1103\u1173 \u1109\u1173\u1102\u1162\u11b8\u1109\u1163\u11ba \u1111\u1162\u1110\u1165\u11ab"
     },
     {
@@ -354,7 +312,7 @@
       "author": null,
       "contributor": null,
       "id": "leaderboard_snapshot_blog",
-      "community": 0,
+      "community": 2,
       "norm_label": "blog: leaderboard-snapshot"
     },
     {
@@ -367,7 +325,7 @@
       "author": null,
       "contributor": null,
       "id": "leaderboard_snapshot_dual_set",
-      "community": 0,
+      "community": 2,
       "norm_label": "\u110b\u1175\u110c\u116e\u11bc sorted set \u1109\u1173\u1102\u1162\u11b8\u1109\u1163\u11ba \u1111\u1162\u1110\u1165\u11ab (leaderboard-snapshot)"
     },
     {
@@ -380,7 +338,7 @@
       "author": null,
       "contributor": null,
       "id": "leaderboard_snapshot_ab",
-      "community": 0,
+      "community": 2,
       "norm_label": "\u1109\u1173\u1102\u1162\u11b8\u1109\u1163\u11ba a/b \u1109\u116e\u11ab\u1112\u116a\u11ab \u1100\u116d\u110e\u1166 (leaderboard-snapshot)"
     },
     {
@@ -393,8 +351,450 @@
       "author": null,
       "contributor": null,
       "id": "raw_readme",
-      "community": 5,
+      "community": 9,
       "norm_label": "raw/ \u1111\u1169\u11af\u1103\u1165 readme \u2014 \u110b\u1171\u110f\u1175 \u1109\u1169\u1109\u1173 \u1100\u116a\u11ab\u1105\u1175 \u110c\u1175\u110e\u1175\u11b7"
+    },
+    {
+      "label": "LLM Wiki Pattern",
+      "file_type": "document",
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "llm_wiki_pattern_wiki",
+      "community": 3,
+      "norm_label": "llm wiki pattern"
+    },
+    {
+      "label": "Raw Sources Layer",
+      "file_type": "document",
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "3\uacc4\uce35 \uc544\ud0a4\ud14d\ucc98",
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "llm_wiki_pattern_raw_sources",
+      "community": 5,
+      "norm_label": "raw sources layer"
+    },
+    {
+      "label": "Wiki Layer",
+      "file_type": "document",
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "3\uacc4\uce35 \uc544\ud0a4\ud14d\ucc98",
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "llm_wiki_pattern_wiki_layer",
+      "community": 5,
+      "norm_label": "wiki layer"
+    },
+    {
+      "label": "Schema Layer (CLAUDE.md / AGENTS.md)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "3\uacc4\uce35 \uc544\ud0a4\ud14d\ucc98",
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "llm_wiki_pattern_schema",
+      "community": 5,
+      "norm_label": "schema layer (claude.md / agents.md)"
+    },
+    {
+      "label": "Ingest Operation",
+      "file_type": "document",
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "\uc8fc\uc694 Operations",
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "llm_wiki_pattern_ingest_op",
+      "community": 3,
+      "norm_label": "ingest operation"
+    },
+    {
+      "label": "Query Operation",
+      "file_type": "document",
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "\uc8fc\uc694 Operations",
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "llm_wiki_pattern_query_op",
+      "community": 3,
+      "norm_label": "query operation"
+    },
+    {
+      "label": "Lint Operation",
+      "file_type": "document",
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "\uc8fc\uc694 Operations",
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "llm_wiki_pattern_lint_op",
+      "community": 3,
+      "norm_label": "lint operation"
+    },
+    {
+      "label": "index.md Catalog",
+      "file_type": "document",
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "\uc778\ub371\uc2f1 \ubc0f \ub85c\uae45",
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "llm_wiki_pattern_index_md",
+      "community": 3,
+      "norm_label": "index.md catalog"
+    },
+    {
+      "label": "log.md Chronological Log",
+      "file_type": "document",
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "\uc778\ub371\uc2f1 \ubc0f \ub85c\uae45",
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "llm_wiki_pattern_log_md",
+      "community": 3,
+      "norm_label": "log.md chronological log"
+    },
+    {
+      "label": "qmd Local Search Engine",
+      "file_type": "document",
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "\uc120\ud0dd\uc801 CLI \ub3c4\uad6c",
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "llm_wiki_pattern_qmd",
+      "community": 3,
+      "norm_label": "qmd local search engine"
+    },
+    {
+      "label": "Obsidian (Wiki IDE)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "\uc2e4\uc6a9 \ud301",
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "llm_wiki_pattern_obsidian",
+      "community": 11,
+      "norm_label": "obsidian (wiki ide)"
+    },
+    {
+      "label": "RAG (Retrieval-Augmented Generation)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "\ud575\uc2ec \uc544\uc774\ub514\uc5b4",
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "llm_wiki_pattern_rag",
+      "community": 7,
+      "norm_label": "rag (retrieval-augmented generation)"
+    },
+    {
+      "label": "graphify Tool",
+      "file_type": "document",
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": null,
+      "source_url": "https://github.com/safishamsi/graphify",
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "graphify_wiki_graphify",
+      "community": 0,
+      "norm_label": "graphify tool"
+    },
+    {
+      "label": "Deterministic AST Pass (tree-sitter)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucc98\ub9ac \ud30c\uc774\ud504\ub77c\uc778",
+      "source_url": "https://github.com/safishamsi/graphify",
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "graphify_wiki_ast_pass",
+      "community": 4,
+      "norm_label": "deterministic ast pass (tree-sitter)"
+    },
+    {
+      "label": "Local Whisper Transcription",
+      "file_type": "document",
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucc98\ub9ac \ud30c\uc774\ud504\ub77c\uc778",
+      "source_url": "https://github.com/safishamsi/graphify",
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "graphify_wiki_whisper",
+      "community": 0,
+      "norm_label": "local whisper transcription"
+    },
+    {
+      "label": "Claude/GPT Semantic Extraction",
+      "file_type": "document",
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucc98\ub9ac \ud30c\uc774\ud504\ub77c\uc778",
+      "source_url": "https://github.com/safishamsi/graphify",
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "graphify_wiki_semantic_extraction",
+      "community": 4,
+      "norm_label": "claude/gpt semantic extraction"
+    },
+    {
+      "label": "Leiden Clustering (Community Detection)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucc98\ub9ac \ud30c\uc774\ud504\ub77c\uc778",
+      "source_url": "https://github.com/safishamsi/graphify",
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "graphify_wiki_leiden",
+      "community": 0,
+      "norm_label": "leiden clustering (community detection)"
+    },
+    {
+      "label": "graph.html Interactive Visualization",
+      "file_type": "document",
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucd9c\ub825 \ud615\uc2dd",
+      "source_url": "https://github.com/safishamsi/graphify",
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "graphify_wiki_graph_html",
+      "community": 0,
+      "norm_label": "graph.html interactive visualization"
+    },
+    {
+      "label": "GRAPH_REPORT.md",
+      "file_type": "document",
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucd9c\ub825 \ud615\uc2dd",
+      "source_url": "https://github.com/safishamsi/graphify",
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "graphify_wiki_graph_report",
+      "community": 0,
+      "norm_label": "graph_report.md"
+    },
+    {
+      "label": "graph.json Persistent Graph Data",
+      "file_type": "document",
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucd9c\ub825 \ud615\uc2dd",
+      "source_url": "https://github.com/safishamsi/graphify",
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "graphify_wiki_graph_json",
+      "community": 0,
+      "norm_label": "graph.json persistent graph data"
+    },
+    {
+      "label": "Obsidian Vault Output",
+      "file_type": "document",
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucd9c\ub825 \ud615\uc2dd",
+      "source_url": "https://github.com/safishamsi/graphify",
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "graphify_wiki_obsidian_vault",
+      "community": 11,
+      "norm_label": "obsidian vault output"
+    },
+    {
+      "label": "Agent-Navigable Wiki Output (wiki/)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucd9c\ub825 \ud615\uc2dd",
+      "source_url": "https://github.com/safishamsi/graphify",
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "graphify_wiki_agent_wiki",
+      "community": 5,
+      "norm_label": "agent-navigable wiki output (wiki/)"
+    },
+    {
+      "label": "Relationship Tagging (EXTRACTED/INFERRED/AMBIGUOUS)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ud575\uc2ec \uc124\uacc4 \uc6d0\uce59",
+      "source_url": "https://github.com/safishamsi/graphify",
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "graphify_wiki_relationship_tagging",
+      "community": 0,
+      "norm_label": "relationship tagging (extracted/inferred/ambiguous)"
+    },
+    {
+      "label": "Git Hook Integration",
+      "file_type": "document",
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ud575\uc2ec \uc124\uacc4 \uc6d0\uce59",
+      "source_url": "https://github.com/safishamsi/graphify",
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "graphify_wiki_git_hook",
+      "community": 0,
+      "norm_label": "git hook integration"
+    },
+    {
+      "label": "SHA256-based Incremental Caching",
+      "file_type": "document",
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucd9c\ub825 \ud615\uc2dd",
+      "source_url": "https://github.com/safishamsi/graphify",
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "id": "graphify_wiki_sha256_cache",
+      "community": 0,
+      "norm_label": "sha256-based incremental caching"
+    },
+    {
+      "label": "LLM Wiki Core Idea (Persistent Compounding Knowledge)",
+      "file_type": "document",
+      "source_file": "raw/llm-wiki.md",
+      "source_location": "The core idea",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_llm_wiki_core_idea",
+      "community": 7,
+      "norm_label": "llm wiki core idea (persistent compounding knowledge)"
+    },
+    {
+      "label": "LLM Wiki Three-Layer Architecture",
+      "file_type": "document",
+      "source_file": "raw/llm-wiki.md",
+      "source_location": "Architecture",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_llm_wiki_architecture",
+      "community": 5,
+      "norm_label": "llm wiki three-layer architecture"
+    },
+    {
+      "label": "Vannevar Bush Memex (1945)",
+      "file_type": "document",
+      "source_file": "raw/llm-wiki.md",
+      "source_location": "Why this works",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_llm_wiki_memex",
+      "community": 7,
+      "norm_label": "vannevar bush memex (1945)"
+    },
+    {
+      "label": "Tolkien Gateway (fan wiki reference)",
+      "file_type": "document",
+      "source_file": "raw/llm-wiki.md",
+      "source_location": "The core idea",
+      "source_url": "https://tolkiengateway.net/wiki/Main_Page",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_llm_wiki_tolkien_gateway",
+      "community": 7,
+      "norm_label": "tolkien gateway (fan wiki reference)"
+    },
+    {
+      "label": "graphify (raw source)",
+      "file_type": "document",
+      "source_file": "raw/graphify.md",
+      "source_location": null,
+      "source_url": "https://github.com/safishamsi/graphify",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_graphify_tool",
+      "community": 10,
+      "norm_label": "graphify (raw source)"
+    },
+    {
+      "label": "Penpax (Enterprise graphify layer)",
+      "file_type": "document",
+      "source_file": "raw/graphify.md",
+      "source_location": "Related Project",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_graphify_penpax",
+      "community": 10,
+      "norm_label": "penpax (enterprise graphify layer)"
+    },
+    {
+      "label": "graphify Processing Pipeline",
+      "file_type": "document",
+      "source_file": "raw/graphify.md",
+      "source_location": "Processing Pipeline",
+      "source_url": "https://github.com/safishamsi/graphify",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_graphify_pipeline",
+      "community": 4,
+      "norm_label": "graphify processing pipeline"
+    },
+    {
+      "label": "tree-sitter AST Parser",
+      "file_type": "document",
+      "source_file": "raw/graphify.md",
+      "source_location": "Processing Pipeline",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_graphify_treesitter",
+      "community": 4,
+      "norm_label": "tree-sitter ast parser"
+    },
+    {
+      "label": "Claude/GPT API (semantic extraction)",
+      "file_type": "document",
+      "source_file": "raw/graphify.md",
+      "source_location": "Processing Pipeline",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_graphify_claude_gpt",
+      "community": 4,
+      "norm_label": "claude/gpt api (semantic extraction)"
     }
   ],
   "links": [
@@ -483,18 +883,6 @@
       "target": "game_server_request_context_entry_points"
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/content/wiki/redis-leaderboard-snapshot.md",
-      "source_location": "\uad00\ub828 \ud56d\ubaa9 [[game-server-request-context]]",
-      "weight": 1.0,
-      "_src": "redis_leaderboard_snapshot",
-      "_tgt": "game_server_request_context",
-      "source": "game_server_request_context",
-      "target": "redis_leaderboard_snapshot"
-    },
-    {
       "relation": "semantically_similar_to",
       "confidence": "INFERRED",
       "confidence_score": 0.65,
@@ -505,6 +893,18 @@
       "_tgt": "design_data_in_engine",
       "source": "game_server_request_context",
       "target": "design_data_in_engine"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/redis-leaderboard-snapshot.md",
+      "source_location": "\uad00\ub828 \ud56d\ubaa9 [[game-server-request-context]]",
+      "weight": 1.0,
+      "_src": "redis_leaderboard_snapshot",
+      "_tgt": "game_server_request_context",
+      "source": "game_server_request_context",
+      "target": "redis_leaderboard_snapshot"
     },
     {
       "relation": "references",
@@ -733,47 +1133,511 @@
       "_tgt": "leaderboard_snapshot_ab",
       "source": "leaderboard_snapshot",
       "target": "leaderboard_snapshot_ab"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "3\uacc4\uce35 \uc544\ud0a4\ud14d\ucc98",
+      "weight": 1.0,
+      "_src": "llm_wiki_pattern_wiki",
+      "_tgt": "llm_wiki_pattern_raw_sources",
+      "source": "llm_wiki_pattern_wiki",
+      "target": "llm_wiki_pattern_raw_sources"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "3\uacc4\uce35 \uc544\ud0a4\ud14d\ucc98",
+      "weight": 1.0,
+      "_src": "llm_wiki_pattern_wiki",
+      "_tgt": "llm_wiki_pattern_wiki_layer",
+      "source": "llm_wiki_pattern_wiki",
+      "target": "llm_wiki_pattern_wiki_layer"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "3\uacc4\uce35 \uc544\ud0a4\ud14d\ucc98",
+      "weight": 1.0,
+      "_src": "llm_wiki_pattern_wiki",
+      "_tgt": "llm_wiki_pattern_schema",
+      "source": "llm_wiki_pattern_wiki",
+      "target": "llm_wiki_pattern_schema"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "\uc8fc\uc694 Operations",
+      "weight": 1.0,
+      "_src": "llm_wiki_pattern_wiki",
+      "_tgt": "llm_wiki_pattern_ingest_op",
+      "source": "llm_wiki_pattern_wiki",
+      "target": "llm_wiki_pattern_ingest_op"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "\uc8fc\uc694 Operations",
+      "weight": 1.0,
+      "_src": "llm_wiki_pattern_wiki",
+      "_tgt": "llm_wiki_pattern_query_op",
+      "source": "llm_wiki_pattern_wiki",
+      "target": "llm_wiki_pattern_query_op"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "\uc8fc\uc694 Operations",
+      "weight": 1.0,
+      "_src": "llm_wiki_pattern_wiki",
+      "_tgt": "llm_wiki_pattern_lint_op",
+      "source": "llm_wiki_pattern_wiki",
+      "target": "llm_wiki_pattern_lint_op"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "\uc778\ub371\uc2f1 \ubc0f \ub85c\uae45",
+      "weight": 1.0,
+      "_src": "llm_wiki_pattern_wiki",
+      "_tgt": "llm_wiki_pattern_index_md",
+      "source": "llm_wiki_pattern_wiki",
+      "target": "llm_wiki_pattern_index_md"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "\uc778\ub371\uc2f1 \ubc0f \ub85c\uae45",
+      "weight": 1.0,
+      "_src": "llm_wiki_pattern_wiki",
+      "_tgt": "llm_wiki_pattern_log_md",
+      "source": "llm_wiki_pattern_wiki",
+      "target": "llm_wiki_pattern_log_md"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "\uc120\ud0dd\uc801 CLI \ub3c4\uad6c",
+      "weight": 1.0,
+      "_src": "llm_wiki_pattern_wiki",
+      "_tgt": "llm_wiki_pattern_qmd",
+      "source": "llm_wiki_pattern_wiki",
+      "target": "llm_wiki_pattern_qmd"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "\uc2e4\uc6a9 \ud301",
+      "weight": 1.0,
+      "_src": "llm_wiki_pattern_wiki",
+      "_tgt": "llm_wiki_pattern_obsidian",
+      "source": "llm_wiki_pattern_wiki",
+      "target": "llm_wiki_pattern_obsidian"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "\ud575\uc2ec \uc544\uc774\ub514\uc5b4",
+      "weight": 1.0,
+      "_src": "llm_wiki_pattern_wiki",
+      "_tgt": "llm_wiki_pattern_rag",
+      "source": "llm_wiki_pattern_wiki",
+      "target": "llm_wiki_pattern_rag"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\uad00\ub828",
+      "weight": 0.8,
+      "_src": "graphify_wiki_graphify",
+      "_tgt": "llm_wiki_pattern_wiki",
+      "source": "llm_wiki_pattern_wiki",
+      "target": "graphify_wiki_graphify"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "src/content/wiki/llm-wiki-pattern.md",
+      "source_location": "sources frontmatter",
+      "weight": 1.0,
+      "_src": "llm_wiki_pattern_wiki",
+      "_tgt": "raw_llm_wiki_core_idea",
+      "source": "llm_wiki_pattern_wiki",
+      "target": "raw_llm_wiki_core_idea"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/llm-wiki.md",
+      "source_location": "Architecture",
+      "weight": 1.0,
+      "_src": "raw_llm_wiki_architecture",
+      "_tgt": "llm_wiki_pattern_raw_sources",
+      "source": "llm_wiki_pattern_raw_sources",
+      "target": "raw_llm_wiki_architecture"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/llm-wiki.md",
+      "source_location": "Architecture",
+      "weight": 1.0,
+      "_src": "raw_llm_wiki_architecture",
+      "_tgt": "llm_wiki_pattern_wiki_layer",
+      "source": "llm_wiki_pattern_wiki_layer",
+      "target": "raw_llm_wiki_architecture"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucd9c\ub825 \ud615\uc2dd",
+      "weight": 0.85,
+      "_src": "graphify_wiki_agent_wiki",
+      "_tgt": "llm_wiki_pattern_wiki_layer",
+      "source": "llm_wiki_pattern_wiki_layer",
+      "target": "graphify_wiki_agent_wiki"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/llm-wiki.md",
+      "source_location": "Architecture",
+      "weight": 1.0,
+      "_src": "raw_llm_wiki_architecture",
+      "_tgt": "llm_wiki_pattern_schema",
+      "source": "llm_wiki_pattern_schema",
+      "target": "raw_llm_wiki_architecture"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ud575\uc2ec \uc124\uacc4 \uc6d0\uce59",
+      "weight": 0.7,
+      "_src": "graphify_wiki_relationship_tagging",
+      "_tgt": "llm_wiki_pattern_lint_op",
+      "source": "llm_wiki_pattern_lint_op",
+      "target": "graphify_wiki_relationship_tagging"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucd9c\ub825 \ud615\uc2dd",
+      "weight": 0.9,
+      "_src": "graphify_wiki_obsidian_vault",
+      "_tgt": "llm_wiki_pattern_obsidian",
+      "source": "llm_wiki_pattern_obsidian",
+      "target": "graphify_wiki_obsidian_vault"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/llm-wiki.md",
+      "source_location": "The core idea",
+      "weight": 1.0,
+      "_src": "llm_wiki_pattern_rag",
+      "_tgt": "raw_llm_wiki_core_idea",
+      "source": "llm_wiki_pattern_rag",
+      "target": "raw_llm_wiki_core_idea"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucc98\ub9ac \ud30c\uc774\ud504\ub77c\uc778",
+      "weight": 1.0,
+      "_src": "graphify_wiki_graphify",
+      "_tgt": "graphify_wiki_ast_pass",
+      "source": "graphify_wiki_graphify",
+      "target": "graphify_wiki_ast_pass"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucc98\ub9ac \ud30c\uc774\ud504\ub77c\uc778",
+      "weight": 1.0,
+      "_src": "graphify_wiki_graphify",
+      "_tgt": "graphify_wiki_whisper",
+      "source": "graphify_wiki_graphify",
+      "target": "graphify_wiki_whisper"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucc98\ub9ac \ud30c\uc774\ud504\ub77c\uc778",
+      "weight": 1.0,
+      "_src": "graphify_wiki_graphify",
+      "_tgt": "graphify_wiki_semantic_extraction",
+      "source": "graphify_wiki_graphify",
+      "target": "graphify_wiki_semantic_extraction"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucc98\ub9ac \ud30c\uc774\ud504\ub77c\uc778",
+      "weight": 1.0,
+      "_src": "graphify_wiki_graphify",
+      "_tgt": "graphify_wiki_leiden",
+      "source": "graphify_wiki_graphify",
+      "target": "graphify_wiki_leiden"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucd9c\ub825 \ud615\uc2dd",
+      "weight": 1.0,
+      "_src": "graphify_wiki_graphify",
+      "_tgt": "graphify_wiki_graph_html",
+      "source": "graphify_wiki_graphify",
+      "target": "graphify_wiki_graph_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucd9c\ub825 \ud615\uc2dd",
+      "weight": 1.0,
+      "_src": "graphify_wiki_graphify",
+      "_tgt": "graphify_wiki_graph_report",
+      "source": "graphify_wiki_graphify",
+      "target": "graphify_wiki_graph_report"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucd9c\ub825 \ud615\uc2dd",
+      "weight": 1.0,
+      "_src": "graphify_wiki_graphify",
+      "_tgt": "graphify_wiki_graph_json",
+      "source": "graphify_wiki_graphify",
+      "target": "graphify_wiki_graph_json"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucd9c\ub825 \ud615\uc2dd",
+      "weight": 1.0,
+      "_src": "graphify_wiki_graphify",
+      "_tgt": "graphify_wiki_obsidian_vault",
+      "source": "graphify_wiki_graphify",
+      "target": "graphify_wiki_obsidian_vault"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucd9c\ub825 \ud615\uc2dd",
+      "weight": 1.0,
+      "_src": "graphify_wiki_graphify",
+      "_tgt": "graphify_wiki_agent_wiki",
+      "source": "graphify_wiki_graphify",
+      "target": "graphify_wiki_agent_wiki"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ud575\uc2ec \uc124\uacc4 \uc6d0\uce59",
+      "weight": 1.0,
+      "_src": "graphify_wiki_graphify",
+      "_tgt": "graphify_wiki_relationship_tagging",
+      "source": "graphify_wiki_graphify",
+      "target": "graphify_wiki_relationship_tagging"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ud575\uc2ec \uc124\uacc4 \uc6d0\uce59",
+      "weight": 1.0,
+      "_src": "graphify_wiki_graphify",
+      "_tgt": "graphify_wiki_git_hook",
+      "source": "graphify_wiki_graphify",
+      "target": "graphify_wiki_git_hook"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "\ucd9c\ub825 \ud615\uc2dd",
+      "weight": 1.0,
+      "_src": "graphify_wiki_graphify",
+      "_tgt": "graphify_wiki_sha256_cache",
+      "source": "graphify_wiki_graphify",
+      "target": "graphify_wiki_sha256_cache"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/content/wiki/graphify.md",
+      "source_location": "sources frontmatter",
+      "weight": 1.0,
+      "_src": "graphify_wiki_graphify",
+      "_tgt": "raw_graphify_tool",
+      "source": "graphify_wiki_graphify",
+      "target": "raw_graphify_tool"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "raw/graphify.md",
+      "source_location": "Processing Pipeline",
+      "weight": 0.95,
+      "_src": "raw_graphify_treesitter",
+      "_tgt": "graphify_wiki_ast_pass",
+      "source": "graphify_wiki_ast_pass",
+      "target": "raw_graphify_treesitter"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "raw/graphify.md",
+      "source_location": "Processing Pipeline",
+      "weight": 0.95,
+      "_src": "raw_graphify_claude_gpt",
+      "_tgt": "graphify_wiki_semantic_extraction",
+      "source": "graphify_wiki_semantic_extraction",
+      "target": "raw_graphify_claude_gpt"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/llm-wiki.md",
+      "source_location": "Why this works",
+      "weight": 1.0,
+      "_src": "raw_llm_wiki_core_idea",
+      "_tgt": "raw_llm_wiki_memex",
+      "source": "raw_llm_wiki_core_idea",
+      "target": "raw_llm_wiki_memex"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/llm-wiki.md",
+      "source_location": "The core idea",
+      "weight": 1.0,
+      "_src": "raw_llm_wiki_core_idea",
+      "_tgt": "raw_llm_wiki_tolkien_gateway",
+      "source": "raw_llm_wiki_core_idea",
+      "target": "raw_llm_wiki_tolkien_gateway"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "raw/llm-wiki.md",
+      "source_location": "Architecture",
+      "weight": 1.0,
+      "_src": "raw_llm_wiki_core_idea",
+      "_tgt": "raw_llm_wiki_architecture",
+      "source": "raw_llm_wiki_core_idea",
+      "target": "raw_llm_wiki_architecture"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/graphify.md",
+      "source_location": "Processing Pipeline",
+      "weight": 1.0,
+      "_src": "raw_graphify_tool",
+      "_tgt": "raw_graphify_pipeline",
+      "source": "raw_graphify_tool",
+      "target": "raw_graphify_pipeline"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/graphify.md",
+      "source_location": "Related Project",
+      "weight": 1.0,
+      "_src": "raw_graphify_tool",
+      "_tgt": "raw_graphify_penpax",
+      "source": "raw_graphify_tool",
+      "target": "raw_graphify_penpax"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/graphify.md",
+      "source_location": "Processing Pipeline",
+      "weight": 1.0,
+      "_src": "raw_graphify_pipeline",
+      "_tgt": "raw_graphify_treesitter",
+      "source": "raw_graphify_pipeline",
+      "target": "raw_graphify_treesitter"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/graphify.md",
+      "source_location": "Processing Pipeline",
+      "weight": 1.0,
+      "_src": "raw_graphify_pipeline",
+      "_tgt": "raw_graphify_claude_gpt",
+      "source": "raw_graphify_pipeline",
+      "target": "raw_graphify_claude_gpt"
     }
   ],
-  "hyperedges": [
-    {
-      "id": "redis_snapshot_pattern_trio",
-      "label": "Redis \uc2a4\ub0c5\uc0f7 \ub7ad\ud0b9 \uad6c\ud604 \ud328\ud134",
-      "nodes": [
-        "redis_leaderboard_snapshot_sorted_set",
-        "redis_leaderboard_snapshot_dual_set",
-        "redis_leaderboard_snapshot_ab"
-      ],
-      "relation": "implement",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.95,
-      "source_file": "src/content/wiki/redis-leaderboard-snapshot.md"
-    },
-    {
-      "id": "game_server_entrypoint_context_flow",
-      "label": "\uac8c\uc784 \uc11c\ubc84 \uc9c4\uc785\uc810 \u2192 RequestContext \ud750\ub984",
-      "nodes": [
-        "game_server_request_context_entry_points",
-        "game_server_request_context_struct",
-        "game_server_request_context"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.95,
-      "source_file": "src/content/wiki/game-server-request-context.md"
-    },
-    {
-      "id": "design_data_independence_pattern",
-      "label": "\uae30\ud68d\ub370\uc774\ud130 \ub3c5\ub9bd \uad00\ub9ac \ud328\ud134",
-      "nodes": [
-        "design_data_in_engine",
-        "design_data_in_engine_circular_dep",
-        "design_data_in_engine_schema_export"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.9,
-      "source_file": "src/content/wiki/design-data-in-engine.md"
-    }
-  ]
+  "hyperedges": []
 }

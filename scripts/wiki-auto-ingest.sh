@@ -85,11 +85,12 @@ if [ -n "$NEW_SOURCES" ]; then
   claude -p "Auto wiki-ingest: the following sources were just committed and added to wiki-log.md as unincorporated:$NEW_SOURCES
 
 For EACH source:
-1. Read the source file (raw/<file>.md or src/content/blog/<slug>.md)
-2. Check existing wiki pages in src/content/wiki/ and ## Wiki Pages in wiki-log.md
-3. Decide: MERGE into existing page if same topic, CREATE new page otherwise
-4. Write the wiki page with proper frontmatter (title, description, publishDate: today, updatedDate: today, tags, sources: [\"<source-id>\"])
-5. Update wiki-log.md: move source from ## Unincorporated to ## Incorporated, update ## Wiki Pages if new page created
+1. Read graphify-out/GRAPH_REPORT.md to identify which community/concepts the source belongs to
+2. Read the source file (raw/<file>.md or src/content/blog/<slug>.md)
+3. Based on the community identified in step 1, read only the most relevant 1-2 existing wiki pages from that community (do NOT scan all of src/content/wiki/)
+4. Decide: MERGE into an existing page if same topic, CREATE new page otherwise
+5. Write the wiki page with proper frontmatter (title, description, publishDate: today, updatedDate: today, tags, sources: [\"<source-id>\"])
+6. Update wiki-log.md: move source from ## Unincorporated to ## Incorporated, update ## Wiki Pages if new page created
 
 Content rules: no narrative arc, structured reference material only. Use [[wiki-link]] for cross-refs.
 Process automatically. No confirmation needed."
@@ -102,12 +103,13 @@ if [ -n "$MODIFIED_SOURCES" ]; then
   claude -p "Auto wiki-ingest (section update): the following sources were modified:$MODIFIED_SOURCES
 
 For EACH source:
-1. Read the updated source file
-2. Find the wiki page that references this source (check sources: field in wiki frontmatter)
-3. Identify the sections in the wiki page that were contributed by this source
-4. Update ONLY those sections to reflect the changes — do not rewrite unrelated sections
-5. Update updatedDate in the wiki page frontmatter to today
-6. Do NOT change wiki-log.md (source is already incorporated)
+1. Read graphify-out/GRAPH_REPORT.md to identify which community/concepts this source belongs to
+2. Read the updated source file
+3. Find the wiki page that references this source (check sources: field in wiki frontmatter — use the community info from step 1 to narrow the search)
+4. Identify the sections in the wiki page that were contributed by this source
+5. Update ONLY those sections to reflect the changes — do not rewrite unrelated sections
+6. Update updatedDate in the wiki page frontmatter to today
+7. Do NOT change wiki-log.md (source is already incorporated)
 
 Content rules: no narrative arc, structured reference material only. Use [[wiki-link]] for cross-refs.
 Process automatically. No confirmation needed."

@@ -4,6 +4,12 @@
 
 set -e
 
+# Skip if this commit was made by graphify auto-update (prevent infinite loop)
+LAST_MSG=$(git -C "$(dirname "$0")/.." log -1 --pretty=%s 2>/dev/null || true)
+if [[ "$LAST_MSG" == *"[graphify-auto]"* ]]; then
+  exit 0
+fi
+
 PROJECT_ROOT="$(git -C "$(dirname "$0")/.." rev-parse --show-toplevel)"
 WIKI_LOG="$PROJECT_ROOT/wiki-log.md"
 TODAY=$(date +%Y-%m-%d)
@@ -105,4 +111,15 @@ For EACH source:
 
 Content rules: no narrative arc, structured reference material only. Use [[wiki-link]] for cross-refs.
 Process automatically. No confirmation needed."
+fi
+
+# Trigger graphify --update if wiki pages changed in this commit
+WIKI_CHANGED=$(git -C "$PROJECT_ROOT" diff-tree --no-commit-id -r --name-status \
+  --diff-filter=AMD HEAD 2>/dev/null \
+  | grep -E '^[AMD]\s+src/content/wiki/.*\.md$' || true)
+
+if [ -n "$WIKI_CHANGED" ]; then
+  echo ""
+  echo "[graphify] Wiki pages changed — running graphify update in background..."
+  bash "$PROJECT_ROOT/scripts/run-graphify-update.sh" &
 fi

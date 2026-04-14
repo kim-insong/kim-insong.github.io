@@ -7,13 +7,14 @@ Use the `/web-insong-net` skill for design system reference.
 
 ## Feature → Doc Index
 
-| Feature | Module Doc | Spec |
-|---------|------------|------|
-| Layout & Components | docs/modules/layout.md | — |
-| Pages & Routing | docs/modules/pages.md | — |
-| Content Collections | docs/modules/content.md | — |
-| Styles & Design Tokens | docs/modules/styles.md | — |
-| Deployment (GitHub Pages) | docs/modules/deploy.md | — |
+| Feature | Design Doc | Exec Plan |
+|---------|------------|-----------|
+| Layout & Components | docs/design-docs/layout.md | — |
+| Pages & Routing | docs/design-docs/pages.md | — |
+| Content Collections | docs/design-docs/content.md | — |
+| Styles & Design Tokens | docs/design-docs/styles.md | — |
+| Deployment (GitHub Pages) | docs/design-docs/deploy.md | — |
+| graphify 지식 그래프 | docs/design-docs/graphify-wiki-integration.md | docs/exec-plans/completed/graphify-wiki-integration.md |
 
 ## Wiki Auto-Ingest
 
@@ -39,6 +40,24 @@ Then check `wiki-log.md` to determine the mode:
 3. 그 소스가 기여한 섹션만 업데이트 — 다른 소스에서 온 섹션은 건드리지 않음
 4. wiki frontmatter의 `updatedDate` 갱신
 5. wiki-log.md는 변경하지 않음
+
+## graphify 지식 그래프
+
+post-commit hook이 `src/content/wiki/` 변경 시 자동으로 `graphify-out/`을 갱신한다.
+
+**AI 에이전트 활용 규칙:**
+- wiki 관련 작업 전: `graphify-out/GRAPH_REPORT.md` 읽어서 커뮤니티/핵심 노드 파악
+- 구체적인 개념 탐색: `/graphify query "<질문>"` 실행
+- 에이전트 진입점: `graphify-out/wiki/index.md`
+
+**출력 구조:**
+- `graphify-out/GRAPH_REPORT.md` — 커뮤니티 요약, God Nodes, 추천 쿼리
+- `graphify-out/graph.json` — 전체 그래프 데이터
+- `graphify-out/graph.html` — 브라우저 시각화
+- `graphify-out/obsidian/` — Obsidian vault (File > Open Vault)
+- `graphify-out/wiki/` — 에이전트 탐색용 마크다운
+
+**수동 갱신:** `npm run build:agent-wiki`
 
 ## Git Workflow
 

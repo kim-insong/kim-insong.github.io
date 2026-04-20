@@ -1,0 +1,36 @@
+# Code Quality Principles
+
+> 11 nodes · cohesion 0.18
+
+## Key Concepts
+
+- **코드 품질 원칙** (6 connections) — `src/content/wiki/code-quality.md`
+- **Git 워크플로우 패턴** (4 connections) — `src/content/wiki/git-workflow-patterns.md`
+- **Pre-push PR 상태 체크** (2 connections) — `src/content/wiki/git-workflow-patterns.md`
+- **추상화 - 실제 필요한 만큼만** (1 connections) — `src/content/wiki/code-quality.md`
+- **에러 핸들링 원칙** (1 connections) — `src/content/wiki/code-quality.md`
+- **OWASP Top 10 인식** (1 connections) — `src/content/wiki/code-quality.md`
+- **가역성 원칙** (1 connections) — `src/content/wiki/code-quality.md`
+- **범위 원칙 - 요청된 것만 한다** (1 connections) — `src/content/wiki/code-quality.md`
+- **feature 브랜치 전략** (1 connections) — `src/content/wiki/git-workflow-patterns.md`
+- **커밋 메시지 포맷** (1 connections) — `src/content/wiki/git-workflow-patterns.md`
+- **MERGED 브랜치 push 금지 이유** (1 connections) — `src/content/wiki/git-workflow-patterns.md`
+
+## Relationships
+
+- No strong cross-community connections detected
+
+## Source Files
+
+- `src/content/wiki/code-quality.md`
+- `src/content/wiki/git-workflow-patterns.md`
+
+## Audit Trail
+
+- EXTRACTED: 18 (90%)
+- INFERRED: 2 (10%)
+- AMBIGUOUS: 0 (0%)
+
+---
+
+*Part of the graphify knowledge wiki. See [[index]] to navigate.*

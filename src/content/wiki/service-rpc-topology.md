@@ -68,6 +68,60 @@ public class CoreNode : ServerInstance { }
 | 역추적 가능 | `RpcPair(A, B)` grep으로 해당 연결을 요구하는 Service 전수 확인 |
 | 배포 유연성 | 같은 코드가 ServerType 분리/통합 변경에도 재컴파일 없이 대응 |
 
+## 함정: 선언 누락을 배포 구성이 숨긴다
+
+**시나리오**
+
+1. `ServiceA`가 `[RpcPair(X, Y)]` 선언 → X-Y Session 준비됨
+2. `ServiceB`도 X-Y 호출이 필요한데 `RpcPair` 선언을 누락
+3. 현재 배포에서는 X와 Y가 같은 인스턴스에 있거나 ServiceA의 Session을 공유 → 동작 문제 없음
+4. 배포 구성 변경 (X와 Y 분리 / ServiceA 제거) 시 ServiceB 호출이 조용히 실패
+
+**함의**
+
+- 런타임 검증만으로는 누락이 노출되지 않음
+- 실제 서버 구성을 바꿔보기 전까지 잠복
+- 정적 검증 장치가 없으면 축적되는 종류의 부채
+
+## 정적 검증에 필요한 요구사항
+
+선언과 실제 호출의 일치를 빌드 단계에서 잡으려면 다음이 필요하다.
+
+### 1. RPC 함수에 방향 타입 부여
+
+```csharp
+[RpcTarget(ServerType.Match)]
+public interface IMatchRpc {
+    Task<MatchResult> RequestMatch(PlayerId player);
+}
+
+[CallerServerType(ServerType.Gateway)]
+public class BattleEntryService : Service {
+    async Task Handle(...) {
+        var result = await _matchRpc.RequestMatch(player);
+        // Gateway → Match 방향이 타입에 박혀 있음
+    }
+}
+```
+
+- 각 RPC 인터페이스는 **대상 ServerType**을 타입에 명시
+- Service는 **호출자 ServerType**을 타입에 명시
+- 정적 분석기가 실제 호출 그래프에서 필요한 `(Caller, Target)` 쌍 집합을 도출
+- Service의 `[RpcPair]` 선언 집합과 비교하여 누락/과잉 탐지
+
+### 2. ServerType 내부 접근 검증
+
+RPC 함수 본문에서 참조하는 함수·변수가 해당 ServerType에 속한 것인지 검증. ServerType 경계를 넘어 다른 ServerType의 내부 상태에 직접 접근하면 안 됨.
+
+## ServerType 분리 전략 비교
+
+| 전략 | 장점 | 단점 |
+|------|------|------|
+| 한 프로젝트 + 기능 플래그 (`#if`, ServerType enum 분기) | 초기 개발 속도, 빌드 수 적음 | 경계 흐려짐, 타 ServerType 내부 상태 직접 참조가 런타임 전까지 안 드러남, 정적 검증 어려움 |
+| ServerType별 프로젝트 분리 | 컴파일러가 경계 강제, 타 ServerType 접근은 RPC 인터페이스로만 가능, 정적 검증 자연스러움 | 초기 모듈 분리 비용, 공통 모듈 설계 필요 |
+
+**권장**: ServerType별 프로젝트 분리. 공통 코드는 별도 모듈로 추출하고 각 ServerType은 자기 모듈 + 공통 모듈만 참조.
+
 ## 안티패턴: 인스턴스 쪽 연결 선언
 
 ```csharp

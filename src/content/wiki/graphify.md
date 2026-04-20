@@ -3,8 +3,8 @@ title: "graphify — 코드/문서 지식 그래프 도구"
 description: "코드, 문서, 이미지, 미디어를 쿼리 가능한 지식 그래프로 변환하는 AI 코딩 어시스턴트 스킬"
 tags: ["wiki", "knowledge-graph", "tooling", "AI", "Claude"]
 publishDate: 2026-04-14
-updatedDate: 2026-04-14
-sources: ["raw/graphify.md"]
+updatedDate: 2026-04-20
+sources: ["raw/graphify.md", "blog:graphify-for-claude-code"]
 draft: false
 ---
 
@@ -16,6 +16,15 @@ Claude Code, Codex, Cursor, GitHub Copilot CLI 등 AI 플랫폼에서 스킬로 
 - GitHub: [safishamsi/graphify](https://github.com/safishamsi/graphify)
 - License: MIT
 - Requirements: Python 3.10+, Claude Code
+
+## 설치 명령 구분
+
+두 명령은 이름이 비슷해도 범위가 다르다 — 둘 다 필요하다.
+
+| 명령 | 범위 | 효과 |
+|------|------|------|
+| `graphify install --platform claude` | 시스템 전역 | Claude Code에 `/graphify` slash command 등록 |
+| `graphify claude install` | 현재 프로젝트 | 프로젝트 `CLAUDE.md`에 "그래프를 먼저 읽어라" 지침 주입 |
 
 ## 설치 및 기본 사용
 
@@ -71,6 +80,20 @@ SHA256 기반 캐싱으로 증분 업데이트 — 변경된 파일만 재처리
 
 - `wiki/index.md`를 진입점으로 에이전트 탐색 가능
 
+## 벡터 DB vs. 그래프 (코드베이스 관점)
+
+| 기준 | 그래프 (graphify) | 벡터 DB |
+|------|-------------------|---------|
+| 함수 호출 / 클래스 참조 추적 | 완벽 (AST 기반) | 불가능 — 이름 유사도만 |
+| 결정론 | 같은 코드 → 같은 그래프 | 임베딩 모델 바뀌면 결과도 바뀜 |
+| 최단 경로 질의 (A → B) | 지원 | 불가능 |
+| edge 감사 (EXTRACTED/INFERRED/AMBIGUOUS) | 모든 엣지에 태그 | 없음 — 유사도 숫자만 |
+| 자연어 유사도 검색 | 약함 | 강함 |
+| unstructured blob (로그, 회의록) | 약함 | 강함 |
+| 증분 삽입 | 재클러스터링 필요 가능 | O(1) |
+
+**원칙**: 코드베이스 탐색과 "이 함수를 바꾸면 뭐가 깨지는가" 같은 구조 질문은 그래프. 애매한 자연어 검색이나 대량 unstructured text는 벡터.
+
 ## 핵심 설계 원칙
 
 - **Privacy-first**: 코드는 AST로 로컬 분석, 문서/이미지만 모델 API 전송
@@ -84,3 +107,4 @@ SHA256 기반 캐싱으로 증분 업데이트 — 변경된 파일만 재처리
 
 - [[getting-started]] — 이 위키의 소스 관리 방식
 - [[llm-wiki-pattern]] — graphify가 구현하는 LLM wiki 패턴
+- 블로그: [[graphify-for-claude-code]] 원문 글

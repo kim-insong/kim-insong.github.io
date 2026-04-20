@@ -2,7 +2,7 @@
 title: "프로젝트 문서 정책"
 description: "언제, 어디에, 어떤 문서를 작성하는가 — OpenAI Harness Engineering 패턴 기반"
 publishDate: 2026-04-14
-updatedDate: 2026-04-14
+updatedDate: 2026-04-21
 tags: ["documentation", "workflow", "Claude", "architecture"]
 draft: false
 sources: ["raw/documentation-policy.md"]
@@ -70,6 +70,17 @@ Sources/Features/Auth/CLAUDE.md
 
 - 단일 파일, 10줄 미만 (Tier 0)
 - 수정이 자명하고 범위가 완전히 명확할 때
+
+## Plan Mode와 exec-plans 동기화
+
+Plan Mode 시스템은 `~/.claude/plans/<random>.md`에 임시 파일을 저장한다.
+프로젝트 작업 중 Plan Mode를 사용할 때는 **반드시** 같은 내용을
+`docs/exec-plans/active/<feature-slug>.md`에도 작성해야 한다.
+
+| 위치 | 역할 | 수명 |
+|------|------|------|
+| `~/.claude/plans/` | Plan Mode 시스템 전용 | 임시 |
+| `docs/exec-plans/` | 프로젝트 아카이브 | 영구 |
 
 ## Completion 체크리스트
 

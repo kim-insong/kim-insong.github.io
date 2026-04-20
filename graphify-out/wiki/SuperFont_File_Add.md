@@ -12,7 +12,7 @@
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Getting Started Layer]] (10 shared connections)
 
 ## Source Files
 

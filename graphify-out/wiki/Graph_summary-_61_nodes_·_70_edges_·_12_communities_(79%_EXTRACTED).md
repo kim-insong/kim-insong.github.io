@@ -2,7 +2,7 @@
 
 > God node · 20 connections · `graphify-out/GRAPH_REPORT.md`
 
-**Community:** [[Auto-Ingest & Hook Wiring]]
+**Community:** [[Wiki Community Hubs]]
 
 ## Connections by Relation
 

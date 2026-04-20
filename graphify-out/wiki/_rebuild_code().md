@@ -2,7 +2,7 @@
 
 > God node · 15 connections · `tools/graphify/watch.py`
 
-**Community:** [[Graph Analysis Internals]]
+**Community:** [[Graph Analysis Functions]]
 
 ## Connections by Relation
 

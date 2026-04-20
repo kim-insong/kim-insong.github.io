@@ -20,7 +20,7 @@
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Redis Leaderboard Pattern]] (34 shared connections)
 
 ## Source Files
 

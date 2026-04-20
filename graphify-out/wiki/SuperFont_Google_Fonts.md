@@ -14,7 +14,7 @@
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[iOS App Development (Community)]] (12 shared connections)
 
 ## Source Files
 

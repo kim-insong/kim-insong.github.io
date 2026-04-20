@@ -33,8 +33,8 @@
 
 ## Relationships
 
-- [[Whisper Transcription]] (1 shared connections)
-- [[Build-Wiki-Graph Script]] (1 shared connections)
+- [[SuperTimers Edit Panel]] (1 shared connections)
+- [[Game Design Data Architecture]] (1 shared connections)
 
 ## Source Files
 

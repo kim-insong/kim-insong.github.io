@@ -58,3 +58,13 @@ Claude Code로 개발 작업을 할 때 작업 규모에 따라 워크플로우 
 
 빌드 커맨드는 에이전트 내부에서 실행하지 않는다 — 항상 외부에서.
 [7] 실패 = 미완료 작업 (통과할 때까지 루프).
+
+## Completion 명령 (wrap up / commit / finalize)
+
+"마무리", "커밋", "wrap up" 요청 시 순서:
+
+1. `docs/exec-plans/active/` → `completed/`로 완료된 플랜 이동
+2. 설계 결정이 바뀌었으면 `docs/design-docs/` 업데이트
+3. 일반화할 수 있는 지식 캡처 (memory 또는 skill 파일에 기록)
+4. `github` 스킬로 커밋 — 영어 메시지 + Co-Authored-By
+5. PR 생성

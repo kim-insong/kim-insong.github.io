@@ -2,7 +2,7 @@
 
 > God node · 27 connections · `src/content/wiki/graphify.md`
 
-**Community:** [[graphify Pipeline (AST + Semantic)]]
+**Community:** [[Claude Code Integration]]
 
 ## Connections by Relation
 

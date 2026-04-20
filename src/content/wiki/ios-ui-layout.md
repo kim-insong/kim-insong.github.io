@@ -2,7 +2,7 @@
 title: "iOS SwiftUI UI 레이아웃 패턴"
 description: "iPhone/iPad SwiftUI 앱에서 레이아웃을 설계할 때의 패턴과 판단 기준"
 publishDate: 2026-04-14
-updatedDate: 2026-04-14
+updatedDate: 2026-04-21
 tags: ["iOS", "SwiftUI", "layout", "iPad", "iPhone"]
 draft: false
 sources: ["raw/ios-ui-layout-patterns.md"]
@@ -34,6 +34,7 @@ expandedHeight  = collapsedHeight + pickerHeight  // picker rows = 180pt
 ```
 
 - 풀너비 footer 버튼 1개 = 72pt
+- delete만: +72pt / duplicate+delete: +144pt
 
 ## iPad 레이아웃 원칙
 

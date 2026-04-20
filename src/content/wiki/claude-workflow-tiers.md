@@ -2,7 +2,7 @@
 title: "Claude Code 개발 워크플로우 티어"
 description: "작업 규모에 따라 Tier 0–3 중 적절한 워크플로우를 선택하는 기준"
 publishDate: 2026-04-14
-updatedDate: 2026-04-14
+updatedDate: 2026-04-21
 tags: ["Claude", "AI", "workflow", "agent"]
 draft: false
 sources: ["raw/claude-workflow-tiers.md"]
@@ -55,7 +55,20 @@ sources: ["raw/claude-workflow-tiers.md"]
 구현 중 숨겨진 복잡도가 드러나면 올린다. 처음 예상보다 간단하면 내린다.
 의심스러우면 낮은 티어로 시작 — 과소 설계 후 에스컬레이션이 과대 설계보다 낫다.
 
+## Completion 명령 (wrap up / commit / finalize)
+
+"마무리", "커밋", "wrap up" 요청 시 순서:
+
+1. `docs/exec-plans/active/` → `completed/`로 완료된 플랜 이동
+2. 설계 결정이 바뀌었으면 `docs/design-docs/` 업데이트
+3. 일반화할 수 있는 지식 캡처 (memory 또는 skill 파일에 기록)
+4. `github` 스킬로 커밋 — 영어 메시지 + Co-Authored-By
+5. PR 생성
+
+→ [[documentation-policy]] Completion 체크리스트와 동일한 규칙.
+
 ## 관련
 
 - [[agent-orchestration]] — 병렬 에이전트 모델 선택 및 격리 기준
 - [[claude-skill-feedback-loop]] — 스킬 자동 피드백 루프
+- [[documentation-policy]] — 플랜 이동 및 문서 작성 시점

@@ -8,7 +8,7 @@ Shared shell (head, nav, footer) that wraps every page via a single BaseLayout s
 |------|------|
 | src/layouts/BaseLayout.astro | HTML shell — meta tags, font load, Header/Footer, scroll-reveal script |
 | src/components/Header.astro | Sticky top nav with active-path detection |
-| src/components/Footer.astro | Copyright + GitHub link |
+| src/components/Footer.astro | Copyright only |
 | src/lib/utils.ts | `cn()` helper (clsx + tailwind-merge) for `.tsx` islands |
 
 ## Core Concepts

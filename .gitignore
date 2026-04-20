@@ -1,5 +1,7 @@
 dist/
 node_modules/
+.astro/
+__pycache__/
 .env
 .env.*
 !.env.example
@@ -10,3 +12,5 @@ node_modules/
 .graphify_cached.json
 .graphify_uncached.txt
 .graphify_semantic*.json
+graphify-out/.graphify_*
+graphify-out/cache/

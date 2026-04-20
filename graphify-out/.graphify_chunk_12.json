@@ -1,0 +1,109 @@
+{
+  "nodes": [
+    {
+      "id": "02_home_musicnote",
+      "label": "SuperMusicNote Home",
+      "file_type": "image",
+      "source_file": "public/apps/supermusicnote/02_home.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "02_home_app_title",
+      "label": "NoteQuiz (App Title)",
+      "extraction_type": "EXTRACTED",
+      "confidence_score": 0.98,
+      "description": "App title 'NoteQuiz' displayed in large bold text at the top of the home screen."
+    },
+    {
+      "id": "02_home_subtitle",
+      "label": "Subtitle — 악보 음표 읽기 연습",
+      "extraction_type": "EXTRACTED",
+      "confidence_score": 0.97,
+      "description": "Korean subtitle under the app title: '악보 음표 읽기 연습' (Sheet music note reading practice)."
+    },
+    {
+      "id": "02_home_section_header",
+      "label": "Section Header — 문제 유형 선택",
+      "extraction_type": "EXTRACTED",
+      "confidence_score": 0.97,
+      "description": "Section header '문제 유형 선택' (Select Question Type) above the quiz type list."
+    },
+    {
+      "id": "02_home_option_treble_easy",
+      "label": "Option — 높은음자리표 쉬움 (덧줄 2줄 이하)",
+      "extraction_type": "EXTRACTED",
+      "confidence_score": 0.96,
+      "description": "Selected quiz option: Treble clef (높은음자리표), difficulty 쉬움 (Easy), range 덧줄 2줄 이하 (Ledger lines 2 or fewer). Checkbox is checked (blue filled), row has light blue highlight background."
+    },
+    {
+      "id": "02_home_option_treble_hard",
+      "label": "Option — 높은음자리표 어려움 (덧줄 3~5줄)",
+      "extraction_type": "EXTRACTED",
+      "confidence_score": 0.96,
+      "description": "Quiz option: Treble clef (높은음자리표), difficulty 어려움 (Hard), range 덧줄 3~5줄 (Ledger lines 3-5). Checkbox is unchecked."
+    },
+    {
+      "id": "02_home_option_bass_easy",
+      "label": "Option — 낮은음자리표 쉬움 (덧줄 2줄 이하)",
+      "extraction_type": "EXTRACTED",
+      "confidence_score": 0.96,
+      "description": "Quiz option: Bass clef (낮은음자리표), difficulty 쉬움 (Easy), range 덧줄 2줄 이하. Checkbox is unchecked."
+    },
+    {
+      "id": "02_home_option_bass_hard",
+      "label": "Option — 낮은음자리표 어려움 (덧줄 3~5줄)",
+      "extraction_type": "EXTRACTED",
+      "confidence_score": 0.96,
+      "description": "Quiz option: Bass clef (낮은음자리표), difficulty 어려움 (Hard), range 덧줄 3~5줄. Checkbox is unchecked."
+    },
+    {
+      "id": "02_home_start_button",
+      "label": "Primary Button — 시작하기",
+      "extraction_type": "EXTRACTED",
+      "confidence_score": 0.98,
+      "description": "Primary CTA button labeled '시작하기' (Start) at bottom-left, large rounded-rectangle with solid blue background and white text."
+    },
+    {
+      "id": "02_home_records_button",
+      "label": "Secondary Button — 기록보기",
+      "extraction_type": "EXTRACTED",
+      "confidence_score": 0.97,
+      "description": "Secondary button labeled '기록보기' (View Records) at bottom-right, rounded-rectangle with light blue background and blue text."
+    },
+    {
+      "id": "02_home_design_pattern_checklist",
+      "label": "Pattern — Checklist Selection List",
+      "extraction_type": "INFERRED",
+      "confidence_score": 0.85,
+      "description": "Screen uses a checklist/selection-list pattern: four rows each with checkbox, clef icon, title+difficulty label, and range descriptor on the right. Supports multi-select semantics typical of iOS list forms."
+    },
+    {
+      "id": "02_home_platform_ios",
+      "label": "Platform — iOS",
+      "extraction_type": "INFERRED",
+      "confidence_score": 0.9,
+      "description": "Status bar (time 4:31, wifi, battery) and overall visual style indicate iOS."
+    }
+  ],
+  "edges": [
+    {"source": "02_home_musicnote", "target": "02_home_app_title", "relation": "displays", "confidence_score": 0.98},
+    {"source": "02_home_musicnote", "target": "02_home_subtitle", "relation": "displays", "confidence_score": 0.97},
+    {"source": "02_home_musicnote", "target": "02_home_section_header", "relation": "contains", "confidence_score": 0.96},
+    {"source": "02_home_section_header", "target": "02_home_option_treble_easy", "relation": "groups", "confidence_score": 0.95},
+    {"source": "02_home_section_header", "target": "02_home_option_treble_hard", "relation": "groups", "confidence_score": 0.95},
+    {"source": "02_home_section_header", "target": "02_home_option_bass_easy", "relation": "groups", "confidence_score": 0.95},
+    {"source": "02_home_section_header", "target": "02_home_option_bass_hard", "relation": "groups", "confidence_score": 0.95},
+    {"source": "02_home_musicnote", "target": "02_home_start_button", "relation": "contains", "confidence_score": 0.97},
+    {"source": "02_home_musicnote", "target": "02_home_records_button", "relation": "contains", "confidence_score": 0.97},
+    {"source": "02_home_option_treble_easy", "target": "02_home_start_button", "relation": "feeds_into", "confidence_score": 0.8},
+    {"source": "02_home_musicnote", "target": "02_home_design_pattern_checklist", "relation": "uses_pattern", "confidence_score": 0.85},
+    {"source": "02_home_musicnote", "target": "02_home_platform_ios", "relation": "runs_on", "confidence_score": 0.9}
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

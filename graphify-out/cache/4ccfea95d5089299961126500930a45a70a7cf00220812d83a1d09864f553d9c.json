@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "git_hook_integration", "target": "graphify_tool", "relation": "implements", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "graphify-out/obsidian/Git Hook Integration.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

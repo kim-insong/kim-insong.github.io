@@ -34,6 +34,8 @@ Run `/wiki-ingest` to process unincorporated sources.
 | raw/agent-orchestration-patterns.md | agent-orchestration | 2026-04-14 | new page |
 | raw/documentation-policy.md | documentation-policy | 2026-04-14 | new page |
 | raw/code-quality-principles.md | code-quality | 2026-04-14 | new page |
+| raw/logging-standards.md | logging-standards | 2026-04-21 | new page |
+| raw/knowledge-capture.md | knowledge-capture | 2026-04-21 | new page |
 
 ---
 
@@ -58,3 +60,5 @@ Run `/wiki-ingest` to process unincorporated sources.
 | documentation-policy | 프로젝트 문서 정책 | documentation, workflow, Claude, architecture |
 | code-quality | 코드 품질 원칙 | code-quality, Claude, workflow, security |
 | main-session-per-ticket | 메인세션 = 티켓 단위 워크플로우 | Claude, AI, workflow, context, code-review |
+| logging-standards | 옵저버빌리티 & 로깅 표준 | logging, observability, Claude, workflow, tooling |
+| knowledge-capture | 지식 캡처 규율 | Claude, workflow, memory, skill, knowledge-management |

@@ -2,7 +2,7 @@
 title: "iOS SwiftUI UI 레이아웃 패턴"
 description: "iPhone/iPad SwiftUI 앱에서 레이아웃을 설계할 때의 패턴과 판단 기준"
 publishDate: 2026-04-14
-updatedDate: 2026-04-14
+updatedDate: 2026-04-21
 tags: ["iOS", "SwiftUI", "layout", "iPad", "iPhone"]
 draft: false
 sources: ["raw/ios-ui-layout-patterns.md"]

@@ -2,7 +2,7 @@
 title: "AI Agent 오케스트레이션 패턴"
 description: "Claude Code에서 여러 에이전트를 조율할 때의 모델 선택, 병렬화, 격리, 역할 분담 기준"
 publishDate: 2026-04-14
-updatedDate: 2026-04-14
+updatedDate: 2026-04-21
 tags: ["Claude", "AI", "agent", "workflow", "parallelization"]
 draft: false
 sources: ["raw/agent-orchestration-patterns.md"]
@@ -79,6 +79,17 @@ github skill      → commit → PR
 - 1개: 작업이 알려진 파일에 한정, 작은 타겟 변경
 - 여러 개: 범위 불확실, 여러 코드베이스 영역 연관, 기존 패턴 파악 필요
 - 최대 3개 병렬 (품질 > 수량)
+
+## Skill / Agent 파일 작성 언어 규칙
+
+**모든 skill 및 agent 파일은 영어로 작성한다.** 적용 범위:
+
+- frontmatter `description` 필드
+- 섹션 제목, instruction, 규칙 텍스트
+- 출력 / 성공 / 에러 메시지 (프롬프트 템플릿 내부 포함)
+- 주석, 역할 설명
+
+한국어는 skill 파일 내부의 *예시 데이터*에만 허용 (예: 언어별 App Store 카피 문자열).
 
 ## 관련
 

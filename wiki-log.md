@@ -16,6 +16,7 @@ Run `/wiki-ingest` to process unincorporated sources.
 
 | Source | Wiki Page | Date | Notes |
 |--------|-----------|------|-------|
+| blog:merge-per-task | merge-per-task | 2026-04-21 | new page |
 | blog:main-session-per-ticket | main-session-per-ticket | 2026-04-20 | new page |
 | blog:graphify-for-claude-code | graphify | 2026-04-20 | merged |
 | blog:hello-world | getting-started | 2026-04-13 | merged |
@@ -58,3 +59,4 @@ Run `/wiki-ingest` to process unincorporated sources.
 | documentation-policy | 프로젝트 문서 정책 | documentation, workflow, Claude, architecture |
 | code-quality | 코드 품질 원칙 | code-quality, Claude, workflow, security |
 | main-session-per-ticket | 메인세션 = 티켓 단위 워크플로우 | Claude, AI, workflow, context, code-review |
+| merge-per-task | Task 단위 머지 원칙 | git, worktree, Claude, workflow, deploy, staging |

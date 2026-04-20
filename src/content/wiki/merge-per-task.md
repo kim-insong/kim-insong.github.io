@@ -3,6 +3,7 @@ title: "Task 단위 머지 원칙"
 description: "Claude의 병렬 에이전트 + git worktree + staging deploy 조합에서 통합의 원자 단위를 task 하나로 유지하는 이유와 방법"
 tags: ["git", "worktree", "Claude", "workflow", "deploy", "staging"]
 publishDate: 2026-04-20
+updatedDate: 2026-04-21
 draft: false
 sources: ["blog:merge-per-task"]
 ---
@@ -94,6 +95,11 @@ main (pull)
 
 ## 관련
 
-- 블로그: [[merge-per-task]] 원문 글
 - [[main-session-per-ticket]] — 메인세션을 티켓 단위로 유지하는 원칙 (task = 메인세션 단위)
+- [[agent-orchestration]] — 병렬 agent 조율, architect의 브랜치 할당
 - [[git-workflow-patterns]] — 브랜치 네이밍, 커밋 포맷, PR 관리
+- [[claude-workflow-tiers]] — 작업 규모별 티어 선택
+
+## 출처
+
+- [블로그 — 한 번에 하나의 task만 머지한다](/blog/merge-per-task/)

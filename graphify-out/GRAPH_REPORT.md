@@ -1,93 +1,189 @@
 # Graph Report - src/content/wiki/ raw/  (2026-04-21)
 
 ## Corpus Check
-- 30 files · ~13,818 words
+- 33 files · ~15,757 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1051 nodes · 1372 edges · 78 communities detected
-- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 150 edges (avg confidence: 0.79)
+- 1070 nodes · 1237 edges · 174 communities detected
+- Extraction: 88% EXTRACTED · 12% INFERRED · 0% AMBIGUOUS · INFERRED: 143 edges (avg confidence: 0.79)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Language AST Extractors|Language AST Extractors]]
 - [[_COMMUNITY_Graph Analysis Functions|Graph Analysis Functions]]
-- [[_COMMUNITY_Benchmark & Installers|Benchmark & Installers]]
-- [[_COMMUNITY_Claude Code Integration|Claude Code Integration]]
-- [[_COMMUNITY_Site Content & Schema|Site Content & Schema]]
-- [[_COMMUNITY_graphify Pipeline Variants|graphify Pipeline Variants]]
-- [[_COMMUNITY_graphify Core Concepts|graphify Core Concepts]]
-- [[_COMMUNITY_URL Ingest Fetchers|URL Ingest Fetchers]]
-- [[_COMMUNITY_Wiki Community Hubs|Wiki Community Hubs]]
+- [[_COMMUNITY_Skill Installers|Skill Installers]]
+- [[_COMMUNITY_insong.net Site Structure|insong.net Site Structure]]
+- [[_COMMUNITY_graphify Rationale & Integration|graphify Rationale & Integration]]
+- [[_COMMUNITY_graphify Wiki (KO)|graphify Wiki (KO)]]
 - [[_COMMUNITY_Merge-per-Task Workflow|Merge-per-Task Workflow]]
-- [[_COMMUNITY_File Detection & Conversion|File Detection & Conversion]]
-- [[_COMMUNITY_Game Design Data Architecture|Game Design Data Architecture]]
-- [[_COMMUNITY_Obsidian Export & Traversal|Obsidian Export & Traversal]]
-- [[_COMMUNITY_Code Quality & Review Docs|Code Quality & Review Docs]]
-- [[_COMMUNITY_AI Skill Feedback Loops|AI Skill Feedback Loops]]
-- [[_COMMUNITY_Extraction Cache|Extraction Cache]]
-- [[_COMMUNITY_Wiki Operations|Wiki Operations]]
-- [[_COMMUNITY_iOS App Portfolio|iOS App Portfolio]]
-- [[_COMMUNITY_Workflow Tiers (0-3)|Workflow Tiers (0-3)]]
-- [[_COMMUNITY_SuperMusicNote UI|SuperMusicNote UI]]
-- [[_COMMUNITY_Documentation Policy & Git Rules|Documentation Policy & Git Rules]]
-- [[_COMMUNITY_iOS Persistence & Layout|iOS Persistence & Layout]]
-- [[_COMMUNITY_Wiki Architecture Layers|Wiki Architecture Layers]]
-- [[_COMMUNITY_SuperTimers Edit Panel|SuperTimers Edit Panel]]
-- [[_COMMUNITY_VideoAudio Transcription|Video/Audio Transcription]]
-- [[_COMMUNITY_Redis Leaderboard Pattern|Redis Leaderboard Pattern]]
-- [[_COMMUNITY_Git Hook Installer|Git Hook Installer]]
-- [[_COMMUNITY_SuperTimers Onboarding|SuperTimers Onboarding]]
-- [[_COMMUNITY_SuperFont UI|SuperFont UI]]
-- [[_COMMUNITY_Wiki Entry Points|Wiki Entry Points]]
-- [[_COMMUNITY_SuperTimers Home Patterns|SuperTimers Home Patterns]]
-- [[_COMMUNITY_SuperMusicNote Quiz Setup|SuperMusicNote Quiz Setup]]
-- [[_COMMUNITY_insong.net Stack & LLM Wiki|insong.net Stack & LLM Wiki]]
-- [[_COMMUNITY_Code Quality Principles|Code Quality Principles]]
-- [[_COMMUNITY_Graph Build Layer|Graph Build Layer]]
-- [[_COMMUNITY_Wiki Output Writer|Wiki Output Writer]]
-- [[_COMMUNITY_SuperFont Install Flow|SuperFont Install Flow]]
-- [[_COMMUNITY_Brand Identity (insong.net)|Brand Identity (insong.net)]]
-- [[_COMMUNITY_SuperTimers Alarm Form|SuperTimers Alarm Form]]
-- [[_COMMUNITY_SuperMusicNote Records|SuperMusicNote Records]]
+- [[_COMMUNITY_graphify Architecture Concepts|graphify Architecture Concepts]]
+- [[_COMMUNITY_Token Reduction Benchmark|Token Reduction Benchmark]]
+- [[_COMMUNITY_URL Ingestion Pipeline|URL Ingestion Pipeline]]
 - [[_COMMUNITY_Wiki Auto-Ingest Rules|Wiki Auto-Ingest Rules]]
-- [[_COMMUNITY_iOS App Development (Community)|iOS App Development (Community)]]
+- [[_COMMUNITY_File Detection & Classification|File Detection & Classification]]
+- [[_COMMUNITY_Agent Orchestration (KO)|Agent Orchestration (KO)]]
+- [[_COMMUNITY_Code Quality Guide Structure|Code Quality Guide Structure]]
+- [[_COMMUNITY_Semantic Extraction Cache|Semantic Extraction Cache]]
+- [[_COMMUNITY_SuperMusicNote Answer UI|SuperMusicNote Answer UI]]
+- [[_COMMUNITY_SuperTimers Alarm Section|SuperTimers Alarm Section]]
+- [[_COMMUNITY_AudioVideo Transcription|Audio/Video Transcription]]
+- [[_COMMUNITY_Git Hook Installation|Git Hook Installation]]
+- [[_COMMUNITY_Community Detection (Leiden)|Community Detection (Leiden)]]
+- [[_COMMUNITY_Permission Dialog UI|Permission Dialog UI]]
+- [[_COMMUNITY_SuperFont My Fonts Screen|SuperFont My Fonts Screen]]
+- [[_COMMUNITY_Wiki Pages (KO)|Wiki Pages (KO)]]
+- [[_COMMUNITY_SuperTimers Presets|SuperTimers Presets]]
+- [[_COMMUNITY_SuperMusicNote Home|SuperMusicNote Home]]
+- [[_COMMUNITY_LLM Wiki Theory|LLM Wiki Theory]]
+- [[_COMMUNITY_Game Server Architecture (KO)|Game Server Architecture (KO)]]
+- [[_COMMUNITY_Code Quality Principles (KO)|Code Quality Principles (KO)]]
+- [[_COMMUNITY_Graph Build & Validate|Graph Build & Validate]]
+- [[_COMMUNITY_iOS Apps & Communities|iOS Apps & Communities]]
+- [[_COMMUNITY_Wiki Generation (wiki.py)|Wiki Generation (wiki.py)]]
+- [[_COMMUNITY_SuperFont Install Flow|SuperFont Install Flow]]
+- [[_COMMUNITY_insong.net Brand Identity|insong.net Brand Identity]]
+- [[_COMMUNITY_SuperTimers Edit Screen|SuperTimers Edit Screen]]
+- [[_COMMUNITY_SuperMusicNote Records|SuperMusicNote Records]]
+- [[_COMMUNITY_Source Ingest Flow|Source Ingest Flow]]
 - [[_COMMUNITY_SuperFont Google Fonts|SuperFont Google Fonts]]
-- [[_COMMUNITY_graphify Processing Pipeline|graphify Processing Pipeline]]
-- [[_COMMUNITY_Game Server Request Context|Game Server Request Context]]
-- [[_COMMUNITY_Getting Started Layer|Getting Started Layer]]
+- [[_COMMUNITY_CLAUDE.md & Memory Rules|CLAUDE.md & Memory Rules]]
+- [[_COMMUNITY_Request Context Blog Post|Request Context Blog Post]]
+- [[_COMMUNITY_2025 iOS Stack|2025 iOS Stack]]
+- [[_COMMUNITY_Doc Policy Structure|Doc Policy Structure]]
+- [[_COMMUNITY_iPhone Layout & Gestures|iPhone Layout & Gestures]]
+- [[_COMMUNITY_Request Context (dup)|Request Context (dup)]]
 - [[_COMMUNITY_SuperFont File Add|SuperFont File Add]]
-- [[_COMMUNITY_iOS Stack (SwiftUISwiftData)|iOS Stack (SwiftUI/SwiftData)]]
-- [[_COMMUNITY_Python Package Root|Python Package Root]]
-- [[_COMMUNITY_Wiki Seed Nodes|Wiki Seed Nodes]]
-- [[_COMMUNITY_Wiki Lint & Tagging|Wiki Lint & Tagging]]
 - [[_COMMUNITY_Logging Standards|Logging Standards]]
-- [[_COMMUNITY_SwiftUI SheetKeyboard|SwiftUI Sheet/Keyboard]]
-- [[_COMMUNITY_Code Deletion Principles|Code Deletion Principles]]
-- [[_COMMUNITY_Wiki Search Component|Wiki Search Component]]
-- [[_COMMUNITY_TS Utility Helpers|TS Utility Helpers]]
-- [[_COMMUNITY_Blog Launch Posts|Blog Launch Posts]]
-- [[_COMMUNITY_Skill Auto-Update Discipline|Skill Auto-Update Discipline]]
-- [[_COMMUNITY_Incremental Update & Caching|Incremental Update & Caching]]
-- [[_COMMUNITY_astro.config.mjs|astro.config.mjs]]
-- [[_COMMUNITY_manifest.py|manifest.py]]
-- [[_COMMUNITY_env.d.ts|env.d.ts]]
-- [[_COMMUNITY_config.ts|config.ts]]
-- [[_COMMUNITY_Feature-Branch PR Workflow|Feature-Branch PR Workflow]]
-- [[_COMMUNITY_cn() Utility|cn() Utility]]
-- [[_COMMUNITY_install-graphify.sh|install-graphify.sh]]
-- [[_COMMUNITY_graphify Output Layer|graphify Output Layer]]
-- [[_COMMUNITY_GRAPH_REPORT|GRAPH_REPORT.md]]
-- [[_COMMUNITY_graph.json Store|graph.json Store]]
-- [[_COMMUNITY_Leiden Clustering|Leiden Clustering]]
-- [[_COMMUNITY_EXTRACTEDINFERREDAMBIGUOUS Tagging|EXTRACTED/INFERRED/AMBIGUOUS Tagging]]
-- [[_COMMUNITY_SF Symbol Selection|SF Symbol Selection]]
-- [[_COMMUNITY_SkillAgent Language Rule|Skill/Agent Language Rule]]
-- [[_COMMUNITY_Error Handling Principle|Error Handling Principle]]
-- [[_COMMUNITY_SuperMusicNote Splash|SuperMusicNote Splash]]
-- [[_COMMUNITY_SuperFont Profile Downloaded|SuperFont Profile Downloaded]]
-- [[_COMMUNITY_SuperFont Safari Allow Profile|SuperFont Safari Allow Profile]]
-- [[_COMMUNITY_Supported File Formats|Supported File Formats]]
+- [[_COMMUNITY_iOS Data Persistence|iOS Data Persistence]]
+- [[_COMMUNITY_graphify Ecosystem Actors|graphify Ecosystem Actors]]
+- [[_COMMUNITY_Game Design Data Architecture|Game Design Data Architecture]]
+- [[_COMMUNITY_Memex & Wiki Lineage|Memex & Wiki Lineage]]
+- [[_COMMUNITY_iPad Layout Patterns|iPad Layout Patterns]]
+- [[_COMMUNITY_SwiftUI Sheet Presentation|SwiftUI Sheet Presentation]]
+- [[_COMMUNITY_SwiftUI Layout Patterns|SwiftUI Layout Patterns]]
+- [[_COMMUNITY_Request Context (dup 2)|Request Context (dup 2)]]
+- [[_COMMUNITY_LLM Wiki Lineage|LLM Wiki Lineage]]
+- [[_COMMUNITY_Community 54|Community 54]]
+- [[_COMMUNITY_Community 55|Community 55]]
+- [[_COMMUNITY_Community 56|Community 56]]
+- [[_COMMUNITY_Community 57|Community 57]]
+- [[_COMMUNITY_Community 58|Community 58]]
+- [[_COMMUNITY_Community 59|Community 59]]
+- [[_COMMUNITY_Community 60|Community 60]]
+- [[_COMMUNITY_Community 61|Community 61]]
+- [[_COMMUNITY_Community 62|Community 62]]
+- [[_COMMUNITY_Community 63|Community 63]]
+- [[_COMMUNITY_Community 64|Community 64]]
+- [[_COMMUNITY_Community 65|Community 65]]
+- [[_COMMUNITY_Community 66|Community 66]]
+- [[_COMMUNITY_Community 67|Community 67]]
+- [[_COMMUNITY_Community 68|Community 68]]
+- [[_COMMUNITY_Community 69|Community 69]]
+- [[_COMMUNITY_Community 70|Community 70]]
+- [[_COMMUNITY_Community 71|Community 71]]
+- [[_COMMUNITY_Community 72|Community 72]]
+- [[_COMMUNITY_Community 73|Community 73]]
+- [[_COMMUNITY_Community 74|Community 74]]
+- [[_COMMUNITY_Community 75|Community 75]]
+- [[_COMMUNITY_Community 76|Community 76]]
+- [[_COMMUNITY_Community 77|Community 77]]
+- [[_COMMUNITY_Community 78|Community 78]]
+- [[_COMMUNITY_Community 79|Community 79]]
+- [[_COMMUNITY_Community 80|Community 80]]
+- [[_COMMUNITY_Community 81|Community 81]]
+- [[_COMMUNITY_Community 82|Community 82]]
+- [[_COMMUNITY_Community 83|Community 83]]
+- [[_COMMUNITY_Community 84|Community 84]]
+- [[_COMMUNITY_Community 85|Community 85]]
+- [[_COMMUNITY_Community 86|Community 86]]
+- [[_COMMUNITY_Community 87|Community 87]]
+- [[_COMMUNITY_Community 88|Community 88]]
+- [[_COMMUNITY_Community 89|Community 89]]
+- [[_COMMUNITY_Community 90|Community 90]]
+- [[_COMMUNITY_Community 91|Community 91]]
+- [[_COMMUNITY_Community 92|Community 92]]
+- [[_COMMUNITY_Community 93|Community 93]]
+- [[_COMMUNITY_Community 94|Community 94]]
+- [[_COMMUNITY_Community 95|Community 95]]
+- [[_COMMUNITY_Community 96|Community 96]]
+- [[_COMMUNITY_Community 97|Community 97]]
+- [[_COMMUNITY_Community 98|Community 98]]
+- [[_COMMUNITY_Community 99|Community 99]]
+- [[_COMMUNITY_Community 100|Community 100]]
+- [[_COMMUNITY_Community 101|Community 101]]
+- [[_COMMUNITY_Community 102|Community 102]]
+- [[_COMMUNITY_Community 103|Community 103]]
+- [[_COMMUNITY_Community 104|Community 104]]
+- [[_COMMUNITY_Community 105|Community 105]]
+- [[_COMMUNITY_Community 106|Community 106]]
+- [[_COMMUNITY_Community 107|Community 107]]
+- [[_COMMUNITY_Community 108|Community 108]]
+- [[_COMMUNITY_Community 109|Community 109]]
+- [[_COMMUNITY_Community 110|Community 110]]
+- [[_COMMUNITY_Community 111|Community 111]]
+- [[_COMMUNITY_Community 112|Community 112]]
+- [[_COMMUNITY_Community 113|Community 113]]
+- [[_COMMUNITY_Community 114|Community 114]]
+- [[_COMMUNITY_Community 115|Community 115]]
+- [[_COMMUNITY_Community 116|Community 116]]
+- [[_COMMUNITY_Community 117|Community 117]]
+- [[_COMMUNITY_Community 118|Community 118]]
+- [[_COMMUNITY_Community 119|Community 119]]
+- [[_COMMUNITY_Community 120|Community 120]]
+- [[_COMMUNITY_Community 121|Community 121]]
+- [[_COMMUNITY_Community 122|Community 122]]
+- [[_COMMUNITY_Community 123|Community 123]]
+- [[_COMMUNITY_Community 124|Community 124]]
+- [[_COMMUNITY_Community 125|Community 125]]
+- [[_COMMUNITY_Community 126|Community 126]]
+- [[_COMMUNITY_Community 127|Community 127]]
+- [[_COMMUNITY_Community 128|Community 128]]
+- [[_COMMUNITY_Community 129|Community 129]]
+- [[_COMMUNITY_Community 130|Community 130]]
+- [[_COMMUNITY_Community 131|Community 131]]
+- [[_COMMUNITY_Community 132|Community 132]]
+- [[_COMMUNITY_Community 133|Community 133]]
+- [[_COMMUNITY_Community 134|Community 134]]
+- [[_COMMUNITY_Community 135|Community 135]]
+- [[_COMMUNITY_Community 136|Community 136]]
+- [[_COMMUNITY_Community 137|Community 137]]
+- [[_COMMUNITY_Community 138|Community 138]]
+- [[_COMMUNITY_Community 139|Community 139]]
+- [[_COMMUNITY_Community 140|Community 140]]
+- [[_COMMUNITY_Community 141|Community 141]]
+- [[_COMMUNITY_Community 142|Community 142]]
+- [[_COMMUNITY_Community 143|Community 143]]
+- [[_COMMUNITY_Community 144|Community 144]]
+- [[_COMMUNITY_Community 145|Community 145]]
+- [[_COMMUNITY_Community 146|Community 146]]
+- [[_COMMUNITY_Community 147|Community 147]]
+- [[_COMMUNITY_Community 148|Community 148]]
+- [[_COMMUNITY_Community 149|Community 149]]
+- [[_COMMUNITY_Community 150|Community 150]]
+- [[_COMMUNITY_Community 151|Community 151]]
+- [[_COMMUNITY_Community 152|Community 152]]
+- [[_COMMUNITY_Community 153|Community 153]]
+- [[_COMMUNITY_Community 154|Community 154]]
+- [[_COMMUNITY_Community 155|Community 155]]
+- [[_COMMUNITY_Community 156|Community 156]]
+- [[_COMMUNITY_Community 157|Community 157]]
+- [[_COMMUNITY_Community 158|Community 158]]
+- [[_COMMUNITY_Community 159|Community 159]]
+- [[_COMMUNITY_Community 160|Community 160]]
+- [[_COMMUNITY_Community 161|Community 161]]
+- [[_COMMUNITY_Community 162|Community 162]]
+- [[_COMMUNITY_Community 163|Community 163]]
+- [[_COMMUNITY_Community 164|Community 164]]
+- [[_COMMUNITY_Community 165|Community 165]]
+- [[_COMMUNITY_Community 166|Community 166]]
+- [[_COMMUNITY_Community 167|Community 167]]
+- [[_COMMUNITY_Community 168|Community 168]]
+- [[_COMMUNITY_Community 169|Community 169]]
+- [[_COMMUNITY_Community 170|Community 170]]
+- [[_COMMUNITY_Community 171|Community 171]]
+- [[_COMMUNITY_Community 172|Community 172]]
+- [[_COMMUNITY_Community 173|Community 173]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `main()` - 31 edges
@@ -98,12 +194,10 @@
 6. `_read_text()` - 16 edges
 7. `_extract_generic()` - 16 edges
 8. `_rebuild_code()` - 15 edges
-9. `LLM Wiki Pattern` - 14 edges
-10. `graphify skill (Claude Code)` - 14 edges
+9. `graphify skill (Claude Code)` - 14 edges
+10. `detect()` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `이중 sorted set 스냅샷 패턴` --semantically_similar_to--> `이중 sorted set 스냅샷 패턴 (leaderboard-snapshot)`  [INFERRED] [semantically similar]
-  src/content/wiki/redis-leaderboard-snapshot.md → graphify-out/obsidian/이중 sorted set 스냅샷 패턴.md
 - `npm run build:agent-wiki` --semantically_similar_to--> `npm script build:agent-wiki`  [INFERRED] [semantically similar]
   CLAUDE.md → docs/exec-plans/completed/llm-wiki-graphify.md
 - `Wiki: 위키 시작하기` --semantically_similar_to--> `위키 시작하기 (obsidian)`  [INFERRED] [semantically similar]
@@ -112,14 +206,22 @@
   wiki-log.md → graphify-out/obsidian/Blog leaderboard-snapshot.md
 - `김인송 (Kim Insong) game developer profile` --conceptually_related_to--> `src/pages/about.astro`  [INFERRED]
   about.pdf → docs/design-docs/pages.md
+- `file_hash()` --calls--> `update()`  [INFERRED]
+  tools/graphify/cache.py → src/components/WikiGraph.tsx
 
 ## Hyperedges (group relationships)
+- **Tier 3 병렬 에이전트 파이프라인 구성** — claude_workflow_tiers_tier3_pipeline, agent_orchestration_standard_pipeline, agent_orchestration_worktree_isolation, agent_orchestration_model_selection, agent_orchestration_scope_limit [EXTRACTED 0.95]
+- **표준 로그 포맷 플랫폼 구현 (shell/node/swift)** — logging_standards_log_format, logging_standards_shell_convention, logging_standards_node_hook_stderr, logging_standards_swift_prefix [EXTRACTED 1.00]
+- **graphify 4-stage processing pipeline** — graphify_ast_pass, graphify_whisper, graphify_semantic_extraction, graphify_leiden_clustering [EXTRACTED 1.00]
+- **graphify output artifact set** — graphify_graph_html, graphify_graph_report_md, graphify_graph_json, graphify_obsidian_vault, graphify_wiki_output [EXTRACTED 1.00]
+- **Two-scope install commands** — graphify_install_platform_claude, graphify_claude_install, graphify_slash_command, graphify_claude_md [EXTRACTED 1.00]
 - **티켓 라이프사이클 6단계** — main_session_per_ticket_requirementsdesign, main_session_per_ticket_designdocfork, main_session_per_ticket_criteriaextraction, main_session_per_ticket_implementation, main_session_per_ticket_reviewagent, main_session_per_ticket_reviewreflection [EXTRACTED 1.00]
 - **세션 책임 분리** — main_session_per_ticket_mainsession, main_session_per_ticket_forksession, main_session_per_ticket_subagent, main_session_per_ticket_reviewagent [EXTRACTED 1.00]
 - **code-quality-guide 이중 사용 패턴** — main_session_per_ticket_codequalityguide, main_session_per_ticket_implementation, main_session_per_ticket_reviewagent [EXTRACTED 1.00]
-- **Staging Deploy Pipeline (staging.sh + merge --no-ff + fastlane)** — merge_per_task_staging_sh, merge_per_task_staging_branch, merge_per_task_merge_no_ff, merge_per_task_fastlane_testflight [EXTRACTED 0.95]
-- **staging.sh 브랜치 목록 결정 3가지 모드** — merge_per_task_branch_mode_plan, merge_per_task_branch_mode_worktrees, merge_per_task_branch_mode_explicit [EXTRACTED 0.95]
-- **Task 단위 머지 위반 안티패턴** — merge_per_task_antipattern_stack_tasks, merge_per_task_antipattern_push_staging, merge_per_task_antipattern_merge_staging_to_main [EXTRACTED 0.90]
+- **Tier 3 완료 플로우 (Completion 공통 규칙)** — claude_workflow_tiers_completion_command, documentation_policy_completion_checklist, knowledge_capture_immediate_rule, agent_orchestration_no_internal_commit [EXTRACTED 1.00]
+- **Coordinator derivation from Services and Instances** — service_rpc_topology_service, service_rpc_topology_serverinstance, service_rpc_topology_coordinator, service_rpc_topology_session [EXTRACTED 0.95]
+- **Staging deploy pipeline (task branches to TestFlight)** — merge_per_task_task, merge_per_task_staging_sh, merge_per_task_staging_branch, merge_per_task_fastlane, merge_per_task_testflight [EXTRACTED 0.95]
+- **Parallel agent task isolation (worktree + branch + architect)** — merge_per_task_claude_agent_isolation, merge_per_task_git_worktree, merge_per_task_architect_agent, merge_per_task_dependency_dag [INFERRED 0.80]
 
 ## Communities
 
@@ -128,379 +230,941 @@ Cohesion: 0.05
 Nodes (79): _csharp_extra_walk(), extract_blade(), extract_c(), extract_cpp(), extract_csharp(), extract_dart(), extract_elixir(), _extract_generic() (+71 more)
 
 ### Community 1 - "Graph Analysis Functions"
-Cohesion: 0.04
-Nodes (68): _cross_community_surprises(), _cross_file_surprises(), _file_category(), god_nodes(), graph_diff(), _is_concept_node(), _is_file_node(), _node_community_map() (+60 more)
-
-### Community 2 - "Benchmark & Installers"
-Cohesion: 0.06
-Nodes (51): _estimate_tokens(), print_benchmark(), _query_subgraph_tokens(), Token-reduction benchmark - measures how much context graphify saves vs naive fu, Print a human-readable benchmark report., Run BFS from best-matching nodes and return estimated tokens in the subgraph con, Measure token reduction: corpus tokens vs graphify query tokens.      Args:, run_benchmark() (+43 more)
-
-### Community 3 - "Claude Code Integration"
 Cohesion: 0.05
-Nodes (48): Claude/GPT API (semantic extraction), ClaudeGPT Semantic Extraction, Community: graphify Pipeline (AST + Semantic), Rationale: What AST cannot capture, Deterministic AST pass, blog: graphify-for-claude-code, Claude Code, graphify claude install (+40 more)
+Nodes (56): _cross_community_surprises(), _cross_file_surprises(), _file_category(), god_nodes(), graph_diff(), _is_concept_node(), _is_file_node(), _node_community_map() (+48 more)
 
-### Community 4 - "Site Content & Schema"
+### Community 2 - "Skill Installers"
+Cohesion: 0.07
+Nodes (43): _agents_install(), _agents_uninstall(), _antigravity_install(), _antigravity_uninstall(), _check_skill_version(), claude_install(), claude_uninstall(), _cursor_install() (+35 more)
+
+### Community 3 - "insong.net Site Structure"
 Cohesion: 0.06
 Nodes (44): Breadth across client, dedicated/web/socket server, Windows tool, web service, mobile app, 김인송 (Kim Insong) game developer profile, Site nav: 소개/앱/블로그/위키/그래프, Feature-to-Doc Index, apps collection schema (tagline, platform, features, screenshots), apps collection, blog collection, wiki collection (+36 more)
 
-### Community 5 - "graphify Pipeline Variants"
+### Community 4 - "graphify Rationale & Integration"
+Cohesion: 0.06
+Nodes (42): Rationale: What AST cannot capture, Deterministic AST pass, blog: graphify-for-claude-code, Claude Code, graphify claude install, CLAUDE.md, Codex, Community Detection (+34 more)
+
+### Community 5 - "graphify Wiki (KO)"
 Cohesion: 0.05
 Nodes (40): npm run build:agent-wiki, EXTRACTED/INFERRED/AMBIGUOUS 감사 추적, confidence_score 요구사항, 하이퍼엣지 (3+ 노드 그룹), Karpathy /raw folder 워크플로우, 병렬 subagent로 5-10배 속도 향상, graphify 9-step pipeline, graphify-aider (sequential) (+32 more)
 
-### Community 6 - "graphify Core Concepts"
+### Community 6 - "Merge-per-Task Workflow"
+Cohesion: 0.06
+Nodes (38): Antipattern: merge staging to main, Antipattern: pushing staging branch, Antipattern: stacking multiple task branches, architect agent, Blog: merge-per-task, Claude Agent isolation: worktree, Dependency DAG (per spec), Explicit args mode (+30 more)
+
+### Community 7 - "graphify Architecture Concepts"
 Cohesion: 0.06
 Nodes (37): AST Structural Extraction, Honest Audit Trail (EXTRACTED/INFERRED/AMBIGUOUS), BFS/DFS Traversal Query, Community Detection, Confidence Score Rules, --mode deep (Aggressive INFERRED), Semantic Extraction Cache, God Nodes Analysis (+29 more)
 
-### Community 7 - "URL Ingest Fetchers"
+### Community 8 - "Token Reduction Benchmark"
+Cohesion: 0.07
+Nodes (30): _estimate_tokens(), print_benchmark(), _query_subgraph_tokens(), Token-reduction benchmark - measures how much context graphify saves vs naive fu, Print a human-readable benchmark report., Run BFS from best-matching nodes and return estimated tokens in the subgraph con, Measure token reduction: corpus tokens vs graphify query tokens.      Args:, run_benchmark() (+22 more)
+
+### Community 9 - "URL Ingestion Pipeline"
 Cohesion: 0.1
 Nodes (32): _detect_url_type(), _download_binary(), _fetch_arxiv(), _fetch_html(), _fetch_tweet(), _fetch_webpage(), _html_to_markdown(), ingest() (+24 more)
 
-### Community 8 - "Wiki Community Hubs"
+### Community 10 - "Wiki Auto-Ingest Rules"
 Cohesion: 0.06
 Nodes (35): graphify-out/wiki/index.md agent entry, graphify-out/GRAPH_REPORT.md entry point rule, graphify knowledge graph rule, post-commit hook auto-refresh, Community: Claude Skills & Game Server, Community: Game Data Architecture, Community: Getting Started, Community: graphify Output Layer (+27 more)
 
-### Community 9 - "Merge-per-Task Workflow"
-Cohesion: 0.06
-Nodes (34): agent-orchestration (wiki link), 안티패턴: staging을 main에 merge, 안티패턴: staging 브랜치 push, 안티패턴: 여러 task 브랜치 쌓기, Architect Agent, Architect 범위 한계 (한 기획서 내부), blog:merge-per-task (출처), 직접 명시 모드 (+26 more)
-
-### Community 10 - "File Detection & Conversion"
+### Community 11 - "File Detection & Classification"
 Cohesion: 0.1
 Nodes (30): classify_file(), convert_office_file(), count_words(), detect(), detect_incremental(), docx_to_markdown(), extract_pdf_text(), FileType (+22 more)
 
-### Community 11 - "Game Design Data Architecture"
-Cohesion: 0.08
-Nodes (29): 게임 기획데이터 관리 원칙, Blog: design-data-in-engine, 클라이언트 원본 시 순환 참조 패턴, 순환 참조 문제, enum 발급 주체 구분, 기획데이터를 독립으로 두는 이유, 게임 엔진 안의 기획데이터 문제, 스키마 export 방식 (임시 해결책) (+21 more)
-
-### Community 12 - "Obsidian Export & Traversal"
+### Community 12 - "Agent Orchestration (KO)"
 Cohesion: 0.09
-Nodes (22): main(), pageResolver(), parseFrontmatter(), Export graph as an Obsidian Canvas file - communities as groups, nodes as cards., to_canvas(), Strip control characters and cap length.      Safe for embedding in JSON data (i, sanitize_label(), _bfs() (+14 more)
+Nodes (26): 같은 파일은 같은 agent에 할당 (충돌 방지), 모델 선택 기준 (opus/sonnet/haiku 역할 매핑), Agent 내부 commit/push 금지 — github 스킬 사용, 병렬화 판단 기준 (독립↔의존), Agent당 범위 제한 (~3개 파일, tight scope), 기본값 sonnet, usage limit 시에만 opus 폴백, 표준 파이프라인 (Explore→Plan→Architect→Dev→QA→Review→Build→PR), worktree 격리 조건 (쓰기 병렬 agent는 필수) (+18 more)
 
-### Community 13 - "Code Quality & Review Docs"
+### Community 13 - "Code Quality Guide Structure"
 Cohesion: 0.12
 Nodes (25): adr.md (ADR 기록), agent-orchestration (관련), claude-workflow-tiers (관련), code-convention.md, code-quality (관련), code-quality-guide.md, Context 보존 원칙, 3단계 — 평가 기준 추출 (Sub-agent) (+17 more)
 
-### Community 14 - "AI Skill Feedback Loops"
-Cohesion: 0.14
-Nodes (24): 자동 감지 + 사람 확인 패턴, Blog ai-skill-feedback-loop, Blog design-data-in-engine, Blog: game-server-request-context, Claude 스킬 자동 피드백 루프, Claude 스킬 자동 피드백 루프, 자동 감지 + 사람 확인 패턴, Blog: ai-skill-feedback-loop (+16 more)
-
-### Community 15 - "Extraction Cache"
+### Community 14 - "Semantic Extraction Cache"
 Cohesion: 0.13
 Nodes (22): _body_content(), cache_dir(), cached_files(), check_semantic_cache(), clear_cache(), file_hash(), load_cached(), Check semantic extraction cache for a list of absolute file paths.      Returns (+14 more)
 
-### Community 16 - "Wiki Operations"
-Cohesion: 0.16
-Nodes (21): Agent-Navigable Wiki Output (wiki), Community: Knowledge Architecture Layers, Wiki Operations (Ingest/Query/Lint) (Community), index.md Catalog, Ingest Operation, Lint Operation, LLM Wiki Core Idea (Persistent Compounding Knowledge), LLM Wiki Core Idea (Persistent Compounding Knowledge) (+13 more)
-
-### Community 17 - "iOS App Portfolio"
-Cohesion: 0.11
-Nodes (21): SuperFont (iOS app), SuperMathQuiz (iOS app), SuperMusicNote (iOS app), SuperTimers (iOS app), Backward-Compatible 디코더 패턴 (decodeIfPresent), Claude/GPT Semantic Extraction, Community: Claude / AI 자동화, Community: 게임 서버 / 아키텍처 (+13 more)
-
-### Community 18 - "Workflow Tiers (0-3)"
-Cohesion: 0.12
-Nodes (18): 모델 선택 기준, 병렬화 판단 기준, Tier 3 표준 파이프라인, AI Agent 오케스트레이션 패턴, worktree 격리 조건, AI 스킬 피드백 루프, stop hook 타이밍, 낮은 티어부터 시작하는 이유 (+10 more)
-
-### Community 19 - "SuperMusicNote UI"
+### Community 15 - "SuperMusicNote Answer UI"
 Cohesion: 0.12
 Nodes (18): Answer Buttons Row (도레미파솔라시), 도 Button, 파 Button, 라 Button, 미 Button, 레 Button, 시 Button, 솔 Button (+10 more)
 
-### Community 20 - "Documentation Policy & Git Rules"
-Cohesion: 0.13
-Nodes (17): Agent 모델 선택 기준 (opus/sonnet/haiku), Agent 병렬화 판단 기준, 프로젝트 문서 정책 (폴더 구조), Modular CLAUDE.md 계층 로딩, Plan Mode와 exec-plans 동기화 규칙, Git Feature Branch Strategy, Git Commit Message Format, Pre-push PR 상태 체크 (MERGED 브랜치 회피) (+9 more)
-
-### Community 21 - "iOS Persistence & Layout"
-Cohesion: 0.12
-Nodes (17): 원자적 파일 쓰기, decodeIfPresent 패턴, saveVersion 필드, 버전 히스토리 인라인 문서화, iOS 데이터 영속성 패턴, 제스처 시스템, iPad 레이아웃 원칙, iPhone 레이아웃 원칙 (+9 more)
-
-### Community 22 - "Wiki Architecture Layers"
-Cohesion: 0.16
-Nodes (16): index.md Catalog, Ingest Operation, Lint Operation, log.md Chronological Log, Obsidian (Wiki IDE), qmd Local Search Engine, Query Operation, RAG (Retrieval-Augmented Generation) (+8 more)
-
-### Community 23 - "SuperTimers Edit Panel"
+### Community 16 - "SuperTimers Alarm Section"
 Cohesion: 0.13
 Nodes (16): Alarm Section (알람), Alarm Timeline (8분 전 - 종료), Alarm Label: 종료 5분 전, Back Button (chevron), Orange Color Dot, Delete Timer Button (타이머 삭제), Edit Button (수정), Helper Text: 타임라인 드래그 안내 (+8 more)
 
-### Community 24 - "Video/Audio Transcription"
+### Community 17 - "Audio/Video Transcription"
 Cohesion: 0.21
 Nodes (13): build_whisper_prompt(), download_audio(), _get_whisper(), _get_yt_dlp(), is_url(), _model_name(), Transcribe a video/audio file or URL to a .txt transcript.      If video_path is, Transcribe a list of video/audio files or URLs, return paths to transcript .txt (+5 more)
 
-### Community 25 - "Redis Leaderboard Pattern"
-Cohesion: 0.31
-Nodes (14): Blog leaderboard-snapshot, Redis Leaderboard Patterns (Community), Redis 랭킹 & 스냅샷 (Community), 이중 sorted set 스냅샷 패턴 (leaderboard-snapshot), 이중 sorted set 스냅샷 패턴, 이중 sorted set 스냅샷 패턴 (leaderboard-snapshot), 이중 sorted set 스냅샷 패턴 (leaderboard-snapshot), 리더보드 스냅샷 패턴 (+6 more)
-
-### Community 26 - "Git Hook Installer"
+### Community 18 - "Git Hook Installation"
 Cohesion: 0.22
 Nodes (12): _git_root(), install(), _install_hook(), Walk up to find .git directory., Install a single git hook, appending if an existing hook is present., Remove graphify section from a git hook using start/end markers., Install graphify post-commit and post-checkout hooks in the nearest git repo., Remove graphify post-commit and post-checkout hooks. (+4 more)
 
-### Community 27 - "SuperTimers Onboarding"
+### Community 19 - "Community Detection (Leiden)"
+Cohesion: 0.22
+Nodes (12): cluster(), cohesion_score(), _partition(), Community detection on NetworkX graphs. Uses Leiden (graspologic) if available,, Run a second Leiden pass on a community subgraph to split it further., Context manager to suppress stdout/stderr during library calls.      graspologic, Ratio of actual intra-community edges to maximum possible., Run community detection. Returns {node_id: community_id}.      Tries Leiden (gra (+4 more)
+
+### Community 20 - "Permission Dialog UI"
 Cohesion: 0.17
 Nodes (13): Alarm Clock Icon (orange), Bell Icon (red), Allow Button (허용), Deny Button (허용 안 함), Footer Credit 'by Hyewon & Insong', Notification Permission Dialog, Pause Button Icon (teal), Play Button Icon (green) (+5 more)
 
-### Community 28 - "SuperFont UI"
+### Community 21 - "SuperFont My Fonts Screen"
 Cohesion: 0.17
 Nodes (13): Bottom CTA 재설치할 폰트 선택, Empty State, Filter Chip Group, Preview Text Field, SuperFont My Fonts, Font Search Bar, 선택만 Toggle, Font Size Slider (+5 more)
 
-### Community 29 - "Wiki Entry Points"
+### Community 22 - "Wiki Pages (KO)"
 Cohesion: 0.17
 Nodes (12): Blog hello-world, Blog leaderboard-snapshot, 위키 시작하기 (obsidian), 리더보드 스냅샷 패턴, raw 폴더 README — 위키 소스 관리 지침, Wiki: 게임 서버 요청 컨텍스트 패턴, Wiki: 위키 시작하기, Wiki: graphify — 지식 그래프 도구 (+4 more)
 
-### Community 30 - "SuperTimers Home Patterns"
+### Community 23 - "SuperTimers Presets"
 Cohesion: 0.2
 Nodes (12): Add Timer FAB (+ 타이머 추가), Design Pattern: Active Instance Badge (#1), Design Pattern: Color-coded Timer Identity, Design Pattern: iOS Native Look, Design Pattern: Multi-stage Alerts, Preset: 세탁기 (45분), Preset: 라면 타이머 #1 (8분), Preset: 런닝 인터벌 (30분) (+4 more)
 
-### Community 31 - "SuperMusicNote Quiz Setup"
+### Community 24 - "SuperMusicNote Home"
 Cohesion: 0.18
 Nodes (12): NoteQuiz (App Title), Pattern — Checklist Selection List, SuperMusicNote Home, Option — 낮은음자리표 쉬움 (덧줄 2줄 이하), Option — 낮은음자리표 어려움 (덧줄 3~5줄), Option — 높은음자리표 쉬움 (덧줄 2줄 이하), Option — 높은음자리표 어려움 (덧줄 3~5줄), Platform — iOS (+4 more)
 
-### Community 32 - "insong.net Stack & LLM Wiki"
+### Community 25 - "LLM Wiki Theory"
 Cohesion: 0.22
 Nodes (11): insong.net project (Astro v4 + Tailwind v4), /web-insong-net skill, LLM Memory & Knowledge community node, LLM Wiki Core Idea (Persistent Compounding Knowledge), LLM Wiki Three-Layer Architecture, RAG (Retrieval-Augmented Generation), Raw Sources Layer, Schema Layer (CLAUDE.md / AGENTS.md) (+3 more)
 
-### Community 33 - "Code Quality Principles"
+### Community 26 - "Game Server Architecture (KO)"
+Cohesion: 0.2
+Nodes (11): 순환 참조 문제, enum 발급 주체 구분, 기획데이터를 독립으로 두는 이유, 게임 엔진 안의 기획데이터 문제, 언리얼 path를 key로 쓸 수 없음, 게임 서버 요청 컨텍스트 전파, A/B snapshot 스왑, 두 개의 sorted set 동시 쓰기 (+3 more)
+
+### Community 27 - "Code Quality Principles (KO)"
 Cohesion: 0.18
 Nodes (11): 추상화 - 실제 필요한 만큼만, 에러 핸들링 원칙, OWASP Top 10 인식, 가역성 원칙, 범위 원칙 - 요청된 것만 한다, 코드 품질 원칙, feature 브랜치 전략, 커밋 메시지 포맷 (+3 more)
 
-### Community 34 - "Graph Build Layer"
+### Community 28 - "Graph Build & Validate"
 Cohesion: 0.27
 Nodes (8): build(), build_from_json(), Build a NetworkX graph from an extraction dict.      directed=True produces a Di, Merge multiple extraction results into one graph.      directed=True produces a, assert_valid(), Validate an extraction JSON dict against the graphify schema.     Returns a list, Raise ValueError with all errors if extraction is invalid., validate_extraction()
 
-### Community 35 - "Wiki Output Writer"
+### Community 29 - "iOS Apps & Communities"
+Cohesion: 0.2
+Nodes (10): SuperFont (iOS app), SuperMathQuiz (iOS app), SuperMusicNote (iOS app), SuperTimers (iOS app), Claude/GPT Semantic Extraction, Community: Claude / AI 자동화, Community: 게임 서버 / 아키텍처, Community: iOS / Apple 개발 (+2 more)
+
+### Community 30 - "Wiki Generation (wiki.py)"
 Cohesion: 0.36
 Nodes (8): _community_article(), _cross_community_links(), _god_node_article(), _index_md(), Return (community_label, edge_count) pairs for cross-community connections, sort, Generate a Wikipedia-style wiki from the graph.      Writes:       - index.md, _safe_filename(), to_wiki()
 
-### Community 36 - "SuperFont Install Flow"
+### Community 31 - "SuperFont Install Flow"
 Cohesion: 0.25
 Nodes (9): SuperFont Back Link, Cancel Action, Close Button, Install Confirm Action, Install Profile Modal, SuperFont Settings Install, Top Install Button, Unsigned Profile Notice (+1 more)
 
-### Community 37 - "Brand Identity (insong.net)"
+### Community 32 - "insong.net Brand Identity"
 Cohesion: 0.32
 Nodes (8): insong.net Brand Identity, Brand Blue #4F6DF0, White Foreground, Letter 'i' Glyph, Rounded Square Background, Favicon SVG, system-ui Sans-Serif Typography, 32x32 ViewBox
 
-### Community 38 - "SuperTimers Alarm Form"
+### Community 33 - "SuperTimers Edit Screen"
 Cohesion: 0.32
 Nodes (8): 알람 추가 (Add Alarm), 추가 (Primary Add Button), 알람 Timeline (종료 1분 전), 취소 (Cancel Button), 타이머 시간 Slider (10분), 이름 / 타이머 이름 (Name Field), SuperTimers Edit, 새 타이머 (New Timer Title)
 
-### Community 39 - "SuperMusicNote Records"
+### Community 34 - "SuperMusicNote Records"
 Cohesion: 0.32
 Nodes (8): 닫기 Button, Empty Content Area, Empty State Message, Light Theme Background, Modal Sheet Presentation, SuperMusicNote Records, 플레이 기록 (Play Records), iOS Status Bar
 
-### Community 40 - "Wiki Auto-Ingest Rules"
+### Community 35 - "Source Ingest Flow"
 Cohesion: 0.29
 Nodes (7): Modified source ingest flow (section-scoped update), New source ingest flow (Unincorporated -> MERGE/CREATE), Source ID path convention, Wiki Auto-Ingest hook rule, [WIKI_AUTO_INGEST: <path>] PostToolUse marker, Incorporated sources table, Unincorporated sources table
 
-### Community 41 - "iOS App Development (Community)"
-Cohesion: 0.57
-Nodes (7): Blog on-building-ios-apps, iOS 앱 개발 (Community), iOS App Development (Community), iOS 앱 개발 스택 (2025), iOS 앱 개발 스택 (2025), SwiftData (영속성 레이어), SwiftUI (기본 UI 레이어)
-
-### Community 42 - "SuperFont Google Fonts"
+### Community 36 - "SuperFont Google Fonts"
 Cohesion: 0.29
 Nodes (7): Bottom check CTA, Category filter chips, Font list card pattern, Font preview size slider, SuperFont Google Fonts, Google Fonts source dropdown, Install status filters
 
-### Community 43 - "graphify Processing Pipeline"
-Cohesion: 0.4
-Nodes (5): Claude/GPT API (semantic extraction), Penpax (Enterprise graphify layer), graphify Processing Pipeline, graphify (raw source), tree-sitter AST Parser
+### Community 37 - "CLAUDE.md & Memory Rules"
+Cohesion: 0.29
+Nodes (7): CLAUDE.md는 목차 역할 (~100줄 이하), Modular CLAUDE.md (경로별 계층 로드), CLAUDE.md 직접 임베딩 금지 — 규칙 묘지 (rationale), 메모리에 저장하지 않을 것 (코드/히스토리/디버깅), Feedback 메모리 구조 (규칙 + Why + How to apply), Memory 타입 구분 (user/feedback/project/reference), Why를 알면 엣지케이스 판단 가능 (rationale)
 
-### Community 44 - "Game Server Request Context"
+### Community 38 - "Request Context Blog Post"
+Cohesion: 0.6
+Nodes (6): Blog: game-server-request-context, Claude Skills & Game Server (Community), 진입점 분류 (패킷운영툴자동이벤트), 게임 서버 요청 컨텍스트 패턴, RequestContext 구조체 (C++), RequestContext 구조체 (C++)
+
+### Community 39 - "2025 iOS Stack"
+Cohesion: 0.33
+Nodes (6): 지루한 스택을 선택한 이유, 2025년 iOS 앱 개발, Swift Concurrency, SwiftData, SwiftUI 기본값 선택, Xcode Cloud
+
+### Community 40 - "Doc Policy Structure"
+Cohesion: 0.33
+Nodes (6): Skill/Agent 파일은 영어로 작성, design-docs 작성 기준 (아키텍처 결정/트레이드오프), 파일 네이밍 (feature-slug.md, active→completed), docs/ 폴더 구조 (design-docs/specs/exec-plans 등), OpenAI Harness Engineering 패턴 기반 (citation), product-specs 작성 기준 (UI/UX 수락 기준)
+
+### Community 41 - "iPhone Layout & Gestures"
+Cohesion: 0.33
+Nodes (6): iPhone 제스처 시스템 (long press/pan/tap), 홈 화면 Identity (앱 제목 brand 표시), iPhone 레이아웃 원칙 (NavigationStack/sheet/portrait), Minimum Sheet Depth 원칙, Resize handle 치수 (outer=20pt, inner=min(33,h/3)), Sheet Detent 크기 공식 (baseContent + footerCount×72)
+
+### Community 42 - "Request Context (dup)"
 Cohesion: 0.6
 Nodes (5): Blog game-server-request-context, 게임 서버 요청 추적 community node, 진입점 분류 (패킷/운영툴/자동이벤트), 게임 서버 요청 컨텍스트 패턴, RequestContext 구조체 (C++)
 
-### Community 45 - "Getting Started Layer"
-Cohesion: 0.8
-Nodes (5): Blog hello-world, Getting Started (Community), 위키 워크플로우 (Community), raw 폴더 README — 위키 소스 관리 지침, 위키 시작하기
-
-### Community 46 - "SuperFont File Add"
+### Community 43 - "SuperFont File Add"
 Cohesion: 0.5
 Nodes (5): Bottom Add Bar (파일을 추가하세요), Primary CTA (+ 파일 선택), Empty State (폰트 파일 추가), SuperFont File Add, Top Tab Bar (파일 추가 / 사이트 추가 / 내 폰트)
 
-### Community 47 - "iOS Stack (SwiftUI/SwiftData)"
-Cohesion: 0.5
-Nodes (4): iOS 앱 개발 스택 (2025), Blog: on-building-ios-apps, SwiftData (영속성 레이어), SwiftUI (기본 UI 레이어)
+### Community 44 - "Logging Standards"
+Cohesion: 0.4
+Nodes (5): 표준 로그 포맷 [HH:MM:SS] [LEVEL] [component] message, Node.js 훅은 stderr에 로그 출력, Shell 스크립트 로그 컨벤션 (set -euo pipefail), stdout은 훅 프로토콜 채널이라 stderr 사용 (rationale), Swift/XCUITest [ACTION]/[ASSERT] prefix
 
-### Community 48 - "Python Package Root"
+### Community 45 - "iOS Data Persistence"
+Cohesion: 0.5
+Nodes (5): 원자적 파일 쓰기, decodeIfPresent 패턴, saveVersion 필드, 버전 히스토리 인라인 문서화, iOS 데이터 영속성 패턴
+
+### Community 46 - "graphify Ecosystem Actors"
+Cohesion: 0.4
+Nodes (5): Claude/GPT API (semantic extraction), Penpax (Enterprise graphify layer), graphify Processing Pipeline, graphify (raw source), tree-sitter AST Parser
+
+### Community 47 - "Game Design Data Architecture"
+Cohesion: 0.5
+Nodes (4): 클라이언트 원본 시 순환 참조 패턴, 기획데이터 아키텍처 (Community), 게임 기획데이터 관리 원칙, 스키마 export 방식 (임시 해결책)
+
+### Community 48 - "Memex & Wiki Lineage"
+Cohesion: 0.5
+Nodes (4): LLM Wiki Core Idea (Persistent Compounding Knowledge), Tolkien Gateway (fan wiki reference), Vannevar Bush Memex (1945), Vannevar Bush Memex (1945)
+
+### Community 49 - "iPad Layout Patterns"
+Cohesion: 0.5
+Nodes (4): Device 분기 패턴 (userInterfaceIdiom, horizontalSizeClass), iPad에서 숨길 것들 (bottomBar/navBar/floating), iPad 레이아웃 (document-style grid + edit panel 360pt), Multitasking 대응 (Split View/Slide Over)
+
+### Community 50 - "SwiftUI Sheet Presentation"
+Cohesion: 0.5
+Nodes (4): 이중 슬라이드 글리치 회피 (rationale), isPresented를 withAnimation으로 감싸지 말 것, SwiftUI Sheet Presentation 패턴, sheet onAppear 대신 .task 사용
+
+### Community 51 - "SwiftUI Layout Patterns"
+Cohesion: 0.5
+Nodes (4): 레이아웃 안정성 (opacity vs if/else), NavigationStack 내 중첩 ScrollView Safe Area, ScrollView 인디케이터와 clipShape 배치, Stats/데이터 테이블 레이아웃 (단일 List row + VStack)
+
+### Community 52 - "Request Context (dup 2)"
+Cohesion: 0.67
+Nodes (4): 게임 서버 요청 컨텍스트 패턴, Blog: game-server-request-context, 진입점 분류 (패킷/운영툴/자동이벤트), RequestContext 구조체 (C++)
+
+### Community 53 - "LLM Wiki Lineage"
+Cohesion: 0.5
+Nodes (4): LLM Wiki Three-Layer Architecture, LLM Wiki Core Idea (Persistent Compounding Knowledge), Vannevar Bush Memex (1945), Tolkien Gateway (fan wiki reference)
+
+### Community 54 - "Community 54"
 Cohesion: 0.67
 Nodes (1): graphify - extract · build · cluster · analyze · report.
 
-### Community 49 - "Wiki Seed Nodes"
-Cohesion: 0.67
-Nodes (3): 위키 시작하기, Blog: hello-world, raw/ 폴더 README — 위키 소스 관리 지침
-
-### Community 50 - "Wiki Lint & Tagging"
+### Community 55 - "Community 55"
 Cohesion: 0.67
 Nodes (3): Lint Operation, LLM Wiki Pattern, Relationship Tagging (EXTRACTED/INFERRED/AMBIGUOUS)
 
-### Community 51 - "Logging Standards"
-Cohesion: 0.67
-Nodes (3): 이상 탐지 규칙 (ERROR/FAIL/WARN grep), 표준 로그 포맷 [HH:MM:SS] [LEVEL] [component], 로그 읽기 규율 (exit code만 믿지 말 것)
+### Community 56 - "Community 56"
+Cohesion: 1.0
+Nodes (3): Claude/GPT API (semantic extraction), ClaudeGPT Semantic Extraction, Community: graphify Pipeline (AST + Semantic)
 
-### Community 52 - "SwiftUI Sheet/Keyboard"
+### Community 57 - "Community 57"
 Cohesion: 0.67
-Nodes (3): 키보드 회피 Overlay 배치 (ignoresSafeArea 바깥), Minimum Sheet Depth 원칙, SwiftUI Sheet Presentation 패턴 (no withAnimation)
+Nodes (3): graphify (raw source), Penpax (Enterprise graphify layer), Penpax (Enterprise graphify layer)
 
-### Community 53 - "Code Deletion Principles"
+### Community 58 - "Community 58"
 Cohesion: 0.67
-Nodes (3): 추상화 원칙 (실제 필요한 만큼만), 삭제 원칙 (미사용 코드 완전 제거), 코드 범위 원칙 (요청된 것만)
+Nodes (3): Agent-Navigable Wiki Output (wiki), Community: Knowledge Architecture Layers, Schema Layer (CLAUDE.md AGENTS.md)
 
-### Community 54 - "Wiki Search Component"
+### Community 59 - "Community 59"
+Cohesion: 0.67
+Nodes (3): Redis Leaderboard Patterns (Community), 이중 sorted set 스냅샷 패턴 (leaderboard-snapshot), 스냅샷 A/B 순환 교체 (leaderboard-snapshot)
+
+### Community 60 - "Community 60"
+Cohesion: 0.67
+Nodes (3): 미완성 Draft 상태 패턴 (canSave vs isComplete), 키보드 Input UX 규칙 (numberPad 완료 버튼, Picker 우선), 키보드 회피 Overlay 배치 패턴
+
+### Community 61 - "Community 61"
 Cohesion: 1.0
 Nodes (0): 
 
-### Community 55 - "TS Utility Helpers"
+### Community 62 - "Community 62"
 Cohesion: 1.0
 Nodes (0): 
 
-### Community 56 - "Blog Launch Posts"
+### Community 63 - "Community 63"
+Cohesion: 1.0
+Nodes (2): Community: Obsidian Integration, Obsidian Vault Output
+
+### Community 64 - "Community 64"
+Cohesion: 1.0
+Nodes (2): iOS App Development (Community), iOS 앱 개발 스택 (2025)
+
+### Community 65 - "Community 65"
 Cohesion: 1.0
 Nodes (2): 블로그를 시작합니다, 글쓰기로 속도 늦추기
 
-### Community 57 - "Skill Auto-Update Discipline"
+### Community 66 - "Community 66"
+Cohesion: 1.0
+Nodes (2): AI 스킬 피드백 루프, stop hook 타이밍
+
+### Community 67 - "Community 67"
 Cohesion: 1.0
 Nodes (2): 자동 업데이트가 스킬을 망치는 이유, 자동 감지 + 사람 확인 구조
 
-### Community 58 - "Incremental Update & Caching"
+### Community 68 - "Community 68"
+Cohesion: 1.0
+Nodes (2): Agent 타입별 용도 (Explore/Plan/general-purpose), Explore agent 개수 기준 (1~3개, 품질>수량)
+
+### Community 69 - "Community 69"
+Cohesion: 1.0
+Nodes (2): chevron.right는 push navigation 전용, SF Symbol 선택 기준
+
+### Community 70 - "Community 70"
+Cohesion: 1.0
+Nodes (2): claude-skills repo 대상 커밋 규칙, Knowledge Capture Hook ([KNOWLEDGE CAPTURE])
+
+### Community 71 - "Community 71"
 Cohesion: 1.0
 Nodes (2): Incremental update, SHA256-based caching
 
-### Community 59 - "astro.config.mjs"
+### Community 72 - "Community 72"
 Cohesion: 1.0
 Nodes (0): 
 
-### Community 60 - "manifest.py"
+### Community 73 - "Community 73"
 Cohesion: 1.0
 Nodes (0): 
 
-### Community 61 - "env.d.ts"
+### Community 74 - "Community 74"
 Cohesion: 1.0
 Nodes (0): 
 
-### Community 62 - "config.ts"
+### Community 75 - "Community 75"
 Cohesion: 1.0
 Nodes (0): 
 
-### Community 63 - "Feature-Branch PR Workflow"
+### Community 76 - "Community 76"
 Cohesion: 1.0
 Nodes (1): Git feature-branch + PR workflow
 
-### Community 64 - "cn() Utility"
+### Community 77 - "Community 77"
 Cohesion: 1.0
 Nodes (1): src/lib/utils.ts cn() helper (clsx + tailwind-merge)
 
-### Community 65 - "install-graphify.sh"
+### Community 78 - "Community 78"
 Cohesion: 1.0
 Nodes (1): Step 6: scripts/install-graphify.sh (optional)
 
-### Community 66 - "graphify Output Layer"
+### Community 79 - "Community 79"
+Cohesion: 1.0
+Nodes (1): iOS 앱 개발 (Community)
+
+### Community 80 - "Community 80"
+Cohesion: 1.0
+Nodes (1): Claude 스킬 자동화 (Community)
+
+### Community 81 - "Community 81"
+Cohesion: 1.0
+Nodes (1): 위키 워크플로우 (Community)
+
+### Community 82 - "Community 82"
+Cohesion: 1.0
+Nodes (1): Wiki Operations (Ingest/Query/Lint) (Community)
+
+### Community 83 - "Community 83"
+Cohesion: 1.0
+Nodes (1): Getting Started (Community)
+
+### Community 84 - "Community 84"
+Cohesion: 1.0
+Nodes (1): Redis 랭킹 & 스냅샷 (Community)
+
+### Community 85 - "Community 85"
 Cohesion: 1.0
 Nodes (1): graphify Output Layer (Community)
 
-### Community 67 - "GRAPH_REPORT.md"
+### Community 86 - "Community 86"
 Cohesion: 1.0
 Nodes (0): 
 
-### Community 68 - "graph.json Store"
+### Community 87 - "Community 87"
 Cohesion: 1.0
 Nodes (1): graph.json Persistent Graph Data
 
-### Community 69 - "Leiden Clustering"
+### Community 88 - "Community 88"
 Cohesion: 1.0
 Nodes (1): Leiden Clustering (Community Detection)
 
-### Community 70 - "EXTRACTED/INFERRED/AMBIGUOUS Tagging"
+### Community 89 - "Community 89"
+Cohesion: 1.0
+Nodes (1): Redis 랭킹과 스냅샷 패턴
+
+### Community 90 - "Community 90"
+Cohesion: 1.0
+Nodes (1): 이중 sorted set 스냅샷 패턴 (leaderboard-snapshot)
+
+### Community 91 - "Community 91"
+Cohesion: 1.0
+Nodes (1): 스키마 export 방식 (임시 해결책)
+
+### Community 92 - "Community 92"
 Cohesion: 1.0
 Nodes (1): Relationship Tagging (EXTRACTED/INFERRED/AMBIGUOUS)
 
-### Community 71 - "SF Symbol Selection"
+### Community 93 - "Community 93"
 Cohesion: 1.0
-Nodes (1): SF Symbol 선택 기준
+Nodes (1): 컨텍스트가 흐르며 쌓이는 이유
 
-### Community 72 - "Skill/Agent Language Rule"
+### Community 94 - "Community 94"
 Cohesion: 1.0
-Nodes (1): Skill/Agent 파일 영어 작성 규칙
+Nodes (1): 초기 설계가 나중 로깅 비용을 줄이는 이유
 
-### Community 73 - "Error Handling Principle"
-Cohesion: 1.0
-Nodes (1): 에러 핸들링 원칙 (발생 불가 시나리오 무시)
-
-### Community 74 - "SuperMusicNote Splash"
+### Community 95 - "Community 95"
 Cohesion: 1.0
 Nodes (1): SuperMusicNote Splash
 
-### Community 75 - "SuperFont Profile Downloaded"
+### Community 96 - "Community 96"
 Cohesion: 1.0
 Nodes (1): SuperFont Profile Downloaded
 
-### Community 76 - "SuperFont Safari Allow Profile"
+### Community 97 - "Community 97"
 Cohesion: 1.0
 Nodes (1): SuperFont Safari Allow Profile
 
-### Community 77 - "Supported File Formats"
+### Community 98 - "Community 98"
+Cohesion: 1.0
+Nodes (1): Blog ai-skill-feedback-loop
+
+### Community 99 - "Community 99"
+Cohesion: 1.0
+Nodes (1): Claude 스킬 자동 피드백 루프
+
+### Community 100 - "Community 100"
+Cohesion: 1.0
+Nodes (1): Hook 타이밍 불일치 (stop hook vs user-prompt-submit)
+
+### Community 101 - "Community 101"
+Cohesion: 1.0
+Nodes (1): 자동 감지 + 사람 확인 패턴
+
+### Community 102 - "Community 102"
+Cohesion: 1.0
+Nodes (1): Ingest Operation
+
+### Community 103 - "Community 103"
+Cohesion: 1.0
+Nodes (1): LLM Wiki Pattern
+
+### Community 104 - "Community 104"
+Cohesion: 1.0
+Nodes (1): Lint Operation
+
+### Community 105 - "Community 105"
+Cohesion: 1.0
+Nodes (1): Query Operation
+
+### Community 106 - "Community 106"
+Cohesion: 1.0
+Nodes (1): index.md Catalog
+
+### Community 107 - "Community 107"
+Cohesion: 1.0
+Nodes (1): log.md Chronological Log
+
+### Community 108 - "Community 108"
+Cohesion: 1.0
+Nodes (1): qmd Local Search Engine
+
+### Community 109 - "Community 109"
+Cohesion: 1.0
+Nodes (1): RAG (Retrieval-Augmented Generation)
+
+### Community 110 - "Community 110"
+Cohesion: 1.0
+Nodes (1): LLM Wiki Core Idea (Persistent Compounding Knowledge)
+
+### Community 111 - "Community 111"
+Cohesion: 1.0
+Nodes (1): Schema Layer (CLAUDE.md / AGENTS.md)
+
+### Community 112 - "Community 112"
+Cohesion: 1.0
+Nodes (1): LLM Wiki Three-Layer Architecture
+
+### Community 113 - "Community 113"
+Cohesion: 1.0
+Nodes (1): Obsidian (Wiki IDE)
+
+### Community 114 - "Community 114"
+Cohesion: 1.0
+Nodes (1): Raw Sources Layer
+
+### Community 115 - "Community 115"
+Cohesion: 1.0
+Nodes (1): Wiki Layer
+
+### Community 116 - "Community 116"
+Cohesion: 1.0
+Nodes (1): XCUITest 주의사항 (absolute frame, accessibility ID)
+
+### Community 117 - "Community 117"
+Cohesion: 1.0
+Nodes (1): Drag Handle/Slider UX (핸들은 트랙 아래)
+
+### Community 118 - "Community 118"
+Cohesion: 1.0
+Nodes (1): Blog hello-world
+
+### Community 119 - "Community 119"
+Cohesion: 1.0
+Nodes (1): 위키 시작하기
+
+### Community 120 - "Community 120"
+Cohesion: 1.0
+Nodes (1): Blog design-data-in-engine
+
+### Community 121 - "Community 121"
+Cohesion: 1.0
+Nodes (1): 게임 기획데이터 관리 원칙
+
+### Community 122 - "Community 122"
+Cohesion: 1.0
+Nodes (1): 스키마 export 방식 (임시 해결책)
+
+### Community 123 - "Community 123"
+Cohesion: 1.0
+Nodes (1): 클라이언트 원본 시 순환 참조 패턴
+
+### Community 124 - "Community 124"
+Cohesion: 1.0
+Nodes (1): 이중 sorted set 스냅샷 패턴
+
+### Community 125 - "Community 125"
+Cohesion: 1.0
+Nodes (1): Redis 랭킹과 스냅샷 패턴
+
+### Community 126 - "Community 126"
+Cohesion: 1.0
+Nodes (1): 스냅샷 AB 교체 패턴
+
+### Community 127 - "Community 127"
+Cohesion: 1.0
+Nodes (1): Redis sorted set 실시간 랭킹
+
+### Community 128 - "Community 128"
 Cohesion: 1.0
 Nodes (1): Supported File Formats
 
+### Community 129 - "Community 129"
+Cohesion: 1.0
+Nodes (1): Blog on-building-ios-apps
+
+### Community 130 - "Community 130"
+Cohesion: 1.0
+Nodes (1): SwiftData (영속성 레이어)
+
+### Community 131 - "Community 131"
+Cohesion: 1.0
+Nodes (1): SwiftUI (기본 UI 레이어)
+
+### Community 132 - "Community 132"
+Cohesion: 1.0
+Nodes (1): iOS 앱 개발 스택 (2025)
+
+### Community 133 - "Community 133"
+Cohesion: 1.0
+Nodes (1): 이중 sorted set 스냅샷 패턴 (leaderboard-snapshot)
+
+### Community 134 - "Community 134"
+Cohesion: 1.0
+Nodes (1): 리더보드 스냅샷 패턴
+
+### Community 135 - "Community 135"
+Cohesion: 1.0
+Nodes (1): Blog leaderboard-snapshot
+
+### Community 136 - "Community 136"
+Cohesion: 1.0
+Nodes (1): 스냅샷 AB 순환 교체 (leaderboard-snapshot)
+
+### Community 137 - "Community 137"
+Cohesion: 1.0
+Nodes (1): 프로젝트 문서 정책 (폴더 구조)
+
+### Community 138 - "Community 138"
+Cohesion: 1.0
+Nodes (1): Modular CLAUDE.md 계층 로딩
+
+### Community 139 - "Community 139"
+Cohesion: 1.0
+Nodes (1): Plan Mode와 exec-plans 동기화 규칙
+
+### Community 140 - "Community 140"
+Cohesion: 1.0
+Nodes (1): Git Feature Branch Strategy
+
+### Community 141 - "Community 141"
+Cohesion: 1.0
+Nodes (1): Git Commit Message Format
+
+### Community 142 - "Community 142"
+Cohesion: 1.0
+Nodes (1): Pre-push PR 상태 체크 (MERGED 브랜치 회피)
+
+### Community 143 - "Community 143"
+Cohesion: 1.0
+Nodes (1): 지식 캡처 규율
+
+### Community 144 - "Community 144"
+Cohesion: 1.0
+Nodes (1): Memory 타입 구분 (user/feedback/project/reference)
+
+### Community 145 - "Community 145"
+Cohesion: 1.0
+Nodes (1): 표준 로그 포맷 [HH:MM:SS] [LEVEL] [component]
+
+### Community 146 - "Community 146"
+Cohesion: 1.0
+Nodes (1): 로그 읽기 규율 (exit code만 믿지 말 것)
+
+### Community 147 - "Community 147"
+Cohesion: 1.0
+Nodes (1): 이상 탐지 규칙 (ERROR/FAIL/WARN grep)
+
+### Community 148 - "Community 148"
+Cohesion: 1.0
+Nodes (1): raw 폴더 README — 위키 소스 관리 지침
+
+### Community 149 - "Community 149"
+Cohesion: 1.0
+Nodes (1): iPhone 레이아웃 원칙 (NavigationStack + Portrait lock)
+
+### Community 150 - "Community 150"
+Cohesion: 1.0
+Nodes (1): iPad Edit Panel 레이아웃 (360pt 고정, 700pt fallback)
+
+### Community 151 - "Community 151"
+Cohesion: 1.0
+Nodes (1): SwiftUI 제스처 시스템 (Long press / Pan / Tap)
+
+### Community 152 - "Community 152"
+Cohesion: 1.0
+Nodes (1): Sheet Detent 크기 공식
+
+### Community 153 - "Community 153"
+Cohesion: 1.0
+Nodes (1): 키보드 회피 Overlay 배치 (ignoresSafeArea 바깥)
+
+### Community 154 - "Community 154"
+Cohesion: 1.0
+Nodes (1): SwiftUI Sheet Presentation 패턴 (no withAnimation)
+
+### Community 155 - "Community 155"
+Cohesion: 1.0
+Nodes (1): SF Symbol 선택 기준
+
+### Community 156 - "Community 156"
+Cohesion: 1.0
+Nodes (1): Minimum Sheet Depth 원칙
+
+### Community 157 - "Community 157"
+Cohesion: 1.0
+Nodes (1): Agent 모델 선택 기준 (opus/sonnet/haiku)
+
+### Community 158 - "Community 158"
+Cohesion: 1.0
+Nodes (1): Agent 병렬화 판단 기준
+
+### Community 159 - "Community 159"
+Cohesion: 1.0
+Nodes (1): Worktree 격리 사용 조건
+
+### Community 160 - "Community 160"
+Cohesion: 1.0
+Nodes (1): Tier 3 표준 파이프라인 (Explore→Plan→Dev→QA→Review)
+
+### Community 161 - "Community 161"
+Cohesion: 1.0
+Nodes (1): Skill/Agent 파일 영어 작성 규칙
+
+### Community 162 - "Community 162"
+Cohesion: 1.0
+Nodes (1): 코드 범위 원칙 (요청된 것만)
+
+### Community 163 - "Community 163"
+Cohesion: 1.0
+Nodes (1): 에러 핸들링 원칙 (발생 불가 시나리오 무시)
+
+### Community 164 - "Community 164"
+Cohesion: 1.0
+Nodes (1): 추상화 원칙 (실제 필요한 만큼만)
+
+### Community 165 - "Community 165"
+Cohesion: 1.0
+Nodes (1): 삭제 원칙 (미사용 코드 완전 제거)
+
+### Community 166 - "Community 166"
+Cohesion: 1.0
+Nodes (1): 가역성 원칙 (파괴적 액션은 확인 후)
+
+### Community 167 - "Community 167"
+Cohesion: 1.0
+Nodes (1): Claude Code 개발 티어 (Tier 0–3)
+
+### Community 168 - "Community 168"
+Cohesion: 1.0
+Nodes (1): 티어 라우팅 시그널
+
+### Community 169 - "Community 169"
+Cohesion: 1.0
+Nodes (1): Completion 명령 순서 (wrap up/commit)
+
+### Community 170 - "Community 170"
+Cohesion: 1.0
+Nodes (1): saveVersion 필드 규칙
+
+### Community 171 - "Community 171"
+Cohesion: 1.0
+Nodes (1): Backward-Compatible 디코더 패턴 (decodeIfPresent)
+
+### Community 172 - "Community 172"
+Cohesion: 1.0
+Nodes (1): 파일 기반 DataStore 원자적 쓰기 패턴
+
+### Community 173 - "Community 173"
+Cohesion: 1.0
+Nodes (1): Save Data 필수 테스트 케이스
+
 ## Knowledge Gaps
-- **488 isolated node(s):** `Build a NetworkX graph from an extraction dict.      directed=True produces a Di`, `Merge multiple extraction results into one graph.      directed=True produces a`, `Escape a string for embedding in a YAML double-quoted scalar.`, `Turn a URL into a safe filename.`, `Classify the URL for targeted extraction.` (+483 more)
+- **564 isolated node(s):** `Build a NetworkX graph from an extraction dict.      directed=True produces a Di`, `Merge multiple extraction results into one graph.      directed=True produces a`, `Escape a string for embedding in a YAML double-quoted scalar.`, `Turn a URL into a safe filename.`, `Classify the URL for targeted extraction.` (+559 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `Wiki Search Component`** (2 nodes): `WikiSearch.tsx`, `handleClickOutside()`
+- **Thin community `Community 61`** (2 nodes): `WikiSearch.tsx`, `handleClickOutside()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `TS Utility Helpers`** (2 nodes): `utils.ts`, `cn()`
+- **Thin community `Community 62`** (2 nodes): `utils.ts`, `cn()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Blog Launch Posts`** (2 nodes): `블로그를 시작합니다`, `글쓰기로 속도 늦추기`
+- **Thin community `Community 63`** (2 nodes): `Community: Obsidian Integration`, `Obsidian Vault Output`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Skill Auto-Update Discipline`** (2 nodes): `자동 업데이트가 스킬을 망치는 이유`, `자동 감지 + 사람 확인 구조`
+- **Thin community `Community 64`** (2 nodes): `iOS App Development (Community)`, `iOS 앱 개발 스택 (2025)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Incremental Update & Caching`** (2 nodes): `Incremental update`, `SHA256-based caching`
+- **Thin community `Community 65`** (2 nodes): `블로그를 시작합니다`, `글쓰기로 속도 늦추기`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `astro.config.mjs`** (1 nodes): `astro.config.mjs`
+- **Thin community `Community 66`** (2 nodes): `AI 스킬 피드백 루프`, `stop hook 타이밍`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `manifest.py`** (1 nodes): `manifest.py`
+- **Thin community `Community 67`** (2 nodes): `자동 업데이트가 스킬을 망치는 이유`, `자동 감지 + 사람 확인 구조`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `env.d.ts`** (1 nodes): `env.d.ts`
+- **Thin community `Community 68`** (2 nodes): `Agent 타입별 용도 (Explore/Plan/general-purpose)`, `Explore agent 개수 기준 (1~3개, 품질>수량)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `config.ts`** (1 nodes): `config.ts`
+- **Thin community `Community 69`** (2 nodes): `chevron.right는 push navigation 전용`, `SF Symbol 선택 기준`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Feature-Branch PR Workflow`** (1 nodes): `Git feature-branch + PR workflow`
+- **Thin community `Community 70`** (2 nodes): `claude-skills repo 대상 커밋 규칙`, `Knowledge Capture Hook ([KNOWLEDGE CAPTURE])`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `cn() Utility`** (1 nodes): `src/lib/utils.ts cn() helper (clsx + tailwind-merge)`
+- **Thin community `Community 71`** (2 nodes): `Incremental update`, `SHA256-based caching`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `install-graphify.sh`** (1 nodes): `Step 6: scripts/install-graphify.sh (optional)`
+- **Thin community `Community 72`** (1 nodes): `astro.config.mjs`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `graphify Output Layer`** (1 nodes): `graphify Output Layer (Community)`
+- **Thin community `Community 73`** (1 nodes): `manifest.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `GRAPH_REPORT.md`** (1 nodes): `GRAPH_REPORT.md`
+- **Thin community `Community 74`** (1 nodes): `env.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `graph.json Store`** (1 nodes): `graph.json Persistent Graph Data`
+- **Thin community `Community 75`** (1 nodes): `config.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Leiden Clustering`** (1 nodes): `Leiden Clustering (Community Detection)`
+- **Thin community `Community 76`** (1 nodes): `Git feature-branch + PR workflow`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `EXTRACTED/INFERRED/AMBIGUOUS Tagging`** (1 nodes): `Relationship Tagging (EXTRACTED/INFERRED/AMBIGUOUS)`
+- **Thin community `Community 77`** (1 nodes): `src/lib/utils.ts cn() helper (clsx + tailwind-merge)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `SF Symbol Selection`** (1 nodes): `SF Symbol 선택 기준`
+- **Thin community `Community 78`** (1 nodes): `Step 6: scripts/install-graphify.sh (optional)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Skill/Agent Language Rule`** (1 nodes): `Skill/Agent 파일 영어 작성 규칙`
+- **Thin community `Community 79`** (1 nodes): `iOS 앱 개발 (Community)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Error Handling Principle`** (1 nodes): `에러 핸들링 원칙 (발생 불가 시나리오 무시)`
+- **Thin community `Community 80`** (1 nodes): `Claude 스킬 자동화 (Community)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `SuperMusicNote Splash`** (1 nodes): `SuperMusicNote Splash`
+- **Thin community `Community 81`** (1 nodes): `위키 워크플로우 (Community)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `SuperFont Profile Downloaded`** (1 nodes): `SuperFont Profile Downloaded`
+- **Thin community `Community 82`** (1 nodes): `Wiki Operations (Ingest/Query/Lint) (Community)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `SuperFont Safari Allow Profile`** (1 nodes): `SuperFont Safari Allow Profile`
+- **Thin community `Community 83`** (1 nodes): `Getting Started (Community)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Supported File Formats`** (1 nodes): `Supported File Formats`
+- **Thin community `Community 84`** (1 nodes): `Redis 랭킹 & 스냅샷 (Community)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 85`** (1 nodes): `graphify Output Layer (Community)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 86`** (1 nodes): `GRAPH_REPORT.md`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 87`** (1 nodes): `graph.json Persistent Graph Data`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 88`** (1 nodes): `Leiden Clustering (Community Detection)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 89`** (1 nodes): `Redis 랭킹과 스냅샷 패턴`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 90`** (1 nodes): `이중 sorted set 스냅샷 패턴 (leaderboard-snapshot)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 91`** (1 nodes): `스키마 export 방식 (임시 해결책)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 92`** (1 nodes): `Relationship Tagging (EXTRACTED/INFERRED/AMBIGUOUS)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 93`** (1 nodes): `컨텍스트가 흐르며 쌓이는 이유`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 94`** (1 nodes): `초기 설계가 나중 로깅 비용을 줄이는 이유`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 95`** (1 nodes): `SuperMusicNote Splash`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 96`** (1 nodes): `SuperFont Profile Downloaded`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 97`** (1 nodes): `SuperFont Safari Allow Profile`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 98`** (1 nodes): `Blog ai-skill-feedback-loop`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 99`** (1 nodes): `Claude 스킬 자동 피드백 루프`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 100`** (1 nodes): `Hook 타이밍 불일치 (stop hook vs user-prompt-submit)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 101`** (1 nodes): `자동 감지 + 사람 확인 패턴`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 102`** (1 nodes): `Ingest Operation`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 103`** (1 nodes): `LLM Wiki Pattern`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 104`** (1 nodes): `Lint Operation`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 105`** (1 nodes): `Query Operation`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 106`** (1 nodes): `index.md Catalog`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 107`** (1 nodes): `log.md Chronological Log`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 108`** (1 nodes): `qmd Local Search Engine`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 109`** (1 nodes): `RAG (Retrieval-Augmented Generation)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 110`** (1 nodes): `LLM Wiki Core Idea (Persistent Compounding Knowledge)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 111`** (1 nodes): `Schema Layer (CLAUDE.md / AGENTS.md)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 112`** (1 nodes): `LLM Wiki Three-Layer Architecture`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 113`** (1 nodes): `Obsidian (Wiki IDE)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 114`** (1 nodes): `Raw Sources Layer`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 115`** (1 nodes): `Wiki Layer`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 116`** (1 nodes): `XCUITest 주의사항 (absolute frame, accessibility ID)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 117`** (1 nodes): `Drag Handle/Slider UX (핸들은 트랙 아래)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 118`** (1 nodes): `Blog hello-world`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 119`** (1 nodes): `위키 시작하기`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 120`** (1 nodes): `Blog design-data-in-engine`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 121`** (1 nodes): `게임 기획데이터 관리 원칙`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 122`** (1 nodes): `스키마 export 방식 (임시 해결책)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 123`** (1 nodes): `클라이언트 원본 시 순환 참조 패턴`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 124`** (1 nodes): `이중 sorted set 스냅샷 패턴`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 125`** (1 nodes): `Redis 랭킹과 스냅샷 패턴`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 126`** (1 nodes): `스냅샷 AB 교체 패턴`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 127`** (1 nodes): `Redis sorted set 실시간 랭킹`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 128`** (1 nodes): `Supported File Formats`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 129`** (1 nodes): `Blog on-building-ios-apps`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 130`** (1 nodes): `SwiftData (영속성 레이어)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 131`** (1 nodes): `SwiftUI (기본 UI 레이어)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 132`** (1 nodes): `iOS 앱 개발 스택 (2025)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 133`** (1 nodes): `이중 sorted set 스냅샷 패턴 (leaderboard-snapshot)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 134`** (1 nodes): `리더보드 스냅샷 패턴`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 135`** (1 nodes): `Blog leaderboard-snapshot`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 136`** (1 nodes): `스냅샷 AB 순환 교체 (leaderboard-snapshot)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 137`** (1 nodes): `프로젝트 문서 정책 (폴더 구조)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 138`** (1 nodes): `Modular CLAUDE.md 계층 로딩`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 139`** (1 nodes): `Plan Mode와 exec-plans 동기화 규칙`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 140`** (1 nodes): `Git Feature Branch Strategy`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 141`** (1 nodes): `Git Commit Message Format`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 142`** (1 nodes): `Pre-push PR 상태 체크 (MERGED 브랜치 회피)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 143`** (1 nodes): `지식 캡처 규율`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 144`** (1 nodes): `Memory 타입 구분 (user/feedback/project/reference)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 145`** (1 nodes): `표준 로그 포맷 [HH:MM:SS] [LEVEL] [component]`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 146`** (1 nodes): `로그 읽기 규율 (exit code만 믿지 말 것)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 147`** (1 nodes): `이상 탐지 규칙 (ERROR/FAIL/WARN grep)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 148`** (1 nodes): `raw 폴더 README — 위키 소스 관리 지침`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 149`** (1 nodes): `iPhone 레이아웃 원칙 (NavigationStack + Portrait lock)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 150`** (1 nodes): `iPad Edit Panel 레이아웃 (360pt 고정, 700pt fallback)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 151`** (1 nodes): `SwiftUI 제스처 시스템 (Long press / Pan / Tap)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 152`** (1 nodes): `Sheet Detent 크기 공식`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 153`** (1 nodes): `키보드 회피 Overlay 배치 (ignoresSafeArea 바깥)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 154`** (1 nodes): `SwiftUI Sheet Presentation 패턴 (no withAnimation)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 155`** (1 nodes): `SF Symbol 선택 기준`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 156`** (1 nodes): `Minimum Sheet Depth 원칙`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 157`** (1 nodes): `Agent 모델 선택 기준 (opus/sonnet/haiku)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 158`** (1 nodes): `Agent 병렬화 판단 기준`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 159`** (1 nodes): `Worktree 격리 사용 조건`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 160`** (1 nodes): `Tier 3 표준 파이프라인 (Explore→Plan→Dev→QA→Review)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 161`** (1 nodes): `Skill/Agent 파일 영어 작성 규칙`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 162`** (1 nodes): `코드 범위 원칙 (요청된 것만)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 163`** (1 nodes): `에러 핸들링 원칙 (발생 불가 시나리오 무시)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 164`** (1 nodes): `추상화 원칙 (실제 필요한 만큼만)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 165`** (1 nodes): `삭제 원칙 (미사용 코드 완전 제거)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 166`** (1 nodes): `가역성 원칙 (파괴적 액션은 확인 후)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 167`** (1 nodes): `Claude Code 개발 티어 (Tier 0–3)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 168`** (1 nodes): `티어 라우팅 시그널`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 169`** (1 nodes): `Completion 명령 순서 (wrap up/commit)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 170`** (1 nodes): `saveVersion 필드 규칙`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 171`** (1 nodes): `Backward-Compatible 디코더 패턴 (decodeIfPresent)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 172`** (1 nodes): `파일 기반 DataStore 원자적 쓰기 패턴`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 173`** (1 nodes): `Save Data 필수 테스트 케이스`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `main()` connect `Benchmark & Installers` to `Language AST Extractors`, `Graph Analysis Functions`, `Graph Build Layer`, `Obsidian Export & Traversal`?**
-  _High betweenness centrality (0.033) - this node is a cross-community bridge._
-- **Why does `_rebuild_code()` connect `Graph Analysis Functions` to `Language AST Extractors`, `Benchmark & Installers`, `Graph Build Layer`, `File Detection & Conversion`, `Extraction Cache`?**
-  _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **Why does `download_audio()` connect `Video/Audio Transcription` to `Language AST Extractors`, `URL Ingest Fetchers`?**
+- **Why does `main()` connect `Skill Installers` to `Language AST Extractors`, `Graph Analysis Functions`, `Token Reduction Benchmark`, `Community Detection (Leiden)`, `Graph Build & Validate`?**
+  _High betweenness centrality (0.032) - this node is a cross-community bridge._
+- **Why does `_rebuild_code()` connect `Graph Analysis Functions` to `Language AST Extractors`, `Skill Installers`, `File Detection & Classification`, `Semantic Extraction Cache`, `Community Detection (Leiden)`, `Graph Build & Validate`?**
+  _High betweenness centrality (0.016) - this node is a cross-community bridge._
+- **Why does `download_audio()` connect `Audio/Video Transcription` to `Language AST Extractors`, `URL Ingestion Pipeline`?**
   _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **Are the 32 inferred relationships involving `str` (e.g. with `file_hash()` and `to_html()`) actually correct?**
   _`str` has 32 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 15 inferred relationships involving `main()` (e.g. with `build_from_json()` and `run_benchmark()`) actually correct?**
   _`main()` has 15 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Build a NetworkX graph from an extraction dict.      directed=True produces a Di`, `Merge multiple extraction results into one graph.      directed=True produces a`, `Escape a string for embedding in a YAML double-quoted scalar.` to the rest of the system?**
-  _488 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _564 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Language AST Extractors` be split into smaller, more focused modules?**
   _Cohesion score 0.05 - nodes in this community are weakly interconnected._

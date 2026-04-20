@@ -34,6 +34,7 @@ expandedHeight  = collapsedHeight + pickerHeight  // picker rows = 180pt
 ```
 
 - 풀너비 footer 버튼 1개 = 72pt
+- delete만: +72pt / duplicate+delete: +144pt
 
 ## iPad 레이아웃 원칙
 

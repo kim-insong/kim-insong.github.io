@@ -103,6 +103,34 @@ SHA256 기반 캐싱으로 증분 업데이트 — 변경된 파일만 재처리
 - **Git hook integration**: 커밋 시 그래프 자동 재빌드 (선택)
 - **Watch mode**: 개발 중 실시간 그래프 동기화
 
+## 사용 시나리오
+
+| 시나리오 | 기존 방식 | graphify 대체 |
+|----------|-----------|----------------|
+| 프로젝트 LLM 컨텍스트 | 폴더마다 `CLAUDE.md` 수동 유지 | 그래프가 구조 보관, `/graphify query`로 서브그래프만 로드 |
+| 개인 지식 창고 | 태그 수동 관리, 수동 교차참조 | `/raw`에 dump → community detection이 묶음 |
+| 비정형 작성자 의도 | 폴더 CLAUDE.md의 자유 텍스트 | 폴더 CLAUDE.md 유지 (그래프가 대신 못 함) |
+
+**원칙**: "이 폴더에 뭐가 있고 어디서 호출되는가" 같은 구조 정보는 그래프, "왜 이렇게 설계했는가" 같은 작성자 의도는 사람이 쓴 CLAUDE.md.
+
+## CLAUDE.md 완전 대체가 위험한 이유
+
+**로딩 보장 차이:**
+- `CLAUDE.md` — cwd 기준 자동 로드, 해당 폴더 작업 내내 항상 컨텍스트에 있음
+- `GRAPH_REPORT.md` — PreToolUse 훅이 Glob/Grep 직전에만 Claude에게 알림. 파일 탐색 없이 바로 답하면 안 읽힘
+
+**AST가 못 잡는 것:**
+- "이 폴더 테스트는 mock 금지" 같은 규칙
+- "사용자 문자열은 L10n 필수" 같은 관습
+- "stable ID 재사용 금지" 같은 원칙
+- 도메인 용어집 (order vs. transaction vs. receipt)
+
+**하이브리드 레시피** — 폴더 CLAUDE.md는 규칙·관습·용어집만 10줄 이내로, 맨 위에 한 줄 포인터:
+```markdown
+> 폴더 구조/의존은 graphify-out/GRAPH_REPORT.md 참조.
+```
+구조는 그래프가, 의도는 CLAUDE.md가 들고 있는다.
+
 ## 관련
 
 - [[getting-started]] — 이 위키의 소스 관리 방식

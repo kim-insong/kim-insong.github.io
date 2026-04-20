@@ -1,30 +1,24 @@
 # LLM Wiki Pattern
 
-> God node · 14 connections · `src/content/wiki/llm-wiki-pattern.md`
+> 1 nodes · cohesion 1.00
 
-**Community:** [[Wiki Operations]]
+## Key Concepts
 
-## Connections by Relation
+- **LLM Wiki Pattern** (0 connections) — `src/content/wiki/llm-wiki-pattern.md`
 
-### conceptually_related_to
-- [[RAG (Retrieval-Augmented Generation)]] `EXTRACTED`
+## Relationships
 
-### has_member
-- [[Wiki Operations (Ingest/Query/Lint) (Community)]] `EXTRACTED`
+- No strong cross-community connections detected
 
-### references
-- [[LLM Wiki Core Idea (Persistent Compounding Knowledge)]] `INFERRED`
-- [[Obsidian (Wiki IDE)]] `EXTRACTED`
-- [[Wiki Layer]] `EXTRACTED`
-- [[Raw Sources Layer]] `EXTRACTED`
-- [[Ingest Operation]] `EXTRACTED`
-- [[Query Operation]] `EXTRACTED`
-- [[LLM Wiki Core Idea (Persistent Compounding Knowledge)]] `INFERRED`
-- [[Lint Operation]] `EXTRACTED`
-- [[Schema Layer (CLAUDE.md / AGENTS.md)]] `EXTRACTED`
-- [[index.md Catalog]] `EXTRACTED`
-- [[log.md Chronological Log]] `EXTRACTED`
-- [[qmd Local Search Engine]] `EXTRACTED`
+## Source Files
+
+- `src/content/wiki/llm-wiki-pattern.md`
+
+## Audit Trail
+
+- EXTRACTED: 0 (0%)
+- INFERRED: 0 (0%)
+- AMBIGUOUS: 0 (0%)
 
 ---
 

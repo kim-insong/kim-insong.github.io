@@ -15,7 +15,7 @@
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[SuperFont Back Link]] (18 shared connections)
 
 ## Source Files
 

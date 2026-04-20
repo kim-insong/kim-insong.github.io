@@ -2,7 +2,7 @@
 
 > God node · 14 connections · `tools/graphify/skill.md`
 
-**Community:** [[graphify Pipeline Variants]]
+**Community:** [[Graphify Audit Trail]]
 
 ## Connections by Relation
 

@@ -4,90 +4,47 @@
   "graph": {
     "hyperedges": [
       {
-        "id": "graphify_processing_pipeline_stages",
-        "label": "graphify 4-stage processing pipeline",
+        "id": "main_session_per_ticket_lifecycle",
+        "label": "\ud2f0\ucf13 \ub77c\uc774\ud504\uc0ac\uc774\ud074 6\ub2e8\uacc4",
         "nodes": [
-          "graphify_ast_pass",
-          "graphify_whisper",
-          "graphify_semantic_extraction",
-          "graphify_leiden_clustering"
+          "main_session_per_ticket_requirementsdesign",
+          "main_session_per_ticket_designdocfork",
+          "main_session_per_ticket_criteriaextraction",
+          "main_session_per_ticket_implementation",
+          "main_session_per_ticket_reviewagent",
+          "main_session_per_ticket_reviewreflection"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "src/content/wiki/main-session-per-ticket.md"
+      },
+      {
+        "id": "main_session_per_ticket_sessionresponsibility",
+        "label": "\uc138\uc158 \ucc45\uc784 \ubd84\ub9ac",
+        "nodes": [
+          "main_session_per_ticket_mainsession",
+          "main_session_per_ticket_forksession",
+          "main_session_per_ticket_subagent",
+          "main_session_per_ticket_reviewagent"
         ],
         "relation": "form",
         "confidence": "EXTRACTED",
         "confidence_score": 1.0,
-        "source_file": "src/content/wiki/graphify.md"
+        "source_file": "src/content/wiki/main-session-per-ticket.md"
       },
       {
-        "id": "graphify_output_artifacts",
-        "label": "graphify output artifact set",
+        "id": "main_session_per_ticket_guideloop",
+        "label": "code-quality-guide \uc774\uc911 \uc0ac\uc6a9 \ud328\ud134",
         "nodes": [
-          "graphify_graph_html",
-          "graphify_graph_report_md",
-          "graphify_graph_json",
-          "graphify_obsidian_vault",
-          "graphify_wiki_output"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "src/content/wiki/graphify.md"
-      },
-      {
-        "id": "graphify_install_command_pair",
-        "label": "Two-scope install commands",
-        "nodes": [
-          "graphify_install_platform_claude",
-          "graphify_claude_install",
-          "graphify_slash_command",
-          "graphify_claude_md"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "src/content/wiki/graphify.md"
-      },
-      {
-        "id": "graphify_processing_pipeline",
-        "label": "Four-stage processing pipeline",
-        "nodes": [
-          "graphify_deterministic_ast_pass",
-          "graphify_local_whisper",
-          "graphify_semantic_extraction",
-          "graphify_leiden_clustering"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.95,
-        "source_file": "src/content/wiki/graphify.md"
-      },
-      {
-        "id": "graphify_output_artifacts",
-        "label": "Graphify output artifact set",
-        "nodes": [
-          "graphify_graph_html",
-          "graphify_graph_report_md",
-          "graphify_graph_json",
-          "graphify_obsidian_vault",
-          "graphify_wiki_output"
-        ],
-        "relation": "form",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.9,
-        "source_file": "src/content/wiki/graphify.md"
-      },
-      {
-        "id": "graphify_core_design_principles",
-        "label": "Core design principles",
-        "nodes": [
-          "graphify_privacy_first",
-          "graphify_token_efficient",
-          "graphify_no_embeddings",
-          "graphify_edge_tagging"
+          "main_session_per_ticket_codequalityguide",
+          "main_session_per_ticket_implementation",
+          "main_session_per_ticket_reviewagent"
         ],
         "relation": "implement",
         "confidence": "EXTRACTED",
-        "confidence_score": 0.9,
-        "source_file": "src/content/wiki/graphify.md"
+        "confidence_score": 1.0,
+        "source_file": "src/content/wiki/main-session-per-ticket.md"
       }
     ]
   },
@@ -349,7 +306,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/hooks.py",
       "source_location": "L1",
-      "community": 24,
+      "community": 25,
       "norm_label": "hooks.py",
       "id": "tools_graphify_hooks_py"
     },
@@ -358,7 +315,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/hooks.py",
       "source_location": "L111",
-      "community": 24,
+      "community": 25,
       "norm_label": "_git_root()",
       "id": "hooks_git_root"
     },
@@ -367,7 +324,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/hooks.py",
       "source_location": "L120",
-      "community": 24,
+      "community": 25,
       "norm_label": "_install_hook()",
       "id": "hooks_install_hook"
     },
@@ -376,7 +333,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/hooks.py",
       "source_location": "L134",
-      "community": 24,
+      "community": 25,
       "norm_label": "_uninstall_hook()",
       "id": "hooks_uninstall_hook"
     },
@@ -385,7 +342,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/hooks.py",
       "source_location": "L155",
-      "community": 24,
+      "community": 25,
       "norm_label": "install()",
       "id": "hooks_install"
     },
@@ -394,7 +351,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/hooks.py",
       "source_location": "L170",
-      "community": 24,
+      "community": 25,
       "norm_label": "uninstall()",
       "id": "hooks_uninstall"
     },
@@ -403,7 +360,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/hooks.py",
       "source_location": "L183",
-      "community": 24,
+      "community": 25,
       "norm_label": "status()",
       "id": "hooks_status"
     },
@@ -412,7 +369,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/hooks.py",
       "source_location": "L112",
-      "community": 24,
+      "community": 25,
       "norm_label": "walk up to find .git directory.",
       "id": "hooks_rationale_112"
     },
@@ -421,7 +378,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/hooks.py",
       "source_location": "L121",
-      "community": 24,
+      "community": 25,
       "norm_label": "install a single git hook, appending if an existing hook is present.",
       "id": "hooks_rationale_121"
     },
@@ -430,7 +387,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/hooks.py",
       "source_location": "L135",
-      "community": 24,
+      "community": 25,
       "norm_label": "remove graphify section from a git hook using start/end markers.",
       "id": "hooks_rationale_135"
     },
@@ -439,7 +396,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/hooks.py",
       "source_location": "L156",
-      "community": 24,
+      "community": 25,
       "norm_label": "install graphify post-commit and post-checkout hooks in the nearest git repo.",
       "id": "hooks_rationale_156"
     },
@@ -448,7 +405,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/hooks.py",
       "source_location": "L171",
-      "community": 24,
+      "community": 25,
       "norm_label": "remove graphify post-commit and post-checkout hooks.",
       "id": "hooks_rationale_171"
     },
@@ -457,7 +414,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/hooks.py",
       "source_location": "L184",
-      "community": 24,
+      "community": 25,
       "norm_label": "check if graphify hooks are installed.",
       "id": "hooks_rationale_184"
     },
@@ -691,7 +648,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L1",
-      "community": 13,
+      "community": 14,
       "norm_label": "cache.py",
       "id": "tools_graphify_cache_py"
     },
@@ -700,7 +657,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L10",
-      "community": 13,
+      "community": 14,
       "norm_label": "_body_content()",
       "id": "cache_body_content"
     },
@@ -709,7 +666,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L20",
-      "community": 13,
+      "community": 14,
       "norm_label": "file_hash()",
       "id": "cache_file_hash"
     },
@@ -718,7 +675,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L44",
-      "community": 13,
+      "community": 14,
       "norm_label": "cache_dir()",
       "id": "cache_cache_dir"
     },
@@ -727,7 +684,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L51",
-      "community": 13,
+      "community": 14,
       "norm_label": "load_cached()",
       "id": "cache_load_cached"
     },
@@ -736,7 +693,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L71",
-      "community": 13,
+      "community": 14,
       "norm_label": "save_cached()",
       "id": "cache_save_cached"
     },
@@ -745,7 +702,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L88",
-      "community": 13,
+      "community": 14,
       "norm_label": "cached_files()",
       "id": "cache_cached_files"
     },
@@ -754,7 +711,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L94",
-      "community": 13,
+      "community": 14,
       "norm_label": "clear_cache()",
       "id": "cache_clear_cache"
     },
@@ -763,7 +720,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L101",
-      "community": 13,
+      "community": 14,
       "norm_label": "check_semantic_cache()",
       "id": "cache_check_semantic_cache"
     },
@@ -772,7 +729,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L127",
-      "community": 13,
+      "community": 14,
       "norm_label": "save_semantic_cache()",
       "id": "cache_save_semantic_cache"
     },
@@ -781,7 +738,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L11",
-      "community": 13,
+      "community": 14,
       "norm_label": "strip yaml frontmatter from markdown content, returning only the body.",
       "id": "cache_rationale_11"
     },
@@ -790,7 +747,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L21",
-      "community": 13,
+      "community": 14,
       "norm_label": "sha256 of file contents + path relative to root.      using a relative path (not",
       "id": "cache_rationale_21"
     },
@@ -799,7 +756,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L45",
-      "community": 13,
+      "community": 14,
       "norm_label": "returns graphify-out/cache/ - creates it if needed.",
       "id": "cache_rationale_45"
     },
@@ -808,7 +765,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L52",
-      "community": 13,
+      "community": 14,
       "norm_label": "return cached extraction for this file if hash matches, else none.      cache ke",
       "id": "cache_rationale_52"
     },
@@ -817,7 +774,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L72",
-      "community": 13,
+      "community": 14,
       "norm_label": "save extraction result for this file.      stores as graphify-out/cache/{hash}.j",
       "id": "cache_rationale_72"
     },
@@ -826,7 +783,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L89",
-      "community": 13,
+      "community": 14,
       "norm_label": "return set of file paths that have a valid cache entry (hash still matches).",
       "id": "cache_rationale_89"
     },
@@ -835,7 +792,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L95",
-      "community": 13,
+      "community": 14,
       "norm_label": "delete all graphify-out/cache/*.json files.",
       "id": "cache_rationale_95"
     },
@@ -844,7 +801,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L105",
-      "community": 13,
+      "community": 14,
       "norm_label": "check semantic extraction cache for a list of absolute file paths.      returns",
       "id": "cache_rationale_105"
     },
@@ -853,7 +810,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/cache.py",
       "source_location": "L133",
-      "community": 13,
+      "community": 14,
       "norm_label": "save semantic extraction results to cache, keyed by source_file.      groups nod",
       "id": "cache_rationale_133"
     },
@@ -1303,7 +1260,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/cluster.py",
       "source_location": "L1",
-      "community": 25,
+      "community": 1,
       "norm_label": "cluster.py",
       "id": "tools_graphify_cluster_py"
     },
@@ -1312,7 +1269,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/cluster.py",
       "source_location": "L10",
-      "community": 25,
+      "community": 1,
       "norm_label": "_suppress_output()",
       "id": "cluster_suppress_output"
     },
@@ -1321,7 +1278,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/cluster.py",
       "source_location": "L21",
-      "community": 25,
+      "community": 1,
       "norm_label": "_partition()",
       "id": "cluster_partition"
     },
@@ -1330,7 +1287,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/cluster.py",
       "source_location": "L59",
-      "community": 25,
+      "community": 1,
       "norm_label": "cluster()",
       "id": "cluster_cluster"
     },
@@ -1339,7 +1296,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/cluster.py",
       "source_location": "L107",
-      "community": 25,
+      "community": 1,
       "norm_label": "_split_community()",
       "id": "cluster_split_community"
     },
@@ -1348,7 +1305,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/cluster.py",
       "source_location": "L125",
-      "community": 25,
+      "community": 1,
       "norm_label": "cohesion_score()",
       "id": "cluster_cohesion_score"
     },
@@ -1357,7 +1314,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/cluster.py",
       "source_location": "L136",
-      "community": 25,
+      "community": 1,
       "norm_label": "score_all()",
       "id": "cluster_score_all"
     },
@@ -1366,7 +1323,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/cluster.py",
       "source_location": "L1",
-      "community": 25,
+      "community": 1,
       "norm_label": "community detection on networkx graphs. uses leiden (graspologic) if available,",
       "id": "cluster_rationale_1"
     },
@@ -1375,7 +1332,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/cluster.py",
       "source_location": "L11",
-      "community": 25,
+      "community": 1,
       "norm_label": "context manager to suppress stdout/stderr during library calls.      graspologic",
       "id": "cluster_rationale_11"
     },
@@ -1384,7 +1341,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/cluster.py",
       "source_location": "L22",
-      "community": 25,
+      "community": 1,
       "norm_label": "run community detection. returns {node_id: community_id}.      tries leiden (gra",
       "id": "cluster_rationale_22"
     },
@@ -1393,7 +1350,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/cluster.py",
       "source_location": "L60",
-      "community": 25,
+      "community": 1,
       "norm_label": "run leiden community detection. returns {community_id: [node_ids]}.      communi",
       "id": "cluster_rationale_60"
     },
@@ -1402,7 +1359,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/cluster.py",
       "source_location": "L108",
-      "community": 25,
+      "community": 1,
       "norm_label": "run a second leiden pass on a community subgraph to split it further.",
       "id": "cluster_rationale_108"
     },
@@ -1411,7 +1368,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/cluster.py",
       "source_location": "L126",
-      "community": 25,
+      "community": 1,
       "norm_label": "ratio of actual intra-community edges to maximum possible.",
       "id": "cluster_rationale_126"
     },
@@ -1420,7 +1377,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/transcribe.py",
       "source_location": "L1",
-      "community": 22,
+      "community": 23,
       "norm_label": "transcribe.py",
       "id": "tools_graphify_transcribe_py"
     },
@@ -1429,7 +1386,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/transcribe.py",
       "source_location": "L17",
-      "community": 22,
+      "community": 23,
       "norm_label": "_model_name()",
       "id": "transcribe_model_name"
     },
@@ -1438,7 +1395,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/transcribe.py",
       "source_location": "L21",
-      "community": 22,
+      "community": 23,
       "norm_label": "_get_whisper()",
       "id": "transcribe_get_whisper"
     },
@@ -1447,7 +1404,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/transcribe.py",
       "source_location": "L32",
-      "community": 22,
+      "community": 23,
       "norm_label": "_get_yt_dlp()",
       "id": "transcribe_get_yt_dlp"
     },
@@ -1456,7 +1413,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/transcribe.py",
       "source_location": "L43",
-      "community": 22,
+      "community": 23,
       "norm_label": "is_url()",
       "id": "transcribe_is_url"
     },
@@ -1465,7 +1422,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/transcribe.py",
       "source_location": "L48",
-      "community": 22,
+      "community": 23,
       "norm_label": "download_audio()",
       "id": "transcribe_download_audio"
     },
@@ -1474,7 +1431,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/transcribe.py",
       "source_location": "L91",
-      "community": 22,
+      "community": 23,
       "norm_label": "build_whisper_prompt()",
       "id": "transcribe_build_whisper_prompt"
     },
@@ -1483,7 +1440,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/transcribe.py",
       "source_location": "L114",
-      "community": 22,
+      "community": 23,
       "norm_label": "transcribe()",
       "id": "transcribe_transcribe"
     },
@@ -1492,7 +1449,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/transcribe.py",
       "source_location": "L162",
-      "community": 22,
+      "community": 23,
       "norm_label": "transcribe_all()",
       "id": "transcribe_transcribe_all"
     },
@@ -1501,7 +1458,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/transcribe.py",
       "source_location": "L44",
-      "community": 22,
+      "community": 23,
       "norm_label": "return true if the string looks like a url rather than a file path.",
       "id": "transcribe_rationale_44"
     },
@@ -1510,7 +1467,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/transcribe.py",
       "source_location": "L49",
-      "community": 22,
+      "community": 23,
       "norm_label": "download audio-only stream from a url using yt-dlp.      returns the path to the",
       "id": "transcribe_rationale_49"
     },
@@ -1519,7 +1476,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/transcribe.py",
       "source_location": "L92",
-      "community": 22,
+      "community": 23,
       "norm_label": "build a domain hint for whisper from god nodes extracted from the corpus.      f",
       "id": "transcribe_rationale_92"
     },
@@ -1528,7 +1485,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/transcribe.py",
       "source_location": "L120",
-      "community": 22,
+      "community": 23,
       "norm_label": "transcribe a video/audio file or url to a .txt transcript.      if video_path is",
       "id": "transcribe_rationale_120"
     },
@@ -1537,7 +1494,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/transcribe.py",
       "source_location": "L167",
-      "community": 22,
+      "community": 23,
       "norm_label": "transcribe a list of video/audio files or urls, return paths to transcript .txt",
       "id": "transcribe_rationale_167"
     },
@@ -2383,7 +2340,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/extract.py",
       "source_location": "L2873",
-      "community": 13,
+      "community": 14,
       "norm_label": "_check_tree_sitter_version()",
       "id": "extract_check_tree_sitter_version"
     },
@@ -2392,7 +2349,7 @@
       "file_type": "code",
       "source_file": "tools/graphify/extract.py",
       "source_location": "L2891",
-      "community": 13,
+      "community": 14,
       "norm_label": "extract()",
       "id": "extract_extract"
     },
@@ -2716,7 +2673,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/extract.py",
       "source_location": "L2874",
-      "community": 13,
+      "community": 14,
       "norm_label": "raise a clear error if tree-sitter is too old for the new language api.",
       "id": "extract_rationale_2874"
     },
@@ -2725,7 +2682,7 @@
       "file_type": "rationale",
       "source_file": "tools/graphify/extract.py",
       "source_location": "L2892",
-      "community": 13,
+      "community": 14,
       "norm_label": "extract ast nodes and edges from a list of code files.      two-pass process:",
       "id": "extract_rationale_2892"
     },
@@ -3525,7 +3482,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "llm wiki core idea (persistent compounding knowledge)",
       "id": "raw_llm_wiki_core_idea"
     },
@@ -3538,7 +3495,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "llm wiki three-layer architecture",
       "id": "raw_llm_wiki_architecture"
     },
@@ -3551,7 +3508,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "vannevar bush memex (1945)",
       "id": "raw_llm_wiki_memex"
     },
@@ -3564,7 +3521,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "tolkien gateway (fan wiki reference)",
       "id": "raw_llm_wiki_tolkien_gateway"
     },
@@ -3642,7 +3599,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "claude \u1109\u1173\u110f\u1175\u11af \u110c\u1161\u1103\u1169\u11bc \u1111\u1175\u1103\u1173\u1107\u1162\u11a8 \u1105\u116e\u1111\u1173",
       "id": "claude_skill_feedback_loop"
     },
@@ -3655,7 +3612,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "blog: ai-skill-feedback-loop",
       "id": "claude_skill_feedback_loop_blog"
     },
@@ -3668,7 +3625,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "hook \u1110\u1161\u110b\u1175\u1106\u1175\u11bc \u1107\u116e\u11af\u110b\u1175\u11af\u110e\u1175 (stop hook vs user-prompt-submit)",
       "id": "claude_skill_feedback_loop_hook_timing"
     },
@@ -3681,7 +3638,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "\u110c\u1161\u1103\u1169\u11bc \u1100\u1161\u11b7\u110c\u1175 + \u1109\u1161\u1105\u1161\u11b7 \u1112\u116a\u11a8\u110b\u1175\u11ab \u1111\u1162\u1110\u1165\u11ab",
       "id": "claude_skill_feedback_loop_auto_detect"
     },
@@ -3694,7 +3651,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "llm wiki pattern",
       "id": "llm_wiki_pattern_wiki"
     },
@@ -3707,7 +3664,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "raw sources layer",
       "id": "llm_wiki_pattern_raw_sources"
     },
@@ -3720,7 +3677,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "wiki layer",
       "id": "llm_wiki_pattern_wiki_layer"
     },
@@ -3733,7 +3690,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "schema layer (claude.md / agents.md)",
       "id": "llm_wiki_pattern_schema"
     },
@@ -3746,7 +3703,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "ingest operation",
       "id": "llm_wiki_pattern_ingest_op"
     },
@@ -3759,7 +3716,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "query operation",
       "id": "llm_wiki_pattern_query_op"
     },
@@ -3772,7 +3729,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "lint operation",
       "id": "llm_wiki_pattern_lint_op"
     },
@@ -3785,7 +3742,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "index.md catalog",
       "id": "llm_wiki_pattern_index_md"
     },
@@ -3798,7 +3755,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "log.md chronological log",
       "id": "llm_wiki_pattern_log_md"
     },
@@ -3811,7 +3768,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "qmd local search engine",
       "id": "llm_wiki_pattern_qmd"
     },
@@ -3824,7 +3781,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "obsidian (wiki ide)",
       "id": "llm_wiki_pattern_obsidian"
     },
@@ -3837,7 +3794,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "rag (retrieval-augmented generation)",
       "id": "llm_wiki_pattern_rag"
     },
@@ -6099,7 +6056,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "\u110b\u1175\u110c\u116e\u11bc sorted set \u1109\u1173\u1102\u1162\u11b8\u1109\u1163\u11ba \u1111\u1162\u1110\u1165\u11ab (leaderboard-snapshot)",
       "id": "leaderboard_snapshot_dual_sorted_set"
     },
@@ -6112,7 +6069,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "\u1105\u1175\u1103\u1165\u1107\u1169\u1103\u1173 \u1109\u1173\u1102\u1162\u11b8\u1109\u1163\u11ba \u1111\u1162\u1110\u1165\u11ab",
       "id": "leaderboard_snapshot_pattern"
     },
@@ -6125,7 +6082,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "\u110b\u1175\u110c\u116e\u11bc sorted set \u1109\u1173\u1102\u1162\u11b8\u1109\u1163\u11ba \u1111\u1162\u1110\u1165\u11ab",
       "id": "dual_sorted_set_snapshot_pattern"
     },
@@ -6138,7 +6095,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "blog leaderboard-snapshot",
       "id": "blog_leaderboard_snapshot"
     },
@@ -6151,7 +6108,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "redis \u1105\u1162\u11bc\u110f\u1175\u11bc\u1100\u116a \u1109\u1173\u1102\u1162\u11b8\u1109\u1163\u11ba \u1111\u1162\u1110\u1165\u11ab",
       "id": "redis_ranking_snapshot_pattern"
     },
@@ -6164,7 +6121,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "\u1109\u1173\u1102\u1162\u11b8\u1109\u1163\u11ba ab \u1109\u116e\u11ab\u1112\u116a\u11ab \u1100\u116d\u110e\u1166 (leaderboard-snapshot)",
       "id": "snapshot_ab_swap_leaderboard_snapshot"
     },
@@ -6177,7 +6134,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "\u1109\u1173\u1102\u1162\u11b8\u1109\u1163\u11ba ab \u1100\u116d\u110e\u1166 \u1111\u1162\u1110\u1165\u11ab",
       "id": "snapshot_ab_swap_pattern"
     },
@@ -6190,7 +6147,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "redis sorted set \u1109\u1175\u11af\u1109\u1175\u1100\u1161\u11ab \u1105\u1162\u11bc\u110f\u1175\u11bc",
       "id": "redis_sorted_set_realtime_ranking"
     },
@@ -6203,7 +6160,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "claude \u1109\u1173\u110f\u1175\u11af \u110c\u1161\u1103\u1169\u11bc\u1112\u116a (community)",
       "id": "community_claude_skill_automation"
     },
@@ -6216,7 +6173,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "blog ai-skill-feedback-loop",
       "id": "blog_ai_skill_feedback_loop"
     },
@@ -6229,7 +6186,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "claude \u1109\u1173\u110f\u1175\u11af \u110c\u1161\u1103\u1169\u11bc \u1111\u1175\u1103\u1173\u1107\u1162\u11a8 \u1105\u116e\u1111\u1173",
       "id": "claude_skill_auto_feedback_loop"
     },
@@ -6242,7 +6199,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "hook \u1110\u1161\u110b\u1175\u1106\u1175\u11bc \u1107\u116e\u11af\u110b\u1175\u11af\u110e\u1175 (stop hook vs user-prompt-submit)",
       "id": "hook_timing_mismatch"
     },
@@ -6255,7 +6212,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "\u110c\u1161\u1103\u1169\u11bc \u1100\u1161\u11b7\u110c\u1175 + \u1109\u1161\u1105\u1161\u11b7 \u1112\u116a\u11a8\u110b\u1175\u11ab \u1111\u1162\u1110\u1165\u11ab",
       "id": "auto_detect_human_confirm_pattern"
     },
@@ -6320,7 +6277,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "wiki operations (ingest/query/lint) (community)",
       "id": "community_wiki_operations"
     },
@@ -6333,7 +6290,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "ingest operation",
       "id": "ingest_operation"
     },
@@ -6346,7 +6303,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "llm wiki pattern",
       "id": "llm_wiki_pattern"
     },
@@ -6359,7 +6316,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "lint operation",
       "id": "lint_operation"
     },
@@ -6372,7 +6329,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "query operation",
       "id": "query_operation"
     },
@@ -6385,7 +6342,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "index.md catalog",
       "id": "index_md_catalog"
     },
@@ -6398,7 +6355,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "log.md chronological log",
       "id": "log_md_chronological_log"
     },
@@ -6411,7 +6368,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "qmd local search engine",
       "id": "qmd_local_search_engine"
     },
@@ -6424,7 +6381,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "rag (retrieval-augmented generation)",
       "id": "rag_retrieval_augmented_generation"
     },
@@ -6437,7 +6394,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "llm wiki core idea (persistent compounding knowledge)",
       "id": "llm_wiki_core_idea_persistent_compounding_knowledge"
     },
@@ -6450,7 +6407,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "schema layer (claude.md / agents.md)",
       "id": "schema_layer_claude_agents_md"
     },
@@ -6463,7 +6420,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "llm wiki three-layer architecture",
       "id": "llm_wiki_three_layer_architecture"
     },
@@ -6489,7 +6446,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "raw sources layer",
       "id": "raw_sources_layer"
     },
@@ -6502,7 +6459,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "wiki layer",
       "id": "wiki_layer"
     },
@@ -6515,7 +6472,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "\u1100\u1175\u1112\u116c\u11a8\u1103\u1166\u110b\u1175\u1110\u1165 \u110b\u1161\u110f\u1175\u1110\u1166\u11a8\u110e\u1165 (community)",
       "id": "community_game_data_architecture"
     },
@@ -6528,7 +6485,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "blog design-data-in-engine",
       "id": "blog_design_data_in_engine"
     },
@@ -6541,7 +6498,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "\u1100\u1166\u110b\u1175\u11b7 \u1100\u1175\u1112\u116c\u11a8\u1103\u1166\u110b\u1175\u1110\u1165 \u1100\u116a\u11ab\u1105\u1175 \u110b\u116f\u11ab\u110e\u1175\u11a8",
       "id": "game_design_data_management_principles"
     },
@@ -6554,7 +6511,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "\u1109\u1173\u110f\u1175\u1106\u1161 export \u1107\u1161\u11bc\u1109\u1175\u11a8 (\u110b\u1175\u11b7\u1109\u1175 \u1112\u1162\u1100\u1167\u11af\u110e\u1162\u11a8)",
       "id": "schema_export_temp_solution"
     },
@@ -6567,7 +6524,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "\u110f\u1173\u11af\u1105\u1161\u110b\u1175\u110b\u1165\u11ab\u1110\u1173 \u110b\u116f\u11ab\u1107\u1169\u11ab \u1109\u1175 \u1109\u116e\u11ab\u1112\u116a\u11ab \u110e\u1161\u11b7\u110c\u1169 \u1111\u1162\u1110\u1165\u11ab",
       "id": "client_source_circular_reference_pattern"
     },
@@ -6593,7 +6550,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "redis \u1105\u1162\u11bc\u110f\u1175\u11bc & \u1109\u1173\u1102\u1162\u11b8\u1109\u1163\u11ba (community)",
       "id": "community_redis_ranking_snapshot"
     },
@@ -6684,7 +6641,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "agent-navigable wiki output (wiki)",
       "id": "agent_navigable_wiki_output"
     },
@@ -6697,7 +6654,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "\u1100\u1166\u110b\u1175\u11b7 \u1100\u1175\u1112\u116c\u11a8\u1103\u1166\u110b\u1175\u1110\u1165 \u1100\u116a\u11ab\u1105\u1175 \u110b\u116f\u11ab\u110e\u1175\u11a8",
       "id": "game_design_data_principles"
     },
@@ -6710,7 +6667,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "\u1109\u1173\u110f\u1175\u1106\u1161 export \u1107\u1161\u11bc\u1109\u1175\u11a8 (\u110b\u1175\u11b7\u1109\u1175 \u1112\u1162\u1100\u1167\u11af\u110e\u1162\u11a8)",
       "id": "schema_export_workaround"
     },
@@ -6723,7 +6680,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "\u110f\u1173\u11af\u1105\u1161\u110b\u1175\u110b\u1165\u11ab\u1110\u1173 \u110b\u116f\u11ab\u1107\u1169\u11ab \u1109\u1175 \u1109\u116e\u11ab\u1112\u116a\u11ab \u110e\u1161\u11b7\u110c\u1169 \u1111\u1162\u1110\u1165\u11ab",
       "id": "client_original_circular_reference_pattern"
     },
@@ -6762,7 +6719,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "blog: game-server-request-context",
       "id": "blog_game_server_request_context"
     },
@@ -6775,7 +6732,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "\u1100\u1166\u110b\u1175\u11b7 \u1109\u1165\u1107\u1165 \u110b\u116d\u110e\u1165\u11bc \u110f\u1165\u11ab\u1110\u1166\u11a8\u1109\u1173\u1110\u1173 \u1111\u1162\u1110\u1165\u11ab",
       "id": "game_server_request_context_pattern"
     },
@@ -6801,7 +6758,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "requestcontext \u1100\u116e\u110c\u1169\u110e\u1166 (c++)",
       "id": "requestcontext_struct_cpp"
     },
@@ -6814,7 +6771,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "\u110c\u1175\u11ab\u110b\u1175\u11b8\u110c\u1165\u11b7 \u1107\u116e\u11ab\u1105\u1172 (\u1111\u1162\u110f\u1175\u11ba\u110b\u116e\u11ab\u110b\u1167\u11bc\u1110\u116e\u11af\u110c\u1161\u1103\u1169\u11bc\u110b\u1175\u1107\u1166\u11ab\u1110\u1173)",
       "id": "entry_point_classification"
     },
@@ -6853,7 +6810,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "redis \u1105\u1162\u11bc\u110f\u1175\u11bc\u1100\u116a \u1109\u1173\u1102\u1162\u11b8\u1109\u1163\u11ba \u1111\u1162\u1110\u1165\u11ab",
       "id": "redis_leaderboard_snapshot_pattern"
     },
@@ -6866,7 +6823,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "\u110b\u1175\u110c\u116e\u11bc sorted set \u1109\u1173\u1102\u1162\u11b8\u1109\u1163\u11ba \u1111\u1162\u1110\u1165\u11ab (leaderboard-snapshot)",
       "id": "dual_sorted_set_snapshot_leaderboard"
     },
@@ -6879,7 +6836,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "community: knowledge architecture layers",
       "id": "community_knowledge_architecture_layers"
     },
@@ -6892,7 +6849,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "schema layer (claude.md agents.md)",
       "id": "schema_layer_claudemd_agentsmd"
     },
@@ -6944,7 +6901,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "llm wiki core idea (persistent compounding knowledge)",
       "id": "llm_wiki_core_idea"
     },
@@ -6957,7 +6914,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "claude skills & game server (community)",
       "id": "community_claude_skills_game_server"
     },
@@ -6970,7 +6927,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "redis leaderboard patterns (community)",
       "id": "community_redis_leaderboard_patterns"
     },
@@ -6983,7 +6940,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "\u1109\u1173\u1102\u1162\u11b8\u1109\u1163\u11ba a/b \u1109\u116e\u11ab\u1112\u116a\u11ab \u1100\u116d\u110e\u1166 (leaderboard-snapshot)",
       "id": "snapshot_ab_rotation_leaderboard"
     },
@@ -6996,7 +6953,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "\u1109\u1173\u110f\u1175\u1106\u1161 export \u1107\u1161\u11bc\u1109\u1175\u11a8 (\u110b\u1175\u11b7\u1109\u1175 \u1112\u1162\u1100\u1167\u11af\u110e\u1162\u11a8)",
       "id": "schema_export_temporary_solution"
     },
@@ -7022,7 +6979,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "requestcontext \u1100\u116e\u110c\u1169\u110e\u1166 (c++)",
       "id": "request_context_struct_cpp"
     },
@@ -7048,7 +7005,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "tolkien gateway (fan wiki reference)",
       "id": "tolkien_gateway_fan_wiki"
     },
@@ -7061,7 +7018,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "vannevar bush memex (1945)",
       "id": "vannevar_bush_memex_1945"
     },
@@ -7074,7 +7031,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "\u110b\u1175\u110c\u116e\u11bc sorted set \u1109\u1173\u1102\u1162\u11b8\u1109\u1163\u11ba \u1111\u1162\u1110\u1165\u11ab (leaderboard-snapshot)",
       "id": "dual_sorted_set_snapshot_pattern_leaderboard"
     },
@@ -7100,7 +7057,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 16,
       "norm_label": "vannevar bush memex (1945)",
       "id": "vannevar_bush_memex"
     },
@@ -7178,7 +7135,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "\u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173 \u1106\u116e\u11ab\u1109\u1165 \u110c\u1165\u11bc\u110e\u1162\u11a8 (\u1111\u1169\u11af\u1103\u1165 \u1100\u116e\u110c\u1169)",
       "id": "doc_policy_folder_structure"
     },
@@ -7191,7 +7148,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "modular claude.md \u1100\u1168\u110e\u1173\u11bc \u1105\u1169\u1103\u1175\u11bc",
       "id": "doc_policy_modular_claude_md"
     },
@@ -7204,7 +7161,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "plan mode\u110b\u116a exec-plans \u1103\u1169\u11bc\u1100\u1175\u1112\u116a \u1100\u1172\u110e\u1175\u11a8",
       "id": "doc_policy_plan_mode_sync"
     },
@@ -7217,7 +7174,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "git feature branch strategy",
       "id": "git_branch_strategy"
     },
@@ -7230,7 +7187,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "git commit message format",
       "id": "git_commit_format"
     },
@@ -7243,7 +7200,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "pre-push pr \u1109\u1161\u11bc\u1110\u1162 \u110e\u1166\u110f\u1173 (merged \u1107\u1173\u1105\u1162\u11ab\u110e\u1175 \u1112\u116c\u1111\u1175)",
       "id": "git_pre_push_pr_state_check"
     },
@@ -7256,7 +7213,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "\u110c\u1175\u1109\u1175\u11a8 \u110f\u1162\u11b8\u110e\u1165 \u1100\u1172\u110b\u1172\u11af",
       "id": "knowledge_capture_discipline"
     },
@@ -7269,7 +7226,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "knowledge capture hook (stop hook)",
       "id": "knowledge_capture_hook"
     },
@@ -7282,7 +7239,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "memory \u1110\u1161\u110b\u1175\u11b8 \u1100\u116e\u1107\u116e\u11ab (user/feedback/project/reference)",
       "id": "memory_type_taxonomy"
     },
@@ -7438,7 +7395,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "agent \u1106\u1169\u1103\u1166\u11af \u1109\u1165\u11ab\u1110\u1162\u11a8 \u1100\u1175\u110c\u116e\u11ab (opus/sonnet/haiku)",
       "id": "agent_model_selection"
     },
@@ -7451,7 +7408,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "agent \u1107\u1167\u11bc\u1105\u1167\u11af\u1112\u116a \u1111\u1161\u11ab\u1103\u1161\u11ab \u1100\u1175\u110c\u116e\u11ab",
       "id": "agent_parallelization_rule"
     },
@@ -7464,7 +7421,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "worktree \u1100\u1167\u11a8\u1105\u1175 \u1109\u1161\u110b\u116d\u11bc \u110c\u1169\u1100\u1165\u11ab",
       "id": "worktree_isolation_rule"
     },
@@ -7477,7 +7434,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "tier 3 \u1111\u116d\u110c\u116e\u11ab \u1111\u1161\u110b\u1175\u1111\u1173\u1105\u1161\u110b\u1175\u11ab (explore\u2192plan\u2192dev\u2192qa\u2192review)",
       "id": "standard_pipeline_tier3"
     },
@@ -7555,7 +7512,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "\u1100\u1161\u110b\u1167\u11a8\u1109\u1165\u11bc \u110b\u116f\u11ab\u110e\u1175\u11a8 (\u1111\u1161\u1100\u116c\u110c\u1165\u11a8 \u110b\u1162\u11a8\u1109\u1167\u11ab\u110b\u1173\u11ab \u1112\u116a\u11a8\u110b\u1175\u11ab \u1112\u116e)",
       "id": "reversibility_principle"
     },
@@ -7568,7 +7525,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "claude code \u1100\u1162\u1107\u1161\u11af \u1110\u1175\u110b\u1165 (tier 0\u20133)",
       "id": "tier_definitions"
     },
@@ -7581,7 +7538,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "\u1110\u1175\u110b\u1165 \u1105\u1161\u110b\u116e\u1110\u1175\u11bc \u1109\u1175\u1100\u1173\u1102\u1165\u11af",
       "id": "tier_routing_signals"
     },
@@ -7594,7 +7551,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "completion \u1106\u1167\u11bc\u1105\u1167\u11bc \u1109\u116e\u11ab\u1109\u1165 (wrap up/commit)",
       "id": "workflow_completion_order"
     },
@@ -7737,7 +7694,7 @@
       "captured_at": "2026-03-15",
       "author": "insong",
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "2025\u1102\u1167\u11ab ios \u110b\u1162\u11b8 \u1100\u1162\u1107\u1161\u11af",
       "id": "on_building_ios_apps_post"
     },
@@ -7750,7 +7707,7 @@
       "captured_at": "2026-03-15",
       "author": "insong",
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "swiftui \u1100\u1175\u1107\u1169\u11ab\u1100\u1161\u11b9 \u1109\u1165\u11ab\u1110\u1162\u11a8",
       "id": "on_building_ios_apps_swiftui_default"
     },
@@ -7763,7 +7720,7 @@
       "captured_at": "2026-03-15",
       "author": "insong",
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "swift concurrency",
       "id": "on_building_ios_apps_swift_concurrency"
     },
@@ -7776,7 +7733,7 @@
       "captured_at": "2026-03-15",
       "author": "insong",
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "swiftdata",
       "id": "on_building_ios_apps_swiftdata"
     },
@@ -7789,7 +7746,7 @@
       "captured_at": "2026-03-15",
       "author": "insong",
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "xcode cloud",
       "id": "on_building_ios_apps_xcode_cloud"
     },
@@ -7802,7 +7759,7 @@
       "captured_at": "2026-03-15",
       "author": "insong",
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "\u110c\u1175\u1105\u116e\u1112\u1161\u11ab \u1109\u1173\u1110\u1162\u11a8\u110b\u1173\u11af \u1109\u1165\u11ab\u1110\u1162\u11a8\u1112\u1161\u11ab \u110b\u1175\u110b\u1172",
       "id": "on_building_ios_apps_boring_stack_rationale"
     },
@@ -7919,7 +7876,7 @@
       "captured_at": "2026-04-10",
       "author": "insong",
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "ai \u1109\u1173\u110f\u1175\u11af \u1111\u1175\u1103\u1173\u1107\u1162\u11a8 \u1105\u116e\u1111\u1173",
       "id": "ai_skill_feedback_loop_post"
     },
@@ -7932,7 +7889,7 @@
       "captured_at": "2026-04-10",
       "author": "insong",
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "stop hook \u1110\u1161\u110b\u1175\u1106\u1175\u11bc",
       "id": "ai_skill_feedback_loop_stop_hook"
     },
@@ -8114,7 +8071,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "ai agent \u110b\u1169\u110f\u1166\u1109\u1173\u1110\u1173\u1105\u1166\u110b\u1175\u1109\u1167\u11ab \u1111\u1162\u1110\u1165\u11ab",
       "id": "agent_orchestration_wiki"
     },
@@ -8127,7 +8084,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "\u1106\u1169\u1103\u1166\u11af \u1109\u1165\u11ab\u1110\u1162\u11a8 \u1100\u1175\u110c\u116e\u11ab",
       "id": "agent_orchestration_model_selection"
     },
@@ -8140,7 +8097,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "\u1107\u1167\u11bc\u1105\u1167\u11af\u1112\u116a \u1111\u1161\u11ab\u1103\u1161\u11ab \u1100\u1175\u110c\u116e\u11ab",
       "id": "agent_orchestration_parallelization"
     },
@@ -8153,7 +8110,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "worktree \u1100\u1167\u11a8\u1105\u1175 \u110c\u1169\u1100\u1165\u11ab",
       "id": "agent_orchestration_worktree_isolation"
     },
@@ -8166,7 +8123,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "tier 3 \u1111\u116d\u110c\u116e\u11ab \u1111\u1161\u110b\u1175\u1111\u1173\u1105\u1161\u110b\u1175\u11ab",
       "id": "agent_orchestration_tier3_pipeline"
     },
@@ -8179,7 +8136,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "\u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173 \u1106\u116e\u11ab\u1109\u1165 \u110c\u1165\u11bc\u110e\u1162\u11a8",
       "id": "documentation_policy_wiki"
     },
@@ -8192,7 +8149,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "docs \u1111\u1169\u11af\u1103\u1165 \u1100\u116e\u110c\u1169",
       "id": "documentation_policy_folder_structure"
     },
@@ -8205,7 +8162,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "claude.md\u1102\u1173\u11ab \u1106\u1169\u11a8\u110e\u1161 \u110b\u1167\u11a8\u1112\u1161\u11af",
       "id": "documentation_policy_claudemd_index"
     },
@@ -8218,7 +8175,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "modular claude.md \u1100\u1168\u110e\u1173\u11bc \u1105\u1169\u1103\u1175\u11bc",
       "id": "documentation_policy_modular_claudemd"
     },
@@ -8231,7 +8188,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "completion \u110e\u1166\u110f\u1173\u1105\u1175\u1109\u1173\u1110\u1173",
       "id": "documentation_policy_completion_checklist"
     },
@@ -8309,7 +8266,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "ios swiftui ui \u1105\u1166\u110b\u1175\u110b\u1161\u110b\u116e\u11ba \u1111\u1162\u1110\u1165\u11ab",
       "id": "ios_ui_layout_wiki"
     },
@@ -8322,7 +8279,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "iphone \u1105\u1166\u110b\u1175\u110b\u1161\u110b\u116e\u11ba \u110b\u116f\u11ab\u110e\u1175\u11a8",
       "id": "ios_ui_layout_iphone_rules"
     },
@@ -8335,7 +8292,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "ipad \u1105\u1166\u110b\u1175\u110b\u1161\u110b\u116e\u11ba \u110b\u116f\u11ab\u110e\u1175\u11a8",
       "id": "ios_ui_layout_ipad_rules"
     },
@@ -8348,7 +8305,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "\u110c\u1166\u1109\u1173\u110e\u1165 \u1109\u1175\u1109\u1173\u1110\u1166\u11b7",
       "id": "ios_ui_layout_gesture_system"
     },
@@ -8361,7 +8318,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "sheet detent \u110f\u1173\u1100\u1175 \u1100\u1169\u11bc\u1109\u1175\u11a8",
       "id": "ios_ui_layout_sheet_detent_formula"
     },
@@ -8374,7 +8331,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "sf symbol \u1109\u1165\u11ab\u1110\u1162\u11a8 \u1100\u1175\u110c\u116e\u11ab",
       "id": "ios_ui_layout_sf_symbol_rules"
     },
@@ -8387,7 +8344,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "claude code \u110b\u116f\u110f\u1173\u1111\u1173\u11af\u1105\u1169\u110b\u116e \u1110\u1175\u110b\u1165",
       "id": "claude_workflow_tiers_wiki"
     },
@@ -8400,7 +8357,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "tier 0 direct",
       "id": "claude_workflow_tiers_tier0"
     },
@@ -8413,7 +8370,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "tier 1 plan+implement",
       "id": "claude_workflow_tiers_tier1"
     },
@@ -8426,7 +8383,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "tier 2 parallel agents",
       "id": "claude_workflow_tiers_tier2"
     },
@@ -8439,7 +8396,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "tier 3 full workflow",
       "id": "claude_workflow_tiers_tier3"
     },
@@ -8452,7 +8409,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "\u1102\u1161\u11bd\u110b\u1173\u11ab \u1110\u1175\u110b\u1165\u1107\u116e\u1110\u1165 \u1109\u1175\u110c\u1161\u11a8\u1112\u1161\u1102\u1173\u11ab \u110b\u1175\u110b\u1172",
       "id": "claude_workflow_tiers_escalation_rationale"
     },
@@ -8465,7 +8422,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "ios \u1103\u1166\u110b\u1175\u1110\u1165 \u110b\u1167\u11bc\u1109\u1169\u11a8\u1109\u1165\u11bc \u1111\u1162\u1110\u1165\u11ab",
       "id": "ios_data_persistence_wiki"
     },
@@ -8478,7 +8435,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "saveversion \u1111\u1175\u11af\u1103\u1173",
       "id": "ios_data_persistence_save_version"
     },
@@ -8491,7 +8448,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "decodeifpresent \u1111\u1162\u1110\u1165\u11ab",
       "id": "ios_data_persistence_decode_if_present"
     },
@@ -8504,7 +8461,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "\u110b\u116f\u11ab\u110c\u1161\u110c\u1165\u11a8 \u1111\u1161\u110b\u1175\u11af \u110a\u1173\u1100\u1175",
       "id": "ios_data_persistence_atomic_write"
     },
@@ -8517,7 +8474,7 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "\u1107\u1165\u110c\u1165\u11ab \u1112\u1175\u1109\u1173\u1110\u1169\u1105\u1175 \u110b\u1175\u11ab\u1105\u1161\u110b\u1175\u11ab \u1106\u116e\u11ab\u1109\u1165\u1112\u116a",
       "id": "ios_data_persistence_version_history"
     },
@@ -9825,7 +9782,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "supertimers detail",
       "id": "02_detail_screen"
     },
@@ -9838,7 +9795,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "title: \u1110\u1161\u110b\u1175\u1106\u1165 \u1109\u1161\u11bc\u1109\u1166",
       "id": "02_detail_title"
     },
@@ -9851,7 +9808,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "back button (chevron)",
       "id": "02_detail_back_button"
     },
@@ -9864,7 +9821,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "name section (\u110b\u1175\u1105\u1173\u11b7)",
       "id": "02_detail_name_section"
     },
@@ -9877,7 +9834,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "timer name: \u1105\u1161\u1106\u1167\u11ab \u1110\u1161\u110b\u1175\u1106\u1165",
       "id": "02_detail_name_value"
     },
@@ -9890,7 +9847,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "orange color dot",
       "id": "02_detail_color_indicator"
     },
@@ -9903,7 +9860,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "timer time section (\u1110\u1161\u110b\u1175\u1106\u1165 \u1109\u1175\u1100\u1161\u11ab)",
       "id": "02_detail_time_section"
     },
@@ -9916,7 +9873,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "time value: 8\u1107\u116e\u11ab",
       "id": "02_detail_time_value"
     },
@@ -9929,7 +9886,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "time slider (0\u1107\u116e\u11ab-60\u1107\u116e\u11ab)",
       "id": "02_detail_time_slider"
     },
@@ -9942,7 +9899,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "alarm section (\u110b\u1161\u11af\u1105\u1161\u11b7)",
       "id": "02_detail_alarm_section"
     },
@@ -9955,7 +9912,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "alarm label: \u110c\u1169\u11bc\u1105\u116d 5\u1107\u116e\u11ab \u110c\u1165\u11ab",
       "id": "02_detail_alarm_value"
     },
@@ -9968,7 +9925,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "alarm timeline (8\u1107\u116e\u11ab \u110c\u1165\u11ab - \u110c\u1169\u11bc\u1105\u116d)",
       "id": "02_detail_alarm_timeline"
     },
@@ -9981,7 +9938,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "edit button (\u1109\u116e\u110c\u1165\u11bc)",
       "id": "02_detail_edit_button"
     },
@@ -9994,7 +9951,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "remove alarm button (\u110c\u1166\u1100\u1165)",
       "id": "02_detail_remove_button"
     },
@@ -10007,7 +9964,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "helper text: \u1110\u1161\u110b\u1175\u11b7\u1105\u1161\u110b\u1175\u11ab \u1103\u1173\u1105\u1162\u1100\u1173 \u110b\u1161\u11ab\u1102\u1162",
       "id": "02_detail_helper_text"
     },
@@ -10020,7 +9977,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "delete timer button (\u1110\u1161\u110b\u1175\u1106\u1165 \u1109\u1161\u11a8\u110c\u1166)",
       "id": "02_detail_delete_timer_button"
     },
@@ -10243,7 +10200,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "supermusicnote quiz",
       "id": "03_quiz_musicnote"
     },
@@ -10256,7 +10213,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "\u110c\u1169\u11bc\u1105\u116d button",
       "id": "03_quiz_exit_button"
     },
@@ -10269,7 +10226,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "score pill (correct/incorrect)",
       "id": "03_quiz_score_pill"
     },
@@ -10282,7 +10239,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "correct count (0)",
       "id": "03_quiz_correct_count"
     },
@@ -10295,7 +10252,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "incorrect count (0)",
       "id": "03_quiz_incorrect_count"
     },
@@ -10308,7 +10265,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "search icon",
       "id": "03_quiz_search_icon"
     },
@@ -10321,7 +10278,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "\u1109\u1171\u110b\u116e\u11b7 difficulty badge",
       "id": "03_quiz_difficulty_badge"
     },
@@ -10334,7 +10291,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "treble clef staff with note",
       "id": "03_quiz_staff"
     },
@@ -10347,7 +10304,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "treble clef",
       "id": "03_quiz_treble_clef"
     },
@@ -10360,7 +10317,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "note below staff (do)",
       "id": "03_quiz_note_do"
     },
@@ -10373,7 +10330,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "answer buttons row (\u1103\u1169\u1105\u1166\u1106\u1175\u1111\u1161\u1109\u1169\u11af\u1105\u1161\u1109\u1175)",
       "id": "03_quiz_answer_buttons"
     },
@@ -10386,7 +10343,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "\u1103\u1169 button",
       "id": "03_quiz_btn_do"
     },
@@ -10399,7 +10356,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "\u1105\u1166 button",
       "id": "03_quiz_btn_re"
     },
@@ -10412,7 +10369,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "\u1106\u1175 button",
       "id": "03_quiz_btn_mi"
     },
@@ -10425,7 +10382,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "\u1111\u1161 button",
       "id": "03_quiz_btn_fa"
     },
@@ -10438,7 +10395,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "\u1109\u1169\u11af button",
       "id": "03_quiz_btn_sol"
     },
@@ -10451,7 +10408,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "\u1105\u1161 button",
       "id": "03_quiz_btn_la"
     },
@@ -10464,7 +10421,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "\u1109\u1175 button",
       "id": "03_quiz_btn_si"
     },
@@ -11129,9 +11086,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_tool",
       "community": 3,
-      "norm_label": "graphify"
+      "norm_label": "graphify",
+      "id": "graphify_tool"
     },
     {
       "label": "safishamsi/graphify (GitHub)",
@@ -11142,9 +11099,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_github_repo",
       "community": 3,
-      "norm_label": "safishamsi/graphify (github)"
+      "norm_label": "safishamsi/graphify (github)",
+      "id": "graphify_github_repo"
     },
     {
       "label": "Claude Code",
@@ -11155,9 +11112,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_claude_code",
       "community": 3,
-      "norm_label": "claude code"
+      "norm_label": "claude code",
+      "id": "graphify_claude_code"
     },
     {
       "label": "Codex",
@@ -11168,9 +11125,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_codex",
       "community": 3,
-      "norm_label": "codex"
+      "norm_label": "codex",
+      "id": "graphify_codex"
     },
     {
       "label": "Cursor",
@@ -11181,9 +11138,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_cursor",
       "community": 3,
-      "norm_label": "cursor"
+      "norm_label": "cursor",
+      "id": "graphify_cursor"
     },
     {
       "label": "GitHub Copilot CLI",
@@ -11194,9 +11151,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_github_copilot_cli",
       "community": 3,
-      "norm_label": "github copilot cli"
+      "norm_label": "github copilot cli",
+      "id": "graphify_github_copilot_cli"
     },
     {
       "label": "graphify install --platform claude",
@@ -11207,9 +11164,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_install_platform_claude",
       "community": 3,
-      "norm_label": "graphify install --platform claude"
+      "norm_label": "graphify install --platform claude",
+      "id": "graphify_install_platform_claude"
     },
     {
       "label": "graphify claude install",
@@ -11220,9 +11177,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_claude_install",
       "community": 3,
-      "norm_label": "graphify claude install"
+      "norm_label": "graphify claude install",
+      "id": "graphify_claude_install"
     },
     {
       "label": "/graphify slash command",
@@ -11233,9 +11190,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_slash_command",
       "community": 3,
-      "norm_label": "/graphify slash command"
+      "norm_label": "/graphify slash command",
+      "id": "graphify_slash_command"
     },
     {
       "label": "CLAUDE.md",
@@ -11246,9 +11203,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_claude_md",
       "community": 3,
-      "norm_label": "claude.md"
+      "norm_label": "claude.md",
+      "id": "graphify_claude_md"
     },
     {
       "label": "Deterministic AST pass",
@@ -11259,9 +11216,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_ast_pass",
       "community": 3,
-      "norm_label": "deterministic ast pass"
+      "norm_label": "deterministic ast pass",
+      "id": "graphify_ast_pass"
     },
     {
       "label": "tree-sitter",
@@ -11272,9 +11229,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_tree_sitter",
       "community": 3,
-      "norm_label": "tree-sitter"
+      "norm_label": "tree-sitter",
+      "id": "graphify_tree_sitter"
     },
     {
       "label": "Local Whisper transcription",
@@ -11285,9 +11242,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_whisper",
       "community": 3,
-      "norm_label": "local whisper transcription"
+      "norm_label": "local whisper transcription",
+      "id": "graphify_whisper"
     },
     {
       "label": "Claude/GPT semantic extraction",
@@ -11298,9 +11255,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_semantic_extraction",
       "community": 3,
-      "norm_label": "claude/gpt semantic extraction"
+      "norm_label": "claude/gpt semantic extraction",
+      "id": "graphify_semantic_extraction"
     },
     {
       "label": "Leiden clustering",
@@ -11311,9 +11268,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_leiden_clustering",
       "community": 3,
-      "norm_label": "leiden clustering"
+      "norm_label": "leiden clustering",
+      "id": "graphify_leiden_clustering"
     },
     {
       "label": "Community Detection",
@@ -11324,9 +11281,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_community_detection",
       "community": 3,
-      "norm_label": "community detection"
+      "norm_label": "community detection",
+      "id": "graphify_community_detection"
     },
     {
       "label": "Supported File Formats",
@@ -11337,9 +11294,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_supported_formats",
       "community": 76,
-      "norm_label": "supported file formats"
+      "norm_label": "supported file formats",
+      "id": "graphify_supported_formats"
     },
     {
       "label": "graph.html",
@@ -11350,9 +11307,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_graph_html",
       "community": 3,
-      "norm_label": "graph.html"
+      "norm_label": "graph.html",
+      "id": "graphify_graph_html"
     },
     {
       "label": "GRAPH_REPORT.md",
@@ -11363,9 +11320,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_graph_report_md",
       "community": 3,
-      "norm_label": "graph_report.md"
+      "norm_label": "graph_report.md",
+      "id": "graphify_graph_report_md"
     },
     {
       "label": "graph.json",
@@ -11376,9 +11333,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_graph_json",
       "community": 3,
-      "norm_label": "graph.json"
+      "norm_label": "graph.json",
+      "id": "graphify_graph_json"
     },
     {
       "label": "Obsidian vault output",
@@ -11389,9 +11346,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_obsidian_vault",
       "community": 3,
-      "norm_label": "obsidian vault output"
+      "norm_label": "obsidian vault output",
+      "id": "graphify_obsidian_vault"
     },
     {
       "label": "wiki/ output (agent-facing)",
@@ -11402,9 +11359,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_wiki_output",
       "community": 3,
-      "norm_label": "wiki/ output (agent-facing)"
+      "norm_label": "wiki/ output (agent-facing)",
+      "id": "graphify_wiki_output"
     },
     {
       "label": "SHA256-based caching",
@@ -11415,9 +11372,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_sha256_caching",
       "community": 57,
-      "norm_label": "sha256-based caching"
+      "norm_label": "sha256-based caching",
+      "id": "graphify_sha256_caching"
     },
     {
       "label": "Incremental update",
@@ -11428,9 +11385,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_incremental_update",
       "community": 57,
-      "norm_label": "incremental update"
+      "norm_label": "incremental update",
+      "id": "graphify_incremental_update"
     },
     {
       "label": "/graphify query",
@@ -11441,9 +11398,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_query_command",
       "community": 3,
-      "norm_label": "/graphify query"
+      "norm_label": "/graphify query",
+      "id": "graphify_query_command"
     },
     {
       "label": "/graphify path",
@@ -11454,9 +11411,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_path_command",
       "community": 3,
-      "norm_label": "/graphify path"
+      "norm_label": "/graphify path",
+      "id": "graphify_path_command"
     },
     {
       "label": "Vector DB",
@@ -11467,9 +11424,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_vector_db",
       "community": 3,
-      "norm_label": "vector db"
+      "norm_label": "vector db",
+      "id": "graphify_vector_db"
     },
     {
       "label": "Rationale: Graph vs Vector DB tradeoff",
@@ -11480,9 +11437,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_graph_vs_vector_rationale",
       "community": 3,
-      "norm_label": "rationale: graph vs vector db tradeoff"
+      "norm_label": "rationale: graph vs vector db tradeoff",
+      "id": "graphify_graph_vs_vector_rationale"
     },
     {
       "label": "Privacy-first design",
@@ -11493,9 +11450,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_privacy_first",
       "community": 3,
-      "norm_label": "privacy-first design"
+      "norm_label": "privacy-first design",
+      "id": "graphify_privacy_first"
     },
     {
       "label": "Token efficient (71.5x compression)",
@@ -11506,9 +11463,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_token_efficient",
       "community": 3,
-      "norm_label": "token efficient (71.5x compression)"
+      "norm_label": "token efficient (71.5x compression)",
+      "id": "graphify_token_efficient"
     },
     {
       "label": "No embeddings principle",
@@ -11519,9 +11476,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_no_embeddings",
       "community": 3,
-      "norm_label": "no embeddings principle"
+      "norm_label": "no embeddings principle",
+      "id": "graphify_no_embeddings"
     },
     {
       "label": "Relationship tagging (EXTRACTED/INFERRED/AMBIGUOUS)",
@@ -11532,9 +11489,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_relationship_tagging",
       "community": 3,
-      "norm_label": "relationship tagging (extracted/inferred/ambiguous)"
+      "norm_label": "relationship tagging (extracted/inferred/ambiguous)",
+      "id": "graphify_relationship_tagging"
     },
     {
       "label": "Git hook integration",
@@ -11545,9 +11502,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_git_hook_integration",
       "community": 3,
-      "norm_label": "git hook integration"
+      "norm_label": "git hook integration",
+      "id": "graphify_git_hook_integration"
     },
     {
       "label": "Watch mode",
@@ -11558,9 +11515,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_watch_mode",
       "community": 3,
-      "norm_label": "watch mode"
+      "norm_label": "watch mode",
+      "id": "graphify_watch_mode"
     },
     {
       "label": "Hybrid CLAUDE.md + graph recipe",
@@ -11571,9 +11528,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_hybrid_recipe",
       "community": 3,
-      "norm_label": "hybrid claude.md + graph recipe"
+      "norm_label": "hybrid claude.md + graph recipe",
+      "id": "graphify_hybrid_recipe"
     },
     {
       "label": "Rationale: Loading guarantee difference (CLAUDE.md vs GRAPH_REPORT.md)",
@@ -11584,9 +11541,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_loading_guarantee_rationale",
       "community": 3,
-      "norm_label": "rationale: loading guarantee difference (claude.md vs graph_report.md)"
+      "norm_label": "rationale: loading guarantee difference (claude.md vs graph_report.md)",
+      "id": "graphify_loading_guarantee_rationale"
     },
     {
       "label": "Rationale: What AST cannot capture",
@@ -11597,9 +11554,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_ast_limits_rationale",
       "community": 3,
-      "norm_label": "rationale: what ast cannot capture"
+      "norm_label": "rationale: what ast cannot capture",
+      "id": "graphify_ast_limits_rationale"
     },
     {
       "label": "PreToolUse hook",
@@ -11610,9 +11567,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_pretooluse_hook",
       "community": 3,
-      "norm_label": "pretooluse hook"
+      "norm_label": "pretooluse hook",
+      "id": "graphify_pretooluse_hook"
     },
     {
       "label": "SVG export",
@@ -11623,9 +11580,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_svg_export",
       "community": 3,
-      "norm_label": "svg export"
+      "norm_label": "svg export",
+      "id": "graphify_svg_export"
     },
     {
       "label": "GraphML export",
@@ -11636,9 +11593,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_graphml_export",
       "community": 3,
-      "norm_label": "graphml export"
+      "norm_label": "graphml export",
+      "id": "graphify_graphml_export"
     },
     {
       "label": "Neo4j export",
@@ -11649,9 +11606,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_neo4j_export",
       "community": 3,
-      "norm_label": "neo4j export"
+      "norm_label": "neo4j export",
+      "id": "graphify_neo4j_export"
     },
     {
       "label": "getting-started (wiki link)",
@@ -11662,9 +11619,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_getting_started",
       "community": 3,
-      "norm_label": "getting-started (wiki link)"
+      "norm_label": "getting-started (wiki link)",
+      "id": "graphify_getting_started"
     },
     {
       "label": "llm-wiki-pattern (wiki link)",
@@ -11675,9 +11632,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_llm_wiki_pattern",
       "community": 3,
-      "norm_label": "llm-wiki-pattern (wiki link)"
+      "norm_label": "llm-wiki-pattern (wiki link)",
+      "id": "graphify_llm_wiki_pattern"
     },
     {
       "label": "blog: graphify-for-claude-code",
@@ -11688,9 +11645,334 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_blog_graphify_for_claude_code",
       "community": 3,
-      "norm_label": "blog: graphify-for-claude-code"
+      "norm_label": "blog: graphify-for-claude-code",
+      "id": "graphify_blog_graphify_for_claude_code"
+    },
+    {
+      "label": "\uba54\uc778\uc138\uc158 (\ud2f0\ucf13 \ub2e8\uc704)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_mainsession",
+      "community": 12,
+      "norm_label": "\u1106\u1166\u110b\u1175\u11ab\u1109\u1166\u1109\u1167\u11ab (\u1110\u1175\u110f\u1166\u11ba \u1103\u1161\u11ab\u110b\u1171)"
+    },
+    {
+      "label": "\ud2f0\ucf13 \ub2e8\uc704 \uc6cc\ud06c\ud50c\ub85c\uc6b0",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_ticketunit",
+      "community": 12,
+      "norm_label": "\u1110\u1175\u110f\u1166\u11ba \u1103\u1161\u11ab\u110b\u1171 \u110b\u116f\u110f\u1173\u1111\u1173\u11af\u1105\u1169\u110b\u116e"
+    },
+    {
+      "label": "Context \ubcf4\uc874 \uc6d0\uce59",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_contextpreservation",
+      "community": 12,
+      "norm_label": "context \u1107\u1169\u110c\u1169\u11ab \u110b\u116f\u11ab\u110e\u1175\u11a8"
+    },
+    {
+      "label": "1\ub2e8\uacc4 \u2014 \uc694\uad6c\uc0ac\ud56d + \uc124\uacc4",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_requirementsdesign",
+      "community": 12,
+      "norm_label": "1\u1103\u1161\u11ab\u1100\u1168 \u2014 \u110b\u116d\u1100\u116e\u1109\u1161\u1112\u1161\u11bc + \u1109\u1165\u11af\u1100\u1168"
+    },
+    {
+      "label": "2\ub2e8\uacc4 \u2014 \uc124\uacc4 \uc758\ub3c4 \ubb38\uc11c\ud654 (Fork)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_designdocfork",
+      "community": 12,
+      "norm_label": "2\u1103\u1161\u11ab\u1100\u1168 \u2014 \u1109\u1165\u11af\u1100\u1168 \u110b\u1174\u1103\u1169 \u1106\u116e\u11ab\u1109\u1165\u1112\u116a (fork)"
+    },
+    {
+      "label": "3\ub2e8\uacc4 \u2014 \ud3c9\uac00 \uae30\uc900 \ucd94\ucd9c (Sub-agent)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_criteriaextraction",
+      "community": 12,
+      "norm_label": "3\u1103\u1161\u11ab\u1100\u1168 \u2014 \u1111\u1167\u11bc\u1100\u1161 \u1100\u1175\u110c\u116e\u11ab \u110e\u116e\u110e\u116e\u11af (sub-agent)"
+    },
+    {
+      "label": "4\ub2e8\uacc4 \u2014 \uad6c\ud604",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_implementation",
+      "community": 12,
+      "norm_label": "4\u1103\u1161\u11ab\u1100\u1168 \u2014 \u1100\u116e\u1112\u1167\u11ab"
+    },
+    {
+      "label": "5\ub2e8\uacc4 \u2014 \ub9ac\ubdf0 (\ubcc4\ub3c4 \ub9ac\ubdf0 agent)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_reviewagent",
+      "community": 12,
+      "norm_label": "5\u1103\u1161\u11ab\u1100\u1168 \u2014 \u1105\u1175\u1107\u1172 (\u1107\u1167\u11af\u1103\u1169 \u1105\u1175\u1107\u1172 agent)"
+    },
+    {
+      "label": "6\ub2e8\uacc4 \u2014 \ub9ac\ubdf0 \ubc18\uc601",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_reviewreflection",
+      "community": 12,
+      "norm_label": "6\u1103\u1161\u11ab\u1100\u1168 \u2014 \u1105\u1175\u1107\u1172 \u1107\u1161\u11ab\u110b\u1167\u11bc"
+    },
+    {
+      "label": "code-quality-guide.md",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_codequalityguide",
+      "community": 12,
+      "norm_label": "code-quality-guide.md"
+    },
+    {
+      "label": "code-convention.md",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_codeconvention",
+      "community": 12,
+      "norm_label": "code-convention.md"
+    },
+    {
+      "label": "adr.md (ADR \uae30\ub85d)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_adr",
+      "community": 12,
+      "norm_label": "adr.md (adr \u1100\u1175\u1105\u1169\u11a8)"
+    },
+    {
+      "label": "Fork \uc138\uc158 (1\ud68c\uc131)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_forksession",
+      "community": 12,
+      "norm_label": "fork \u1109\u1166\u1109\u1167\u11ab (1\u1112\u116c\u1109\u1165\u11bc)"
+    },
+    {
+      "label": "Sub-agent (\ud3c9\uac00 \uae30\uc900 \ucd94\ucd9c)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_subagent",
+      "community": 12,
+      "norm_label": "sub-agent (\u1111\u1167\u11bc\u1100\u1161 \u1100\u1175\u110c\u116e\u11ab \u110e\u116e\u110e\u116e\u11af)"
+    },
+    {
+      "label": "code-quality-guide \uc774\uc911 \uc0ac\uc6a9 (\uad6c\ud604+\ub9ac\ubdf0)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_dualuse",
+      "community": 12,
+      "norm_label": "code-quality-guide \u110b\u1175\u110c\u116e\u11bc \u1109\u1161\u110b\u116d\u11bc (\u1100\u116e\u1112\u1167\u11ab+\u1105\u1175\u1107\u1172)"
+    },
+    {
+      "label": "\uc0ac\ub78c \uc5ed\ud560 \ubcc0\ud654 (\uc0ac\uc804 \uac80\ud1a0)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_humanroleshift",
+      "community": 12,
+      "norm_label": "\u1109\u1161\u1105\u1161\u11b7 \u110b\u1167\u11a8\u1112\u1161\u11af \u1107\u1167\u11ab\u1112\u116a (\u1109\u1161\u110c\u1165\u11ab \u1100\u1165\u11b7\u1110\u1169)"
+    },
+    {
+      "label": "Rationale: Fork vs \ubb38\uc11c\ub9cc \ub118\uae30\uae30",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_rationale_forkoverdoc",
+      "community": 12,
+      "norm_label": "rationale: fork vs \u1106\u116e\u11ab\u1109\u1165\u1106\u1161\u11ab \u1102\u1165\u11b7\u1100\u1175\u1100\u1175"
+    },
+    {
+      "label": "Rationale: \uc804\uccb4 convention \ub300\uc2e0 sub-agent \ucd94\ucd9c",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_rationale_subagent",
+      "community": 12,
+      "norm_label": "rationale: \u110c\u1165\u11ab\u110e\u1166 convention \u1103\u1162\u1109\u1175\u11ab sub-agent \u110e\u116e\u110e\u116e\u11af"
+    },
+    {
+      "label": "Rationale: \ubcc4\ub3c4 \uc138\uc158 \ub9ac\ubdf0 (\ub0a8\uc758 \uc2dc\uc120)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_rationale_separatereview",
+      "community": 12,
+      "norm_label": "rationale: \u1107\u1167\u11af\u1103\u1169 \u1109\u1166\u1109\u1167\u11ab \u1105\u1175\u1107\u1172 (\u1102\u1161\u11b7\u110b\u1174 \u1109\u1175\u1109\u1165\u11ab)"
+    },
+    {
+      "label": "Rationale: \ub9ac\ubdf0 \ubc18\uc601\uc740 \uba54\uc778\uc138\uc158",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_rationale_mainsessionrevise",
+      "community": 12,
+      "norm_label": "rationale: \u1105\u1175\u1107\u1172 \u1107\u1161\u11ab\u110b\u1167\u11bc\u110b\u1173\u11ab \u1106\u1166\u110b\u1175\u11ab\u1109\u1166\u1109\u1167\u11ab"
+    },
+    {
+      "label": "Takeaway \u2014 Context \ubc30\ubd84 \uc124\uacc4",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_takeaway",
+      "community": 12,
+      "norm_label": "takeaway \u2014 context \u1107\u1162\u1107\u116e\u11ab \u1109\u1165\u11af\u1100\u1168"
+    },
+    {
+      "label": "claude-workflow-tiers (\uad00\ub828)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_claudeworkflowtiers",
+      "community": 12,
+      "norm_label": "claude-workflow-tiers (\u1100\u116a\u11ab\u1105\u1167\u11ab)"
+    },
+    {
+      "label": "agent-orchestration (\uad00\ub828)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_agentorchestration",
+      "community": 12,
+      "norm_label": "agent-orchestration (\u1100\u116a\u11ab\u1105\u1167\u11ab)"
+    },
+    {
+      "label": "documentation-policy (\uad00\ub828)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_documentationpolicy",
+      "community": 12,
+      "norm_label": "documentation-policy (\u1100\u116a\u11ab\u1105\u1167\u11ab)"
+    },
+    {
+      "label": "code-quality (\uad00\ub828)",
+      "file_type": "document",
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_session_per_ticket_codequality",
+      "community": 12,
+      "norm_label": "code-quality (\u1100\u116a\u11ab\u1105\u1167\u11ab)"
     }
   ],
   "links": [
@@ -26735,94 +27017,471 @@
       "_tgt": "graphify_pretooluse_hook",
       "source": "graphify_loading_guarantee_rationale",
       "target": "graphify_pretooluse_hook"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_mainsession",
+      "_tgt": "main_session_per_ticket_ticketunit",
+      "source": "main_session_per_ticket_mainsession",
+      "target": "main_session_per_ticket_ticketunit"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_mainsession",
+      "_tgt": "main_session_per_ticket_contextpreservation",
+      "source": "main_session_per_ticket_mainsession",
+      "target": "main_session_per_ticket_contextpreservation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_mainsession",
+      "_tgt": "main_session_per_ticket_requirementsdesign",
+      "source": "main_session_per_ticket_mainsession",
+      "target": "main_session_per_ticket_requirementsdesign"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_mainsession",
+      "_tgt": "main_session_per_ticket_implementation",
+      "source": "main_session_per_ticket_mainsession",
+      "target": "main_session_per_ticket_implementation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_mainsession",
+      "_tgt": "main_session_per_ticket_reviewreflection",
+      "source": "main_session_per_ticket_mainsession",
+      "target": "main_session_per_ticket_reviewreflection"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_mainsession",
+      "_tgt": "main_session_per_ticket_claudeworkflowtiers",
+      "source": "main_session_per_ticket_mainsession",
+      "target": "main_session_per_ticket_claudeworkflowtiers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_mainsession",
+      "_tgt": "main_session_per_ticket_agentorchestration",
+      "source": "main_session_per_ticket_mainsession",
+      "target": "main_session_per_ticket_agentorchestration"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_contextpreservation",
+      "_tgt": "main_session_per_ticket_takeaway",
+      "source": "main_session_per_ticket_contextpreservation",
+      "target": "main_session_per_ticket_takeaway"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_requirementsdesign",
+      "_tgt": "main_session_per_ticket_designdocfork",
+      "source": "main_session_per_ticket_requirementsdesign",
+      "target": "main_session_per_ticket_designdocfork"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_designdocfork",
+      "_tgt": "main_session_per_ticket_forksession",
+      "source": "main_session_per_ticket_designdocfork",
+      "target": "main_session_per_ticket_forksession"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_designdocfork",
+      "_tgt": "main_session_per_ticket_rationale_forkoverdoc",
+      "source": "main_session_per_ticket_designdocfork",
+      "target": "main_session_per_ticket_rationale_forkoverdoc"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_designdocfork",
+      "_tgt": "main_session_per_ticket_humanroleshift",
+      "source": "main_session_per_ticket_designdocfork",
+      "target": "main_session_per_ticket_humanroleshift"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_criteriaextraction",
+      "_tgt": "main_session_per_ticket_subagent",
+      "source": "main_session_per_ticket_criteriaextraction",
+      "target": "main_session_per_ticket_subagent"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_criteriaextraction",
+      "_tgt": "main_session_per_ticket_rationale_subagent",
+      "source": "main_session_per_ticket_criteriaextraction",
+      "target": "main_session_per_ticket_rationale_subagent"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_criteriaextraction",
+      "_tgt": "main_session_per_ticket_humanroleshift",
+      "source": "main_session_per_ticket_criteriaextraction",
+      "target": "main_session_per_ticket_humanroleshift"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_implementation",
+      "_tgt": "main_session_per_ticket_codequalityguide",
+      "source": "main_session_per_ticket_implementation",
+      "target": "main_session_per_ticket_codequalityguide"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_implementation",
+      "_tgt": "main_session_per_ticket_dualuse",
+      "source": "main_session_per_ticket_implementation",
+      "target": "main_session_per_ticket_dualuse"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_reviewagent",
+      "_tgt": "main_session_per_ticket_codequalityguide",
+      "source": "main_session_per_ticket_reviewagent",
+      "target": "main_session_per_ticket_codequalityguide"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_reviewagent",
+      "_tgt": "main_session_per_ticket_rationale_separatereview",
+      "source": "main_session_per_ticket_reviewagent",
+      "target": "main_session_per_ticket_rationale_separatereview"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_reviewagent",
+      "_tgt": "main_session_per_ticket_reviewreflection",
+      "source": "main_session_per_ticket_reviewagent",
+      "target": "main_session_per_ticket_reviewreflection"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_reviewagent",
+      "_tgt": "main_session_per_ticket_dualuse",
+      "source": "main_session_per_ticket_reviewagent",
+      "target": "main_session_per_ticket_dualuse"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_reviewagent",
+      "_tgt": "main_session_per_ticket_subagent",
+      "source": "main_session_per_ticket_reviewagent",
+      "target": "main_session_per_ticket_subagent"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_reviewreflection",
+      "_tgt": "main_session_per_ticket_rationale_mainsessionrevise",
+      "source": "main_session_per_ticket_reviewreflection",
+      "target": "main_session_per_ticket_rationale_mainsessionrevise"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_codequalityguide",
+      "_tgt": "main_session_per_ticket_subagent",
+      "source": "main_session_per_ticket_codequalityguide",
+      "target": "main_session_per_ticket_subagent"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_codequalityguide",
+      "_tgt": "main_session_per_ticket_dualuse",
+      "source": "main_session_per_ticket_codequalityguide",
+      "target": "main_session_per_ticket_dualuse"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_codequalityguide",
+      "_tgt": "main_session_per_ticket_codeconvention",
+      "source": "main_session_per_ticket_codequalityguide",
+      "target": "main_session_per_ticket_codeconvention"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_codequalityguide",
+      "_tgt": "main_session_per_ticket_adr",
+      "source": "main_session_per_ticket_codequalityguide",
+      "target": "main_session_per_ticket_adr"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_codequalityguide",
+      "_tgt": "main_session_per_ticket_codequality",
+      "source": "main_session_per_ticket_codequalityguide",
+      "target": "main_session_per_ticket_codequality"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_codeconvention",
+      "_tgt": "main_session_per_ticket_subagent",
+      "source": "main_session_per_ticket_codeconvention",
+      "target": "main_session_per_ticket_subagent"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_codeconvention",
+      "_tgt": "main_session_per_ticket_adr",
+      "source": "main_session_per_ticket_codeconvention",
+      "target": "main_session_per_ticket_adr"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_adr",
+      "_tgt": "main_session_per_ticket_forksession",
+      "source": "main_session_per_ticket_adr",
+      "target": "main_session_per_ticket_forksession"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_adr",
+      "_tgt": "main_session_per_ticket_subagent",
+      "source": "main_session_per_ticket_adr",
+      "target": "main_session_per_ticket_subagent"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_adr",
+      "_tgt": "main_session_per_ticket_humanroleshift",
+      "source": "main_session_per_ticket_adr",
+      "target": "main_session_per_ticket_humanroleshift"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_adr",
+      "_tgt": "main_session_per_ticket_documentationpolicy",
+      "source": "main_session_per_ticket_adr",
+      "target": "main_session_per_ticket_documentationpolicy"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "src/content/wiki/main-session-per-ticket.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_session_per_ticket_forksession",
+      "_tgt": "main_session_per_ticket_subagent",
+      "source": "main_session_per_ticket_forksession",
+      "target": "main_session_per_ticket_subagent"
     }
   ],
   "hyperedges": [
     {
-      "id": "graphify_processing_pipeline_stages",
-      "label": "graphify 4-stage processing pipeline",
+      "id": "main_session_per_ticket_lifecycle",
+      "label": "\ud2f0\ucf13 \ub77c\uc774\ud504\uc0ac\uc774\ud074 6\ub2e8\uacc4",
       "nodes": [
-        "graphify_ast_pass",
-        "graphify_whisper",
-        "graphify_semantic_extraction",
-        "graphify_leiden_clustering"
+        "main_session_per_ticket_requirementsdesign",
+        "main_session_per_ticket_designdocfork",
+        "main_session_per_ticket_criteriaextraction",
+        "main_session_per_ticket_implementation",
+        "main_session_per_ticket_reviewagent",
+        "main_session_per_ticket_reviewreflection"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md"
+    },
+    {
+      "id": "main_session_per_ticket_sessionresponsibility",
+      "label": "\uc138\uc158 \ucc45\uc784 \ubd84\ub9ac",
+      "nodes": [
+        "main_session_per_ticket_mainsession",
+        "main_session_per_ticket_forksession",
+        "main_session_per_ticket_subagent",
+        "main_session_per_ticket_reviewagent"
       ],
       "relation": "form",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "src/content/wiki/graphify.md"
+      "source_file": "src/content/wiki/main-session-per-ticket.md"
     },
     {
-      "id": "graphify_output_artifacts",
-      "label": "graphify output artifact set",
+      "id": "main_session_per_ticket_guideloop",
+      "label": "code-quality-guide \uc774\uc911 \uc0ac\uc6a9 \ud328\ud134",
       "nodes": [
-        "graphify_graph_html",
-        "graphify_graph_report_md",
-        "graphify_graph_json",
-        "graphify_obsidian_vault",
-        "graphify_wiki_output"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/content/wiki/graphify.md"
-    },
-    {
-      "id": "graphify_install_command_pair",
-      "label": "Two-scope install commands",
-      "nodes": [
-        "graphify_install_platform_claude",
-        "graphify_claude_install",
-        "graphify_slash_command",
-        "graphify_claude_md"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/content/wiki/graphify.md"
-    },
-    {
-      "id": "graphify_processing_pipeline",
-      "label": "Four-stage processing pipeline",
-      "nodes": [
-        "graphify_deterministic_ast_pass",
-        "graphify_local_whisper",
-        "graphify_semantic_extraction",
-        "graphify_leiden_clustering"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.95,
-      "source_file": "src/content/wiki/graphify.md"
-    },
-    {
-      "id": "graphify_output_artifacts",
-      "label": "Graphify output artifact set",
-      "nodes": [
-        "graphify_graph_html",
-        "graphify_graph_report_md",
-        "graphify_graph_json",
-        "graphify_obsidian_vault",
-        "graphify_wiki_output"
-      ],
-      "relation": "form",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.9,
-      "source_file": "src/content/wiki/graphify.md"
-    },
-    {
-      "id": "graphify_core_design_principles",
-      "label": "Core design principles",
-      "nodes": [
-        "graphify_privacy_first",
-        "graphify_token_efficient",
-        "graphify_no_embeddings",
-        "graphify_edge_tagging"
+        "main_session_per_ticket_codequalityguide",
+        "main_session_per_ticket_implementation",
+        "main_session_per_ticket_reviewagent"
       ],
       "relation": "implement",
       "confidence": "EXTRACTED",
-      "confidence_score": 0.9,
-      "source_file": "src/content/wiki/graphify.md"
+      "confidence_score": 1.0,
+      "source_file": "src/content/wiki/main-session-per-ticket.md"
     }
   ]
 }

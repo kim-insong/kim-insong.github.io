@@ -12,7 +12,7 @@
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[graphify Processing Pipeline]] (12 shared connections)
 
 ## Source Files
 

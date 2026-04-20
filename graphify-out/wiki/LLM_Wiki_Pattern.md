@@ -2,7 +2,7 @@
 
 > God node · 14 connections · `src/content/wiki/llm-wiki-pattern.md`
 
-**Community:** [[LLM Wiki Architecture]]
+**Community:** [[Wiki Operations]]
 
 ## Connections by Relation
 

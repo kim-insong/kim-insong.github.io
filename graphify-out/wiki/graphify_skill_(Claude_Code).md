@@ -2,7 +2,7 @@
 
 > God node · 14 connections · `tools/graphify/skill.md`
 
-**Community:** [[Wiki-Agent Build Pipeline]]
+**Community:** [[graphify Pipeline Variants]]
 
 ## Connections by Relation
 

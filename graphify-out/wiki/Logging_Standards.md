@@ -10,7 +10,7 @@
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Wiki Lint & Tagging]] (4 shared connections)
 
 ## Source Files
 

@@ -2,7 +2,7 @@
 
 > God node · 19 connections · `tools/graphify/skill-claw.md`
 
-**Community:** [[graphify Core Features]]
+**Community:** [[graphify Core Concepts]]
 
 ## Connections by Relation
 

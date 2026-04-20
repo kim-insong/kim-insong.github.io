@@ -1,6 +1,76 @@
 {
   "nodes": [
     {
+      "id": "agent-orchestration",
+      "title": "AI Agent 오케스트레이션 패턴",
+      "tags": [
+        "Claude",
+        "AI",
+        "agent",
+        "workflow",
+        "parallelization"
+      ]
+    },
+    {
+      "id": "claude-skill-feedback-loop",
+      "title": "Claude 스킬 자동 피드백 루프",
+      "tags": [
+        "Claude",
+        "AI",
+        "workflow",
+        "automation"
+      ]
+    },
+    {
+      "id": "claude-workflow-tiers",
+      "title": "Claude Code 개발 워크플로우 티어",
+      "tags": [
+        "Claude",
+        "AI",
+        "workflow",
+        "agent"
+      ]
+    },
+    {
+      "id": "code-quality",
+      "title": "코드 품질 원칙",
+      "tags": [
+        "code-quality",
+        "Claude",
+        "workflow",
+        "security"
+      ]
+    },
+    {
+      "id": "design-data-in-engine",
+      "title": "게임 기획데이터 관리 원칙",
+      "tags": [
+        "game-dev",
+        "architecture",
+        "design-data"
+      ]
+    },
+    {
+      "id": "documentation-policy",
+      "title": "프로젝트 문서 정책",
+      "tags": [
+        "documentation",
+        "workflow",
+        "Claude",
+        "architecture"
+      ]
+    },
+    {
+      "id": "game-server-request-context",
+      "title": "게임 서버 요청 컨텍스트 패턴",
+      "tags": [
+        "game-dev",
+        "server",
+        "logging",
+        "architecture"
+      ]
+    },
+    {
       "id": "getting-started",
       "title": "위키 시작하기",
       "tags": [
@@ -9,13 +79,147 @@
       ]
     },
     {
+      "id": "git-workflow-patterns",
+      "title": "Git 워크플로우 패턴",
+      "tags": [
+        "git",
+        "workflow",
+        "Claude",
+        "PR"
+      ]
+    },
+    {
+      "id": "graphify",
+      "title": "graphify — 코드/문서 지식 그래프 도구",
+      "tags": [
+        "wiki",
+        "knowledge-graph",
+        "tooling",
+        "AI",
+        "Claude"
+      ]
+    },
+    {
+      "id": "ios-app-development",
+      "title": "iOS 앱 개발 스택 (2025)",
+      "tags": [
+        "iOS",
+        "SwiftUI",
+        "개발"
+      ]
+    },
+    {
+      "id": "ios-data-persistence",
+      "title": "iOS 데이터 영속성 패턴",
+      "tags": [
+        "iOS",
+        "SwiftUI",
+        "data",
+        "persistence",
+        "migration"
+      ]
+    },
+    {
+      "id": "ios-design-tokens",
+      "title": "iOS SwiftUI 디자인 토큰 & 컴포넌트 패턴",
+      "tags": [
+        "iOS",
+        "SwiftUI",
+        "design-tokens",
+        "components",
+        "UI"
+      ]
+    },
+    {
+      "id": "ios-ui-layout",
+      "title": "iOS SwiftUI UI 레이아웃 패턴",
+      "tags": [
+        "iOS",
+        "SwiftUI",
+        "layout",
+        "iPad",
+        "iPhone"
+      ]
+    },
+    {
+      "id": "leaderboard-snapshot",
+      "title": "리더보드 스냅샷 패턴",
+      "tags": [
+        "game-dev",
+        "server",
+        "redis",
+        "ranking"
+      ]
+    },
+    {
+      "id": "llm-wiki-pattern",
+      "title": "LLM Wiki 패턴",
+      "tags": [
+        "wiki",
+        "knowledge-management",
+        "AI",
+        "workflow",
+        "architecture"
+      ]
+    },
+    {
+      "id": "redis-leaderboard-snapshot",
+      "title": "Redis 랭킹과 스냅샷 패턴",
+      "tags": [
+        "game-dev",
+        "server",
+        "redis",
+        "ranking"
+      ]
+    },
+    {
+      "id": "ai-skill-feedback-loop",
+      "title": "ai-skill-feedback-loop",
+      "tags": [],
+      "orphan": true
+    },
+    {
       "id": "다른-노트-파일명",
       "title": "다른-노트-파일명",
+      "tags": [],
+      "orphan": true
+    },
+    {
+      "id": "on-building-ios-apps",
+      "title": "on-building-ios-apps",
       "tags": [],
       "orphan": true
     }
   ],
   "links": [
+    {
+      "source": "agent-orchestration",
+      "target": "claude-workflow-tiers"
+    },
+    {
+      "source": "claude-skill-feedback-loop",
+      "target": "ai-skill-feedback-loop"
+    },
+    {
+      "source": "claude-workflow-tiers",
+      "target": "agent-orchestration"
+    },
+    {
+      "source": "claude-workflow-tiers",
+      "target": "claude-skill-feedback-loop"
+    },
+    {
+      "source": "design-data-in-engine",
+      "target": "design-data-in-engine"
+    },
+    {
+      "source": "documentation-policy",
+      "target": "claude-workflow-tiers"
+    },
+    {
+      "source": "game-server-request-context",
+      "target": "game-server-request-context"
+    },
     {
       "source": "getting-started",
       "target": "getting-started"
@@ -23,6 +227,54 @@
     {
       "source": "getting-started",
       "target": "다른-노트-파일명"
+    },
+    {
+      "source": "graphify",
+      "target": "getting-started"
+    },
+    {
+      "source": "graphify",
+      "target": "llm-wiki-pattern"
+    },
+    {
+      "source": "ios-app-development",
+      "target": "on-building-ios-apps"
+    },
+    {
+      "source": "ios-data-persistence",
+      "target": "ios-app-development"
+    },
+    {
+      "source": "ios-design-tokens",
+      "target": "ios-ui-layout"
+    },
+    {
+      "source": "ios-design-tokens",
+      "target": "ios-app-development"
+    },
+    {
+      "source": "ios-ui-layout",
+      "target": "ios-design-tokens"
+    },
+    {
+      "source": "ios-ui-layout",
+      "target": "ios-app-development"
+    },
+    {
+      "source": "leaderboard-snapshot",
+      "target": "leaderboard-snapshot"
+    },
+    {
+      "source": "llm-wiki-pattern",
+      "target": "getting-started"
+    },
+    {
+      "source": "llm-wiki-pattern",
+      "target": "graphify"
+    },
+    {
+      "source": "redis-leaderboard-snapshot",
+      "target": "game-server-request-context"
     }
   ]
 }

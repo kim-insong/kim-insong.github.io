@@ -2,7 +2,7 @@
 
 > God node · 31 connections · `tools/graphify/__main__.py`
 
-**Community:** [[Query Token Benchmark]]
+**Community:** [[Benchmark & Installers]]
 
 ## Connections by Relation
 

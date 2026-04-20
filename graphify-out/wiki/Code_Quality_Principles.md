@@ -18,7 +18,7 @@
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[insong.net Stack & LLM Wiki]] (20 shared connections)
 
 ## Source Files
 

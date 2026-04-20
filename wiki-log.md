@@ -16,6 +16,8 @@ Run `/wiki-ingest` to process unincorporated sources.
 
 | Source | Wiki Page | Date | Notes |
 |--------|-----------|------|-------|
+| blog:main-session-per-ticket | main-session-per-ticket | 2026-04-20 | new page |
+| blog:graphify-for-claude-code | graphify | 2026-04-20 | merged |
 | blog:hello-world | getting-started | 2026-04-13 | merged |
 | blog:on-building-ios-apps | ios-app-development | 2026-04-13 | new page |
 | blog:ai-skill-feedback-loop | claude-skill-feedback-loop | 2026-04-13 | new page |
@@ -55,3 +57,4 @@ Run `/wiki-ingest` to process unincorporated sources.
 | agent-orchestration | AI Agent 오케스트레이션 패턴 | Claude, AI, agent, workflow, parallelization |
 | documentation-policy | 프로젝트 문서 정책 | documentation, workflow, Claude, architecture |
 | code-quality | 코드 품질 원칙 | code-quality, Claude, workflow, security |
+| main-session-per-ticket | 메인세션 = 티켓 단위 워크플로우 | Claude, AI, workflow, context, code-review |

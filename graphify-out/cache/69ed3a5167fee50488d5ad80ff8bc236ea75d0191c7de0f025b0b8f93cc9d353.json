@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "query_operation", "target": "llm_wiki_pattern", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "graphify-out/obsidian/Query Operation.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

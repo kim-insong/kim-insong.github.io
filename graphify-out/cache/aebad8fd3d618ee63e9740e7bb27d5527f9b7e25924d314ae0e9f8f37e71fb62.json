@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "local_whisper_transcription", "target": "graphify_tool", "relation": "implements", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "graphify-out/obsidian/Local Whisper Transcription.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

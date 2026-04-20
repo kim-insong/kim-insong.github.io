@@ -1,15 +1,20 @@
 # Pages & Routing
 
-Static Astro pages covering home, about, and blog (listing + detail).
+Static Astro pages covering home, about, blog (listing + detail), wiki (listing + detail + graph), and apps (listing + detail).
 
 ## Key Files
 
 | File | Role |
 |------|------|
 | src/pages/index.astro | Homepage — hero section with bio and nav links |
-| src/pages/about.astro | About page — 4 sections: Education, Career, Skills |
+| src/pages/about.astro | About page — 4 sections: Header, Education, Career, Skills |
 | src/pages/blog/index.astro | Blog listing — sorted by `publishDate` desc |
 | src/pages/blog/[slug].astro | Blog post detail — dynamic route from content collection |
+| src/pages/wiki/index.astro | Wiki listing — all reference entries |
+| src/pages/wiki/[slug].astro | Wiki entry detail — dynamic route from wiki collection |
+| src/pages/wiki/graph.astro | Wiki knowledge graph visualization |
+| src/pages/apps/index.astro | Apps listing — all app entries |
+| src/pages/apps/[slug].astro | App detail — dynamic route from apps collection |
 
 ## Core Concepts
 
@@ -73,4 +78,9 @@ graph TD
   A[/] --> B[/about]
   A --> C[/blog]
   C --> D[/blog/:slug]
+  A --> E[/wiki]
+  E --> F[/wiki/:slug]
+  E --> G[/wiki/graph]
+  A --> H[/apps]
+  H --> I[/apps/:slug]
 ```

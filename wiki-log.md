@@ -37,6 +37,7 @@ Run `/wiki-ingest` to process unincorporated sources.
 | raw/logging-standards.md | logging-standards | 2026-04-21 | new page |
 | raw/knowledge-capture.md | knowledge-capture | 2026-04-21 | new page |
 | blog:service-rpc-topology | service-rpc-topology | 2026-04-21 | new page |
+| blog:coordinator-setup-phase | coordinator-setup-phase | 2026-04-21 | new page |
 
 ---
 
@@ -64,3 +65,4 @@ Run `/wiki-ingest` to process unincorporated sources.
 | logging-standards | 옵저버빌리티 & 로깅 표준 | logging, observability, Claude, workflow, tooling |
 | knowledge-capture | 지식 캡처 규율 | Claude, workflow, memory, skill, knowledge-management |
 | service-rpc-topology | Service 기반 RPC 토폴로지 선언 패턴 | game-dev, server, architecture, rpc |
+| coordinator-setup-phase | Coordinator Setup Phase 추적 패턴 | game-dev, server, architecture, rpc, coordinator |

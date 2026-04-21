@@ -39,6 +39,7 @@ Run `/wiki-ingest` to process unincorporated sources.
 | blog:service-rpc-topology | service-rpc-topology | 2026-04-21 | new page |
 | blog:coordinator-setup-phase | coordinator-setup-phase | 2026-04-21 | new page |
 | blog:precomputed-timeline-dispatch | precomputed-timeline-dispatch | 2026-04-21 | new page |
+| blog:tera-server-lockfree | tera-lockfree-architecture | 2026-04-21 | new page |
 
 ---
 
@@ -68,3 +69,4 @@ Run `/wiki-ingest` to process unincorporated sources.
 | service-rpc-topology | Service 기반 RPC 토폴로지 선언 패턴 | game-dev, server, architecture, rpc |
 | coordinator-setup-phase | Coordinator Setup Phase 추적 패턴 | game-dev, server, architecture, rpc, coordinator |
 | precomputed-timeline-dispatch | Precomputed Timeline Dispatch 패턴 | game-dev, server, network, mmo, client |
+| tera-lockfree-architecture | Tera Lock-Free MMO 서버 아키텍처 | game-dev, server, mmo, concurrency, lock-free, tera |

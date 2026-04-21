@@ -18,7 +18,7 @@
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[LLM Wiki Core Concept]] (20 shared connections)
 
 ## Source Files
 

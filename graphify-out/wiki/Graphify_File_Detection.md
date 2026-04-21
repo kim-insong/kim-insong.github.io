@@ -33,9 +33,9 @@
 
 ## Relationships
 
-- [[Agent Orchestration Rules]] (92 shared connections)
-- [[Graphify Extract Internals]] (9 shared connections)
-- [[Graphify Analyze Internals]] (1 shared connections)
+- [[Wiki Integration & Auto-refresh]] (92 shared connections)
+- [[Graphify Analysis & Clustering]] (9 shared connections)
+- [[Graphify AST Extractors]] (1 shared connections)
 
 ## Source Files
 

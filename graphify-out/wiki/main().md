@@ -2,7 +2,7 @@
 
 > God node · 31 connections · `tools/graphify/__main__.py`
 
-**Community:** [[Graphify Install Commands]]
+**Community:** [[insong.net Site & Profile]]
 
 ## Connections by Relation
 

@@ -16,7 +16,7 @@
 
 ## Relationships
 
-- [[Wiki Output Writer]] (18 shared connections)
+- [[Graphify Wiki Export]] (18 shared connections)
 
 ## Source Files
 

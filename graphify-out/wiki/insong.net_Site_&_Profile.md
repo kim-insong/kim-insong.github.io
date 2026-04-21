@@ -33,8 +33,9 @@
 
 ## Relationships
 
-- [[graphify Wiki Integration (KR)]] (1 shared connections)
-- [[Wiki Agent Entry Points]] (1 shared connections)
+- [[Claude Code & graphify integration]] (108 shared connections)
+- [[Coordinator Setup Phase]] (1 shared connections)
+- [[Graphify Ingest (URL Fetch)]] (1 shared connections)
 
 ## Source Files
 

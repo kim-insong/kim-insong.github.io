@@ -2,7 +2,7 @@
 
 > God node · 14 connections · `tools/graphify/skill.md`
 
-**Community:** [[Graphify Audit Trail]]
+**Community:** [[Coordinator Setup Phase]]
 
 ## Connections by Relation
 

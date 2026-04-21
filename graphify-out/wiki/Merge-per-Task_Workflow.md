@@ -1,39 +1,35 @@
 # Merge-per-Task Workflow
 
-> 34 nodes · cohesion 0.06
+> 22 nodes · cohesion 0.10
 
 ## Key Concepts
 
-- **Task 단위 머지 원칙** (11 connections) — `src/content/wiki/merge-per-task.md`
-- **testflight/scripts/staging.sh** (9 connections) — `src/content/wiki/merge-per-task.md`
-- **git worktree** (4 connections) — `src/content/wiki/merge-per-task.md`
-- **Architect Agent** (3 connections) — `src/content/wiki/merge-per-task.md`
-- **개별 PR 단위 main merge** (3 connections) — `src/content/wiki/merge-per-task.md`
-- **의미 충돌 (타입 시그니처 런타임 붕괴)** (3 connections) — `src/content/wiki/merge-per-task.md`
-- **임시 로컬 staging 브랜치** (3 connections) — `src/content/wiki/merge-per-task.md`
-- **Agent isolation: worktree 옵션** (3 connections) — `src/content/wiki/merge-per-task.md`
-- **Architect 범위 한계 (한 기획서 내부)** (2 connections) — `src/content/wiki/merge-per-task.md`
-- **--plan 모드 (staging-branches 태그)** (2 connections) — `src/content/wiki/merge-per-task.md`
-- **--worktrees 모드** (2 connections) — `src/content/wiki/merge-per-task.md`
-- **Developer Agent 병렬 실행** (2 connections) — `src/content/wiki/merge-per-task.md`
-- **Merge Conflict 안전한 실패** (2 connections) — `src/content/wiki/merge-per-task.md`
-- **Task 내부 병렬, Task 간 직렬** (2 connections) — `src/content/wiki/merge-per-task.md`
-- **Trunk-Based Development** (2 connections) — `src/content/wiki/merge-per-task.md`
-- **agent-orchestration (wiki link)** (1 connections) — `src/content/wiki/merge-per-task.md`
-- **안티패턴: staging을 main에 merge** (1 connections) — `src/content/wiki/merge-per-task.md`
-- **안티패턴: staging 브랜치 push** (1 connections) — `src/content/wiki/merge-per-task.md`
-- **안티패턴: 여러 task 브랜치 쌓기** (1 connections) — `src/content/wiki/merge-per-task.md`
-- **blog:merge-per-task (출처)** (1 connections) — `src/content/wiki/merge-per-task.md`
-- **직접 명시 모드** (1 connections) — `src/content/wiki/merge-per-task.md`
-- **claude-workflow-tiers (wiki link)** (1 connections) — `src/content/wiki/merge-per-task.md`
-- **Conflict 범위 협소** (1 connections) — `src/content/wiki/merge-per-task.md`
-- **의존성 DAG 분석** (1 connections) — `src/content/wiki/merge-per-task.md`
-- **같은 브랜치 동시 체크아웃 차단** (1 connections) — `src/content/wiki/merge-per-task.md`
-- *... and 9 more nodes in this community*
+- **Merge-per-task Principle** (7 connections) — `src/content/wiki/merge-per-task.md`
+- **testflight/scripts/staging.sh** (6 connections) — `src/content/wiki/merge-per-task.md`
+- **Staging branch (local ephemeral)** (4 connections) — `src/content/wiki/merge-per-task.md`
+- **architect agent** (3 connections) — `src/content/wiki/merge-per-task.md`
+- **Antipattern: stacking multiple task branches** (2 connections) — `src/content/wiki/merge-per-task.md`
+- **Claude Agent isolation: worktree** (2 connections) — `src/content/wiki/merge-per-task.md`
+- **fastlane** (2 connections) — `src/content/wiki/merge-per-task.md`
+- **--plan mode (staging-branches tag)** (2 connections) — `src/content/wiki/merge-per-task.md`
+- **Semantic conflict (undetected)** (2 connections) — `src/content/wiki/merge-per-task.md`
+- **Task (atomic integration unit)** (2 connections) — `src/content/wiki/merge-per-task.md`
+- **Antipattern: merge staging to main** (1 connections) — `src/content/wiki/merge-per-task.md`
+- **Antipattern: pushing staging branch** (1 connections) — `src/content/wiki/merge-per-task.md`
+- **Blog: merge-per-task** (1 connections) — `src/content/wiki/merge-per-task.md`
+- **Dependency DAG (per spec)** (1 connections) — `src/content/wiki/merge-per-task.md`
+- **Explicit args mode** (1 connections) — `src/content/wiki/merge-per-task.md`
+- **git-workflow-patterns (related)** (1 connections) — `src/content/wiki/merge-per-task.md`
+- **git worktree** (1 connections) — `src/content/wiki/merge-per-task.md`
+- **main-session-per-ticket (related)** (1 connections) — `src/content/wiki/merge-per-task.md`
+- **Merge conflict (detectable)** (1 connections) — `src/content/wiki/merge-per-task.md`
+- **TestFlight** (1 connections) — `src/content/wiki/merge-per-task.md`
+- **Trunk-based development** (1 connections) — `src/content/wiki/merge-per-task.md`
+- **--worktrees mode** (1 connections) — `src/content/wiki/merge-per-task.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Graphify Semantic Cache]] (44 shared connections)
 
 ## Source Files
 
@@ -41,8 +37,8 @@
 
 ## Audit Trail
 
-- EXTRACTED: 66 (92%)
-- INFERRED: 6 (8%)
+- EXTRACTED: 42 (95%)
+- INFERRED: 2 (5%)
 - AMBIGUOUS: 0 (0%)
 
 ---

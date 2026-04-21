@@ -1,30 +1,36 @@
 # Wiki Getting Started
 
-> 5 nodes · cohesion 0.80
+> 12 nodes · cohesion 0.17
 
 ## Key Concepts
 
-- **위키 시작하기** (4 connections) — `src/content/wiki/getting-started.md`
-- **Blog hello-world** (3 connections) — `src/content/wiki/getting-started.md`
-- **Getting Started (Community)** (3 connections) — `graphify-out/obsidian/_COMMUNITY_Getting Started.md`
-- **위키 워크플로우 (Community)** (3 connections) — `graphify-out/obsidian/_COMMUNITY_위키 워크플로우.md`
-- **raw 폴더 README — 위키 소스 관리 지침** (3 connections) — `raw/README.md`
+- **Wiki Pages catalog** (6 connections) — `wiki-log.md`
+- **위키 시작하기 (obsidian)** (3 connections) — `graphify-out/obsidian/위키 시작하기.md`
+- **Blog leaderboard-snapshot** (2 connections) — `graphify-out/obsidian/Blog leaderboard-snapshot.md`
+- **Wiki: 위키 시작하기** (2 connections) — `wiki-log.md`
+- **Wiki: Redis 랭킹과 스냅샷 패턴** (2 connections) — `wiki-log.md`
+- **Blog hello-world** (1 connections) — `graphify-out/obsidian/위키 시작하기.md`
+- **리더보드 스냅샷 패턴** (1 connections) — `graphify-out/obsidian/Blog leaderboard-snapshot.md`
+- **raw 폴더 README — 위키 소스 관리 지침** (1 connections) — `graphify-out/obsidian/위키 시작하기.md`
+- **Wiki: 게임 서버 요청 컨텍스트 패턴** (1 connections) — `wiki-log.md`
+- **Wiki: graphify — 지식 그래프 도구** (1 connections) — `wiki-log.md`
+- **Wiki: iOS 앱 개발 스택 (2025)** (1 connections) — `wiki-log.md`
+- **Wiki: LLM Wiki 패턴** (1 connections) — `wiki-log.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[SuperTimers Notification Flow]] (22 shared connections)
 
 ## Source Files
 
-- `graphify-out/obsidian/_COMMUNITY_Getting Started.md`
-- `graphify-out/obsidian/_COMMUNITY_위키 워크플로우.md`
-- `raw/README.md`
-- `src/content/wiki/getting-started.md`
+- `graphify-out/obsidian/Blog leaderboard-snapshot.md`
+- `graphify-out/obsidian/위키 시작하기.md`
+- `wiki-log.md`
 
 ## Audit Trail
 
-- EXTRACTED: 14 (88%)
-- INFERRED: 2 (12%)
+- EXTRACTED: 16 (73%)
+- INFERRED: 6 (27%)
 - AMBIGUOUS: 0 (0%)
 
 ---

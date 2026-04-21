@@ -2,7 +2,7 @@
 
 > God node · 26 connections · `tools/graphify/extract.py`
 
-**Community:** [[Language AST Extractors]]
+**Community:** [[Graphify Extract Internals]]
 
 ## Connections by Relation
 

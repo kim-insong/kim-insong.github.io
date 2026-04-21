@@ -1,4 +1,4 @@
-# graphify Core Features
+# Graphify Core Features
 
 > 37 nodes · cohesion 0.06
 
@@ -33,7 +33,7 @@
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Graphify Benchmark]] (76 shared connections)
 
 ## Source Files
 

@@ -1,0 +1,4 @@
+# Python dependencies for graphify knowledge graph pipeline
+# Install: pip3 install -r requirements.txt
+networkx>=3.0
+graspologic>=3.0

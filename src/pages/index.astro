@@ -9,18 +9,18 @@ const posts = (await getCollection('blog'))
 
 ---
 
-<BaseLayout title="Home" description="김인송 — iOS 개발자, 인디 메이커">
+<BaseLayout title="Home" description="김인송 — 18년차 게임 개발자">
   <!-- Hero -->
   <section class="py-24 md:py-36 px-6">
     <div class="max-w-5xl w-full mx-auto">
       <div class="max-w-xl animate-reveal">
-        <span class="section-label">Indie Developer</span>
+        <span class="section-label">Game Developer</span>
         <h1 class="text-3xl md:text-4xl font-semibold text-text tracking-tight mb-4">
           안녕하세요, 김인송입니다.
         </h1>
         <p class="text-text-sub leading-relaxed mb-8">
-          iOS 앱을 만들고 직접 출시합니다. 깔끔한 UI와 좋은 사용자 경험에 집중하며,
-          실제로 사람들이 쓰는 제품을 만드는 것을 목표로 합니다.
+          18년차 게임 개발자입니다. 클라이언트부터 소켓서버까지 폭넓은 경험을 쌓아왔으며,
+          최근에는 AI를 활용한 개발 자동화에 깊이 빠져 있습니다.
         </p>
         <div class="flex flex-wrap gap-4">
           <a href="/about" class="text-sm font-medium text-primary hover:underline">
@@ -44,11 +44,11 @@ const posts = (await getCollection('blog'))
       <div class="flex flex-col md:flex-row gap-16 items-start">
         <div class="flex-1 animate-reveal delay-1">
           <p class="text-sm text-text-sub leading-relaxed mb-4">
-            2019년부터 iOS 개발을 시작해 다양한 프로젝트를 거쳐,
-            지금은 독립적으로 제품을 기획·개발·출시하고 있습니다.
+            Cocos2d-x, Unity, UnrealEngine을 거친 클라이언트 개발 경험과,
+            웹서버부터 MMO·MO 소켓서버까지의 서버 개발 경험을 두루 갖추고 있습니다.
           </p>
           <p class="text-sm text-text-sub leading-relaxed">
-            Swift와 SwiftUI를 주로 사용하며, 앱 디자인부터 배포까지 혼자 진행합니다.
+            현재는 Claude를 활용한 업무 자동화와 바이브코딩에 많은 관심을 두고 있습니다.
           </p>
           <a href="/about" class="inline-block mt-6 text-sm font-medium text-primary hover:underline">
             자세한 소개 →
@@ -56,7 +56,7 @@ const posts = (await getCollection('blog'))
         </div>
         <div class="flex-1 animate-reveal delay-2">
           <div class="grid grid-cols-2 gap-3">
-            {['Swift · SwiftUI', 'Kotlin · Compose', 'TypeScript · Astro', 'Figma'].map(skill => (
+            {['C++ · C#', 'UnrealEngine', 'MSSQL · Redis', 'Claude · AI'].map(skill => (
               <div class="text-xs px-4 py-3 rounded-xl border border-border bg-bg text-text-sub">
                 {skill}
               </div>

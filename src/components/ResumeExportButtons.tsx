@@ -5,9 +5,10 @@ import { jsPDF } from 'jspdf';
 const A4_W = 794;
 const A4_H = 1123;
 const SCALE = 2;
-const PAGE_PAD_V = 80;   // top/bottom page margin (doubled from 40)
-const PAGE_PAD_H = 48;   // left/right section padding (doubled from px-6 = 24px)
+const PAGE_PAD_V = 80;    // top/bottom page margin (doubled from 40)
+const PAGE_PAD_H = 48;    // left/right section padding (doubled from px-6 = 24px)
 const USABLE_H = A4_H - PAGE_PAD_V * 2;
+const PAGE_SAFE_MARGIN = 8; // conservative buffer to prevent sub-pixel item cuts
 
 interface BlockInfo {
   el: HTMLElement;
@@ -152,9 +153,9 @@ function paginate(blocks: BlockInfo[], wrapTop: number): Page[] {
     if (blocksOnPage > 0) {
       if (b.type === 'section-header' && i + 1 < blocks.length) {
         const next = blocks[i + 1];
-        needNewPage = next.top + next.h - pageStartY > USABLE_H;
+        needNewPage = next.top + next.h - pageStartY > USABLE_H - PAGE_SAFE_MARGIN;
       } else {
-        needNewPage = b.top + b.h - pageStartY > USABLE_H;
+        needNewPage = b.top + b.h - pageStartY > USABLE_H - PAGE_SAFE_MARGIN;
       }
     }
 
@@ -182,7 +183,7 @@ function paginate(blocks: BlockInfo[], wrapTop: number): Page[] {
 }
 
 async function renderPage(cloneEl: HTMLElement, page: Page): Promise<HTMLCanvasElement> {
-  const contentH = Math.max(1, page.contentH);
+  const contentH = Math.max(1, Math.ceil(page.contentH));
   const pageH = Math.max(A4_H, contentH + PAGE_PAD_V * 2);
 
   const content = await (html2canvas as unknown as (

@@ -278,7 +278,10 @@ export default function ResumeExportButtons() {
         {state === 'png' ? '내보내는 중...' : 'PNG 다운로드'}
       </button>
       <button className={btnCls} disabled={state !== 'idle'} onClick={() => run('pdf')}>
-        {state === 'pdf' ? '내보내는 중...' : 'PDF 다운로드'}
+        {state === 'pdf' ? '내보내는 중...' : '이미지 PDF'}
+      </button>
+      <button className={btnCls} disabled={state !== 'idle'} onClick={() => window.print()}>
+        텍스트 PDF
       </button>
     </div>
   );

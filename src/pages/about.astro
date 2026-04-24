@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ResumeExportButtons from '../components/ResumeExportButtons.tsx';
 
 const educations = [
   {
@@ -231,14 +232,18 @@ const skills = [
 ---
 
 <BaseLayout title="소개" description="김인송 소개 — 게임 개발자">
+<div id="resume-content">
   <!-- Header -->
-  <section class="py-24 md:py-36 px-6">
+  <section class="py-24 md:py-36 px-6" data-export-section>
     <div class="max-w-5xl w-full mx-auto">
-      <div class="animate-reveal">
+      <div class="animate-reveal" data-export-block="bio">
         <span class="section-label">About</span>
         <h1 class="text-3xl md:text-4xl font-semibold text-text tracking-tight mb-4">
           김인송(1986, 남)
         </h1>
+        <div data-export-hide="true">
+          <ResumeExportButtons client:load />
+        </div>
         <div class="flex flex-col gap-3 text-text-sub leading-relaxed">
           <p>클라이언트&서버 개발 경험이 있는, 17~18년차 게임 개발자입니다.</p>
           <p>클라이언트 프로그래머로서 Cocos2d-x부터 Unity, UnrealEngine에 이르기까지 다양한 엔진을 활용한 클라이언트/데디서버 개발 경험이 있고,</p>
@@ -257,15 +262,15 @@ const skills = [
   </section>
 
   <!-- Education -->
-  <section class="py-20 px-6 border-t border-border bg-bg-alt">
+  <section class="py-20 px-6 border-t border-border bg-bg-alt" data-export-section>
     <div class="max-w-5xl mx-auto">
-      <div class="mb-8 animate-reveal">
+      <div class="mb-8 animate-reveal" data-export-block="section-header">
         <span class="section-label">Education</span>
         <h2 class="text-2xl font-semibold text-text tracking-tight">학력</h2>
       </div>
       <div class="divide-y divide-border animate-reveal delay-1">
         {educations.map(edu => (
-          <div class="py-5 first:pt-0 last:pb-0">
+          <div class="py-5 first:pt-0 last:pb-0" data-export-block="item">
             <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 mb-3">
               <span class="text-xs text-text-sub tabular-nums shrink-0 w-32">{edu.period}</span>
               <div class="flex items-baseline gap-2">
@@ -304,15 +309,15 @@ const skills = [
   </section>
 
   <!-- Career -->
-  <section class="py-20 px-6 border-t border-border bg-bg-alt">
+  <section class="py-20 px-6 border-t border-border bg-bg-alt" data-export-section>
     <div class="max-w-5xl mx-auto">
-      <div class="mb-8 animate-reveal">
+      <div class="mb-8 animate-reveal" data-export-block="section-header">
         <span class="section-label">Experience</span>
         <h2 class="text-2xl font-semibold text-text tracking-tight">경력</h2>
       </div>
       <div class="divide-y divide-border animate-reveal delay-1">
         {careers.map(item => (
-          <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4 py-5 first:pt-0 last:pb-0">
+          <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4 py-5 first:pt-0 last:pb-0" data-export-block="item">
             <span class="text-xs text-text-sub tabular-nums shrink-0 w-32 pt-0.5">{item.period}</span>
             <div class="flex-1">
               <div class="text-sm font-semibold text-text mb-1.5">{item.org}</div>
@@ -354,15 +359,15 @@ const skills = [
   </section>
 
   <!-- Skills -->
-  <section class="py-20 px-6 border-t border-border bg-bg">
+  <section class="py-20 px-6 border-t border-border bg-bg" data-export-section>
     <div class="max-w-5xl mx-auto">
-      <div class="mb-8 animate-reveal">
+      <div class="mb-8 animate-reveal" data-export-block="section-header">
         <span class="section-label">Skills</span>
         <h2 class="text-2xl font-semibold text-text tracking-tight">스킬 & 스택</h2>
       </div>
       <div class="flex flex-col gap-6 animate-reveal delay-1">
         {skills.map(group => (
-          <div class="flex flex-col sm:flex-row gap-2 sm:gap-4">
+          <div class="flex flex-col sm:flex-row gap-2 sm:gap-4" data-export-block="item">
             <span class="text-xs text-text-sub shrink-0 w-32 pt-0.5">{group.category}</span>
             <div class="flex flex-wrap gap-2">
               {group.items.map(item => (
@@ -374,4 +379,5 @@ const skills = [
       </div>
     </div>
   </section>
+</div>
 </BaseLayout>

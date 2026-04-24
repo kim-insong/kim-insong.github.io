@@ -70,6 +70,13 @@
   .delay-3 { transition-delay: 0.18s; }
   .delay-4 { transition-delay: 0.24s; }
 
+  /* export clone: force all reveal animations visible */
+  .export-clone .animate-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
   /* Wiki internal links (remark-wiki-link) */
   .internal {
     color: var(--color-primary);

@@ -1,18 +1,17 @@
 ---
-source_file: "src/content/wiki/llm-wiki-pattern.md"
+source_file: "graphify-out/obsidian/LLM Wiki Three-Layer Architecture.md"
 type: "document"
-community: "Knowledge Architecture Layers"
-location: "3계층 아키텍처"
+community: "LLM Wiki Pattern"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Knowledge_Architecture_Layers
+  - graphify/INFERRED
+  - community/LLM_Wiki_Pattern
 ---
 
 # Schema Layer (CLAUDE.md / AGENTS.md)
 
 ## Connections
-- [[LLM Wiki Pattern]] - `references` [EXTRACTED]
 - [[LLM Wiki Three-Layer Architecture]] - `references` [EXTRACTED]
+- [[insong.net project (Astro v4 + Tailwind v4)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Knowledge_Architecture_Layers
+#graphify/document #graphify/INFERRED #community/LLM_Wiki_Pattern

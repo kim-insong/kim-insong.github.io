@@ -33,11 +33,11 @@
 
 ## Relationships
 
-- [[Token Benchmark & Query]] (10 shared connections)
-- [[File Detection & Classification]] (9 shared connections)
-- [[AI Skill Feedback Loop]] (5 shared connections)
-- [[Graph Analysis Utilities]] (3 shared connections)
-- [[SuperTimers Alarm UI]] (3 shared connections)
+- [[Graph Analysis & Diagnostics]] (290 shared connections)
+- [[Precomputed Timeline Dispatch]] (9 shared connections)
+- [[Agent Orchestration Patterns]] (5 shared connections)
+- [[Whisper Transcription]] (3 shared connections)
+- [[Graphify Build Orchestration]] (1 shared connections)
 
 ## Source Files
 

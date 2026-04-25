@@ -1,18 +1,18 @@
 ---
-source_file: "raw/graphify.md"
+source_file: "graphify-out/obsidian/ClaudeGPT API (semantic extraction).md"
 type: "document"
-community: "graphify Pipeline (AST + Semantic)"
+community: "Semantic Extraction Pipeline"
 location: "Processing Pipeline"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/graphify_Pipeline_(AST_+_Semantic)
+  - graphify/INFERRED
+  - community/Semantic_Extraction_Pipeline
 ---
 
 # Claude/GPT API (semantic extraction)
 
 ## Connections
 - [[ClaudeGPT Semantic Extraction]] - `semantically_similar_to` [INFERRED]
-- [[graphify Processing Pipeline]] - `implements` [EXTRACTED]
+- [[Community graphify Pipeline (AST + Semantic)_1]] - `has_member` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_Pipeline_(AST_+_Semantic)
+#graphify/document #graphify/INFERRED #community/Semantic_Extraction_Pipeline

@@ -23,7 +23,7 @@
 
 ## Relationships
 
-- [[Wiki Operations Layer]] (32 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 

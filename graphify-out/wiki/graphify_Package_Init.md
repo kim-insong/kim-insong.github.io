@@ -1,4 +1,4 @@
-# graphify Package Init
+# Graphify Package Init
 
 > 3 nodes · cohesion 0.67
 
@@ -10,7 +10,7 @@
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Service RPC Topology Decl]] (4 shared connections)
 
 ## Source Files
 

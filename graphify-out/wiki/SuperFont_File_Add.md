@@ -12,7 +12,7 @@
 
 ## Relationships
 
-- [[Getting Started Layer]] (10 shared connections)
+- [[Game Server Request Tracing]] (10 shared connections)
 
 ## Source Files
 

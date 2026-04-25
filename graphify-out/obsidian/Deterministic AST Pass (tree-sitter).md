@@ -1,18 +1,16 @@
 ---
-source_file: "src/content/wiki/graphify.md"
+source_file: "graphify-out/obsidian/tree-sitter AST Parser.md"
 type: "document"
-community: "graphify Pipeline (AST + Semantic)"
-location: "처리 파이프라인"
+community: "Wiki Automation & Hooks"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/graphify_Pipeline_(AST_+_Semantic)
+  - graphify/INFERRED
+  - community/Wiki_Automation_&_Hooks
 ---
 
 # Deterministic AST Pass (tree-sitter)
 
 ## Connections
-- [[graphify Tool]] - `implements` [EXTRACTED]
 - [[tree-sitter AST Parser]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_Pipeline_(AST_+_Semantic)
+#graphify/document #graphify/INFERRED #community/Wiki_Automation_&_Hooks

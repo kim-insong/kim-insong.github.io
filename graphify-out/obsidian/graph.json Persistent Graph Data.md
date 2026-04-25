@@ -1,17 +1,14 @@
 ---
-source_file: "src/content/wiki/graphify.md"
+source_file: "graphify-out/obsidian/graph.json Persistent Graph Data.md"
 type: "document"
-community: "graphify Output Layer"
+community: "Cluster 86"
 location: "출력 형식"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_Output_Layer
+  - community/Cluster_86
 ---
 
 # graph.json Persistent Graph Data
 
-## Connections
-- [[graphify Tool]] - `references` [EXTRACTED]
-
-#graphify/document #graphify/EXTRACTED #community/graphify_Output_Layer
+#graphify/document #graphify/EXTRACTED #community/Cluster_86

@@ -2,7 +2,7 @@
 
 > God node · 15 connections · `tools/graphify/watch.py`
 
-**Community:** [[Graphify AST Extractors]]
+**Community:** [[AST Language Extractors]]
 
 ## Connections by Relation
 

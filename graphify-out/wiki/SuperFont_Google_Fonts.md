@@ -14,7 +14,7 @@
 
 ## Relationships
 
-- [[Wiki Auto-Ingest Flow]] (12 shared connections)
+- [[Wiki Auto-Ingest Hook]] (12 shared connections)
 
 ## Source Files
 

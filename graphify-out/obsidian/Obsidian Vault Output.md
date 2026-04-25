@@ -1,18 +1,17 @@
 ---
 source_file: "src/content/wiki/graphify.md"
 type: "document"
-community: "Obsidian Integration"
-location: "출력 형식"
+community: "Claude Code Integration"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Obsidian_Integration
+  - community/Claude_Code_Integration
 ---
 
-# Obsidian Vault Output
+# Obsidian vault output
 
 ## Connections
-- [[Obsidian (Wiki IDE)]] - `semantically_similar_to` [INFERRED]
-- [[graphify Tool]] - `references` [EXTRACTED]
+- [[graphify]] - `references` [EXTRACTED]
+- [[wiki output (agent-facing)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Obsidian_Integration
+#graphify/document #graphify/EXTRACTED #community/Claude_Code_Integration

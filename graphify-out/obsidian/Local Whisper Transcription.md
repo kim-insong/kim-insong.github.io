@@ -1,17 +1,16 @@
 ---
 source_file: "src/content/wiki/graphify.md"
 type: "document"
-community: "graphify Output Layer"
-location: "처리 파이프라인"
+community: "Claude Code Integration"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_Output_Layer
+  - community/Claude_Code_Integration
 ---
 
-# Local Whisper Transcription
+# Local Whisper transcription
 
 ## Connections
-- [[graphify Tool]] - `implements` [EXTRACTED]
+- [[Processing Pipeline]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_Output_Layer
+#graphify/document #graphify/EXTRACTED #community/Claude_Code_Integration

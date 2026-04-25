@@ -1,17 +1,16 @@
 ---
-source_file: "src/content/wiki/leaderboard-snapshot.md"
+source_file: "graphify-out/obsidian/스냅샷 AB 순환 교체 (leaderboard-snapshot).md"
 type: "document"
 community: "Redis Leaderboard Patterns"
 tags:
   - graphify/document
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/Redis_Leaderboard_Patterns
 ---
 
 # 스냅샷 A/B 순환 교체 (leaderboard-snapshot)
 
 ## Connections
-- [[리더보드 스냅샷 패턴]] - `references` [EXTRACTED]
-- [[스냅샷 AB 교체 패턴]] - `semantically_similar_to` [INFERRED]
+- [[Redis Leaderboard Patterns (Community)]] - `contains_member` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Redis_Leaderboard_Patterns
+#graphify/document #graphify/EXTRACTED #community/Redis_Leaderboard_Patterns

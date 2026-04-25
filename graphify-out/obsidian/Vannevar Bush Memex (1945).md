@@ -1,17 +1,17 @@
 ---
-source_file: "raw/llm-wiki.md"
+source_file: "graphify-out/obsidian/_COMMUNITY_LLM Memory & Knowledge.md"
 type: "document"
-community: "LLM Memory & Knowledge"
-location: "Why this works"
+community: "LLM Wiki Pattern"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LLM_Memory_&_Knowledge
+  - community/LLM_Wiki_Pattern
 ---
 
 # Vannevar Bush Memex (1945)
 
 ## Connections
-- [[LLM Wiki Core Idea (Persistent Compounding Knowledge)]] - `references` [EXTRACTED]
+- [[LLM Memory & Knowledge community node]] - `references` [EXTRACTED]
+- [[LLM Wiki Core Idea (Persistent Compounding Knowledge)]] - `cites` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/LLM_Memory_&_Knowledge
+#graphify/document #graphify/EXTRACTED #community/LLM_Wiki_Pattern

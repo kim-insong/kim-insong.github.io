@@ -19,7 +19,7 @@
 
 ## Relationships
 
-- [[SuperFont MyFonts Screen]] (26 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 

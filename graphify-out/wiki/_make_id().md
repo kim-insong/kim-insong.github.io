@@ -2,7 +2,7 @@
 
 > God node · 26 connections · `tools/graphify/extract.py`
 
-**Community:** [[Graphify Analysis & Clustering]]
+**Community:** [[Graph Analysis & Diagnostics]]
 
 ## Connections by Relation
 

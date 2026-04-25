@@ -1,18 +1,16 @@
 ---
-source_file: "src/content/wiki/llm-wiki-pattern.md"
+source_file: "graphify-out/obsidian/LLM Wiki Three-Layer Architecture.md"
 type: "document"
-community: "Knowledge Architecture Layers"
-location: "3계층 아키텍처"
+community: "LLM Wiki Pattern"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Knowledge_Architecture_Layers
+  - community/LLM_Wiki_Pattern
 ---
 
 # Raw Sources Layer
 
 ## Connections
-- [[LLM Wiki Pattern]] - `references` [EXTRACTED]
 - [[LLM Wiki Three-Layer Architecture]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Knowledge_Architecture_Layers
+#graphify/document #graphify/EXTRACTED #community/LLM_Wiki_Pattern

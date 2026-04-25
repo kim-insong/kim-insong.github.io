@@ -1,17 +1,14 @@
 ---
-source_file: "src/content/wiki/graphify.md"
+source_file: "graphify-out/obsidian/GRAPH_REPORT.md"
 type: "document"
-community: "graphify Output Layer"
+community: "Cluster 85"
 location: "출력 형식"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_Output_Layer
+  - community/Cluster_85
 ---
 
 # GRAPH_REPORT.md
 
-## Connections
-- [[graphify Tool]] - `references` [EXTRACTED]
-
-#graphify/document #graphify/EXTRACTED #community/graphify_Output_Layer
+#graphify/document #graphify/EXTRACTED #community/Cluster_85

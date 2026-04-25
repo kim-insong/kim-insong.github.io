@@ -1,18 +1,16 @@
 ---
 source_file: "src/content/wiki/graphify.md"
 type: "document"
-community: "graphify Output Layer"
-location: "핵심 설계 원칙"
+community: "Claude Code Integration"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_Output_Layer
+  - community/Claude_Code_Integration
 ---
 
-# Relationship Tagging (EXTRACTED/INFERRED/AMBIGUOUS)
+# Relationship tagging (EXTRACTED/INFERRED/AMBIGUOUS)
 
 ## Connections
-- [[Lint Operation]] - `semantically_similar_to` [INFERRED]
-- [[graphify Tool]] - `implements` [EXTRACTED]
+- [[graphify]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_Output_Layer
+#graphify/document #graphify/EXTRACTED #community/Claude_Code_Integration

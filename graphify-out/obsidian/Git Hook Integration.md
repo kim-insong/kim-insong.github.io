@@ -1,17 +1,16 @@
 ---
 source_file: "src/content/wiki/graphify.md"
 type: "document"
-community: "graphify Output Layer"
-location: "핵심 설계 원칙"
+community: "Claude Code Integration"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_Output_Layer
+  - community/Claude_Code_Integration
 ---
 
-# Git Hook Integration
+# Git hook integration
 
 ## Connections
-- [[graphify Tool]] - `implements` [EXTRACTED]
+- [[graphify]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_Output_Layer
+#graphify/document #graphify/EXTRACTED #community/Claude_Code_Integration

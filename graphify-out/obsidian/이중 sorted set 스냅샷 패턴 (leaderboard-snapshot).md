@@ -1,17 +1,13 @@
 ---
-source_file: "src/content/wiki/leaderboard-snapshot.md"
+source_file: "graphify-out/obsidian/이중 sorted set 스냅샷 패턴.md"
 type: "document"
-community: "Redis Leaderboard Patterns"
+community: "Cluster 89"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Redis_Leaderboard_Patterns
+  - graphify/EXTRACTED
+  - community/Cluster_89
 ---
 
 # 이중 sorted set 스냅샷 패턴 (leaderboard-snapshot)
 
-## Connections
-- [[리더보드 스냅샷 패턴]] - `references` [EXTRACTED]
-- [[이중 sorted set 스냅샷 패턴]] - `semantically_similar_to` [INFERRED]
-
-#graphify/document #graphify/INFERRED #community/Redis_Leaderboard_Patterns
+#graphify/document #graphify/EXTRACTED #community/Cluster_89

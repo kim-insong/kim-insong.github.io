@@ -1,19 +1,17 @@
 ---
-source_file: "raw/graphify.md"
+source_file: "graphify-out/obsidian/tree-sitter AST Parser.md"
 type: "document"
-community: "graphify Pipeline (AST + Semantic)"
-location: "Processing Pipeline"
+community: "Wiki Automation & Hooks"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/graphify_Pipeline_(AST_+_Semantic)
+  - graphify/INFERRED
+  - community/Wiki_Automation_&_Hooks
 ---
 
 # graphify Processing Pipeline
 
 ## Connections
-- [[ClaudeGPT API (semantic extraction)]] - `implements` [EXTRACTED]
-- [[graphify (raw source)]] - `implements` [EXTRACTED]
+- [[graphify (raw source)]] - `conceptually_related_to` [INFERRED]
 - [[tree-sitter AST Parser]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_Pipeline_(AST_+_Semantic)
+#graphify/document #graphify/INFERRED #community/Wiki_Automation_&_Hooks

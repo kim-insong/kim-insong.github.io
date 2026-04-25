@@ -15,7 +15,7 @@
 
 ## Relationships
 
-- [[SuperFont Back Link]] (18 shared connections)
+- [[SuperFont Profile Install]] (18 shared connections)
 
 ## Source Files
 

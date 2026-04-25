@@ -1,0 +1,30 @@
+# iOS Stack Choices
+
+> 6 nodes · cohesion 0.33
+
+## Key Concepts
+
+- **2025년 iOS 앱 개발** (4 connections) — `src/content/blog/on-building-ios-apps.md`
+- **SwiftUI 기본값 선택** (2 connections) — `src/content/blog/on-building-ios-apps.md`
+- **지루한 스택을 선택한 이유** (1 connections) — `src/content/blog/on-building-ios-apps.md`
+- **Swift Concurrency** (1 connections) — `src/content/blog/on-building-ios-apps.md`
+- **SwiftData** (1 connections) — `src/content/blog/on-building-ios-apps.md`
+- **Xcode Cloud** (1 connections) — `src/content/blog/on-building-ios-apps.md`
+
+## Relationships
+
+- [[Game Server Request Context]] (10 shared connections)
+
+## Source Files
+
+- `src/content/blog/on-building-ios-apps.md`
+
+## Audit Trail
+
+- EXTRACTED: 10 (100%)
+- INFERRED: 0 (0%)
+- AMBIGUOUS: 0 (0%)
+
+---
+
+*Part of the graphify knowledge wiki. See [[index]] to navigate.*

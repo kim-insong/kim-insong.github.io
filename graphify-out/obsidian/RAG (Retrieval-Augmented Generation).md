@@ -1,18 +1,17 @@
 ---
-source_file: "src/content/wiki/llm-wiki-pattern.md"
+source_file: "graphify-out/obsidian/_COMMUNITY_LLM Memory & Knowledge.md"
 type: "document"
-community: "LLM Memory & Knowledge"
-location: "핵심 아이디어"
+community: "LLM Wiki Pattern"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LLM_Memory_&_Knowledge
+  - community/LLM_Wiki_Pattern
 ---
 
 # RAG (Retrieval-Augmented Generation)
 
 ## Connections
-- [[LLM Wiki Core Idea (Persistent Compounding Knowledge)]] - `conceptually_related_to` [EXTRACTED]
-- [[LLM Wiki Pattern]] - `conceptually_related_to` [EXTRACTED]
+- [[LLM Memory & Knowledge community node]] - `references` [EXTRACTED]
+- [[LLM Wiki Core Idea (Persistent Compounding Knowledge)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/LLM_Memory_&_Knowledge
+#graphify/document #graphify/EXTRACTED #community/LLM_Wiki_Pattern

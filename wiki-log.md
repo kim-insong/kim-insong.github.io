@@ -41,6 +41,7 @@ Run `/wiki-ingest` to process unincorporated sources.
 | blog:precomputed-timeline-dispatch | precomputed-timeline-dispatch | 2026-04-21 | new page |
 | blog:tera-server-lockfree | tera-lockfree-architecture | 2026-04-21 | new page |
 | blog:orleans-9-questions | orleans-9-questions | 2026-04-26 | new page |
+| blog:orleans-deeper-dive | orleans-9-questions | 2026-04-26 | merged |
 
 ---
 

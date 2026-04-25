@@ -40,6 +40,7 @@ Run `/wiki-ingest` to process unincorporated sources.
 | blog:coordinator-setup-phase | coordinator-setup-phase | 2026-04-21 | new page |
 | blog:precomputed-timeline-dispatch | precomputed-timeline-dispatch | 2026-04-21 | new page |
 | blog:tera-server-lockfree | tera-lockfree-architecture | 2026-04-21 | new page |
+| blog:orleans-9-questions | orleans-9-questions | 2026-04-26 | new page |
 
 ---
 
@@ -70,3 +71,4 @@ Run `/wiki-ingest` to process unincorporated sources.
 | coordinator-setup-phase | Coordinator Setup Phase 추적 패턴 | game-dev, server, architecture, rpc, coordinator |
 | precomputed-timeline-dispatch | Precomputed Timeline Dispatch 패턴 | game-dev, server, network, mmo, client |
 | tera-lockfree-architecture | Tera Lock-Free MMO 서버 아키텍처 | game-dev, server, mmo, concurrency, lock-free, tera |
+| orleans-9-questions | Orleans 핵심 메커니즘 9가지 | orleans, actor-model, dotnet, server, concurrency |

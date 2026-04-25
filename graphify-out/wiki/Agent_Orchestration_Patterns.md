@@ -33,7 +33,7 @@
 
 ## Relationships
 
-- [[Graphify File Detection]] (60 shared connections)
+- [[Wiki Automation & Hooks]] (60 shared connections)
 
 ## Source Files
 

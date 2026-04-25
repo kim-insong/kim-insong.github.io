@@ -1,17 +1,14 @@
 ---
-source_file: "src/content/wiki/graphify.md"
+source_file: "graphify-out/obsidian/Leiden Clustering (Community Detection).md"
 type: "document"
-community: "graphify Output Layer"
+community: "Cluster 87"
 location: "처리 파이프라인"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_Output_Layer
+  - community/Cluster_87
 ---
 
 # Leiden Clustering (Community Detection)
 
-## Connections
-- [[graphify Tool]] - `implements` [EXTRACTED]
-
-#graphify/document #graphify/EXTRACTED #community/graphify_Output_Layer
+#graphify/document #graphify/EXTRACTED #community/Cluster_87

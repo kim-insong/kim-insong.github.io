@@ -1,0 +1,17 @@
+---
+source_file: "graphify-out/obsidian/RequestContext 구조체 (C++).md"
+type: "document"
+community: "Game Server Request Context"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Game_Server_Request_Context
+---
+
+# RequestContext 구조체 (C++)
+
+## Connections
+- [[게임 서버 요청 컨텍스트 패턴_1]] - `references` [EXTRACTED]
+- [[진입점 분류 (패킷운영툴자동이벤트)_1]] - `references` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Game_Server_Request_Context

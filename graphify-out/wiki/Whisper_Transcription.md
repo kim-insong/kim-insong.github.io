@@ -21,8 +21,8 @@
 
 ## Relationships
 
-- [[AST Extractors (per-language)]] (3 shared connections)
-- [[URL Ingest Fetchers]] (1 shared connections)
+- [[Graph Analysis & Diagnostics]] (3 shared connections)
+- [[URL Ingest Pipeline]] (1 shared connections)
 
 ## Source Files
 

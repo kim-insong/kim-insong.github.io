@@ -1,18 +1,16 @@
 ---
 source_file: "src/content/wiki/graphify.md"
 type: "document"
-community: "graphify Pipeline (AST + Semantic)"
-location: "처리 파이프라인"
+community: "Claude Code Integration"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_Pipeline_(AST_+_Semantic)
+  - community/Claude_Code_Integration
 ---
 
-# Claude/GPT Semantic Extraction
+# Claude/GPT semantic extraction
 
 ## Connections
-- [[ClaudeGPT API (semantic extraction)]] - `semantically_similar_to` [INFERRED]
-- [[graphify Tool]] - `implements` [EXTRACTED]
+- [[Processing Pipeline]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_Pipeline_(AST_+_Semantic)
+#graphify/document #graphify/EXTRACTED #community/Claude_Code_Integration

@@ -1,17 +1,16 @@
 ---
-source_file: "raw/graphify.md"
+source_file: "graphify-out/obsidian/_COMMUNITY_graphify Enterprise (Penpax).md"
 type: "document"
-community: "graphify Enterprise (Penpax)"
-location: "Related Project"
+community: "Wiki Automation & Hooks"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_Enterprise_(Penpax)
+  - community/Wiki_Automation_&_Hooks
 ---
 
 # Penpax (Enterprise graphify layer)
 
 ## Connections
-- [[graphify (raw source)]] - `references` [EXTRACTED]
+- [[graphify Enterprise (Penpax) community node]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_Enterprise_(Penpax)
+#graphify/document #graphify/EXTRACTED #community/Wiki_Automation_&_Hooks

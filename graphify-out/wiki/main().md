@@ -2,7 +2,7 @@
 
 > God node · 31 connections · `tools/graphify/__main__.py`
 
-**Community:** [[insong.net Site & Profile]]
+**Community:** [[AST Language Extractors]]
 
 ## Connections by Relation
 

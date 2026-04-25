@@ -1,21 +1,17 @@
 # Claude Code Integration
 
-> 48 nodes · cohesion 0.05
+> 42 nodes · cohesion 0.06
 
 ## Key Concepts
 
 - **graphify** (27 connections) — `src/content/wiki/graphify.md`
-- **Processing Pipeline** (8 connections) — `src/content/wiki/graphify.md`
+- **Processing Pipeline** (5 connections) — `src/content/wiki/graphify.md`
 - **Hybrid CLAUDE.md + graph recipe** (4 connections) — `src/content/wiki/graphify.md`
 - **Rationale: Loading guarantee difference (CLAUDE.md vs GRAPH_REPORT.md)** (4 connections) — `src/content/wiki/graphify.md`
-- **Claude/GPT API (semantic extraction)** (3 connections) — `graphify-out/obsidian/ClaudeGPT API (semantic extraction).md`
-- **Community: graphify Pipeline (AST + Semantic)** (3 connections) — `graphify-out/obsidian/_COMMUNITY_graphify Pipeline (AST + Semantic).md`
 - **CLAUDE.md** (3 connections) — `src/content/wiki/graphify.md`
 - **GRAPH_REPORT.md** (3 connections) — `src/content/wiki/graphify.md`
 - **graphify install --platform claude** (3 connections) — `src/content/wiki/graphify.md`
-- **graphify (raw source)** (3 connections) — `graphify-out/obsidian/Penpax (Enterprise graphify layer).md`
 - **Vector DB** (3 connections) — `src/content/wiki/graphify.md`
-- **ClaudeGPT Semantic Extraction** (2 connections) — `graphify-out/obsidian/ClaudeGPT API (semantic extraction).md`
 - **Deterministic AST pass** (2 connections) — `src/content/wiki/graphify.md`
 - **Claude Code** (2 connections) — `src/content/wiki/graphify.md`
 - **graphify claude install** (2 connections) — `src/content/wiki/graphify.md`
@@ -29,24 +25,24 @@
 - **Rationale: What AST cannot capture** (1 connections) — `src/content/wiki/graphify.md`
 - **blog: graphify-for-claude-code** (1 connections) — `src/content/wiki/graphify.md`
 - **Codex** (1 connections) — `src/content/wiki/graphify.md`
-- *... and 23 more nodes in this community*
+- **Community Detection** (1 connections) — `src/content/wiki/graphify.md`
+- **Cursor** (1 connections) — `src/content/wiki/graphify.md`
+- **getting-started (wiki link)** (1 connections) — `src/content/wiki/graphify.md`
+- **Git hook integration** (1 connections) — `src/content/wiki/graphify.md`
+- *... and 17 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Orleans Actor Model]] (96 shared connections)
 
 ## Source Files
 
-- `graphify-out/obsidian/ClaudeGPT API (semantic extraction).md`
-- `graphify-out/obsidian/Penpax (Enterprise graphify layer).md`
-- `graphify-out/obsidian/_COMMUNITY_graphify Pipeline (AST + Semantic).md`
-- `graphify-out/obsidian/graphify (raw source).md`
 - `src/content/wiki/graphify.md`
 
 ## Audit Trail
 
-- EXTRACTED: 104 (93%)
-- INFERRED: 8 (7%)
+- EXTRACTED: 90 (94%)
+- INFERRED: 6 (6%)
 - AMBIGUOUS: 0 (0%)
 
 ---

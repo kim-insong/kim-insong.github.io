@@ -2,7 +2,7 @@
 
 > God node · 19 connections · `tools/graphify/skill-claw.md`
 
-**Community:** [[Graphify Query & Benchmark]]
+**Community:** [[Coordinator Setup Phase Tracing]]
 
 ## Connections by Relation
 

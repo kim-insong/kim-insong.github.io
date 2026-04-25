@@ -1,16 +1,17 @@
 ---
-source_file: "src/content/wiki/leaderboard-snapshot.md"
+source_file: "graphify-out/obsidian/Blog leaderboard-snapshot.md"
 type: "document"
-community: "Redis Leaderboard Patterns"
+community: "Wiki Source Catalog"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Redis_Leaderboard_Patterns
+  - graphify/INFERRED
+  - community/Wiki_Source_Catalog
 ---
 
-# Blog: leaderboard-snapshot
+# Blog leaderboard-snapshot
 
 ## Connections
+- [[Wiki Redis 랭킹과 스냅샷 패턴]] - `semantically_similar_to` [INFERRED]
 - [[리더보드 스냅샷 패턴]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Redis_Leaderboard_Patterns
+#graphify/document #graphify/INFERRED #community/Wiki_Source_Catalog

@@ -1,25 +1,30 @@
 # Game Server Request Context
 
-> 4 nodes · cohesion 0.67
+> 6 nodes · cohesion 0.60
 
 ## Key Concepts
 
-- **게임 서버 요청 컨텍스트 패턴** (3 connections) — `src/content/wiki/game-server-request-context.md`
-- **진입점 분류 (패킷/운영툴/자동이벤트)** (2 connections) — `src/content/wiki/game-server-request-context.md`
-- **RequestContext 구조체 (C++)** (2 connections) — `src/content/wiki/game-server-request-context.md`
-- **Blog: game-server-request-context** (1 connections) — `src/content/wiki/game-server-request-context.md`
+- **게임 서버 요청 컨텍스트 패턴** (5 connections) — `graphify-out/obsidian/Blog game-server-request-context.md`
+- **Claude Skills & Game Server (Community)** (4 connections) — `graphify-out/obsidian/_COMMUNITY_Claude Skills & Game Server.md`
+- **진입점 분류 (패킷운영툴자동이벤트)** (3 connections) — `graphify-out/obsidian/RequestContext 구조체 (C++).md`
+- **Blog: game-server-request-context** (2 connections) — `graphify-out/obsidian/Blog game-server-request-context.md`
+- **RequestContext 구조체 (C++)** (2 connections) — `graphify-out/obsidian/게임 서버 요청 컨텍스트 패턴.md`
+- **RequestContext 구조체 (C++)** (2 connections) — `graphify-out/obsidian/RequestContext 구조체 (C++).md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[CLAUDE.md Doc Policy]] (18 shared connections)
 
 ## Source Files
 
-- `src/content/wiki/game-server-request-context.md`
+- `graphify-out/obsidian/Blog game-server-request-context.md`
+- `graphify-out/obsidian/RequestContext 구조체 (C++).md`
+- `graphify-out/obsidian/_COMMUNITY_Claude Skills & Game Server.md`
+- `graphify-out/obsidian/게임 서버 요청 컨텍스트 패턴.md`
 
 ## Audit Trail
 
-- EXTRACTED: 8 (100%)
+- EXTRACTED: 18 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

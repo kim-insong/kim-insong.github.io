@@ -33,9 +33,9 @@
 
 ## Relationships
 
-- [[Merge-per-Task Workflow]] (92 shared connections)
-- [[Language AST Extractors]] (9 shared connections)
-- [[Graph Analysis Functions]] (1 shared connections)
+- [[Precomputed Timeline Dispatch]] (92 shared connections)
+- [[Graph Analysis & Diagnostics]] (9 shared connections)
+- [[AST Language Extractors]] (1 shared connections)
 
 ## Source Files
 

@@ -2,7 +2,7 @@
 
 > God node · 20 connections · `graphify-out/GRAPH_REPORT.md`
 
-**Community:** [[Graphify Ingest (URL Fetch)]]
+**Community:** [[Graphify Core Pipeline]]
 
 ## Connections by Relation
 

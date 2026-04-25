@@ -1,17 +1,13 @@
 ---
 source_file: "src/content/wiki/llm-wiki-pattern.md"
 type: "document"
-community: "Wiki Operations (Ingest/Query/Lint)"
-location: "주요 Operations"
+community: "Cluster 101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Wiki_Operations_(Ingest/Query/Lint)
+  - community/Cluster_101
 ---
 
 # Ingest Operation
 
-## Connections
-- [[LLM Wiki Pattern]] - `references` [EXTRACTED]
-
-#graphify/document #graphify/EXTRACTED #community/Wiki_Operations_(Ingest/Query/Lint)
+#graphify/document #graphify/EXTRACTED #community/Cluster_101

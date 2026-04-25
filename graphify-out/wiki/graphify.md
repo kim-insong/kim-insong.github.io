@@ -2,7 +2,7 @@
 
 > God node · 27 connections · `src/content/wiki/graphify.md`
 
-**Community:** [[Graphify Core Concepts (KR)]]
+**Community:** [[Orleans Actor Model]]
 
 ## Connections by Relation
 

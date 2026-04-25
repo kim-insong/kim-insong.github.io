@@ -1,12 +1,12 @@
 ---
-source_file: "raw/llm-wiki.md"
+source_file: "graphify-out/obsidian/LLM Wiki Three-Layer Architecture.md"
 type: "document"
-community: "Knowledge Architecture Layers"
+community: "LLM Wiki Pattern"
 location: "Architecture"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Knowledge_Architecture_Layers
+  - community/LLM_Wiki_Pattern
 ---
 
 # LLM Wiki Three-Layer Architecture
@@ -17,4 +17,4 @@ tags:
 - [[Schema Layer (CLAUDE.md  AGENTS.md)]] - `references` [EXTRACTED]
 - [[Wiki Layer]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Knowledge_Architecture_Layers
+#graphify/document #graphify/EXTRACTED #community/LLM_Wiki_Pattern

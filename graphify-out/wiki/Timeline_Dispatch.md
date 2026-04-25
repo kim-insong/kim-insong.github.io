@@ -2,6 +2,8 @@
 
 > God node · 16 connections · `src/content/wiki/precomputed-timeline-dispatch.md`
 
+**Community:** [[Token Budget & Query Subgraph]]
+
 ## Connections by Relation
 
 ### cites

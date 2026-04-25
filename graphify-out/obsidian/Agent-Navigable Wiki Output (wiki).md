@@ -1,18 +1,16 @@
 ---
-source_file: "src/content/wiki/graphify.md"
+source_file: "graphify-out/obsidian/Wiki Layer.md"
 type: "document"
 community: "Knowledge Architecture Layers"
-location: "출력 형식"
 tags:
   - graphify/document
   - graphify/EXTRACTED
   - community/Knowledge_Architecture_Layers
 ---
 
-# Agent-Navigable Wiki Output (wiki/)
+# Agent-Navigable Wiki Output (wiki)
 
 ## Connections
-- [[Wiki Layer]] - `semantically_similar_to` [INFERRED]
-- [[graphify Tool]] - `references` [EXTRACTED]
+- [[Community Knowledge Architecture Layers_1]] - `has_member` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Knowledge_Architecture_Layers

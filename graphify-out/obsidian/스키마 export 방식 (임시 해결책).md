@@ -1,17 +1,16 @@
 ---
-source_file: "src/content/wiki/design-data-in-engine.md"
+source_file: "graphify-out/obsidian/_COMMUNITY_Game Data Architecture.md"
 type: "document"
-community: "Game Data Architecture"
+community: "Plan Data Schema"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Game_Data_Architecture
+  - community/Plan_Data_Schema
 ---
 
 # 스키마 export 방식 (임시 해결책)
 
 ## Connections
-- [[게임 기획데이터 관리 원칙]] - `references` [EXTRACTED]
-- [[클라이언트 원본 시 순환 참조 패턴]] - `references` [EXTRACTED]
+- [[기획데이터 아키텍처 (Community)]] - `has_member` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Game_Data_Architecture
+#graphify/document #graphify/EXTRACTED #community/Plan_Data_Schema

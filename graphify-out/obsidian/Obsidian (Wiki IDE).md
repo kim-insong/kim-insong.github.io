@@ -1,18 +1,13 @@
 ---
 source_file: "src/content/wiki/llm-wiki-pattern.md"
 type: "document"
-community: "Obsidian Integration"
-location: "실용 팁"
+community: "Cluster 112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Obsidian_Integration
+  - community/Cluster_112
 ---
 
 # Obsidian (Wiki IDE)
 
-## Connections
-- [[LLM Wiki Pattern]] - `references` [EXTRACTED]
-- [[Obsidian Vault Output]] - `semantically_similar_to` [INFERRED]
-
-#graphify/document #graphify/EXTRACTED #community/Obsidian_Integration
+#graphify/document #graphify/EXTRACTED #community/Cluster_112

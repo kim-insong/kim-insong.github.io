@@ -1,16 +1,16 @@
 ---
-source_file: "src/content/wiki/game-server-request-context.md"
+source_file: "graphify-out/obsidian/_COMMUNITY_게임 서버 요청 추적.md"
 type: "document"
-community: "Claude Skills & Game Server"
+community: "Game Server Request Tracing"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Claude_Skills_&_Game_Server
+  - community/Game_Server_Request_Tracing
 ---
 
-# Blog: game-server-request-context
+# Blog game-server-request-context
 
 ## Connections
-- [[게임 서버 요청 컨텍스트 패턴]] - `references` [EXTRACTED]
+- [[게임 서버 요청 추적 community node]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Claude_Skills_&_Game_Server
+#graphify/document #graphify/EXTRACTED #community/Game_Server_Request_Tracing

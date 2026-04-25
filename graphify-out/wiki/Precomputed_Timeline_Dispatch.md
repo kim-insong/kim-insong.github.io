@@ -33,7 +33,7 @@
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Token Budget & Query Subgraph]] (80 shared connections)
 
 ## Source Files
 

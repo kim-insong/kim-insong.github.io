@@ -25,7 +25,7 @@
 
 ## Relationships
 
-- [[Agent Orchestration Patterns]] (36 shared connections)
+- [[Wiki Graph Build Script]] (36 shared connections)
 
 ## Source Files
 

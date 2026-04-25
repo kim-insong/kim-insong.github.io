@@ -14,7 +14,7 @@
 
 ## Relationships
 
-- [[iOS App Development (Community)]] (12 shared connections)
+- [[Wiki Auto-Ingest Flow]] (12 shared connections)
 
 ## Source Files
 

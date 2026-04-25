@@ -15,7 +15,7 @@
 
 ## Relationships
 
-- [[SuperTimers Alarm Form]] (18 shared connections)
+- [[SuperTimers Add Alarm]] (18 shared connections)
 
 ## Source Files
 

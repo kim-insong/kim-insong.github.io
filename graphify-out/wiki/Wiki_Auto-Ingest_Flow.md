@@ -14,7 +14,7 @@
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[SuperMusicNote Records]] (12 shared connections)
 
 ## Source Files
 

@@ -2,7 +2,7 @@
 
 > God node · 27 connections · `src/content/wiki/graphify.md`
 
-**Community:** [[Graphify Claude Integration]]
+**Community:** [[Graphify Core Concepts (KR)]]
 
 ## Connections by Relation
 
